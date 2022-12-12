@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      {% include "head.njk" %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="background">
+      <div class="content">
+        {% block header %}
+          {% include "header.njk" %}
+        {% endblock %}
+
+          {% block main %}
+            {% if homepage %}{% else %}
+            <main>
+              <div class="contentblok toc whitepage">
+                {% if notitle %}{% else %}<h1>{{ title }}</h1>{% endif %}
+                {{ content | safe }}
+              </div>
+            </main>
+            {% endif %}
+          {% endblock %}
+
+      </div>
+    </div>
+
+    {% block footer %}
+      <footer class="bottom static">
+        <nav>
+          {% if homepage %}{% else %}
+            <a href="/">à propos de Reunionweb</a><br/>
+          {% endif %}
+            cc-by-sa Alix Guillard 1997-2022
+        </nav>
+      </footer>
+    {% endblock %}
+
+  </body>
+</html>
