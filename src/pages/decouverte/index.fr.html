@@ -1,0 +1,181 @@
+
+---
+title: La fin de l'esclavage
+description:
+image:
+keywords:
+---
+<!--title>
+Découvrez la Réunion
+<title-->
+
+<!--meta>
+<link rel="canonical" href="http://reunionweb.org/decouverte">
+<meta name="Description" content="Cette page liste toutes les définitions et explications présentes sur ce site, classées par catégories.">
+<meta name="KeyWords" content="Découverte, Reunion">
+<meta name="robots" content="noindex" />
+<meta-->
+
+<!--context>
+vingt-derniers-articles.fr.html
+pub/promovacances-minibanner.html
+<context-->
+
+<h3>Voici quelques définitions, des explications et quelques autres articles pour découvrir un peu plus l'île de la Réunion :</h3>
+<!--'-->
+<?php
+
+function list_files($defplace,$l,$lang,$path) {
+    $dossier = opendir("$defplace");
+    while ($Fichier = readdir($dossier)) {
+        if ($Fichier!="." && $Fichier!=".." && substr($Fichier,0,5)!="index") {
+            if (substr($Fichier,-4,4)=="html" && substr($Fichier,0,7)!="context") {
+                // test de langue $l ou $lang
+                if (substr($Fichier,-7,2)==$l OR substr($Fichier,-7,2)==$lang) {
+                    $Fichiexplode=explode(".",$Fichier);
+                    $def_nom=$Fichiexplode[0];
+                    if (!isset($def_file[$def_nom])) { // une page existe
+                        $def_file[$def_nom]=$Fichier;
+                    } else if (substr($Fichier,-7,2)==$l) { // une page existe dans la bonne langue
+                        $def_file[$def_nom]=$Fichier;
+                    }
+                // if (isset($debug) && $debug=="OUI") { echo "<br>(1) <b>$defplace</b> $def_file[$def_nom] - $def_nom →  $Fichier" ; }
+                }
+            }
+            if (is_dir("content/".$path."/".$Fichier)) {
+                $def_nom=$Fichier;
+                $def_file[$def_nom]=$Fichier;
+                //   echo " DIR ";
+            }
+            // if (isset($debug) && $debug=="OUI") { echo "<br>(2)<b>$defplace</b> $def_file[$def_nom] - $def_nom $l $lang<br>"; }
+        }
+    }
+    closedir($dossier);
+    return isset($def_file) ? $def_file : [];
+}
+
+$def_file=list_files($defplace,$l,$lang,$path);
+// asort($def_file);
+$counter=0;
+$page = "<span class=\"decouverte\"></span>";
+
+if (isset($def_file)) {
+  for(reset($def_file); $key = key($def_file); next($def_file)) {
+    $lien_def=$path."/".$key;
+    if (isset($debug) && $debug == "OUI") echo "<br> -lien_def = $lien_def - $path et/ $key";
+    if ($def_file[$key]==$key) {
+      $lang_def="";
+      $listt="content/menulist";
+      // TODO i18n
+      // $meilleurt=find_best_lang($listt,"fr","php");
+      $menut= "content/menulist.fr.php"; //"$meilleur['file'];
+      include ($menut);
+      if (isset($zone[1][$key])) {
+          $titre_def=$zone[1][$key];
+      } elseif ($profzone[$key]) {
+          $titre_def=$profzone[$key];
+      } else {
+          $titre_def="«".$key."»";
+      }
+
+      if($counter%2==0) {
+        // sur 2 colonnes
+        $page.= "<div class=\"left\">
+            <a href=\"$lien_def\" style=\"font-size:large; font-weight:bold\">$titre_def</a> $lang_def
+            <br/>
+            <blockquote>";
+      } else {
+            $page.= "<div class=\"right\">
+            <a href=\"$lien_def\" style=\"font-size:large; font-weight:bold\">$titre_def</a> $lang_def
+            <br/>
+            <blockquote>";
+      }
+
+      $rep_def="content".$path."/".$def_file[$key];
+      $sous_path=$path."/".$def_file[$key];
+      $sous_def_file=list_files($rep_def,$l,$lang,$sous_path);
+
+      if (isset($sous_def_file)) {
+          for(reset($sous_def_file); $sous_key = key($sous_def_file); next($sous_def_file)) {
+              $lien_def=$sous_path."/".$sous_key;
+
+	  //echo $sous_def_file[$sous_key]." - ".$sous_key."<br>";
+
+	  if ($sous_def_file[$sous_key]==$sous_key) {
+	    $lang_def="";
+	    $listt="content/menulist";
+        // TODO i18n
+	    // $meilleurt=find_best_lang($listt,"fr","php");
+	    $menut= $listt.".fr.php";
+	    include ($menut);
+	    if (isset($zone[1][$sous_key])) {
+	      $titre_def=$zone[1][$sous_key];
+	    }
+	    elseif ($profzone[$sous_key]) {
+	      $titre_def=$profzone[$sous_key];
+	    }
+	    else {
+	      $titre_def="«".$sous_key."»";
+	    }
+	  }
+	  else {
+	    require_once('code/title.php');
+	    $fichier_def="content".$path."/".$def_file[$key]."/".$sous_def_file[$sous_key];
+	    $titre_def=get_title($fichier_def);
+
+	    $def_lang=substr($sous_def_file[$sous_key],-7,2);
+	    if (isset($def_lang) && $def_lang!="$l") {
+	      $lang_def="(".$def_lang.")";
+	    }
+      }
+	  $page .= "<a href=\"$lien_def\">$titre_def</a> $lang_def<br/>";
+	}
+      }
+
+	     $page.= "
+</blockquote>
+</div>";
+
+	if ($counter%3==1)
+	   {
+	     $page.= "
+<div class=\"clear\"></div>";
+           }
+
+     $counter++;
+    }
+    else {
+      require_once('code/title.php');
+      $fichier_def="content/".$path."/".$def_file[$key];
+      $titre_def=get_title($fichier_def);
+
+      // TODO check i18n
+      $def_lang=substr($def_file[$key],-7,2);
+      if (isset($def_lang) && $def_lang != "$l") $lang_def=" (".$def_lang.")";
+      else $lang_def = "";
+      $page .= "<a href=\"$lien_def\" style=\"font-weight:bold\">$titre_def</a>$lang_def<br/>";
+    }
+  }
+  $page .="<div class=\"clear\"></div>";
+  echo $page;
+}
+else {
+    $listt="content/menulist";
+    $meilleurt=find_best_lang($listt,"fr","php");
+    $menut= $meilleur[file];
+    include ($menut);
+    $key=$bout[$result];
+    if (isset($zone[1][$key])) {
+      $titre_def=$zone[1][$key];
+    }
+    elseif (isset($profzone[$key])) {
+      $titre_def=$profzone[$key];
+    }
+    else {
+      $titre_def="«".$key."»";
+    }
+    echo "Erreur: Désolé, pas encore d'article sur $titre_def<br/>
+<blockquote><a href=\"/decouverte\">retour à l'index des définitions</a>.</blockquote>";
+}
+
+?>
