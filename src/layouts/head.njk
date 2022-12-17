@@ -2,39 +2,27 @@
   <meta name="author" content="Alix Guillard"/>
   <meta name="HandheldFriendly" content="True"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="title" content="{{ title }}">
+  <meta name="description" content="{{ description }}">
   <link rel="icon" type="image/png" href="/favicon.ico"/>
 
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="description" content="{{ description }}">
+  <meta itemprop="image" content="https://reunionweb.org{{ image }}">
 
-<meta name="title" content="{{ title }}">
-<meta name="description" content="{{ description }}">
-<meta itemprop="name" content="{{ title }}">
-<meta itemprop="description" content="{{ description }}">
-<meta itemprop="image" content="https://reunionweb.org{{ image }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:type" content="{% if schema %}{{schema}}{% else %}website{% endif %}">
+  <!--meta property="og:url" content="TODO find current path"-->
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:site_name" content="reunionweb.org">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="https://reunionweb.org{{ image }}">
 
-<meta property="og:title" content="{{ title }}">
-<meta property="og:type" content="{% if schema %}{{schema}}{% else %}website{% endif %}">
-<!--meta property="og:url" content="TODO find current path"-->
-<meta property="og:description" content="{{ description }}">
-<meta property="og:site_name" content="reunionweb.org">
-<meta property="og:locale" content="fr_FR">
-<meta property="og:image" content="https://reunionweb.org{{ image }}">
-
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:description" content="{{ description }}">
-<meta name="twitter:creator" content="@aloxecorton">
-<meta name="twitter:image:src" content="https://reunionweb.org{{ image }}">
-<meta name="twitter:card" content="summary_large_image">
-
-  <!-- <link rel="preload" as="font" href="/fonts/Allura.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="/fonts/Source Sans Pro Light.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="/fonts/Source Sans Pro Light Italic.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="/fonts/Source Sans Pro Semibold.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="/fonts/Source Sans Pro Semibold Italic.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="/fonts/Playfair Display.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="/fonts/Playfair Display Italic.woff2" type="font/woff2" crossorigin="anonymous"/> -->
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:creator" content="@aloxecorton">
+  <meta name="twitter:image:src" content="https://reunionweb.org{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="/css/styles.css">
   <title>{{title}}</title>
-  <script src="/js/background.js" defer></script>
-  <script src="/js/contacts.js" defer></script>
-  <script src="/js/emailform.js" defer></script>

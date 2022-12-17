@@ -1,8 +1,25 @@
-      <header class="topright home">
-        <div class="whitepage">
-          {% if homepage %}
-            <h1>Reunionweb</h1>
-          {% else %}
-            <a href="/"><h1>L'île de la Réunion sur le web</h1></a>
-          {% endif %}
-      </header>
+    <header class="topright home">
+      <div id="titre">
+          <div class="h1"><a href="/">Reunionweb</a></div>
+          <div class="h2"><a href="/">L'île de la Réunion à travers ses sites web</a></div>
+      </div>
+
+      {% if homepage %}
+        <div id="search">
+        <!-- SiteSearch Google -->
+        <script>
+          (function() {
+            var cx = 'partner-pub-6770013384586203:6910456247';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:searchbox-only></gcse:searchbox-only>
+        <!-- SiteSearch Google Fin -->
+        </div>
+      {% endif %}
+    </header>

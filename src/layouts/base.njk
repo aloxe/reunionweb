@@ -6,7 +6,7 @@
     {% endblock %}
   </head>
   <body>
-    <div id="background">
+    <div id="wrap">
       <div class="content">
         {% block header %}
           {% include "header.njk" %}
@@ -27,11 +27,12 @@
     </div>
 
     {% block footer %}
-      <footer class="bottom static">
+      <footer>
         <nav>
-          {% if homepage %}{% else %}
-            <a href="/">à propos de Reunionweb</a><br/>
-          {% endif %}
+          <a name="ciblefooter"></a>
+            {% if homepage %}{% else %}
+              <a href="/about">à propos de Reunionweb</a>
+            {% endif %}
             cc-by-sa Alix Guillard 1997-2022
         </nav>
       </footer>
