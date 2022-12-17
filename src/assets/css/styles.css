@@ -1,0 +1,273 @@
+@font-face {
+    font-family:'Devroye';
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+    unicode-range: U+000D-FB02;
+    src: local('Devroye'),
+      url('/fonts/DEVROYUN-webfont.woff') format('woff'),
+      url('/fonts/DEVROYUN-webfont.ttf') format('truetype');
+}
+
+body {
+	margin: 0;
+  font-family: Sans-Serif;
+  font-size: 100%;
+	background-color: #fefeae;
+	color: #111111;
+}
+/*
+color_border = "FEFEAE";
+color_bg = "FEFEAE";
+title color_link = "006fcf";
+color_text = "333333";
+color_url = "001c86";
+*/
+
+html, p, td, ul {
+	color: #111111;
+}
+
+#access a { color: #FF5809; }
+#access a:hover, #texte a:hover {  text-decoration:none; }
+#access a:focus, #texte a:focus {  text-decoration:none;  background-color:#000;  color:#FFF; }
+#access { display:none; }
+
+body {
+	background-image: url("/img/tete-2006.png");
+	background-repeat: no-repeat;
+}
+
+/* header */
+
+#titre {
+    padding-left: 10px;
+    height: 120px;
+    margin: 0;
+    color: white;
+}
+
+#titre .h1 {
+    font-family: Devroye, Sans-Serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+#titre .h2 {
+    font-family: Devroye, Sans-Serif;
+    font-size: 15px;
+    margin:-5px 0 5px 0;
+}
+
+#titre a {
+    text-decoration: none;
+    color: white;
+}
+
+#search {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    font-size: smaller;
+    margin: 10px 0 0 0;
+    width: 500px;
+}
+
+input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+    border-color: #006FCF;
+    width: 400px;
+    border-radius: 5px;
+}
+
+#search .gsc-search-button, #search .gsc-search-button-v2 {
+    border-radius: 5px;
+}
+
+/* main content */
+
+main{
+  width: calc(65% - 30px);
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 840px;
+}
+
+@media (max-width: 840px) {
+  main {
+        max-width: 700px;
+        padding: 0 10px;
+        width: calc(100% - 30px);
+    }
+}
+
+main p {
+    text-align : justify;
+    line-height: 1.5em;
+}
+
+main h1 {
+    font-family: Devroye, Arial, Helvetica, sans-serif;
+    width: 100%;
+    border-bottom: #001c86 dotted 1px;
+    padding-top: 0;
+    margin-top: 1em;
+    color: #001c86;
+}
+
+main h2 {
+    font-family: Devroye, Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    padding-top: 0;
+    margin-top: 0.5em;
+    color: #006fd5;
+    width: 100%;
+}
+
+main h3 {
+    width: 100%;
+    padding: 0;
+    margin: 8px 0 3px 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: #006fd5;
+}
+
+main h4 {
+    padding-top: 0;
+    margin-top: 3px;
+    text-align: justify;
+    color: #001c86;
+    font-weight: bold;
+    font-family: Devroye, Arial, Helvetica, sans-serif;
+
+}
+
+main h5 {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+    color: #001c86;
+
+}
+
+main .intro {
+      text-align:right;
+      font-style:italic;
+      font-weight:bold;
+      font-stretch: ultra-condensed;
+}
+
+a {
+      color: #001c86;
+      text-decoration: none;
+}
+
+a:visited {
+    color: #001155;
+    text-decoration: none;
+}
+
+a:hover {
+      color: #0073d7;
+      text-decoration: underline;
+}
+
+a.ext:link:after, a.ext:visited:after, a.ext:active:after {
+   	content:url("/img/puce-url-out.png");
+}
+
+main img {
+    margin: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+main .cadrimage {
+	margin: 5px;
+	text-align:center;
+	font-style: italic;
+	font-size: 10px;
+	color: #006fd5;
+	border:1px;
+}
+
+main li {
+	text-align : justify;
+	margin-bottom : 1em;
+	list-style-image : url("/img/puce-reunion.png");
+}
+
+main table.ligne {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+main td.columns {
+    border: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: top;
+}
+
+main tr.rows {
+    border: 0;
+}
+
+main td.ligne {
+    border-bottom: #0073d7 dotted 2px;
+}
+
+main tr.ligne {
+    border-left: #0073d7 dotted 2px;
+    border-right: #0073d7 dotted 2px;
+}
+
+main tr.titre {
+    color: #680e0e;
+    text-decoration: none;
+    font-weight: bold;
+    border: #f7d25b solid 2px;
+    background-color: #f7d25b;
+}
+
+main table img {
+    float: none !important;
+}
+
+main div.right,
+main div.left {
+    float: left;
+    width: 45%;
+}
+
+main .note {
+    font-style: italic;
+    color: #333;
+}
+
+main .legende {
+   font-style: italic;
+   font-size: 0.8em;
+   color: #006fd5;
+}
+
+main table.socmed {
+    border-collapse: collapse;
+    border: 0;
+    margin: 1em 0;
+}
+
+footer {
+    padding: 20px;
+    border-top: dotted #0073d7 1px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}

@@ -6,34 +6,26 @@
     {% endblock %}
   </head>
   <body>
-    <div id="wrap">
-      <div class="content">
-        {% block header %}
-          {% include "header.njk" %}
-        {% endblock %}
+    {% block header %}
+      {% include "header.njk" %}
+    {% endblock %}
 
-          {% block main %}
-            {% if homepage %}{% else %}
-            <main>
-              <div class="contentblok toc whitepage">
-                {% if notitle %}{% else %}<h1>{{ title }}</h1>{% endif %}
-                {{ content | safe }}
-              </div>
-            </main>
-            {% endif %}
-          {% endblock %}
-
-      </div>
-    </div>
+    {% block main %}
+      {% if homepage %}{% else %}
+      <main>
+          {{ content | safe }}
+      </main>
+      {% endif %}
+    {% endblock %}
 
     {% block footer %}
       <footer>
         <nav>
           <a name="ciblefooter"></a>
-            {% if homepage %}{% else %}
-              <a href="/about">à propos de Reunionweb</a>
-            {% endif %}
-            cc-by-sa Alix Guillard 1997-2022
+          {% if homepage %}{% else %}
+            <a href="/about">à propos de Reunionweb</a>
+          {% endif %}
+          <p>cc-by-sa Alix Guillard 1997-{% year %}</p>
         </nav>
       </footer>
     {% endblock %}
