@@ -11,7 +11,11 @@
     {% endblock %}
 
     {% block main %}
-      {% if homepage %}{% else %}
+      {% if homepage %}
+      {# <main> #}
+          {{ content }}
+      {# </main> #}
+      {% else %}
       <main>
           {{ content | safe }}
       </main>
