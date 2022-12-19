@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+      {% include "head.njk" %}
+    {% endblock %}
+  </head>
+  <body>
+    {% block header %}
+      {% include "header.njk" %}
+    {% endblock %}
+
+    {% block main %}
+      {% if homepage %}
+      {# <main> #}
+          {{ content }}
+      {# </main> #}
+      {% else %}
+      <main>
+          {{ content | safe }}
+      </main>
+      {% endif %}
+    {% endblock %}
+
+    {% block footer %}
+      <footer>
+        <nav>
+          <a name="ciblefooter"></a>
+          {% if homepage %}{% else %}
+            <a href="/about">à propos de Reunionweb</a>
+          {% endif %}
+          <p>cc-by-sa Alix Guillard 1997-{% year %}</p>
+        </nav>
+      </footer>
+    {% endblock %}
+
+  </body>
+</html>

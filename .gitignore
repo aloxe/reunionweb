@@ -1,0 +1,6 @@
+//create a .gitignore file and add the following in it
+# dependencies
+node_modules
+.DS_Store
+_site
+_reunionweb.org
