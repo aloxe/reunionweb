@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+        <meta charSet="utf-8"/>
+  <meta name="author" content="Alix Guillard" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="title" content="Message à Reunionweb">
+  <meta name="description" content="">
+  <link rel="icon" type="image/png" href="/reunionweb/favicon.ico" />
+
+  <meta itemprop="name" content="Message à Reunionweb">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content=".">
+
+  <meta property="og:title" content="Message à Reunionweb">
+  <meta property="og:type" content="website">
+  <!--meta property="og:url" content="TODO find current path"-->
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="reunionweb.org">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content=".">
+
+  <meta name="twitter:title" content="Message à Reunionweb">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:creator" content="@aloxecorton">
+  <meta name="twitter:image:src" content=".">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="/reunionweb/css/styles.css">
+  <title>Message à Reunionweb</title>
+
+    
+  </head>
+  <body>
+    
+          <header>
+      <div id="titre">
+          <div class="h1"><a href="/reunionweb/">Reunionweb</a></div>
+          <div class="h2"><a href="/reunionweb/">L'île de la Réunion à travers ses sites web</a></div>
+      </div>
+
+      <div id="search">
+      <!-- SiteSearch Google -->
+      <script>
+        (function() {
+          var cx = 'partner-pub-6770013384586203:6910456247';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:searchbox-only></gcse:searchbox-only>
+      <!-- SiteSearch Google Fin -->
+      </div>
+
+    </header>
+
+    
+
+    
+      
+      <main>
+          
+<!--meta>
+<meta name="robots" content="noindex" />
+<meta-->
+
+<?php
+$services = array (
+			 "annuaire" => "Vous voulez signaler un site
+			 interessant",
+			 "webwriter" => "Vous voulez discuter sur un article",
+			 "webmaster" => "Vous voulez signaler une
+			 erreur sur le site web",
+			 "webmestre" => "Autres...",
+			 );
+
+Function FalseEmail($email)
+{
+$l=$_SESSION["l"];
+
+if(
+!preg_match("/^([0-9a-zA-Z\.\!\#\$\%\&\'\*\+-\/\=\?\^\_\`\{\|\}\~]+)\@([a-z0-9]+([\.-][a-z0-9]+))*$/", $email, $regs)
+)
+{
+  if ($l=="en") {
+    return "The mail address you entered is not a valid address.";
+  }
+  else {
+    return "L'adresse de courrier électronique est refusée par le serveur parce qu'elle semble invalide.";
+  }
+}
+// else if ( gethostbyname($regs[2]) == $regs[2] )
+// { echo $regs[2]; return "L'adresse de courrier électronique que vous avez entrée n'est pas valide."; }
+else { return FALSE; }
+
+}
+
+////////////////////////////////
+// eoncodage pour les headers de mail
+///////////////////////////////
+
+
+function encode_mail_header( $in_str, $charset ) {
+    $out_str = $in_str;
+
+    if ($out_str && $charset) {
+
+        // define start delimimter, end delimiter and spacer
+        $end = "?=";
+        $start = "=?" . $charset . "?B?";
+        $spacer = $end . "\r\n " . $start;
+
+        // determine length of encoded text within chunks
+        // and ensure length is even
+        $length = 75 - strlen($start) - strlen($end);
+        $length = floor($length/4) * 4;
+
+        // encode the string and split it into chunks
+        // with spacers after each chunk
+        $out_str = base64_encode($out_str);
+        $out_str = chunk_split($out_str, $length, $spacer);
+
+        // remove trailing spacer and
+        // add start and end delimiters
+        $spacer = preg_quote($spacer);
+        $out_str = preg_replace("/" . $spacer . "$/", "", $out_str);
+        $out_str = $start . $out_str . $end;
+    }
+    return $out_str;
+}
+
+$name = $_POST['name'];
+$name = stripcslashes($name);
+$name = iconv("ISO-8859-1","ISO-8859-15",$name);
+$mail = $_POST['mail'];
+$sujet = $_POST['sujet'];
+$service = $_POST['service'];
+$serviceold = $_POST['service'];
+$message = $_POST['message'];
+
+$sujet = stripcslashes($sujet);
+$message = stripcslashes($message);
+
+$server = $_SERVER["SERVER_NAME"];
+$ip = $_SERVER["REMOTE_ADDR"];
+$hostname = gethostbyaddr($ip);
+$browser = $_SERVER["HTTP_USER_AGENT"];
+
+$headname = encode_mail_header("$name", "iso-8859-1");
+$headsujet= encode_mail_header("$sujet",  "iso-8859-1");
+
+// changement de chaines dans la chaine descr du service
+$services[$service] = preg_replace( "/\(.*\)$/", " ", $services[$service] );
+$servicessurweb = str_replace( "le ", "au ", $services[$service]);
+
+// erreurs sur le formulaire
+if (!$name) { $erreur="Vous devez indiquer votre nom.<br>\n";}
+if (!$mail) { $erreur.="Vous devez indiquer votre adresse de courrier électronique.<br>\n";}
+if (!$sujet) { $erreur.="Il est recommandé de mettre un sujet au message que vous désirez envoyer.<br>\n";}
+if (!$service) { $erreur.="Vous devez préciser l'objet de votre envoi.<br>\n";}
+if (!$message) { $erreur.="Votre message est vide.<br>\n";}
+
+
+if (!isset($erreur))
+{
+  if(FalseEmail($mail) == FALSE) {
+
+$header = "From: $headname <$mail>\n";
+$header .= "Reply-To:  $headname <$mail>\n";
+$header .= "MIME-Version: 1.0\r\n";
+$header .= "Content-Type: text/plain; charset=iso-8859-1\r\n";
+$header .= "User-Agent: PHP\n";
+$header .= "X-ClientIP: $ip\n";
+$header .= "X-ClientHost: $hostname \n";
+$header .= "X-ClientBrowser: $browser \n";
+
+$message= "\n".$message;
+$message.= "\n\n";
+
+
+$to = "$service <alix@guillard.fr>"; //
+$to = "$service <$service@reunionweb.org>";
+$subject = "[contact Reunionweb] ".$headsujet;
+
+
+mail($to,$subject,$message,$header);
+
+// mail à la personne
+
+$header2 = "From: Reunionweb <webmaster@reunionweb.org>\n";
+$header2 .= "MIME-Version: 1.0\r\n";
+$header2 .= "Content-Type: text/plain; charset=iso-8859-1\r\n";
+$header2 .= "User-Agent: PHP\n";
+$header2 .= "X-Mailer: PHP\n";
+
+$message2 = "Bonjour, \n\nVous avez envoyé un courrier électronique dont l'objet est [$sujet].
+Nous vous remercions pour ce message ; il a bien été envoyé.\n
+Je ne manquerais pas de vous répondre dans les
+meilleurs délais.";
+$message2 .= "\n\nRappel de votre message :".$message;
+$message2 .= "Cordialement,\n";
+$message2 .= "-- \nLe webmaster\n";
+$message2 .= "\n";
+
+$to2 = $mail;
+$sujet2 = "Merci pour votre message ($headsujet)";
+
+mail($to2,$sujet2,$message2,$header2);
+ echo "<h2>Votre message est envoyé</h2>";
+ echo "<p> Vous allez recevoir un courrier électronique de confirmation.<br>
+	   Si vous ne recevez pas ce courrier de confirmation, c'est
+ peut-être parce que vous avez fait une erreur de frappe en tapant
+ votre adresse électronique. Dans ce cas, nous vous remercions de <a
+ href=\"/about/ecrire\">renvoyer votre message</a>.
+<br/><br/>
+<!--a href=\"/newsletter/subsciption.php?id=1&op=join_direct&email_addr=".$mail."\">Abonnez-vous à la lettre d'information de Reunionweb</a-->.
+</p>";
+
+      echo "<hr>";
+    }
+  else {
+  echo "<h3>Une erreur est survenue lors de l'envoi de votre courrier électronique</h3>\n";
+    echo FalseEmail($mail);
+  echo "<h3>Merci de bien vouloir rectifier votre adresse et renouveler votre envoi : </h3>";
+include ('content/about/formulaire.fr.html');
+
+    // mail to webmaster
+    // pour erreur de mail
+$header3 = "From: $headname <$mail>\n";
+$header3 .= "Reply-To:  $headname <$mail>\n";
+$header3 .= "MIME-Version: 1.0\r\n";
+$header3 .= "Content-Type: text/plain; charset=iso-8859-1\r\n";
+$header3 .= "User-Agent: PHP4\n";
+$header3 .= "X-ClientIP: $ip \n";
+$header3 .= "X-ClientHost: $hostname \n";
+$header3 .= "X-ClientBrowser: $browser \n";
+
+$sujet3 = "[contact] $headsujet";
+// $sujet3 = encode_mail_header("$sujet3", "iso-8859-1"); // marche pas (bizare)
+
+mail("webmaster@orgemont.com", $sujet3,
+"******************************************\n
+$mail semble etre mal tappé par $headname\n
+******************************************\n
+\n\n son ip : $ip \n\n il voulait écrire à : $service\n
+******************************************\n
+\nsujet :\n$sujet\n\nmessage :\n$message",
+	 $header3);
+  }
+}
+else {
+ echo "<h3>Votre message n'a pas été envoyé à cause d'une erreur</h3>";
+ echo "<p>".$erreur."</p>";
+ echo "<h3>Merci de bien vouloir compléter votre demande : </h3>";
+
+include ('content/about/formulaire.fr.html');
+
+}
+
+?>
+
+      </main>
+      
+    
+
+    
+      <footer>
+        <nav>
+          <a name="ciblefooter"></a>
+          
+            <a href="/reunionweb/about">à propos de Reunionweb</a>
+          
+          <p>cc-by-sa Alix Guillard 1997-2022</p>
+        </nav>
+      </footer>
+    
+
+  </body>
+</html>
