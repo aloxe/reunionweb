@@ -1,0 +1,11 @@
+{
+  "name": "reunionweb",
+  "version": "1.0.0",
+  "description": "reunionweb.org",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy",
+    "test": "jest"
+  }
+}

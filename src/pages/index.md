@@ -1,11 +1,9 @@
 ---
 title: Reunionweb
 description: L'île de la Réunion à travers ses sites web
-image:
+image: "/img/tete-2006.png"
 keywords: Découverte, Reunion, blog, articles,
 ---
-
-Découvrez le web réunionnais
 
 {% for page in collections.article %}
   {% if (loop.index < 2) %}
@@ -15,11 +13,9 @@ Découvrez le web réunionnais
 {% endfor %}
 …[lire la suite]({{page.url}})
 
-[tous les articles](/articles/)
-# Découvrez l'île de la Réunion
+[tous les articles]({{ "articles" | url }})
 
-<!-- {% set rank = rank + 1 %}
-{% if rank/2 === rank//2 %}<div class="left">{% else %}<div class="right">{% endif %} -->
+# Découvrez l'île de la Réunion
 
 <div class="twocolumns">
 {% for post in collections.all %}
