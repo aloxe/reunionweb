@@ -4,11 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="{{ title }}">
   <meta name="description" content="{{ description }}">
-  <link rel="icon" type="image/png" href="/favicon.ico" />
+  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
 
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
-  <meta itemprop="image" content="https://reunionweb.org{{ image }}">
+  <meta itemprop="image" content="{{ image | url }}">
 
   <meta property="og:title" content="{{ title }}">
   <meta property="og:type" content="{% if schema %}{{schema}}{% else %}website{% endif %}">
@@ -16,13 +16,13 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="reunionweb.org">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:image" content="https://reunionweb.org{{ image }}">
+  <meta property="og:image" content="{{ image | url }}">
 
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:creator" content="@aloxecorton">
-  <meta name="twitter:image:src" content="https://reunionweb.org{{ image }}">
+  <meta name="twitter:image:src" content="{{ image | url }}">
   <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
   <title>{{title}}</title>

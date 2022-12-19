@@ -1,7 +1,7 @@
     <header>
       <div id="titre">
-          <div class="h1">{% if homepage %}Reunionweb{% else %}<a href="/">Reunionweb</a>{% endif %}</div>
-          <div class="h2">{% if homepage %}L'île de la Réunion à travers ses sites web{% else %}<a href="/">L'île de la Réunion à travers ses sites web</a>{% endif %}</div>
+          <div class="h1">{% if homepage %}Reunionweb{% else %}<a href="{{ '/' | url }}">Reunionweb</a>{% endif %}</div>
+          <div class="h2">{% if homepage %}L'île de la Réunion à travers ses sites web{% else %}<a href="{{ '/' | url }}">L'île de la Réunion à travers ses sites web</a>{% endif %}</div>
       </div>
 
       <div id="search">
