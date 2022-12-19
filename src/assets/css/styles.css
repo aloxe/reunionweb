@@ -262,6 +262,16 @@ main table.socmed {
     margin: 1em 0;
 }
 
+main .twocolumns {
+  column-count: 2;
+}
+
+@media (max-width: 840px) {
+  main .twocolumns {
+    column-count: 1;
+  }
+}
+
 footer {
     padding: 20px;
     border-top: dotted #0073d7 1px;
