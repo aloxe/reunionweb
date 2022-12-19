@@ -12,7 +12,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   return {
-      pathPrefix: "/reunionweb/", // only for test
+      pathPrefix: "/",
+      // pathPrefix: "/reunionweb/", // only for test
       dir: {
           input: 'src/pages',
           output: '_site',

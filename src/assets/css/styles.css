@@ -262,6 +262,10 @@ main table.socmed {
     margin: 1em 0;
 }
 
+main .right {
+  text-align: right;
+}
+
 main .twocolumns {
   column-count: 2;
 }
@@ -270,6 +274,10 @@ main .twocolumns {
   main .twocolumns {
     column-count: 1;
   }
+}
+
+main .twocolumns p {
+  text-align: left;
 }
 
 footer {
