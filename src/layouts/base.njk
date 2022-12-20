@@ -12,11 +12,12 @@
 
     {% block main %}
       {% if homepage %}
-      {# <main> #}
+      <main>
           {{ content }}
-      {# </main> #}
+      </main>
       {% else %}
       <main>
+          <h1>{{ title }}</h1>
           {{ content | safe }}
       </main>
       {% endif %}
@@ -27,7 +28,7 @@
         <nav>
           <a name="ciblefooter"></a>
           {% if homepage %}{% else %}
-            <a href="{{ '/about' | url }}">à propos de Reunionweb</a>
+            <a href="{{ '/about/' | url }}">à propos de Reunionweb</a>
           {% endif %}
           <p>cc-by-sa Alix Guillard 1997-{% year %}</p>
         </nav>

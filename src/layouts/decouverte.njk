@@ -2,7 +2,7 @@
 
     {% block main %}
       <main>
-        <h2>{{ title }}</h2>
+        <h1>{{ title }}</h1>
         {{ content | safe }}
         {% set section = page.url.split("/").length %}
         {% for post in collections.all %}

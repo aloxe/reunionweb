@@ -1,3 +1,5 @@
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+
 module.exports = (eleventyConfig) => {
 
   // Pass-through files
@@ -10,6 +12,14 @@ module.exports = (eleventyConfig) => {
 
   // Get the current year as {% year %}
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // eleventyConfig.addPlugin(pageAssetsPlugin, {
+  //     mode: "parse",
+  //     postsMatching: "*/*.(html|md)",
+  //     recursive: true,
+  //     hashAssets: false,
+  // });
+
 
   return {
       pathPrefix: "/",

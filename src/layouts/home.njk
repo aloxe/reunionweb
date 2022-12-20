@@ -10,6 +10,24 @@
         {% endfor %}
         <p class="right">…<a href="{{ page.url }}">lire la suite</a></p>
 
+        {% set nextread = "" %}
+        {% set lastyear = 0 %}
+        {% for page in collections.article %}
+          {% if page.date and page.date.getFullYear() > lastyear %}
+            {% set lastyear = page.date.getFullYear() %}
+          {% endif %}
+        {% endfor %}
+        {% if lastyear %}
+          <h3>{{ lastyear }}</h3>
+          {% for page in collections.article %}
+            {% if page.date and page.date.getFullYear() === lastyear %}
+              <li><a href="{{page.url}}">{{ page.data.title }}</a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+
+
         <h3><a href="{{ "articles" | url }}">Voir tous les articles</a></h3>
 
         <h1>Découvrez l'île de la Réunion</h1>
