@@ -87,7 +87,7 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 
 /* main content */
 
-main{
+main {
   width: calc(65% - 30px);
   margin: 0 auto;
   padding: 0 30px;
@@ -103,8 +103,12 @@ main{
 }
 
 main p {
-    text-align : justify;
+    /* text-align : justify; */
     line-height: 1.5em;
+}
+
+main .center {
+    text-align:center;
 }
 
 main h1 {
