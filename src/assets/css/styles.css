@@ -166,6 +166,7 @@ main .intro {
       font-stretch: ultra-condensed;
 }
 
+span.link,
 a {
       color: #001c86;
       text-decoration: none;
@@ -176,9 +177,11 @@ a:visited {
     text-decoration: none;
 }
 
+span.link:hover,
 a:hover {
       color: #0073d7;
       text-decoration: underline;
+      cursor: pointer;
 }
 
 a.ext:link:after, a.ext:visited:after, a.ext:active:after {

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+  cd .
+  echo --------------- entree dans le rep ... ----------
+  for i in *
+    do
+    echo conversion de $i dans le tas de photos
+    convert -geometry x100 $i 100/$i
+    echo $i fait en 100
+    echo 
+  done
+
