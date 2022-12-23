@@ -3,6 +3,7 @@
 node_modules
 yarn.lock
 package-lock.json
+.cache
 .DS_Store
 _site
 _reunionweb.org

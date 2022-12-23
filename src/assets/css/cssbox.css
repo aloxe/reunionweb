@@ -1,0 +1,114 @@
+/* The work below, CSSBox, is released under the Creative Commons
+   Attribution-ShareAlike 4.0 license and is available on
+   https://github.com/TheLastProject/CSSBox. You are not required to add
+   additional credit to your website, just leave the above text in this file */
+div.cssbox {
+    display: inline-block;
+
+    padding: 5px;
+    min-height: 210px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 1px;
+    /* border: 1px dotted grey; */
+}
+
+div.cssbox .title {
+    width: 130px;
+    margin: 0 auto;
+    font-size: smaller;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+span.cssbox_full {
+  z-index: 999999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+  transition: opacity 0.5s linear;
+}
+
+span.cssbox_full > span {
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    max-height: 90%;
+    max-width: 90%;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px black;
+    color: black;
+    font-size: small;
+}
+
+span.cssbox_full img {
+    max-height: 70vh;
+    max-width: 80vw;
+    border: 1px solid black;
+}
+
+div.cssbox h2,
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+    color: #eee;
+    text-shadow: 1px 1px 2px black;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  z-index: 999999;
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: white;
+  font-size: 36px;
+}
+
+a.cssbox_close {
+  top: 1%;
+  right: 1%
+}
+
+a.cssbox_close::after {
+  content: '\00d7';
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+/* This is the end of CSSBox */

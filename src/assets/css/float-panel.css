@@ -1,0 +1,35 @@
+.slideanim {
+    visibility:hidden;
+    visibility:visible\9;/*For old IE browsers IE6-8 */
+}
+
+.slideanim.s1.slide {
+    visibility: visible;
+    animation: slide 0.5s  ease;
+}
+
+.slideanim.s2.slide {
+    visibility: visible;
+    animation: slide 1.5s  ease;
+}
+
+.slideanim.s3.slide {
+    visibility: visible;
+    animation: slide 2s  ease;
+}
+
+.slideanim.s4.slide {
+    visibility: visible;
+    animation: slide 4s  ease;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

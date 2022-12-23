@@ -1,8 +1,9 @@
 ---
-title: Les Gouzou de Jace
+title: Galerie des Gouzou de Jace
 description: Une collection de photos des Gouzou de Jace
-image:
-keywords:
+image: /img/gouzou/idee.jpg
+keywords: gouzou, de, jace, streetart, graph
+layout: gouzou.njk
 ---
 
-Bientôt ici des photos de gouzou.
+Photos de gouzou glanées ci et là ou reçues par email.
