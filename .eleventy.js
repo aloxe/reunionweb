@@ -13,12 +13,13 @@ module.exports = (eleventyConfig) => {
   // Get the current year as {% year %}
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-  eleventyConfig.addPlugin(pageAssetsPlugin, {
-      mode: "parse",
-      postsMatching: "src/pages/articles/*/*/*.(html|md)",
-      recursive: true,
-      hashAssets: false,
-  });
+// uncomment when all ready
+  // eleventyConfig.addPlugin(pageAssetsPlugin, {
+  //     mode: "parse",
+  //     postsMatching: "src/pages/articles/*/*.(html|md)",
+  //     recursive: true,
+  //     hashAssets: false,
+  // });
 
 
   return {
