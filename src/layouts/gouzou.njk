@@ -10,7 +10,6 @@
       <main>
         <h1>{{ title }}</h1>
         {{ content | safe }}
-
         {% if gouzoulist %}
         {% for gouzou in gouzoulist %}
         {% if loop.index < 200 %}
