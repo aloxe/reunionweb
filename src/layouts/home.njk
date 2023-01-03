@@ -1,48 +1,41 @@
 {% extends 'base.njk' %}
 
-    {% block main %}
-      <main>
-        {% for page in collections.article %}
-          {% if (loop.index < 2) %}
-        <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
-        <p>{{ page.templateContent | safe | truncate(400) }}</p>
-          {% endif %}
-        {% endfor %}
-        <p class="right">…<a href="{{ page.url }}">lire la suite</a></p>
-
-        {% set nextread = "" %}
-        {% set lastyear = 0 %}
-        {% for page in collections.article %}
-          {% if page.date and page.date.getFullYear() > lastyear %}
-            {% set lastyear = page.date.getFullYear() %}
-          {% endif %}
-        {% endfor %}
-        {% if lastyear %}
-          <h3>{{ lastyear }}</h3>
-          {% for page in collections.article %}
-            {% if page.date and page.date.getFullYear() === lastyear %}
-              <li><a href="{{page.url}}">{{ page.data.title }}</a>
-            {% endif %}
-          {% endfor %}
+{% block main %}
+  <main>
+    {% for page in collections.article %}
+        {% if (loop.index < 2) %}
+            <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
+            <p>{{ page.templateContent | safe | truncate(400) }}</p>
+            <p class="right">…<a href="{{page.url}}">lire la suite</a></p>
         {% endif %}
+    {% endfor %}
 
-
-
-        <h3><a href="{{ "articles" | url }}">Voir tous les articles</a></h3>
-
-        <h1>Découvrez l'île de la Réunion</h1>
-
-        <div class="twocolumns">
-        {% for post in collections.all %}
-            {% if post.url.split("/")[1] === "decouverte" and post.url.split("/")[2] and not post.url.split("/")[3] %}
-        <p>
-          <b><a href="{{ post.url }}">{{ post.data.hometitle }}</a></b><br>
-          {{ post.data.homedesc }}
-        </p>
+    <div class="twocolumns">
+    {% set lastyear = 0 %}
+    {% for page in collections.article %}
+        {% if (loop.index >= 2) and (loop.index < 9) %}
+            {% if page.date and page.date.getFullYear() !== lastyear %}
+                {% set lastyear = page.date.getFullYear() %}
+                <h3>{{ lastyear }}</h3>
             {% endif %}
-        {% endfor %}
-        </div>
+            <h4><a href="{{page.url}}">{{ page.data.title }}</a></h4>
+        {% endif %}
+    {% endfor %}
+    </div>
+    <h3 class="center"><a href="{{ "articles" | url }}">Voir tous les articles</a></h3>
 
-        <div class="clear"></div>
-      </main>
-    {% endblock %}
+    <h1>Découvrez l'île de la Réunion</h1>
+
+    <div class="twocolumns">
+    {% for post in collections.all %}
+        {% if post.url.split("/")[1] === "decouverte" and post.url.split("/")[2] and not post.url.split("/")[3] %}
+      <h3><a href="{{ post.url }}">{{ post.data.hometitle }}</a></h3>
+      <p>{{ post.data.homedesc }}</p>
+        {% endif %}
+    {% endfor %}
+    </div>
+
+    <div class="clear"></div>
+  </main>
+
+{% endblock %}
