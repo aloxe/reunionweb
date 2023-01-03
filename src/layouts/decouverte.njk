@@ -5,14 +5,26 @@
         <h1>{{ title }}</h1>
         {{ content | safe }}
         {% set section = page.url.split("/").length %}
+        <div class="twocolumns">
         {% for post in collections.all %}
-          {% if post.url.split("/")[1] === "decouverte" %}
-            {% if page.url.split("/")[section-2] === post.url.split("/")[section-2] %}
-              {% if post.url.split("/")[section-1] and not post.url.split("/")[section] %}
-                <li><a href="{{post.url}}">{{post.data.title}}</a> {{post.url}}</li>
-              {% endif %}
+          {% if post.url.split("/")[1] === "decouverte"
+          and page.url.split("/")[section - 2] === post.url.split("/")[section - 2]
+          and post.url.split("/")[section - 1] and not post.url.split("/")[section] %}
+
+            <h3><a href="{{post.url}}">{{post.data.title}}</a></h3>
+            {% if post.data.description %}<p>{{post.data.description}}</p>{% endif %}
+
+            {% for subpost in collections.all %}
+            {% if subpost.url.split("/")[1] === "decouverte"
+            and page.url.split("/")[section - 2] === subpost.url.split("/")[section - 2]
+            and subpost.url.split("/")[section - 1] === post.url.split("/")[section - 1]
+            and subpost.url.split("/")[section] %}
+                <h5><a href="{{subpost.url}}">{{subpost.data.title}}</a></h5>
             {% endif %}
+            {% endfor %}
+
           {% endif %}
         {% endfor %}
+        </div>
       </main>
     {% endblock %}
