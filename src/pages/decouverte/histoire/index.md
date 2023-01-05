@@ -7,3 +7,5 @@ image:
 keywords:
 layout: decouverte.njk
 ---
+
+Quelques notes historiques qui expliquent le peuplement et la situation de la Réunion d'aujourd'hui.

@@ -16,11 +16,10 @@ module.exports = (eleventyConfig) => {
 // uncomment when all ready
   // eleventyConfig.addPlugin(pageAssetsPlugin, {
   //     mode: "parse",
-  //     postsMatching: "src/pages/articles/*/*.(html|md)",
+  //     postsMatching: "src/pages/(articles/*/*.(html|md)|decouverte/*/*.(html|md)||decouverte/*/*/*.(html|md))",
   //     recursive: true,
   //     hashAssets: false,
   // });
-
 
   return {
       pathPrefix: "/",
