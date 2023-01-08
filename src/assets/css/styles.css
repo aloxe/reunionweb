@@ -111,6 +111,12 @@ main .center {
     text-align:center;
 }
 
+main .center img {
+    display: block;
+    margin: auto;
+
+}
+
 main h1 {
     font-family: Devroye, serif;
     width: 100%;
