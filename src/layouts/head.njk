@@ -11,8 +11,14 @@
   <meta itemprop="image" content="{{ page.url }}{{ image }}">
 
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:type" content="{% if schema %}{{schema}}{% else %}website{% endif %}">
-{#  <meta property="og:url" content="TODO find current path"> #}
+  {% if schema %}
+  <meta property="og:type" content="{{schema}}">
+  {% elif page.url.split("/")[1] === "decouverte" or page.date %}
+  <meta property="og:type" content="article">
+  {% else %}
+  <meta property="og:type" content="website">
+  {% endif %}
+  {#  <meta property="og:url" content="TODO find current path"> #}
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="reunionweb.org">
   <meta property="og:locale" content="fr_FR">
