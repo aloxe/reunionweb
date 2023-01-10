@@ -1,8 +1,8 @@
 ---
 title: La Culture de la Réunion
+short: La Culture
 description: C'est une culture ayant plusieurs origines diverses
-hometitle: La Culture
-homedesc: Musique, littérature, religions et curiosités. 
+homedesc: Musique, littérature, religions et curiosités.
 image:
 keywords: Découverte, Reunion, Coutumes, art, traditions, langue
 layout: decouverte.njk

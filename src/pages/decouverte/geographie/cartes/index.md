@@ -1,5 +1,6 @@
 ---
 title: Cartes de l'île de la Réunion
+short: Cartes
 description: Plusieurs cartes de la Réunion vous permettent de comprendre mieux l'île
 image:
 keywords:

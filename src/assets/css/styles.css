@@ -11,11 +11,11 @@
 }
 
 body {
-	margin: 0;
-  font-family: Sans-Serif;
-  font-size: 100%;
-	background-color: #fefeae;
-	color: #111111;
+    margin: 0;
+    font-family: Sans-Serif;
+    font-size: 105%;
+    background-color: #fefeae;
+    color: #111111;
 }
 /*
 color_border = "FEFEAE";
@@ -205,7 +205,7 @@ main .cadrimage {
 	margin: 5px;
 	text-align:center;
 	font-style: italic;
-	font-size: 10px;
+	font-size: 90%;
 	color: #006fd5;
 	border:1px;
 }
@@ -260,6 +260,7 @@ main div.left {
 }
 
 main .note {
+   font-size: 0.9em;
     font-style: italic;
     color: #333;
 }
@@ -268,6 +269,14 @@ main .legende {
    font-style: italic;
    font-size: 0.8em;
    color: #006fd5;
+}
+
+main . f-08 {
+    font-size: 0.8em;
+}
+
+main . f-09 {
+    font-size: 0.9em;
 }
 
 main table.socmed {
@@ -280,6 +289,10 @@ main .right {
   text-align: right;
 }
 
+main .bothside {
+    display: flex;
+    justify-content: space-around;
+}
 main .twocolumns {
   column-count: 2;
 }
@@ -306,6 +319,7 @@ main .twocolumns p {
 }
 
 footer {
+    font-size: 90%;
     padding: 20px;
     border-top: dotted #0073d7 1px;
     text-align: center;
