@@ -1,7 +1,7 @@
 ---
 title: Histoire de la Réunion
 description:
-hometitle: L'histoire
+short: Histoire
 homedesc: Histoire de l'île de la Réunion depuis sa découverte jusqu'à nos jours
 image:
 keywords:

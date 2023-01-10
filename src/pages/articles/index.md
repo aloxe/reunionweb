@@ -8,10 +8,10 @@ _Le principe de ce site est de présenter un ou plusieurs site web en rapport av
 
 # Tous les Articles
 {% set year = "year" %}
-{% for page in collections.article.reverse() %}
-  {% if year === page.date.getFullYear() %}{% else %}{% set year = page.date.getFullYear() %}
+{% for post in collections.article.reverse() %}
+  {% if year === post.date.getFullYear() %}{% else %}{% set year = post.date.getFullYear() %}
 ## {{year}}
   {% endif%}
-- [{{page.data.title}}]({{page.url}})<br>
-{{page.data.description}}
+- [{{post.data.title}}]({{post.url}})<br>
+{{post.data.description}}
 {% endfor %}
