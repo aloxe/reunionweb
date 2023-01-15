@@ -1,0 +1,39 @@
+{% macro geturl(categorie) %}
+{% for item in categories %}
+{% if item.slug === categorie %}
+    {{ geturl(item.parent) | trim }}{{ item.slug }}/
+{% endif %}
+{% endfor %}
+{% endmacro %}
+
+
+{% extends 'base.njk' %}
+
+    {% block main %}
+      <main>
+        <h1>{{ title }}</h1>
+        <div>{% include "breadcrumb.njk" %}</div>
+        <h3>SLUG =  {{ page.url.split("/")[page.url.split("/").length -2] }}</h3>
+        {% if categories %}
+        {% for post in categories %}
+            {% if post.slug === page.url.split("/")[page.url.split("/").length -2] %}
+              <p>{{ post.description }}</p>
+            {% endif %}
+        {% endfor %}
+
+        {% for lien in categories %}
+          <h2><a href="/{{ geturl(lien.slug) | trim }}">{{ lien.title }}</a></h2>
+          <p>{{lien.slug}} → {{ geturl(lien.slug) }}</p>
+          <p>{{ lien.description }}</p>
+        {% endfor %}
+        {% endif %}
+        {% if liens %}
+        {% for lien in liens %}
+          <h2><a href="{{ lien.url }}">{{ lien.title }}</a></h2>
+          <p>{{ lien.url }}</p>
+          <p>{{ lien.description }}</p>
+        {% endfor %}
+        {% endif %}
+
+      </main>
+    {% endblock %}

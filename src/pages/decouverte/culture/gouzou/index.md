@@ -1,6 +1,6 @@
 ---
 title: Galerie des Gouzou de Jace
-short: Les Gouzou 
+short: Les Gouzou
 description: Une collection de photos des Gouzou de Jace
 image: galerie-de-gouzou.png
 keywords: gouzou, de, jace, streetart, graph

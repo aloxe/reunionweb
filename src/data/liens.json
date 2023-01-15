@@ -1,0 +1,29 @@
+[
+  {
+      "id": 100,
+      "title": "Collège Les tamarins",
+      "url": "http://college-les-tamarins.ac-reunion.fr",
+      "parent": "scolaires",
+      "importance": 0,
+      "description": "Le collège en plein cœur de Saint-Pierre de la Réunion. Le premier a avoir une page sur la toile.",
+      "article": ["199710"]
+    },
+    {
+      "id": 101,
+      "title": "Clicanoo",
+      "url": "http://www.clicanoo.com/",
+      "parent": "actualites",
+      "importance": 0,
+      "description": "La Journal de L'île de la Réunion. Informations quotidiennes",
+      "article": ["200504", "200605", "200709"]
+    },
+    {
+        "id": 102,
+        "title": "Temoignages",
+        "url": "http://www.temoignages.re/",
+        "parent": "actualites",
+        "importance": 0,
+        "description": "Le quotidien du PCR, archives de tous les articles depuis 2004.",
+        "article": ["200506", "200709"]
+    }
+]
