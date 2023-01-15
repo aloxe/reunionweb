@@ -1,3 +1,5 @@
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+
 module.exports = (eleventyConfig) => {
 
   // Pass-through files
@@ -11,8 +13,17 @@ module.exports = (eleventyConfig) => {
   // Get the current year as {% year %}
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // copy linked images with pages
+  eleventyConfig.addPlugin(pageAssetsPlugin, {
+      mode: "parse",
+      postsMatching: "src/pages/(articles/*/*.(html|md)|/decouverte/((?!gouzou/)[a-z]*/)*[a-zA-Z-_]*\.(html|md))",
+      recursive: true,
+      hashAssets: false,
+  });
+
   return {
-      pathPrefix: "/reunionweb/", // only for test
+      pathPrefix: "/",
+      // pathPrefix: "/reunionweb/", // only for test
       dir: {
           input: 'src/pages',
           output: '_site',

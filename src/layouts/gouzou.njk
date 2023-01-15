@@ -1,0 +1,46 @@
+{% extends 'base.njk' %}
+    {% block head %}
+      {% include "head.njk" %}
+      <script src="/js/float-panel.js" defer></script>
+      <link rel="stylesheet" href="{{ '/css/cssbox.css' | url }}">
+      <link rel="stylesheet" href="{{ '/css/float-panel.css' | url }}">
+    {% endblock %}
+
+    {% block main %}
+      <main>
+        <h1>{{ title }}</h1>
+        <div>{% include "breadcrumb.njk" %}</div>
+        {{ content | safe }}
+        {% if gouzoulist %}
+        {% for gouzou in gouzoulist %}
+        {% if loop.index < 200 %}
+        <div class="cssbox{% if loop.index > 6 %} slideanim s{{ [1,2,3,4] | random }}{% endif %}">
+            <a href="#{{loop.index}}" id="{{loop.index}}" title="{{gouzou.title}}"><img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130">
+            <span class="cssbox_full">
+                <h2>{{ gouzou.title }}</h2>
+                <span>
+                    <img src="{{gouzou.file}}" alt="{{ gouzou.title }}" /><br>
+                    {% if gouzou.license %}{{ gouzou.license }} {% endif %}
+                    {% if gouzou.author %}
+                        {% if gouzou.url %}<span onclick="location='{{ gouzou.url }}'" class="link">{% endif %}
+                            {{ gouzou.author }}
+                        {% if gouzou.url %}</span>{% endif %}
+                    {% endif %}
+                    {% if gouzou.flag %} {{ gouzou.flag }} {% endif %} {{ gouzou.legend }}
+            </span>
+            </span></a>
+            <a class="cssbox_close" href="#void"></a>
+            {% if loop.first == false %}
+            <a class="cssbox_prev" href="#{{ loop.index - 1 }}">←</a>
+            {% endif %}
+            {% if loop.last == false %}
+            <a class="cssbox_next" href="#{{ loop.index + 1}}">→</a>
+            {% endif %}
+            <div class="title">{{ gouzou.title }}</div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+
+      </main>
+    {% endblock %}

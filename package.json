@@ -7,5 +7,12 @@
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=* npx @11ty/eleventy",
     "test": "jest"
+  },
+  "devDependencies": {
+    "eleventy-plugin-page-assets": "^0.3.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "glob-promise": "^6.0.0"
   }
 }

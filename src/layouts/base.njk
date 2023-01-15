@@ -12,13 +12,24 @@
 
     {% block main %}
       {% if homepage %}
-      {# <main> #}
+      <main>
           {{ content }}
-      {# </main> #}
+      </main>
       {% else %}
       <main>
+          <h1>{{ title }}</h1>
+          {% include "breadcrumb.njk" %}
           {{ content | safe }}
+          <hr>
+          {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
+          {% set previousPost = collections.article | getNextCollectionItem(page) %}
+        <div class="bothside  f-09">
+            <p>{% if previousPost %}<b>←</b> <a class='text-sky-600' href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
+
+            <p>{% if nextPost %}<a class='text-sky-600' href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> <b>→</b> {% endif %}</p>
+        </div>
       </main>
+
       {% endif %}
     {% endblock %}
 
@@ -26,10 +37,10 @@
       <footer>
         <nav>
           <a name="ciblefooter"></a>
-          {% if homepage %}{% else %}
-            <a href="{{ '/about' | url }}">à propos de Reunionweb</a>
+          {% if page.url !== "/about/" and page.url !== "/" %}
+            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a>
           {% endif %}
-          <p>cc-by-sa Alix Guillard 1997-{% year %}</p>
+          <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
         </nav>
       </footer>
     {% endblock %}

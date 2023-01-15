@@ -11,11 +11,11 @@
 }
 
 body {
-	margin: 0;
-  font-family: Sans-Serif;
-  font-size: 100%;
-	background-color: #fefeae;
-	color: #111111;
+    margin: 0;
+    font-family: Sans-Serif;
+    font-size: 105%;
+    background-color: #fefeae;
+    color: #111111;
 }
 /*
 color_border = "FEFEAE";
@@ -87,7 +87,7 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 
 /* main content */
 
-main{
+main {
   width: calc(65% - 30px);
   margin: 0 auto;
   padding: 0 30px;
@@ -103,12 +103,22 @@ main{
 }
 
 main p {
-    text-align : justify;
-    line-height: 1.5em;
+    /* text-align : justify; */
+    line-height: 1.4em;
+}
+
+main .center {
+    text-align:center;
+}
+
+main .center img {
+    display: block;
+    margin: auto;
+
 }
 
 main h1 {
-    font-family: Devroye, Arial, Helvetica, sans-serif;
+    font-family: Devroye, serif;
     width: 100%;
     border-bottom: #001c86 dotted 1px;
     padding-top: 0;
@@ -117,7 +127,7 @@ main h1 {
 }
 
 main h2 {
-    font-family: Devroye, Arial, Helvetica, sans-serif;
+    font-family: Devroye, serif;
     margin-left: 10px;
     padding-top: 0;
     margin-top: 0.5em;
@@ -126,31 +136,32 @@ main h2 {
 }
 
 main h3 {
-    width: 100%;
-    padding: 0;
-    margin: 8px 0 3px 10px;
-    margin-left: 10px;
+    font-family: Devroye, serif;
     font-weight: bold;
     font-style: italic;
+    padding: 0;
+    margin: 3px 0;
+    padding-left: 10px;
     color: #006fd5;
 }
 
 main h4 {
+    font-family: Devroye, serif;
     padding-top: 0;
     margin-top: 3px;
     text-align: justify;
     color: #001c86;
     font-weight: bold;
-    font-family: Devroye, Arial, Helvetica, sans-serif;
-
 }
 
 main h5 {
-    width: 100%;
-    padding: 0 10px;
-    margin: 0;
+    font-family: Devroye, serif;
     font-weight: normal;
     font-style: italic;
+    font-size: 0.8em;
+    width: 100%;
+    /* padding: 0 0 0 5px; */
+    margin: 0 0 0.5em 0.5em;
     color: #001c86;
 
 }
@@ -162,6 +173,7 @@ main .intro {
       font-stretch: ultra-condensed;
 }
 
+span.link,
 a {
       color: #001c86;
       text-decoration: none;
@@ -172,9 +184,11 @@ a:visited {
     text-decoration: none;
 }
 
+span.link:hover,
 a:hover {
       color: #0073d7;
       text-decoration: underline;
+      cursor: pointer;
 }
 
 a.ext:link:after, a.ext:visited:after, a.ext:active:after {
@@ -191,14 +205,14 @@ main .cadrimage {
 	margin: 5px;
 	text-align:center;
 	font-style: italic;
-	font-size: 10px;
+	font-size: 90%;
 	color: #006fd5;
 	border:1px;
 }
 
 main li {
 	text-align : justify;
-	margin-bottom : 1em;
+	margin : 0 0 1em 2em;
 	list-style-image : url("/img/puce-reunion.png");
 }
 
@@ -246,6 +260,7 @@ main div.left {
 }
 
 main .note {
+   font-size: 0.9em;
     font-style: italic;
     color: #333;
 }
@@ -256,12 +271,28 @@ main .legende {
    color: #006fd5;
 }
 
+main . f-08 {
+    font-size: 0.8em;
+}
+
+main . f-09 {
+    font-size: 0.9em;
+}
+
 main table.socmed {
     border-collapse: collapse;
     border: 0;
     margin: 1em 0;
 }
 
+main .right {
+  text-align: right;
+}
+
+main .bothside {
+    display: flex;
+    justify-content: space-around;
+}
 main .twocolumns {
   column-count: 2;
 }
@@ -272,7 +303,23 @@ main .twocolumns {
   }
 }
 
+main .twocolumns h3 {
+    break-inside: avoid;
+    break-after: avoid;   /* work not with firefox */
+}
+
+main .twocolumns p,
+main .twocolumns h4,
+main .twocolumns h5 {
+    break-inside: avoid;
+}
+
+main .twocolumns p {
+  text-align: left;
+}
+
 footer {
+    font-size: 90%;
     padding: 20px;
     border-top: dotted #0073d7 1px;
     text-align: center;

@@ -1,0 +1,39 @@
+
+{% macro gettitle(url) %}
+    {% for post in collections.all %}
+        {% if url === post.url %}
+            {{post.data.short or post.data.title}}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+<div class=" f-08">
+    {% if page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] %}
+        <a href="/decouverte">Découverte</a>
+        {% set title2 = gettitle('/decouverte/'+page.url.split("/")[2]+'/') %}
+        {% if not page.url.split("/")[3] %}
+         > {{ title2 }}
+        {% elif not page.url.split("/")[4] %}
+            > <a href="/decouverte/{{ page.url.split("/")[2] }}/">{{ title2 }}</a>
+            > {{ gettitle(page.url) }}
+        {% elif not page.url.split("/")[5] %}
+            {% set title3 = gettitle('/decouverte/'+page.url.split("/")[2]+'/'+page.url.split("/")[3]+'/') %}
+            > <a href="/decouverte/{{ page.url.split("/")[2] }}/">{{ title2 }}</a>
+            > <a href="/decouverte/{{ page.url.split("/")[2] }}/{{ page.url.split("/")[3] }}/">{{ title3 }}</a>
+            > {{ gettitle(page.url) }}
+        {% endif %}
+    {% else %}
+    <p class="right">
+    {% set currentPost = collections.article | getCollectionItem(page) %}
+    {% if currentPost %}
+        {{ currentPost.date.getFullYear() }}
+    {% endif %}
+
+    {# collection is inverted #}
+    {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
+    {% set previousPost = collections.article | getNextCollectionItem(page) %}
+    {% if previousPost %}<br>← <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+    {% if nextPost %}<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> →{% endif %}
+    {% endif %}
+    <br> 
+    </p>
+</div>
