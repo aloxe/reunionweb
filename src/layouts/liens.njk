@@ -6,33 +6,58 @@
 {% endfor %}
 {% endmacro %}
 
+{% macro getarticle(url) %}
+    {% for post in collections.all %}
+        {% if post.data.date and url === post.data.date.split("-").join('') %}
+            <a href="{{ post.data.permalink }}">{{ post.data.title }}</a>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
 
 {% extends 'base.njk' %}
 
     {% block main %}
       <main>
         <h1>{{ title }}</h1>
-        <div>{% include "breadcrumb.njk" %}</div>
-        <h3>SLUG =  {{ page.url.split("/")[page.url.split("/").length -2] }}</h3>
+        <p>{% include "breadcrumb.njk" %}</p>
+        {% set slug = page.url.split("/")[page.url.split("/").length -2] %}
         {% if categories %}
-        {% for post in categories %}
-            {% if post.slug === page.url.split("/")[page.url.split("/").length -2] %}
-              <p>{{ post.description }}</p>
-            {% endif %}
-        {% endfor %}
+          {% for post in categories %}
+              {% if post.slug === slug %}
+                <h4>{{ post.description }}</h4>
+              {% endif %}
+          {% endfor %}
 
-        {% for lien in categories %}
-          <h2><a href="/{{ geturl(lien.slug) | trim }}">{{ lien.title }}</a></h2>
-          <p>{{lien.slug}} → {{ geturl(lien.slug) }}</p>
-          <p>{{ lien.description }}</p>
-        {% endfor %}
+          {% set subcat = false %}
+          {%- for lien in categories %}
+            {% if lien.parent === slug %}
+              {% if not subcat %}<h2>Sous catégories</h2><div class="twocolumns">{% endif %}
+              {% set subcat = true %}
+              <h3><a href="/{{ geturl(lien.slug) | trim }}">{{ lien.title }}</a></h3>
+              <p>{{ lien.description }}</p>
+            {% endif %}
+          {% endfor %}
+          {% if subcat %}</div>{%- endif -%}
         {% endif %}
+
+
         {% if liens %}
-        {% for lien in liens %}
-          <h2><a href="{{ lien.url }}">{{ lien.title }}</a></h2>
-          <p>{{ lien.url }}</p>
-          <p>{{ lien.description }}</p>
-        {% endfor %}
+          {% for lien in liens %}
+          <div class="lien">
+            <img src="http://www.robothumb.com/src/?url={{ lien.url }}&size=100x65&alt=http%3A%2F%2Freunionweb.org%2Fimg%2Fnon-dispo.png" alt="site {{ lien.title }}" width="120" height="90">
+            <p>
+              <b><a href="{{ lien.url }}" class="ext">{{ lien.title }}</a></b><br>
+              <span class="url f-08">{{ lien.url }}</span><br>
+              {{ lien.description }}<br><br>
+              {% if lien.article.length > 0 %}
+                <i class="f-09">Présenté dans:</i><br>
+                {% for article in lien.article %}
+                ➽ <i class="f-09">{{ getarticle(article) }}</i><br>
+                {% endfor %}
+              {% endif %}
+            </p>
+          </div>
+          {% endfor %}
         {% endif %}
 
       </main>

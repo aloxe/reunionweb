@@ -149,7 +149,6 @@ main h4 {
     font-family: Devroye, serif;
     padding-top: 0;
     margin-top: 3px;
-    text-align: justify;
     color: #001c86;
     font-weight: bold;
 }
@@ -271,11 +270,11 @@ main .legende {
    color: #006fd5;
 }
 
-main . f-08 {
+main .f-08 {
     font-size: 0.8em;
 }
 
-main . f-09 {
+main .f-09 {
     font-size: 0.9em;
 }
 
@@ -316,6 +315,35 @@ main .twocolumns h5 {
 
 main .twocolumns p {
   text-align: left;
+}
+
+main .twocolumns h3 + p {
+  margin-top: 0;
+}
+
+main .lien {
+  border-bottom: dotted #0073d7 1px;
+  margin: 6px 0;
+  min-height: 95px;
+}
+
+main .lien img {
+  margin:0 8px 0 0;
+  float:left;
+  border: 1px solid #AAA;
+}
+
+main .lien img + p {
+  margin: 0 0 0 130px;
+}
+
+main .lien .url {
+  color: #339ff9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  display: inline-block;
 }
 
 footer {
