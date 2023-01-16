@@ -1,23 +1,6 @@
-{% macro geturl(categorie) %}
-{% for item in categories %}
-{% if item.slug === categorie %}
-    {{ geturl(item.parent) | trim }}{{ item.slug }}/
-{% endif %}
-{% endfor %}
-{% endmacro %}
-
-{% macro getarticle(url) %}
-    {% for post in collections.all %}
-        {% if post.data.date and url === post.data.date.split("-").join('') %}
-            <a href="{{ post.data.permalink }}">{{ post.data.title }}</a>
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
-
-{% macro showCategorie(lien) %}
-<h3><a href="/{{ geturl(lien.slug) | trim }}">{{ lien.title }}</a></h3>
-<p>{{ lien.description }}</p>
-{% endmacro %}
+{% from 'macros/url.njk' import categoryUrl with context %}
+{% from 'macros/snipet.njk' import snipet with context %}
+{% from 'macros/title.njk' import getLinkTitle with context %}
 
 {% extends 'base.njk' %}
 
@@ -37,7 +20,7 @@
             {% if not slug === "liens" %}<h2>Sous catégorie</h2>{% endif %}
           {% endif %}
           {%- for lien in subcategories %}
-            {{ showCategorie(lien) }}
+            {{ snipet(lien) }}
           {% endfor %}
           {% if subcategories.length > 1 %}</div>{% endif %}
         {% endif %}
@@ -60,7 +43,7 @@
                     <i class="f-09">Article qui en parle :</i><br>
                   {% endif %}
                   {% for article in lien.article %}
-                  ➽ <i class="f-09">{{ getarticle(article) }}</i><br>
+                  ➽ <i class="f-09">{{ getLinkTitle(article) }}</i><br>
                   {% endfor %}
                 {% endif %}
               </p>
@@ -79,7 +62,7 @@
           {% endif %}
           {%- for aslug in assocat.associe %}
             {% set lien =  categories | getCategoryFromSlug(aslug) %}
-            {{ showCategorie(lien) }}
+            {{ snipet(lien) }}
           {% endfor %}
           {% if assocat.associe.length > 1 %}</div>{% endif %}
         {% endif %}

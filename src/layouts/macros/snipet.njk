@@ -1,0 +1,9 @@
+{%- macro snipet(item) -%}
+  {% if item.slug %}
+    {% set snipeturl = categoryUrl(item.slug) | trim %}
+  {% else %}
+    {% set snipeturl = item.url %}
+  {% endif %}
+<h3><a href="/{{ snipeturl }}">{{ item.title }}</a></h3>
+<p>{{ item.description }}</p>
+{%- endmacro -%}

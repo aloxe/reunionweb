@@ -49,12 +49,12 @@
       {% if not page.url.split("/")[3] %}
        > {{ title2 }}
       {% elif not page.url.split("/")[4] %}
-          > <a href="/{{ geturl(page.url.split("/")[2]) | trim }}">{{ title2 }}</a>
+          > <a href="/{{ categoryUrl(page.url.split("/")[2]) | trim }}">{{ title2 }}</a>
           > {{ gettitle(page.url.split("/")[3]) }}
           {% else %}
           {% set title3 = gettitle(page.url.split("/")[3]) %}
-          > <a href="/{{ geturl(page.url.split("/")[2]) | trim }}">{{ title2 }}</a>
-          > <a href="/{{ geturl(page.url.split("/")[3]) | trim }}">{{ title3 }}</a>
+          > <a href="/{{ categoryUrl(page.url.split("/")[2]) | trim }}">{{ title2 }}</a>
+          > <a href="/{{ categoryUrl(page.url.split("/")[3]) | trim }}">{{ title3 }}</a>
           > {{ gettitle(page.url.split("/")[4]) }}
       {% endif %}
     {% endif %}
