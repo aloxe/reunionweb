@@ -27,15 +27,12 @@
                         {% if gouzou.url %}</span>{% endif %}
                     {% endif %}
                     {% if gouzou.flag %} {{ gouzou.flag }} {% endif %} {{ gouzou.legend }}
+                 </span>
             </span>
-            </span></a>
+            </a>
             <a class="cssbox_close" href="#void"></a>
-            {% if loop.first == false %}
-            <a class="cssbox_prev" href="#{{ loop.index - 1 }}">←</a>
-            {% endif %}
-            {% if loop.last == false %}
-            <a class="cssbox_next" href="#{{ loop.index + 1}}">→</a>
-            {% endif %}
+            {% if loop.first == false %}<a class="cssbox_prev" href="#{{ loop.index - 1 }}">←</a> {% endif %}
+            {% if loop.last == false %}<a class="cssbox_next" href="#{{ loop.index + 1}}">→</a>{% endif %}
             <div class="title">{{ gouzou.title }}</div>
         </div>
         {% endif %}

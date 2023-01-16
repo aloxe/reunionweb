@@ -18,7 +18,7 @@
       {% else %}
       <main>
           <h1>{{ title }}</h1>
-          {% include "breadcrumb.njk" %}
+          <p>{% include "breadcrumb.njk" %}</p>
           {{ content | safe }}
           <hr>
           {% set nextPost = collections.article | getPreviousCollectionItem(page) %}

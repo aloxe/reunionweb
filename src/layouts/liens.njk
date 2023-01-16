@@ -9,8 +9,8 @@
         <h1>{{ title }}</h1>
         <p>{% include "breadcrumb.njk" %}</p>
         <h4>{{ description }}</h4>
-
         {# sous catégories #}
+
         {% set subcategories = categories | getCategoriesFromParent(slug) %}
         {% if subcategories.length > 0 %}
           {% if subcategories.length > 1 %}
@@ -30,6 +30,7 @@
         {% if newLiens.length > 0 %}
           <h2>Sites web</h2>
           {% for lien in newLiens %}
+
             <div class="lien">
               <img src="http://www.robothumb.com/src/?url={{ lien.url }}&size=100x65&alt=http%3A%2F%2Freunionweb.org%2Fimg%2Fnon-dispo.png" alt="site {{ lien.title }}" width="120" height="90">
               <p>
@@ -48,6 +49,7 @@
                 {% endif %}
               </p>
             </div>
+
           {% endfor %}
         {% endif %}
 

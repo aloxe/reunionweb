@@ -1,33 +1,19 @@
-{% macro gettitle(url) %}
-    {% for post in collections.all %}
-        {% if url === post.url %}
-            {{post.data.short or post.data.title}}
-        {% endif %}
-        {% if post.date and url === post.date %}
-              article
-        {% endif %}
-    {% endfor %}
-    {% for lien in categories %}
-        {% if url === lien.slug %}
-            {{ lien.title }}
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
+{% from 'macros/title.njk' import getTitle, getLinkTitle with context %}
 
 <div class="f-08">
-    {% if page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] %}
+    {%- if page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] -%}
         <a href="/decouverte/">Découverte</a>
-        {% set title2 = gettitle('/decouverte/'+page.url.split("/")[2]+'/') %}
+        {% set url2 = '/decouverte/'+page.url.split("/")[2]+'/' %}
         {% if not page.url.split("/")[3] %}
-         > {{ title2 }}
+         > {{ getTitle(url2) }}
         {% elif not page.url.split("/")[4] %}
-            > <a href="/decouverte/{{ page.url.split("/")[2] }}/">{{ title2 }}</a>
-            > {{ gettitle(page.url) }}
+            > {{ getLinkTitle(url2) }}
+            > {{ getTitle(page.url) }}
         {% else %}
-            {% set title3 = gettitle('/decouverte/'+page.url.split("/")[2]+'/'+page.url.split("/")[3]+'/') %}
-            > <a href="/decouverte/{{ page.url.split("/")[2] }}/">{{ title2 }}</a>
-            > <a href="/decouverte/{{ page.url.split("/")[2] }}/{{ page.url.split("/")[3] }}/">{{ title3 }}</a>
-            > {{ gettitle(page.url) }}
+            {% set url3 = '/decouverte/'+page.url.split("/")[2]+'/'+page.url.split("/")[3]+'/' %}
+            > {{ getLinkTitle(url2) }}
+            > {{ getLinkTitle(url3) }}
+            > {{ getTitle(page.url) }}
         {% endif %}
     {% elif page.url.split("/")[1] === "articles" and page.url.split("/")[2] %}
       <p class="right">
@@ -45,18 +31,15 @@
       </p>
     {% elif page.url.split("/")[1] === "liens" and page.url.split("/")[2] %}
       <a href="/liens/">Annuaire des liens</a>
-      {% set title2 = gettitle(page.url.split('/')[2]) %}
       {% if not page.url.split("/")[3] %}
-       > {{ title2 }}
+       > {{ getTitle(page.url.split("/")[2]) }}
       {% elif not page.url.split("/")[4] %}
-          > <a href="/{{ categoryUrl(page.url.split("/")[2]) | trim }}">{{ title2 }}</a>
-          > {{ gettitle(page.url.split("/")[3]) }}
-          {% else %}
-          {% set title3 = gettitle(page.url.split("/")[3]) %}
-          > <a href="/{{ categoryUrl(page.url.split("/")[2]) | trim }}">{{ title2 }}</a>
-          > <a href="/{{ categoryUrl(page.url.split("/")[3]) | trim }}">{{ title3 }}</a>
-          > {{ gettitle(page.url.split("/")[4]) }}
+          > {{ getLinkTitle(page.url.split("/")[2]) }}
+          > {{ getTitle(page.url.split("/")[3]) }}
+      {% else %}
+          > {{ getLinkTitle(page.url.split("/")[2]) }}
+          > {{ getLinkTitle(page.url.split("/")[3]) }}
+          > {{ getTitle(page.url.split("/")[4]) }}
       {% endif %}
-    {% endif %}
-
+    {%- endif -%}
 </div>

@@ -13,24 +13,16 @@
 
 {% macro getLinkTitle(url) %}
     {% for post in collections.all %}
-        {% if url === post.url %}
+        {% if url === post.url %} {# decouverte #}
             <a href="{{url}}">{{post.data.short or post.data.title}}</a>
         {% endif %}
-        {% if post.data.date and url === post.data.date.split("-").join('') %}
+        {% if post.data.date and url === post.data.date.split("-").join('') %} {# articles #}
             <a href="/{{ post.data.title | slugify }}/">{{ post.data.title }}</a>
         {% endif %}
     {% endfor %}
-    {% for lien in categories %}
+    {% for lien in categories %} {# liens #}
         {% if url === lien.slug %}
-            <a href="{{url}}">{{ lien.title }}</a>
-        {% endif %}
-    {% endfor %}
-{% endmacro %}
-
-{% macro getLinkArticle(url) %}
-    {% for post in collections.all %}
-        {% if post.data.date and url === post.data.date.split("-").join('') %}
-            <a href="/{{ post.data.title | slugify }}/">{{ post.data.title }}</a>
+            <a href="/{{ categoryUrl(url) | trim }}">{{ lien.title }}</a>
         {% endif %}
     {% endfor %}
 {% endmacro %}
