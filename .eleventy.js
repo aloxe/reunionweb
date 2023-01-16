@@ -21,6 +21,25 @@ module.exports = (eleventyConfig) => {
   //     hashAssets: false,
   // });
 
+  // Filter for liens and categories
+  eleventyConfig.addFilter("getLinksFromParent", (liens = [], slug = "") => {
+    let selected = liens.filter(a => a.parent === slug);
+    return selected;
+  });
+
+  eleventyConfig.addFilter("getCategoryFromSlug", (categories = [], slug = "") => {
+    let category = categories.find(a => a.slug === slug);
+    return category;
+  });
+
+  eleventyConfig.addFilter("getCategoriesFromParent", (categories = [], slug = "") => {
+    console.log("selected");
+    console.log(categories.length);
+    let selected = categories.filter(a => a.parent === slug);
+    console.log(selected.length);
+    return selected;
+  });
+
   return {
       pathPrefix: "/",
       // pathPrefix: "/reunionweb/", // only for test
