@@ -14,12 +14,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // copy linked images with pages
-  // eleventyConfig.addPlugin(pageAssetsPlugin, {
-  //     mode: "parse",
-  //     postsMatching: "src/pages/(articles/*/*.(html|md)|/decouverte/((?!gouzou/)[a-z]*/)*[a-zA-Z-_]*\.(html|md))",
-  //     recursive: true,
-  //     hashAssets: false,
-  // });
+  eleventyConfig.addPlugin(pageAssetsPlugin, {
+      mode: "parse",
+      postsMatching: "src/pages/(articles/*/*.(html|md)|/decouverte/((?!gouzou/)[a-z]*/)*[a-zA-Z-_]*\.(html|md))",
+      recursive: true,
+      hashAssets: false,
+  });
 
   // Filter for liens and categories
   eleventyConfig.addFilter("getLinksFromParent", (liens = [], slug = "") => {
@@ -36,6 +36,12 @@ module.exports = (eleventyConfig) => {
     let selected = categories.filter(a => a.parent === slug);
     return selected;
   });
+
+    eleventyConfig.addFilter("getCategoriesWithLiens", (categories = [], liens = []) => {
+      const categoriesInLiens = liens.map(l => l.parent);
+      let selected = categories.filter(a => categoriesInLiens.includes(a.slug));
+      return selected;
+    });
 
   return {
       pathPrefix: "/",

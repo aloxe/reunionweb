@@ -11,7 +11,8 @@
         <h4>{{ description }}</h4>
         {# sous catégories #}
 
-        {% set subcategories = categories | getCategoriesFromParent(slug) %}
+        {% set subcategoriesall = categories | getCategoriesFromParent(slug) %}
+        {% set subcategories = subcategoriesall | getCategoriesWithLiens(liens) %}
         {% if subcategories.length > 0 %}
           {% if subcategories.length > 1 %}
              {% if not slug === "liens" %}<h2>Sous catégories</h2>{% endif %}
