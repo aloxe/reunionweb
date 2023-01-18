@@ -33,10 +33,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addFilter("getCategoriesFromParent", (categories = [], slug = "") => {
-    console.log("selected");
-    console.log(categories.length);
     let selected = categories.filter(a => a.parent === slug);
-    console.log(selected.length);
     return selected;
   });
 

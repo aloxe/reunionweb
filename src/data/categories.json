@@ -14,13 +14,6 @@
     "description": "Les Portails sur la Réunion"
   },
   {
-    "title": "Informations générales",
-    "slug": "informations",
-    "parent": "portails",
-    "importance": 0,
-    "description": "Portails d'informations générales sur la Réunion."
-  },
-  {
     "title": "Actualités & media",
     "slug": "actualites",
     "parent": "liens",
@@ -126,7 +119,7 @@
   },
   {
     "title": "Peinture & sculpture",
-    "slug": "peiture",
+    "slug": "peinture",
     "parent": "art",
     "associe": ["artistes"],
     "importance": 0,
@@ -199,13 +192,6 @@
     "description": "Les compagnies aériennes qui désservent l'ile de la Réunion"
   },
   {
-    "title": "Portails commerciaux",
-    "slug": "commerciaux",
-    "parent": "portails",
-    "importance": 0,
-    "description": "Portails généralistes et commerciaux"
-  },
-  {
     "title": "Portails thématiques",
     "slug": "thematiques",
     "parent": "portails",
@@ -233,13 +219,6 @@
     "parent": "associations",
     "importance": 0,
     "description": "Associations caritatives et autres formes de solidarités."
-  },
-  {
-    "title": "Forums",
-    "slug": "forums",
-    "parent": "internet",
-    "importance": 0,
-    "description": "Les forums de discussion réunionnais"
   },
   {
     "title": "Blogs d'artistes",
