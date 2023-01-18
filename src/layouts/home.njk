@@ -8,6 +8,7 @@
         {% if (loop.index < 2) %}
             <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
             <p>{{ page.templateContent | safe | truncate(400) }}</p>
+            <p class="center"><img src="{{page.url}}{{page.data.image}}" alt="illustration {{ page.data.title }}"></p>
             <p class="right">…<a href="{{page.url}}">lire la suite</a></p>
         {% endif %}
     {% endfor %}
@@ -24,7 +25,7 @@
         {% endif %}
     {% endfor %}
     </div>
-    <h3 class="center"><a href="{{ "articles" | url }}">Voir tous les articles</a></h3>
+    <h3 class="center"><a href="{{ "articles" | url }}">Liste de tous les articles</a></h3>
 
     <h1>Découvrez l'île de la Réunion</h1>
 
@@ -37,6 +38,11 @@
     </div>
 
     <div class="clear"></div>
+
+    <h1>Le web réunionnais</h1>
+    <p>
+      Retrouvez tous les sites web abordés ici, classés dans un <a href="/liens/">annuaire du web réunionnais</a>.
+    </p>
   </main>
 
 {% endblock %}
