@@ -437,7 +437,7 @@
       "url": "https://www.editions-orphie.com/",
       "parent": "litterature",
       "importance": 0,
-      "description": "Éditeur né à La Réunion en 1984 et qui publie des auteurs et des ouvrages de tout l'outre-mer. Présentation de l'éditeur de ses auteurs et boutique en ligne.",
+      "description": "Éditeur né à la Réunion en 1984 et qui publie des auteurs et des ouvrages de tout l'outre-mer. Présentation de l'éditeur de ses auteurs et boutique en ligne.",
       "article": ["200412"]
   },
   {
@@ -789,6 +789,15 @@
       "parent": "villes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
+      "article": [""]
+  },
+  {
+      "id": 125,
+      "title": "Saint-Pierre",
+      "url": "https://www.saintpierre.re/",
+      "parent": "villes",
+      "importance": 0,
+      "description": "site officiel de la mairie de Saint-Pierre",
       "article": [""]
   },
   {

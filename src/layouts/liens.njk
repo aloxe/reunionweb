@@ -6,7 +6,7 @@
 
     {% block main %}
       <main>
-        <h1>{{ title }}</h1>
+        <h1>{{ pagetitle }}</h1>
         <p>{% include "breadcrumb.njk" %}</p>
         <h4>{{ description }}</h4>
         {# sous catégories #}
@@ -37,7 +37,7 @@
                 <b><a href="{{ lien.url }}" class="ext">{{ lien.title }}</a></b><br>
                 <span class="url f-08">{{ lien.url }}</span><br>
                 {{ lien.description }}<br><br>
-                {% if lien.article.length > 0 %}
+                {% if lien.article.length > 1 and lien.article[0] !== "" %}
                   {% if lien.article.length > 1 %}
                     <i class="f-09">Articles qui en parlent :</i><br>
                   {% else %}
