@@ -1,0 +1,300 @@
+[
+  {
+    "title": "Sélection de sites web réunionnais",
+    "slug": "liens",
+    "parent": 0,
+    "importance": 0,
+    "description": "Les sites cités sur Reunionweb sont tous répertoriés ici. Quand ils existent encore."
+  },
+  {
+    "title": "Portails",
+    "slug": "portails",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Les Portails sur la Réunion"
+  },
+  {
+    "title": "Actualités & media",
+    "slug": "actualites",
+    "parent": "liens",
+    "associe": ["meteo"],
+    "importance": 0,
+    "description": "Sites de médias réunionnais et d'actualité sur la Réunion"
+  },
+  {
+    "title": "Météo",
+    "slug": "meteo",
+    "parent": "liens",
+    "associe": ["actualites"],
+    "importance": 0,
+    "description": "Les sites météorologiques"
+  },
+  {
+    "title": "Art & artistes",
+    "slug": "art",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Littérature, arts plastiques, photographie, musique"
+  },
+  {
+    "title": "Musées & sites classés",
+    "slug": "musees",
+    "parent": "liens",
+    "associe": ["villes", "touristiques"],
+    "importance": 0,
+    "description": "Les sites naturels et historiques classés et les musées."
+  },
+  {
+    "title": "Curiosités & insolite",
+    "slug": "insolite",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Quelques sites insolites relevés par Reunionweb"
+  },
+  {
+    "title": "Scolaires",
+    "slug": "scolaires",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Sites scolaires de la maternelle à l'université et formations"
+  },
+  {
+    "title": "Religieux",
+    "slug": "religieux",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Sites des cultes et sites sur les religions"
+  },
+  {
+    "title": "Perso & blogs",
+    "slug": "perso",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Sites perso et blogs Réunionnais"
+  },
+  {
+    "title": "Internet",
+    "slug": "internet",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Sites en rapport avec Internet à la Réunion"
+  },
+  {
+    "title": "Associations",
+    "slug": "associations",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Associations et autres formes de solidarités"
+  },
+  {
+    "title": "Produits pays",
+    "slug": "pei",
+    "parent": "liens",
+    "associe": ["professionnels"],
+    "importance": 0,
+    "description": "Produits fabriqués sur l'ile de la Réunion"
+  },
+  {
+    "title": "Édition",
+    "slug": "edition",
+    "parent": "actualites",
+    "associe": ["professionnels", "pei"],
+    "importance": 0,
+    "description": "Éditeurs réunionnais et spécialisés"
+  },
+  {
+    "title": "Transports",
+    "slug": "transports",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Les Compagnies aériennes qui desservent la Réunion et les autres moyens de transport."
+  },
+  {
+    "title": "Radio & télévision",
+    "slug": "radio",
+    "parent": "actualites",
+    "associe": ["professionnels"],
+    "importance": 0,
+    "description": "Les radios et télévisions réunionnaises"
+  },
+  {
+    "title": "Peinture & sculpture",
+    "slug": "peinture",
+    "parent": "art",
+    "associe": ["artistes"],
+    "importance": 0,
+    "description": "Peintres, sculpteurs et plasticiens de la Réunion"
+  },
+  {
+    "title": "Littérature",
+    "slug": "litterature",
+    "parent": "art",
+    "importance": 0,
+    "description": "La littérature réunionnaise et de l'océan Indien"
+  },
+  {
+    "title": "Musiques",
+    "slug": "musiques",
+    "parent": "art",
+    "importance": 0,
+    "description": "Les musiques et musiciens de l'île de la Réunion"
+  },
+  {
+    "title": "Photos",
+    "slug": "photos",
+    "parent": "art",
+    "associe": ["artistes"],
+    "importance": 0,
+    "description": "Photographies de la Réunion et photographes réunionnais"
+  },
+  {
+    "title": "Collectifs",
+    "slug": "collectifs",
+    "parent": "art",
+    "associe": ["artistes"],
+    "importance": 0,
+    "description": "Collectifs artistiques divers"
+  },
+  {
+    "title": "pages perso",
+    "slug": "pages",
+    "parent": "perso",
+    "importance": 0,
+    "description": "Pages perso et comptes sociaux réunionnais"
+  },
+  {
+    "title": "Blogs",
+    "slug": "blogs",
+    "parent": "perso",
+    "importance": 0,
+    "description": "La blogosphère réunionnaise"
+  },
+  {
+    "title": "Fournisseurs d'accès Internet",
+    "slug": "fai",
+    "parent": "internet",
+    "importance": 0,
+    "description": "Liste des fournisseurs d'accès à Internet à la Réunion ainsi que des comparateurs."
+  },
+  {
+    "title": "Prestataires Internet",
+    "slug": "presta",
+    "parent": "internet",
+    "associe": ["professionnels"],
+    "importance": 0,
+    "description": "Les prestataires internet à la Réunion"
+  },
+  {
+    "title": "Compagnies aériennes",
+    "slug": "air",
+    "parent": "transports",
+    "importance": 0,
+    "description": "Les compagnies aériennes qui désservent l'ile de la Réunion"
+  },
+  {
+    "title": "Portails thématiques",
+    "slug": "thematiques",
+    "parent": "portails",
+    "importance": 0,
+    "description": "Portails spécialisés dans un domaine précis mais aussi réunionnais"
+  },
+  {
+    "title": "Portails touristiques",
+    "slug": "touristiques",
+    "parent": "portails",
+    "associe": ["musees"],
+    "importance": 0,
+    "description": "Portail essentielement sur le tourisme à la Réunion"
+  },
+  {
+    "title": "Sports & loisirs",
+    "slug": "sport",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Les sports à la Réunion"
+  },
+  {
+    "title": "Solidarités",
+    "slug": "solidarite",
+    "parent": "associations",
+    "importance": 0,
+    "description": "Associations caritatives et autres formes de solidarités."
+  },
+  {
+    "title": "Blogs d'artistes",
+    "slug": "artistes",
+    "parent": "blogs",
+    "importance": 0,
+    "description": "Blogs d'artistes réunionnais : exposition sur le web"
+  },
+  {
+    "title": "Blogs politiques",
+    "slug": "politiques",
+    "parent": "blogs",
+    "importance": 0,
+    "description": "Blogs des hommes et femmes politiques, blogs de campagnes réunionnaises."
+  },
+  {
+    "title": "Villes & Communautés",
+    "slug": "villes",
+    "parent": "liens",
+    "associe": ["rapports"],
+    "importance": 0,
+    "description": "Sites officiels des communes de la Réunion et les communautés de communes et des agences départementales ou gouvernementales."
+  },
+  {
+    "title": "professionnels",
+    "slug": "professionnels",
+    "parent": "liens",
+    "associe": ["pei"],
+    "importance": 0,
+    "description": "Entreprises et les groupements professionnels du département."
+  },
+  {
+    "title": "Agences gouvernementales",
+    "slug": "agences",
+    "parent": "villes",
+    "associe": ["rapports"],
+    "importance": 0,
+    "description": "Le gouvernement ou les agences d'état s'intéressent aux DOM TOM en général ou à la Réunion en particulier."
+  },
+  {
+    "title": "Communautés de communes",
+    "slug": "communautes",
+    "parent": "villes",
+    "associe": "transports",
+    "importance": 0,
+    "description": "Les groupements communaux s'occupant des transports et d'autres services."
+  },
+  {
+    "title": "Hélicoptères & ULM",
+    "slug": "helico",
+    "parent": "transports",
+    "associe": ["sport", "drones"],
+    "importance": 0,
+    "description": "Services pour survoler la Réunion."
+  },
+  {
+    "title": "Drones",
+    "slug": "drones",
+    "parent": "sport",
+    "associe": ["transports"],
+    "importance": 0,
+    "description": "Pour louer un drône et apprendre à les piloter ou tout simplement commander des images vues de haut."
+  },
+  {
+    "title": "Rapports & Études",
+    "slug": "rapports",
+    "parent": "professionnels",
+    "associe": ["villes"],
+    "importance": 0,
+    "description": "Retrouvez ici le études et rapports cités sur ce site. "
+  },
+  {
+    "title": "Porno",
+    "slug": "porno",
+    "parent": "liens",
+    "importance": 0,
+    "description": "Site web érotiques et pornographiques juste à la Réunion."
+  }
+]

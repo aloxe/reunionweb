@@ -1,0 +1,13 @@
+{%- macro snipet(item) -%}
+  {% if item.slug %}
+    {% set snipeturl = "/"+categoryUrl(item.slug) | trim %}
+  {% else %}
+    {% set snipeturl = item.url %}
+  {% endif %}
+<h3><a href="{{ snipeturl }}">{{ item.title or item.data.short or item.data.title }}</a></h3>
+{% if page.url === "/" %}
+  <p>{{ item.data.homedesc or item.data.description }}</p>
+{% else %}
+  <p>{{ item.description or  item.data.description }}</p>
+{% endif %}
+{%- endmacro -%}

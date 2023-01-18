@@ -1,0 +1,28 @@
+{% macro getTitle(url) %}
+    {% for post in collections.all %}
+        {% if url === post.url %} {# decouverte #}
+            {{post.data.short or post.data.title}}
+        {% endif %}
+    {% endfor %}
+    {% for lien in categories %} {# liens #}
+        {% if url === lien.slug %}
+            {{ lien.title }}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{% macro getLinkTitle(url) %}
+    {% for post in collections.all %}
+        {% if url === post.url %} {# decouverte #}
+            <a href="{{url}}">{{post.data.short or post.data.title}}</a>
+        {% endif %}
+        {% if post.data.date and url === post.data.date.split("-").join('') %} {# articles #}
+            <a href="/{{ post.data.title | slugify }}/">{{ post.data.title }}</a>
+        {% endif %}
+    {% endfor %}
+    {% for lien in categories %} {# liens #}
+        {% if url === lien.slug %}
+            <a href="/{{ categoryUrl(url) | trim }}">{{ lien.title }}</a>
+        {% endif %}
+    {% endfor %}
+{% endmacro %}

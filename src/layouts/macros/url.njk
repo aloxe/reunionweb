@@ -1,0 +1,7 @@
+{%- macro categoryUrl(slug = "") -%}
+  {% for item in categories %}
+    {% if item.slug === slug %}
+{{ categoryUrl(item.parent) | trim }}{{ item.slug | trim }}/
+    {% endif %}
+  {% endfor %}
+{%- endmacro -%}
