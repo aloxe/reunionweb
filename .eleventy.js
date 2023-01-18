@@ -1,4 +1,5 @@
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+const format = require('date-fns/format');
 
 module.exports = (eleventyConfig) => {
 
@@ -14,12 +15,17 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // copy linked images with pages
-  eleventyConfig.addPlugin(pageAssetsPlugin, {
-      mode: "parse",
-      postsMatching: "src/pages/(articles/*/*.(html|md)|/decouverte/((?!gouzou/)[a-z]*/)*[a-zA-Z-_]*\.(html|md))",
-      recursive: true,
-      hashAssets: false,
-  });
+  // eleventyConfig.addPlugin(pageAssetsPlugin, {
+  //     mode: "parse",
+  //     postsMatching: "src/pages/(articles/*/*.(html|md)|/decouverte/((?!gouzou/)[a-z]*/)*[a-zA-Z-_]*\.(html|md))",
+  //     recursive: true,
+  //     hashAssets: false,
+  // });
+
+  // add `date` filter thanks to format plugin
+  eleventyConfig.addFilter('date', function (date, dateFormat) {
+    return format(date, dateFormat)
+  })
 
   // Filter for liens and categories
   eleventyConfig.addFilter("getLinksFromParent", (liens = [], slug = "") => {

@@ -1,0 +1,53 @@
+---
+permalink: /sitemap.xml
+layout: false
+---
+{%- from 'macros/url.njk' import categoryUrl with context -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+{%- for item in collections.article %}
+  <url>
+    <loc>{{ meta.url }}{{ item.url }}</loc>
+    <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
+    <changefreq>{{ item.data.sitemapChangefreq | default("monthly") }}</changefreq>
+    <priority>{{ item.data.sitemapPriority | default(0.8) }}</priority>
+  </url>
+{%- endfor -%}
+{%- for item in collections.all -%}
+    {%- if item.url.split("/")[1] === "" %}
+    <url>
+      <loc>{{ meta.url }}{{ item.url }}</loc>
+      <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
+      <changefreq>{{ item.data.sitemapChangefreq | default("weekly") }}</changefreq>
+      <priority>{{ item.data.sitemapPriority | default(0.8) }}</priority>
+    </url>
+    {%- endif -%}
+    {%- if item.url.split("/")[1] === "decouverte" %}
+    <url>
+      <loc>{{ meta.url }}{{ item.url }}</loc>
+      <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
+      <changefreq>{{ item.data.sitemapChangefreq | default("yearly") }}</changefreq>
+      <priority>{{ item.data.sitemapPriority | default(0.7) }}</priority>
+    </url>
+    {%- endif -%}
+    {%- if item.url.split("/")[1] === "liens" %}
+    <url>
+      <loc>{{ meta.url }}{{ item.url }}</loc>
+      <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
+      <changefreq>{{ item.data.sitemapChangefreq | default("monthly") }}</changefreq>
+      <priority>{{ item.data.sitemapPriority | default(0.5) }}</priority>
+    </url>
+    {%- endif -%}
+{%- endfor -%}
+{%- set goodcategories = categories | getCategoriesWithLiens(liens) -%}
+{%- for item in goodcategories -%}
+{%- set snipeturl = "/"+categoryUrl(item.slug) | trim %}
+    <url>
+      <loc>{{ meta.url }}{{ snipeturl }}</loc>
+      <lastmod>{{ page.date | date("yyyy-MM-dd")}}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.3</priority>
+    </url>
+{%- endfor %}
+</urlset>

@@ -1,5 +1,5 @@
   <meta charSet="utf-8"/>
-  <meta name="author" content="Alix Guillard" />
+  <meta name="author" content="{{ meta.authorName }}" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="{{ title }}">
@@ -7,26 +7,26 @@
   <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
 
   <meta itemprop="name" content="{{ title }}">
-  <meta itemprop="description" content="{{ description }} ploppl">
+  <meta itemprop="description" content="{{ description }}">
   <meta itemprop="image" content="{{ page.url }}{{ image }}">
 
   <meta property="og:title" content="{{ title }}">
-  {% if schema %}
+  {%- if schema -%}
   <meta property="og:type" content="{{schema}}">
-  {% elif page.url.split("/")[1] === "decouverte" or page.date %}
+  {%- elif page.url.split("/")[1] === "decouverte" or page.date -%}
   <meta property="og:type" content="article">
-  {% else %}
+  {%- else -%}
   <meta property="og:type" content="website">
-  {% endif %}
-  {#  <meta property="og:url" content="TODO find current path"> #}
+  {%- endif -%}
+  <meta property="og:url" content="{{ meta.url }}{{ page.data.permalink or page.url }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:site_name" content="reunionweb.org">
+  <meta property="og:site_name" content="{{ meta.siteName }}">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:image" content="{{ page.url }}{{ image }}">
 
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:creator" content="@aloxecorton">
+  <meta name="twitter:creator" content="@{{ meta.twitterName }}">
   <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
   <meta name="twitter:card" content="summary_large_image">
 
