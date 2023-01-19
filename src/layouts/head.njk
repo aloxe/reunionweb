@@ -1,5 +1,5 @@
   <meta charSet="utf-8"/>
-  <meta name="author" content="{{ meta.authorName }}" />
+  <meta name="author" content="{{ meta.author.name }}" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="title" content="{{ title }}">
@@ -20,15 +20,17 @@
   {%- endif -%}
   <meta property="og:url" content="{{ meta.url }}{{ page.data.permalink or page.url }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:site_name" content="{{ meta.siteName }}">
+  <meta property="og:site_name" content="{{ meta.title }}">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:image" content="{{ page.url }}{{ image }}">
 
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:creator" content="@{{ meta.twitterName }}">
+  <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
   <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
   <meta name="twitter:card" content="summary_large_image">
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "feed.xml" | absoluteUrl(meta.url) }}" />
 
   <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
   <title>{{title}}</title>

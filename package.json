@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "date-fns": "^2.29.3",
     "eleventy-plugin-page-assets": "^0.3.0"
   },
