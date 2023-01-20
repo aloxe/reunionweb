@@ -17,6 +17,7 @@
             <a href="{{url}}">{{post.data.short or post.data.title}}</a>
         {% endif %}
         {% if post.data.date and url === post.data.date.split("-").join('') %} {# articles #}
+        {# .split("-").join('') | date("yyyy-MM") %} #}
             <a href="/{{ post.data.title | slugify }}/">{{ post.data.title }}</a>
         {% endif %}
     {% endfor %}

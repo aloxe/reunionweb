@@ -96,7 +96,7 @@
       "parent": "communautes",
       "importance": 0,
       "description": "Communauté agglomérations du nord de l'île de la Réunion.",
-      "article": ["0"]
+      "article": [""]
   },
   {
       "id": 156,
@@ -132,7 +132,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["0"]
+      "article": ["199811"]
   },
   {
       "id": 23,
@@ -267,7 +267,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "Radio télévision d'Outre-mer à la Réunion. programmes, écoute live et émissions en replay.",
-      "article": ["0"]
+      "article": ["199811"]
   },
   {
       "id": 44,
@@ -276,7 +276,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "Programmes, boutique et écoute en ligne des deux stations du groupe Free DOM.",
-      "article": ["0"]
+      "article": [""]
   },
   {
       "id": 46,
@@ -1068,7 +1068,7 @@
       "parent": "communautes",
       "importance": 0,
       "description": "Communauté de communes regroupant La Possession, Le Port, Saint-Paul, Trois-Bassins et Saint-Leu ",
-      "article": ["0"]
+      "article": [""]
   },
   {
       "id": 164,
@@ -1077,7 +1077,7 @@
       "parent": "communautes",
       "importance": 0,
       "description": "Communauté de communes regroupant Bras-Panon, La Plaine-des-Palmistes, Saint-André, Saint-Benoît, Sainte-Rose et Salazie.",
-      "article": ["0"]
+      "article": [""]
   },
   {
       "id": 165,
@@ -1086,7 +1086,7 @@
       "parent": "communautes",
       "importance": 0,
       "description": "Communauté de communes regroupant l'Entre-Deux, Saint-Joseph, Saint-Philippe et Le Tampon",
-      "article": ["0"]
+      "article": [""]
   },
   {
       "id": 166,
@@ -1095,7 +1095,7 @@
       "parent": "communautes",
       "importance": 0,
       "description": "Communayté de communes regroupant Cilaos, L'Étang-Salé, Les Avirons, Petite-Île, Saint-Louis, Saint-Pierre",
-      "article": ["0"]
+      "article": [""]
   },
   {
       "id": 170,
