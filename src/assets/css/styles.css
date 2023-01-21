@@ -1,3 +1,64 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* box sizing reset */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
 @font-face {
     font-family:'Devroye';
     font-weight: normal;
@@ -16,7 +77,12 @@ body {
     font-size: 105%;
     background-color: #fefeae;
     color: #111111;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
 }
+
 /*
 color_border = "FEFEAE";
 color_bg = "FEFEAE";
@@ -52,7 +118,7 @@ body {
     font-family: Devroye, Sans-Serif;
     font-size: 26px;
     font-weight: bold;
-    margin: 5px 0 0 0;
+    margin: 20px 0 15px;
 }
 
 #titre .h2 {
@@ -102,55 +168,94 @@ main {
     }
 }
 
-main p {
-    /* text-align : justify; */
-    line-height: 1.4em;
+.button {
+  border: 1px solid #001c86;
+  display: inline-flex;
+  border-radius: 14px;
+  margin: 0.5em auto;
+  width: fit-content;
+  padding: 0 0.5em;
 }
 
 main .center {
-    text-align:center;
+    text-align: center;
 }
 
-main .center img {
-    display: block;
-    margin: auto;
+main .left {
+    text-align: left;
+}
 
+main .right {
+    text-align: right;
+}
+
+main p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: .04em;
+  padding: 12px 0;
+}
+
+main li {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: .04em;
+}
+
+main p b {
+  font-weight: 700;
 }
 
 main h1 {
     font-family: Devroye, serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1em;
     width: 100%;
     border-bottom: #001c86 dotted 1px;
-    padding-top: 0;
-    margin-top: 1em;
+    padding: 0;
+    margin: 32px 0 12px;
     color: #001c86;
+}
+
+main h1::after {
+  content: "";
+  display: block;
+  margin-top: 0;
 }
 
 main h2 {
     font-family: Devroye, serif;
-    margin-left: 10px;
-    padding-top: 0;
-    margin-top: 0.5em;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+    padding: 0;
+    margin: 14px 0 12px;
     color: #006fd5;
     width: 100%;
 }
 
 main h3 {
     font-family: Devroye, serif;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 900;
     font-style: italic;
+    line-height: 24px;
     padding: 0;
-    margin: 3px 0;
-    padding-left: 10px;
+    margin: 14px 0 8px;
     color: #006fd5;
 }
 
 main h4 {
     font-family: Devroye, serif;
-    padding-top: 0;
-    margin-top: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 12px 0;
     color: #001c86;
-    font-weight: bold;
 }
 
 main h5 {
@@ -158,18 +263,16 @@ main h5 {
     font-weight: normal;
     font-style: italic;
     font-size: 0.8em;
+    line-height: 24px;
     width: 100%;
-    /* padding: 0 0 0 5px; */
-    margin: 0 0 0.5em 0.5em;
+    margin: 12px 0;
     color: #001c86;
 
 }
 
-main .intro {
-      text-align:right;
-      font-style:italic;
-      font-weight:bold;
-      font-stretch: ultra-condensed;
+main hr {
+  border: 0;
+  border-bottom: #001c86 dotted 1px;
 }
 
 span.link,
@@ -195,18 +298,48 @@ a.ext:link:after, a.ext:visited:after, a.ext:active:after {
 }
 
 main img {
+    display: block;
     margin: 8px;
-    max-width: 100%;
+    max-width: calc(100% - 16px);
     height: auto;
 }
 
+main iframe {
+    display: block;
+    margin: 8px;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
 main .cadrimage {
-	margin: 5px;
-	text-align:center;
-	font-style: italic;
-	font-size: 90%;
+  margin: 5px 0;
+	padding: 5px;
+	border:1px dotted #006fd5;
+}
+
+main .cadrimage iframe,
+main .cadrimage img {
+    margin: 0;
+    max-width: 100%;
+}
+
+main .legende {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    color: #006fd5;
+}
+
+main .legende a {
 	color: #006fd5;
-	border:1px;
+  text-decoration: underline;
+}
+
+main p.smaller {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  padding: 0 0 12px;
 }
 
 main li {
@@ -252,40 +385,28 @@ main table img {
     float: none !important;
 }
 
-main div.right,
-main div.left {
-    float: left;
-    width: 45%;
-}
+/* TODO: itemleft faceitemleft legende cadreimage */
 
 main .note {
-   font-size: 0.9em;
-    font-style: italic;
-    color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: italic;
+  color: #666;
 }
 
-main .legende {
-   font-style: italic;
-   font-size: 0.8em;
-   color: #006fd5;
+main .f14 {
+  font-size: 14px;
+  line-height: 20px;
 }
 
-main .f-08 {
-    font-size: 0.8em;
+main .f16 {
+  font-size: 16px;
+  line-height: 20px;
 }
 
-main .f-09 {
-    font-size: 0.9em;
-}
-
-main table.socmed {
-    border-collapse: collapse;
-    border: 0;
-    margin: 1em 0;
-}
-
-main .right {
+main p.articlebread {
   text-align: right;
+  margin-top: 0;
 }
 
 main .bothside {
@@ -303,6 +424,7 @@ main .twocolumns {
 }
 
 main .twocolumns h3 {
+    margin: 14px 0 0;
     break-inside: avoid;
     break-after: avoid;   /* work not with firefox */
 }
@@ -310,6 +432,7 @@ main .twocolumns h3 {
 main .twocolumns p,
 main .twocolumns h4,
 main .twocolumns h5 {
+    font-size: 17px;
     break-inside: avoid;
 }
 
@@ -317,8 +440,15 @@ main .twocolumns p {
   text-align: left;
 }
 
+main .twocolumns h5 + p,
+main .twocolumns p + h5,
 main .twocolumns h3 + p {
   margin-top: 0;
+  padding-top: 5px;
+}
+
+main .twocolumns h5 + h3 {
+  margin-top: 34px;
 }
 
 main .lien {
@@ -346,11 +476,50 @@ main .lien .url {
   display: inline-block;
 }
 
+/* HOME */
+
+main p.suite {
+  text-align: right;
+  margin-top: -24px;
+  padding-top: 0;
+}
+
+main p.suite a:hover {
+  border-color: #006fd5;
+}
+
+main h3 a.button {
+  padding: 8px;
+  border-radius: 20px;
+}
+
+main h3 a.button:hover {
+  border-color: #006fd5;
+  text-decoration: none;
+}
+
+/* Clear floats after the columns */
+.homerow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.homeimg {
+  float: left;
+  width: 150px;
+  margin: 0 20px 0 0;
+}
+
 footer {
     font-size: 90%;
     padding: 20px;
     border-top: dotted #0073d7 1px;
     text-align: center;
+}
+
+footer p {
+    padding: 10px 0;
 }
 
 .clear {

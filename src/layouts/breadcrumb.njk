@@ -1,6 +1,8 @@
 {% from 'macros/title.njk' import getTitle, getLinkTitle with context %}
 
-<div class="f-08">
+{% set hasArticles = page.url.split("/")[1] and page.inputPath.split("/")[3] === "articles" %}
+
+<p class="f14{% if hasArticles %} articlebread{% endif %}">
     {%- if page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] -%}
         <a href="/decouverte/">Découverte</a>
         {% set url2 = '/decouverte/'+page.url.split("/")[2]+'/' %}
@@ -27,8 +29,7 @@
           > {{ getLinkTitle(page.url.split("/")[3]) }}
           > {{ getTitle(page.url.split("/")[4]) }}
       {% endif %}
-      {%- elif page.url.split("/")[1] and page.inputPath.split("/")[3] === "articles" -%}
-        <p class="right">
+      {%- elif hasArticles -%}
           {% set currentPost = collections.article | getCollectionItem(page) %}
           {% if currentPost %}
               {{ currentPost.date.getFullYear() }}
@@ -40,7 +41,6 @@
           {% if previousPost %}<br>← <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
           {% if nextPost %}<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> →{% endif %}
           <br> 
-        </p>
     {%- else -%}
     {%- endif -%}
-</div>
+</p>
