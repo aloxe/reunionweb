@@ -12,12 +12,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // copy linked images with pages
-  // eleventyConfig.addPlugin(pageAssetsPlugin, {
-  //     mode: "parse",
-  //     postsMatching: "src/pages/(articles/*/*.(html|md)|/decouverte/((?!gouzou/)[a-z]*/)*[a-zA-Z-_]*\.(html|md))",
-  //     recursive: true,
-  //     hashAssets: false,
-  // });
+  eleventyConfig.addPlugin(pageAssetsPlugin, {
+      mode: "parse",
+      postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z]*/)*.(html|md)",
+      recursive: false,
+      hashAssets: false,
+  });
 
   // add `date` filter thanks to format plugin
   eleventyConfig.addFilter('date', function (date, dateFormat) {
