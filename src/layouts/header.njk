@@ -1,7 +1,7 @@
     <header>
       <div id="titre">
-          <div class="h1">{% if homepage %}{{ site.title }}{% else %}<a href="{{ '/' | url }}">{{ site.title }}</a>{% endif %}</div>
-          <div class="h2">{% if homepage %}{{ site.subtitle }}{% else %}<a href="{{ '/' | url }}">{{ site.subtitle }}</a>{% endif %}</div>
+          <div class="h1">{% if homepage %}{{ meta.title }}{% else %}<a href="{{ '/' | url }}">{{ meta.title }}</a>{% endif %}</div>
+          <div class="h2">{% if homepage %}{{ meta.subtitle }}{% else %}<a href="{{ '/' | url }}">{{ meta.subtitle }}</a>{% endif %}</div>
       </div>
 
       <div id="search">

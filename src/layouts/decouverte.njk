@@ -5,7 +5,7 @@
     {% block main %}
       <main>
         <h1>{{ title }}</h1>
-        <p>{% include "breadcrumb.njk" %}</p>
+        {% include "breadcrumb.njk" %}
         {{ content | safe }}
 
         {% set section = page.url.split("/").length %}

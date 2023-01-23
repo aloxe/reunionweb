@@ -3,7 +3,7 @@ name: Build Eleventy
 on:
   push:
     branches:
-      - main
+      - build
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -26,8 +26,14 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Copy Site recursively to remote
+        uses: appleboy/scp-action@master
         with:
-          publish_dir: ./_site
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          source: "_site/*"
+          target: "domains/test.xn--4lj4bfp6d.eu.org/public_html"
+          strip_components: 1
+          rm: true

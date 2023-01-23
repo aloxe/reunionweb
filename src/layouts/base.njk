@@ -18,16 +18,17 @@
       {% else %}
       <main>
           <h1>{{ title }}</h1>
-          {# <p>{% include "breadcrumb.njk" %}</p> #}
+          {% include "breadcrumb.njk" %}
           {{ content | safe }}
-          <hr>
           {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
           {% set previousPost = collections.article | getNextCollectionItem(page) %}
-        <div class="bothside  f-09">
-            <p>{% if previousPost %}<b>←</b> <a class='text-sky-600' href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
-
-            <p>{% if nextPost %}<a class='text-sky-600' href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> <b>→</b> {% endif %}</p>
-        </div>
+          {%- if previousPost or nextPost -%}
+            <hr>
+            <div class="bothside">
+                <p class="f16">{% if previousPost %}<b>←</b> <a class='text-sky-600' href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
+                <p class="f16">{% if nextPost %}<a class='text-sky-600' href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> <b>→</b>{% endif %}</p>
+            </div>
+          {%- endif -%}
       </main>
 
       {% endif %}
@@ -36,9 +37,12 @@
     {% block footer %}
       <footer>
         <nav>
-          <a name="ciblefooter"></a>
           {% if page.url !== "/about/" and page.url !== "/" %}
-            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a>
+            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a><br>
+             ⋅ <a href="{{ '/articles/' | url }}">articles</a>
+             ⋅ <a href="{{ '/decouverte/' | url }}">découverte</a>
+             ⋅ <a href="{{ '/liens/' | url }}">liens</a>
+             ⋅
           {% endif %}
           <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
         </nav>

@@ -7,9 +7,11 @@
     {% for page in collections.article %}
         {% if (loop.index < 2) %}
             <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
+            <div class="homewrow">
+            <p class="homeimg"><img src="{{page.url}}{{page.data.image}}" alt="illustration {{ page.data.title }}"></p>
             <p>{{ page.templateContent | safe | truncate(400) }}</p>
-            <p class="center"><img src="{{page.url}}{{page.data.image}}" alt="illustration {{ page.data.title }}"></p>
-            <p class="right">…<a href="{{page.url}}">lire la suite</a></p>
+          </div>
+            <p class="suite"><a href="{{page.url}}" class="button">…lire la suite</a></p>
         {% endif %}
     {% endfor %}
 
@@ -25,7 +27,7 @@
         {% endif %}
     {% endfor %}
     </div>
-    <h3 class="center"><a href="{{ "articles" | url }}">Liste de tous les articles</a></h3>
+    <h3 class="center"><a href="{{ "articles" | url }}" class="button">tous les articles</a></h3>
 
     <h1>Découvrez l'île de la Réunion</h1>
 
