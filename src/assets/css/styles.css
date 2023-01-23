@@ -406,6 +406,7 @@ main .f16 {
 
 main p.articlebread {
   text-align: right;
+  padding-top: 0;
   margin-top: 0;
 }
 
