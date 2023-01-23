@@ -15,7 +15,16 @@
       "parent": "portails",
       "importance": 2,
       "description": "Le portail Réunionnais avec une actualité hebdomadaire, des photos et plein d'autres infos. C'est peut-être aujourd'hui le seul blog généraliste ayant une si grande longévité.",
-      "article": ["200701"]
+      "article": ["200203", "200701"]
+  },
+  {
+      "id": 4,
+      "title": "Wikipedia Réunion",
+      "url": "https://fr.wikipedia.org/wiki/Portail:La_R%C3%A9union",
+      "parent": "portails",
+      "importance": 2,
+      "description": "Le portail de la Réunion de la célèbre encyclopédie en ligne Wikipedia.",
+      "article": ["200203"]
   },
   {
       "id": 8,
@@ -47,11 +56,20 @@
   {
       "id": 13,
       "title": "Meteo France",
-      "url": "http://www.meteo.fr/temps/domtom/La_Reunion/",
+      "url": "https://meteofrance.re/fr",
       "parent": "meteo",
       "importance": 0,
       "description": "La page Réunion de Météo-France. prévisions et informations sur les cyclones.",
       "article": ["199903"]
+  },
+  {
+      "id": 14,
+      "title": "MTOTEC",
+      "url": "https://www.mtotec.com/",
+      "parent": "meteo",
+      "importance": 0,
+      "description": "Suivit et explications de tous les événements météo dans le bassin cyclonique du Sud-Ouest de l'Océan Indien.",
+      "article": ["199903", "200202"]
   },
   {
       "id": 15,
@@ -169,6 +187,15 @@
       "importance": 0,
       "description": "Portail avec canaux de chat pour réunionnais, forum, informations",
       "article": ["200304"]
+  },
+  {
+      "id": 30,
+      "title": "Spoutnik a 40 ans",
+      "url": "http://www.arra.re/spoutnik/sppigno.html",
+      "parent": "scolaires",
+      "importance": 0,
+      "description": "Le site de la mise sur orbite d'une réplique de spoutnik par un collège réunionnais.",
+      "article": ["199711"]
   },
   {
       "id": 159,
@@ -448,6 +475,15 @@
       "importance": 0,
       "description": "Présentation d'un livre de Koulsoum MOUSSA sur les Indo-musulmans de la Réunion.",
       "article": ["200106"]
+  },
+  {
+      "id": 66,
+      "title": "Auteurs réunionnais sur Île en île",
+      "url": "http://ile-en-ile.org/lit-reunionnaise/",
+      "parent": "litterature",
+      "importance": 0,
+      "description": "Une base de données des auteurs de la littérature réunionnaise.",
+      "article": ["200412"]
   },
   {
       "id": 67,
@@ -772,6 +808,15 @@
       "importance": 0,
       "description": "Point d'échange Internet à la Réunion. Tout ce qu'il faut savoir pour s'y connecter.",
       "article": ["201010"]
+  },
+  {
+      "id": 125,
+      "title": "Le Margouillat",
+      "url": "http://sites.reunionweb.org/margouillat/",
+      "parent": "artistes",
+      "importance": 0,
+      "description": "Les 14 numéros et plus du mensuel endémique de l'île de La Réunion qui sortait tous les mois jusqu'en janvier 2002.",
+      "article": ["200502", "201206"]
   },
   {
       "id": 180,
@@ -1231,5 +1276,14 @@
       "importance": 0,
       "description": "Le site officiel du parc national de la Réunion, créé en 2007 en même temps que le parc. C'est une zone nationale de protection de la fragile biodiversité couvrant tous les hauts de l'île.",
       "article": ["200710"]
+  },
+  {
+      "id": 197,
+      "title": "NRJ Réunion",
+      "url": "http://www.nrj.re/",
+      "parent": "radio",
+      "importance": 0,
+      "description": "La première radio musicale de France a osse sa station dans l'Océan Indien",
+      "article": ["199903"]
   }
 ]

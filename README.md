@@ -10,10 +10,8 @@
 new Gouzou images can be added in assets/img/gouzou
 thumbnails will be generated bu running `node gouzouthumb.js`
 inspired by https://www.raymondcamden.com/2021/04/07/building-a-simple-image-gallery-with-eleventy
-meta information should be added in the data json
+meta information should be added in `src/data/gouzoulist.json`
 
-to be added https://quentin.delcourt.be/blog/2020-02-10_eleventy-gitlab-ci-pipeline/
+# Liens list
 
-https://docs.gitlab.com/ee/user/application_security/dependency_scanning/
-
-todo: https://www.raymondcamden.com/2022/04/03/including-rss-content-in-your-eleventy-site-part-2
+Links are sorted by category in `src/data/categories.json` and all information in `src/data/liens.json` where the category is referenced by its slug with key `parent`.

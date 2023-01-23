@@ -304,6 +304,16 @@ main img {
     height: auto;
 }
 
+main img.left {
+    float: left;
+    margin-right: 15px;
+}
+
+main img.right {
+    float: right;
+    margin-left: 15px;
+  }
+
 main iframe {
     display: block;
     margin: 8px;
@@ -319,7 +329,7 @@ main .cadrimage {
 
 main .cadrimage iframe,
 main .cadrimage img {
-    margin: 0;
+    margin: 0 auto;
     max-width: 100%;
 }
 
