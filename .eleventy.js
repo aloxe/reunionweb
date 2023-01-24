@@ -1,9 +1,41 @@
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const format = require('date-fns/format');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const fs = require("fs");
+
+const searchFilter = require("./src/filters/searchFilter");
+const NOT_FOUND_PATH = "_site/404.html";
 
 module.exports = (eleventyConfig) => {
+  // page 404 with --serve
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, bs) {
 
+        bs.addMiddleware("*", (req, res) => {
+          if (!fs.existsSync(NOT_FOUND_PATH)) {
+            throw new Error(`Expected a \`${NOT_FOUND_PATH}\` file but could not find one. Did you create a 404.html template?`);
+          }
+
+          const content_404 = fs.readFileSync(NOT_FOUND_PATH);
+          // Add 404 http status code in request header.
+          res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      }
+    }
+  });
+
+  //search filter
+  eleventyConfig.addFilter("search", searchFilter);
+  eleventyConfig.addCollection("indexable", collection => {
+    const collectionDecouverte = collection.getFilteredByGlob("./src/pages/decouverte/**/*.html");
+    const collectionArticles = collection.getFilteredByGlob("./src/pages/articles/**/*.html");
+    const collectionArticlesMd = collection.getFilteredByGlob("./src/pages/articles/**/*.md");
+    return [...collectionDecouverte, ...collectionArticles, ...collectionArticlesMd];
+  });
 
   // rss plugin https://www.11ty.dev/docs/plugins/rss/
   eleventyConfig.addPlugin(pluginRss);
