@@ -1,0 +1,23 @@
+{% extends 'base.njk' %}
+
+{% block main %}
+  <main>
+    <h1>{{ title }}</h1>
+
+    <h4>Recherchez un mot, un nom, une phrase dans les articles du site</h4>
+
+    <p class="field">
+      <input type="search" placeholder="votre recherche..." id="searchField">
+    </p>
+    <ol id="searchResults"></ol>
+    <div id="noResultsFound" style="display: none">
+      <p>Aucun résultat.</p>
+    </div>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
+  ></script>
+    <script type="text/javascript" src="/js/search.js"></script>
+  </main>
+
+{% endblock %}

@@ -58,6 +58,13 @@ html {
   box-sizing: inherit;
 }
 
+/*
+color_border = "FEFEAE";
+color_bg = "FEFEAE";
+title color_link = "006fcf";
+color_text = "333333";
+color_url = "001c86";
+*/
 
 @font-face {
     font-family:'Devroye';
@@ -71,6 +78,10 @@ html {
       url('/fonts/DEVROYUN-webfont.ttf') format('truetype');
 }
 
+html {
+  height: 100%;  /* sticky footer */
+}
+
 body {
     margin: 0;
     font-family: Sans-Serif;
@@ -81,15 +92,8 @@ body {
     -webkit-font-smoothing: antialiased !important;
     -moz-font-smoothing: antialiased !important;
     text-rendering: optimizelegibility !important;
+    height: 100%;  /* sticky footer */
 }
-
-/*
-color_border = "FEFEAE";
-color_bg = "FEFEAE";
-title color_link = "006fcf";
-color_text = "333333";
-color_url = "001c86";
-*/
 
 html, p, td, ul {
 	color: #111111;
@@ -118,7 +122,7 @@ body {
     font-family: Devroye, Sans-Serif;
     font-size: 26px;
     font-weight: bold;
-    margin: 20px 0 15px;
+    padding: 20px 0 15px;
 }
 
 #titre .h2 {
@@ -154,16 +158,17 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 /* main content */
 
 main {
+  min-height: calc(100% - 210px); /* sticky footer */
   width: calc(65% - 30px);
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 10px 30px 110px; /* sticky footer */
   max-width: 840px;
 }
 
 @media (max-width: 840px) {
   main {
         max-width: 700px;
-        padding: 0 10px;
+        padding: 10px 10px 110px; /* sticky footer */
         width: calc(100% - 30px);
     }
 }
@@ -508,7 +513,7 @@ main h3 a.button:hover {
   text-decoration: none;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns on home */
 .homerow:after {
   content: "";
   display: table;
@@ -521,11 +526,34 @@ main h3 a.button:hover {
   margin: 0 20px 0 0;
 }
 
+#searchField {
+  display: block;
+  width: calc(100% - 4px);
+  font-size: 18px;
+  font-weight: 600;
+  color: #001c86;
+  padding: 10px;
+  border: 2px solid #006fcf;
+}
+
+#searchField:focus {
+  border-left: 12px solid #006fcf;
+}
+
+body > footer {  /* sticky footer */
+  position: sticky;
+  top: 100vh;
+  margin-top: -110px;
+  overflow: hidden;
+  height: 110px;
+}
+
 footer {
-    font-size: 90%;
-    padding: 20px;
-    border-top: dotted #0073d7 1px;
-    text-align: center;
+
+  font-size: 90%;
+  padding: 20px;
+  border-top: dotted #0073d7 1px;
+  text-align: center;
 }
 
 footer p {
