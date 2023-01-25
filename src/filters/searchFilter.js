@@ -15,7 +15,7 @@ module.exports = function (collection) {
       id: page.url,
       title: page.template.frontMatter.data.title,
       description: page.template.frontMatter.data.description,
-      content: page.templateContent + " ",
+      content: page.templateContent.replace(/<[^>]*>?|\r\n/gm, ' ').trim(),
     });
   });
 
