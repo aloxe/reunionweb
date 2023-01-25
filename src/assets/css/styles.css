@@ -74,8 +74,9 @@ color_url = "001c86";
     font-display: swap;
     unicode-range: U+000D-FB02;
     src: local('Devroye'),
+      url('/fonts/DEVROYUN-webfont.woff2') format('woff2'),
       url('/fonts/DEVROYUN-webfont.woff') format('woff'),
-      url('/fonts/DEVROYUN-webfont.ttf') format('truetype');
+      url('/fonts/DEVROYUN-webfont.ttf') format('ttf');
 }
 
 html {
