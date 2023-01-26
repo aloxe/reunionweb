@@ -37,12 +37,16 @@
     {% block footer %}
       <footer>
         <nav>
+        <p class="left">
+          <a href="{{ '/articles/' | url }}">articles</a><br>
+          <a href="{{ '/decouverte/' | url }}">découverte</a><br>
+          <a href="{{ '/recherche/' | url }}">recherche</a><br>
+          <a href="{{ '/liens/' | url }}">liens</a>
+        </p>
           {% if page.url !== "/about/" and page.url !== "/" %}
-            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a><br>
-             ⋅ <a href="{{ '/articles/' | url }}">articles</a>
-             ⋅ <a href="{{ '/decouverte/' | url }}">découverte</a>
-             ⋅ <a href="{{ '/recherche/' | url }}">recherche</a>
-             ⋅ <a href="{{ '/liens/' | url }}">liens</a>
+          <p>
+            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a>
+          </p>
           {% endif %}
           <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
         </nav>
