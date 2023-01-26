@@ -12,10 +12,10 @@
         {# sous catégories #}
 
         {% set subcategoriesall = categories | getCategoriesFromParent(slug) %}
-        {% set subcategories = subcategoriesall | getCategoriesWithLiens(liens) %}
+        {% set subcategories = subcategoriesall | getCategoriesWithLiens(liens, categories) %}
         {% if subcategories.length > 0 %}
           {% if subcategories.length > 1 %}
-             {% if not slug === "liens" %}<h2>Sous catégories</h2>{% endif %}
+            {% if not slug === "liens" %}<h2>Sous catégories</h2>{% endif %}
             <div class="twocolumns">
           {% else %}
             {% if not slug === "liens" %}<h2>Sous catégorie</h2>{% endif %}
