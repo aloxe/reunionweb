@@ -495,42 +495,6 @@
       "article": ["199909"]
   },
   {
-      "id": 185,
-      "title": "comité opérationnel de réduction du risque requin à La Réunion ",
-      "url": "http://www.reunion.gouv.fr/le-comite-operationnel-de-reduction-du-risque-a870.html",
-      "parent": "agences",
-      "importance": 0,
-      "description": "(aussi appelé CO4R) Instaurée en septembre 2012 c'est une cellule opérationnelle de réduction du risque requins se réunit régulièrement sous l'égide de la préfecture et coordonne les actions de terrain pour réduire le risque requin.",
-      "article": ["201604"]
-  },
-  {
-      "id": 183,
-      "title": "Parc Marin de la Réunion",
-      "url": "http://jean-marc.charel.pagesperso-orange.fr/parcmarin.htm",
-      "parent": "agences",
-      "importance": 0,
-      "description": "Le site de l'ancienne structure de préservation du lagon réunionnais avec les règles de l'époque.",
-      "article": ["201107"]
-  },
-  {
-      "id": 184,
-      "title": "Réserve Naturelle Marine de la Réunion",
-      "url": "http://www.reservemarinereunion.fr/",
-      "parent": "agences",
-      "importance": 0,
-      "description": "Site de la Réserve naturelle marine de la Réunion, toutes les informations sur la protection du lagon mais aussi sa découverte.",
-      "article": ["201107"]
-  },
-  {
-      "id": 160,
-      "title": "Zeop",
-      "url": "http://www.zeop.re/",
-      "parent": "fai",
-      "importance": 0,
-      "description": "Fournisseur Internet champion de la fibre optique à la Réunion.",
-      "article": ["201503"]
-  },
-  {
       "id": 75,
       "title": "UDAR le blog",
       "url": "http://www.udarpeinture.canalblog.com/",
@@ -738,42 +702,6 @@
       "article": ["200706"]
   },
   {
-      "id": 190,
-      "title": "Globice",
-      "url": "https://www.globice.org/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Groupe Local d’OBservation et d’Identification des CEtacés. Association d'étude et de protection des grands animaux marins. Membre de l'Union Internationale pour la Conservation de la Nature depuis 2010 et association de référence pour l'observation et",
-      "article": ["201809"]
-  },
-  {
-      "id": 186,
-      "title": "Shark Citizen",
-      "url": "http://www.sharkcitizen.fr/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Association de défense de la nature présente à la Réunion. Elle a pour but de faire face au risque requin tout en préservant le lagon et les poissons qui y vivent.",
-      "article": ["201604"]
-  },
-  {
-      "id": 187,
-      "title": "Ligue de Surf de la Réunion",
-      "url": "https://www.surfingreunion.com/",
-      "parent": "sport",
-      "importance": 0,
-      "description": "Information sur la pratique du surf à la Réunion. les compétitions et les risques lié à ce sport.",
-      "article": ["201604"]
-  },
-  {
-      "id": 188,
-      "title": "Peur sur les plages. Du « risque requin » à la « crise requin »",
-      "url": "http://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-thematiques/risques-et-societes/corpus-documentaire/peur-sur-les-plages-requins-reunion",
-      "parent": "rapports",
-      "importance": 0,
-      "description": "Dossier sur le risque requin à la Réunion, réalisé par Emmanuelle Surmont, agrégée de géographie à l'ENS de Lyon.",
-      "article": ["201604"]
-  },
-  {
       "id": 118,
       "title": "Le Quotidien de la Réunion",
       "url": "http://www.lequotidien.re/",
@@ -801,7 +729,7 @@
       "article": ["201809"]
   },
   {
-      "id": 124,
+      "id": 121,
       "title": "REUNIX",
       "url": "https://www.renater.fr/reseau/national-et-international/renaterix/",
       "parent": "internet",
@@ -810,7 +738,7 @@
       "article": ["201010"]
   },
   {
-      "id": 125,
+      "id": 122,
       "title": "Le Margouillat",
       "url": "http://sites.reunionweb.org/margouillat/",
       "parent": "artistes",
@@ -819,7 +747,7 @@
       "article": ["200502", "201206"]
   },
   {
-      "id": 180,
+      "id": 123,
       "title": "Le blog de Li-An",
       "url": "https://www.li-an.fr/blog/",
       "parent": "artistes",
@@ -828,16 +756,25 @@
       "article": ["200502"]
   },
   {
-      "id": 126,
+      "id": 124,
+      "title": " Les offres Internet à La Réunion ",
+      "url": "https://www.echosdunet.net/dossiers/offres-internet-reunion",
+      "parent": "internet",
+      "importance": 0,
+      "description": "Page listant les nombreux fournisseurs d'accès à Internet commercialisent des offres Internet. semble être le plus à jour.",
+      "article": ["200804"]
+  },
+  {
+      "id": 125,
       "title": "Saint-Paul",
       "url": "http://www.mairie-saintpaul.fr",
       "parent": "villes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": [""]
+      "article": ["201404"]
   },
   {
-      "id": 125,
+      "id": 126,
       "title": "Saint-Pierre",
       "url": "https://www.saintpierre.re/",
       "parent": "villes",
@@ -888,7 +825,7 @@
       "parent": "villes",
       "importance": 0,
       "description": "Mairie de Saint Leu. Information administratives et locales.",
-      "article": ["200508", "201412"]
+      "article": ["200508", "201404", "201412"]
   },
   {
       "id": 132,
@@ -945,15 +882,6 @@
       "article": ["200804"]
   },
   {
-      "id": 125,
-      "title": " Les offres Internet à La Réunion ",
-      "url": "https://www.echosdunet.net/dossiers/offres-internet-reunion",
-      "parent": "internet",
-      "importance": 0,
-      "description": "Page listant les nombreux fournisseurs d'accès à Internet commercialisent des offres Internet. semble être le plus à jour.",
-      "article": ["200804"]
-  },
-  {
       "id": 138,
       "title": "Canalbox",
       "url": "https://www.canalbox.com/re",
@@ -987,6 +915,15 @@
       "parent": "photos",
       "importance": 0,
       "description": "Le site du photographe (et maintenant vidéaste) Alexandre Boyer. Expositions de photos de la nature et autres projets.",
+      "article": ["201303"]
+  },
+  {
+      "id": 142,
+      "title": "Société d’Etudes Ornithologiques de La Réunion",
+      "url": "http://www.seor.fr/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Association de conservation et de protection de l’avifaune indigène et de promotion des connaissances en ornithologie.",
       "article": ["201303"]
   },
   {
@@ -1087,6 +1024,78 @@
       "importance": 0,
       "description": "Le plus grand aéroport de l'île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
       "article": ["200108"]
+  },
+  {
+      "id": 160,
+      "title": "Zeop",
+      "url": "http://www.zeop.re/",
+      "parent": "fai",
+      "importance": 0,
+      "description": "Fournisseur Internet champion de la fibre optique à la Réunion.",
+      "article": ["201503"]
+  },
+  {
+      "id": 185,
+      "title": "comité opérationnel de réduction du risque requin à La Réunion ",
+      "url": "http://www.reunion.gouv.fr/le-comite-operationnel-de-reduction-du-risque-a870.html",
+      "parent": "agences",
+      "importance": 0,
+      "description": "(aussi appelé CO4R) Instaurée en septembre 2012 c'est une cellule opérationnelle de réduction du risque requins se réunit régulièrement sous l'égide de la préfecture et coordonne les actions de terrain pour réduire le risque requin.",
+      "article": ["201604"]
+  },
+  {
+      "id": 183,
+      "title": "Aller plonger à La Réunion, île intense, Jean Marc Charel",
+      "url": "http://jean-marc.charel.pagesperso-orange.fr/",
+      "parent": "pages",
+      "importance": 0,
+      "description": "Site perso sur plongée locale avec des info sur l'ancienne structure de préservation du lagon réunionnais.",
+      "article": ["201107"]
+  },
+  {
+      "id": 184,
+      "title": "Réserve Naturelle Marine de la Réunion",
+      "url": "http://www.reservemarinereunion.fr/",
+      "parent": "musees",
+      "importance": 0,
+      "description": "Site de la Réserve naturelle marine de la Réunion, toutes les informations sur la protection du lagon mais aussi sa découverte.",
+      "article": ["201107"]
+  },
+  {
+      "id": 186,
+      "title": "Shark Citizen",
+      "url": "http://www.sharkcitizen.fr/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Association de défense de la nature présente à la Réunion. Elle a pour but de faire face au risque requin tout en préservant le lagon et les poissons qui y vivent.",
+      "article": ["201604"]
+  },
+  {
+      "id": 187,
+      "title": "Ligue de Surf de la Réunion",
+      "url": "https://www.surfingreunion.com/",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Information sur la pratique du surf à la Réunion. les compétitions et les risques lié à ce sport.",
+      "article": ["201604"]
+  },
+  {
+      "id": 188,
+      "title": "Peur sur les plages. Du « risque requin » à la « crise requin »",
+      "url": "http://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-thematiques/risques-et-societes/corpus-documentaire/peur-sur-les-plages-requins-reunion",
+      "parent": "rapports",
+      "importance": 0,
+      "description": "Dossier sur le risque requin à la Réunion, réalisé par Emmanuelle Surmont, agrégée de géographie à l'ENS de Lyon.",
+      "article": ["201604"]
+  },
+  {
+      "id": 190,
+      "title": "Globice",
+      "url": "https://www.globice.org/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Groupe Local d’OBservation et d’Identification des CEtacés. Association d'étude et de protection des grands animaux marins. Membre de l'Union Internationale pour la Conservation de la Nature depuis 2010 et association de référence pour l'observation et",
+      "article": ["201809"]
   },
   {
       "id": 161,
@@ -1222,6 +1231,15 @@
       "importance": 0,
       "description": "Le collège en plein cœur de Saint-Pierre de la Réunion. Le premier a avoir une page sur la toile.",
       "article": ["199710"]
+  },
+  {
+      "id": 183,
+      "title": "Horizon Réunion (es Éneries Réunion)",
+      "url": "https://energies-reunion.com/",
+      "parent": "agences",
+      "importance": 0,
+      "description": "Société publique locale qui a pris le relai de l'Agence régionale de l'énergie de La Réunion pour faciliter les économies d'énergie et favoriser l'utilisation des énergies renouvelables.",
+      "article": ["201404"]
   },
   {
       "id": 191,
