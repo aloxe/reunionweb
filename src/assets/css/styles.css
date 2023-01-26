@@ -159,17 +159,17 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 /* main content */
 
 main {
-  min-height: calc(100% - 210px); /* sticky footer */
+  min-height: calc(100% - 190px); /* sticky footer */
   width: calc(65% - 30px);
   margin: 0 auto;
-  padding: 10px 30px 110px; /* sticky footer */
+  padding: 10px 30px 90px; /* sticky footer */
   max-width: 840px;
 }
 
 @media (max-width: 840px) {
   main {
         max-width: 700px;
-        padding: 10px 10px 110px; /* sticky footer */
+        padding: 10px 10px 90px; /* sticky footer */
         width: calc(100% - 30px);
     }
 }
@@ -444,6 +444,9 @@ main .twocolumns h3 {
     break-inside: avoid;
     break-after: avoid;   /* work not with firefox */
 }
+main .twocolumns > h3 {
+    margin: 0;
+}
 
 main .twocolumns p,
 main .twocolumns h4,
@@ -544,22 +547,30 @@ main h3 a.button:hover {
 body > footer {  /* sticky footer */
   position: sticky;
   top: 100vh;
-  margin-top: -110px;
+  margin-top: -90px;
   overflow: hidden;
-  height: 110px;
+  height: 90px;
 }
 
 footer {
-
   font-size: 90%;
-  padding: 20px;
+  padding: 16px;
   border-top: dotted #0073d7 1px;
   text-align: center;
 }
 
 footer p {
-    padding: 10px 0;
+    padding: 8px 0;
 }
+
+footer p.left {
+    float: left;
+    padding: 0;
+    margin: -10px 10px 0;
+    text-align: left;
+    line-height: 20px;
+}
+
 
 .clear {
     clear: both;
