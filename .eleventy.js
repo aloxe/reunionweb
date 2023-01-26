@@ -72,10 +72,12 @@ module.exports = (eleventyConfig) => {
     return selected;
   });
 
-    eleventyConfig.addFilter("getCategoriesWithLiens", (categories = [], liens = []) => {
+    eleventyConfig.addFilter("getCategoriesWithLiens", (categories = [], liens = [], allCategories = []) => {
       const categoriesInLiens = liens.map(l => l.parent);
-      let selected = categories.filter(a => categoriesInLiens.includes(a.slug));
-      return selected;
+      const categorieParents = allCategories.map(c => c.parent);
+      let selectedl = categories.filter(a => categoriesInLiens.includes(a.slug));
+      let selectedc = categories.filter(a => categorieParents.includes(a.slug));
+      return [...new Set([...selectedl, ...selectedc])];
     });
 
     // Pass-through files
