@@ -5,6 +5,8 @@ if (isset($json->name))
     $name = stripcslashes($json->name);
 if (isset($json->email))
     $email = stripcslashes($json->email);
+// if (isset($json->subject))
+//     $email = stripcslashes($json->subject);
 if (isset($json->message))
     $message = stripcslashes($json->message);
 
@@ -47,7 +49,7 @@ $headname = encode_mail_header("$name", "iso-8859-1");
 // $to = 'alix@guillard.fr';
 $to = 'alix@filin.cz';
 
-$subject = 'web message alix.guillard.fr';
+$subject = '[reunionweb.org] web message';
 $message = "FROM: $name\r\n Email: $email\r\n Message: $message";
 
 $header = "From: $headname <$email>\r\n";
