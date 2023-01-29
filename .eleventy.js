@@ -40,8 +40,12 @@ module.exports = (eleventyConfig) => {
   // rss plugin https://www.11ty.dev/docs/plugins/rss/
   eleventyConfig.addPlugin(pluginRss);
 
+  // Short codes
   // Get the current year as {% year %}
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+  // fnac affiliate
+  eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}"> 🛒 achetez sur</a>`);
 
   // copy linked images with pages
   eleventyConfig.addPlugin(pageAssetsPlugin, {
