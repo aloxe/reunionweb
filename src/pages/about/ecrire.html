@@ -9,17 +9,15 @@ layout: ecrire
 Pour envoyer votre message, veuillez compléter <b>tous</b> les champs de ce formulaire :
 </h4>
 
-<section id="email" class="hatch slideDown">
-		<form id="contactForm" onSubmit="HandleSubmit()" className="rien">
+<section id="mailform">
+		<form id="contactForm" onSubmit="HandleSubmit()">
 				<label for="name">Votre nom :</label>
-				<input type="text" id="name" name="name" required onChange="onFieldChange" data-validation-required-message="Entrez votre nom"/><br />
+				<input type="text" id="name" name="name" required data-validation-required-message="Entrez votre nom"/><br />
 				<label for="emailaddress">Votre adresse électronique :</label>
-				<input type="email" id="emailaddress" name="emailaddress" required onChange="onFieldChange"  data-validation-required-message="votre adresse mail" data-validation-validemail-message="votre adresse n'est pas bonne" /><br />
-				<!-- <label for="subject">Sujet du message :</label> -->
-				<!-- <input type="text" id="subject" name="subject" required onChange="onFieldChange"  data-validation-required-message="entrez un sujet" /><br /> -->
+				<input type="email" id="emailaddress" name="emailaddress" required data-validation-required-message="votre adresse mail" data-validation-validemail-message="votre adresse n'est pas bonne" /><br />
 				<label for="message">Message:</label>
-				<textarea name="message" id="message" required onChange="onFieldChange"  maxlength="255" data-validation-minlength-message="5 caractères minimum" minlength="5" data-validation-required-message="merci d'écrire un message"></textarea><br />
-				 <button type="submit" id="formsubmit">Envoyer</button> <!--disabled={feedback !== ""} -->
+				<textarea name="message" id="message" required maxlength="255" data-validation-minlength-message="5 caractères minimum" minlength="5" data-validation-required-message="merci d'écrire un message"></textarea><br />
+				 <button type="submit" id="formsubmit">Envoyer</button>
 		</form>
-		<div id="feedback" class="success">{{ feedback }}</div>
 </section>
+<section id="feedback" class="rollup"></section>

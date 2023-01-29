@@ -1,13 +1,12 @@
 function HandleSubmit(e) {
   e?.preventDefault();
-  const name = document.getElementById('name').value;
-  const emailaddress = document.getElementById('emailaddress').value;
-  const message = document.getElementById('message').value;
-  sendEmail(name, email, message);
+  const name = document.getElementById('name').value.toString();
+  const emailaddress = document.getElementById('emailaddress').value.toString();
+  const message = document.getElementById('message').value.toString();
+  sendEmail(name, emailaddress, message);
 }
 
-function sendEmail(name, email, message) {
-  console.log("sendEmail");
+function sendEmail(name, email="", message="") {
     const options = {
         method: 'POST',
         body: JSON.stringify({
@@ -24,14 +23,12 @@ function sendEmail(name, email, message) {
     .then(data => {
         if (data.status === 201) {
           feedback="\o/ message envoyé. Merci !";
-          setTimeout(() => document.getElementById('contactForm').className = "hidden", 2000);
-          setTimeout(() => document.getElementById('feedback').className = "", 3800);
         } else {
-            feedback="Problème: message non envoyé :(";
-            setTimeout(() => document.getElementById('contactForm').className = "hidden", 2000);
-            setTimeout(() => document.getElementById('feedback').className = "", 5800);
+          feedback="Problème: message non envoyé :(";
         }
-        console.log(feedback);
+        document.getElementById('feedback').replaceChildren(feedback);
+        setTimeout(() => document.getElementById('mailform').classList.add("rollup"), 2000);
+        setTimeout(() => document.getElementById('feedback').classList.remove("rollup"), 3800);
     })
     .catch(error => console.error("sendEmail", error))
 }

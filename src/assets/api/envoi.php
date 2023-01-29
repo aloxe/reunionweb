@@ -5,8 +5,6 @@ if (isset($json->name))
     $name = stripcslashes($json->name);
 if (isset($json->email))
     $email = stripcslashes($json->email);
-// if (isset($json->subject))
-//     $email = stripcslashes($json->subject);
 if (isset($json->message))
     $message = stripcslashes($json->message);
 
