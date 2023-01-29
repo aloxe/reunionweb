@@ -41,13 +41,11 @@ function encode_mail_header( $in_str, $charset ) {
 }
 
 // Here we get all the information from the fields sent over by the form.
-
 $name = iconv("ISO-8859-1","ISO-8859-15",$name);
 $headname = encode_mail_header("$name", "iso-8859-1");
-// $to =
-include "../../homes/mailto.php";
+include "../../homes/mailto.php"; // $to =
 
-$subject = '[reunionweb.org] web message';
+$subject = "[reunionweb.org] message from $name";
 $message = "FROM: $name\r\n Email: $email\r\n Message: $message";
 
 $header = "From: $headname <$email>\r\n";
