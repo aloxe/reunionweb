@@ -46,8 +46,8 @@ function encode_mail_header( $in_str, $charset ) {
 
 $name = iconv("ISO-8859-1","ISO-8859-15",$name);
 $headname = encode_mail_header("$name", "iso-8859-1");
-// $to = 'alix@guillard.fr';
-$to = 'alix@filin.cz';
+// $to =
+include "../../homes/mailto.php";
 
 $subject = '[reunionweb.org] web message';
 $message = "FROM: $name\r\n Email: $email\r\n Message: $message";

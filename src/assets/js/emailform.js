@@ -2,9 +2,8 @@ function HandleSubmit(e) {
   e?.preventDefault();
   const name = document.getElementById('name').value;
   const emailaddress = document.getElementById('emailaddress').value;
-  const subject = document.getElementById('subject').value;
   const message = document.getElementById('message').value;
-  sendEmail(name, email, subject, message);
+  sendEmail(name, email, message);
 }
 
 function sendEmail(name, email, message) {
@@ -14,7 +13,6 @@ function sendEmail(name, email, message) {
         body: JSON.stringify({
             name: name,
             email: email,
-            subject: subject,
             message: message
         }),
         headers: { 'Content-Type': 'application/json' }
