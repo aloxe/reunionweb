@@ -9,12 +9,16 @@ function HandleSubmit(e) {
 function sendEmail(name, email, message) {
     const options = {
         method: 'POST',
+        mode: 'no-cors',
+        cache: 'no-cache',
+        credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/json' },
+        referrerPolicy: 'no-referrer',
         body: JSON.stringify({
             name: name,
             email: email,
             message: message
-        }),
-        headers: { 'Content-Type': 'application/json' }
+        })
     }
 
     var feedback;
@@ -22,15 +26,15 @@ function sendEmail(name, email, message) {
     .then(response => response.json())
     .then(data => {
         if (data.status === 201) {
-          feedback="📨 message envoyé. 😘 Merci !";
+          feedback="📨 message envoyé. 😘 Merci !";
         } else {
-          feedback="⚠️ Problème: message non envoyé :(";
+          feedback="⚠️ Problème: message non envoyé :(";
         }
         document.getElementById('feedback').replaceChildren(feedback);
         setTimeout(() => document.getElementById('mailform').classList.add("rollup"), 2000);
         setTimeout(() => document.getElementById('feedback').classList.remove("rollup"), 2800);
     })
-    .catch(error => console.error("sendEmail", error))
+    .catch(error => console.error("error sendEmail", error))
 }
 
 document.getElementById("contactForm").addEventListener("submit", HandleSubmit);
