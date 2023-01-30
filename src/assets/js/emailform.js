@@ -9,17 +9,12 @@ function HandleSubmit(e) {
 function sendEmail(name, email, message) {
     const options = {
         method: 'POST',
-        mode: 'no-cors',
-        cache: 'no-cache',
-        credentials: 'same-origin',
-        headers: { 'Content-Type': 'application/json' },
-        referrerPolicy: 'no-referrer',
         body: JSON.stringify({
-            name: name,
-            email: email,
-            message: message
-        })
-    }
+          name: name,
+          email: email,
+          message: message
+        });
+    };
 
     var feedback;
     fetch("/api/envoi.php", options)
