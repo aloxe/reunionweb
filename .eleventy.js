@@ -50,7 +50,9 @@ module.exports = (eleventyConfig) => {
   // copy linked images with pages
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "parse",
-      postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z]*/)*.(html|md)",
+      // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
+      postsMatching: "src/pages/{decouverte,article}/{*,/**/!(gouzou)/}*.{html,md}",
+      // postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z.-]*/)*[0-9a-z.-]*(html|md)",
       recursive: false,
       hashAssets: false,
   });
