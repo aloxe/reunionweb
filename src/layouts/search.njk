@@ -1,25 +1,12 @@
 {% extends 'base.njk' %}
-    {% block head %}
-    <style>
-#search {
-	border: 2px solid #006fcf;
-	border-radius: 5px;
-	transition: all 0.3s;
-	padding: 13px;
-  display: block;
-  width: calc(100% - 4px);
-  font-size: 18px;
-  font-weight: 600;
-  color: #001c86;
-	opacity: 1;
-}
-
-#search:focus {
-  border-left: 12px solid #006fcf;
-}
-</style>
-
+{% block head %}
+  {% include "head.njk" %}
+  {% set css %}
+    {% include "includes/css/search.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
 {% endblock %}
+
 {% block main %}
   <main>
     <h1>{{ title }}</h1>
@@ -33,11 +20,12 @@
     <div id="noResultsFound" style="display: none">
       <p>Aucun résultat.</p>
     </div>
-    <script
-    type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.min.js"
-  ></script>
-    <script type="text/javascript" src="/js/search.js"></script>
   </main>
+
+  {% set js %}
+    {% include "includes/js/search.js" %}
+    {% include "includes/js/elasticlunr.min.js" %}
+  {% endset %}
+  <script>{{ js | jsmin | safe }}</script>
 
 {% endblock %}

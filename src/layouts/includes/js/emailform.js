@@ -13,7 +13,7 @@ function sendEmail(name, email, message) {
           name: name,
           email: email,
           message: message
-        });
+        })
     };
 
     var feedback;

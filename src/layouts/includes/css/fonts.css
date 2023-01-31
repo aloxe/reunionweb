@@ -1,0 +1,10 @@
+@font-face {
+    font-family:'Devroye';
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-display: swap;
+    unicode-range: U+000D-FB02;
+    src: local('Devroye'),
+      url('/fonts/DEVROYUN-webfont.woff2') format('woff2');
+}

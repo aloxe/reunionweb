@@ -1,54 +1,43 @@
-  <meta charSet="utf-8"/>
-  <meta name="author" content="{{ meta.author.name }}" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="{{ title }}">
-  <meta name="description" content="{{ description }}">
-  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
-  <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
-  <title>{{title}}</title>
+<meta charSet="utf-8"/>
+<meta name="author" content="{{ meta.author.name }}" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description }}">
+<link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
+<link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
+<title>{{title}}</title>
 
-  <meta itemprop="name" content="{{ title }}">
-  <meta itemprop="description" content="{{ description }}">
-  <meta itemprop="image" content="{{ page.url }}{{ image }}">
+<meta itemprop="name" content="{{ title }}">
+<meta itemprop="description" content="{{ description }}">
+<meta itemprop="image" content="{{ page.url }}{{ image }}">
 
-  <meta property="og:title" content="{{ title }}">
-  {%- if schema -%}
-  <meta property="og:type" content="{{schema}}">
-  {%- elif page.url.split("/")[1] === "decouverte" or page.date -%}
-  <meta property="og:type" content="article">
-  {%- else -%}
-  <meta property="og:type" content="website">
-  {%- endif -%}
-  <meta property="og:url" content="{{ meta.url }}{{ page.data.permalink or page.url }}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:site_name" content="{{ meta.title }}">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:image" content="{{ page.url }}{{ image }}">
+<meta property="og:title" content="{{ title }}">
+{%- if schema -%}
+<meta property="og:type" content="{{schema}}">
+{%- elif page.url.split("/")[1] === "decouverte" or page.date -%}
+<meta property="og:type" content="article">
+{%- else -%}
+<meta property="og:type" content="website">
+{%- endif -%}
+<meta property="og:url" content="{{ meta.url }}{{ page.data.permalink or page.url }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:site_name" content="{{ meta.title }}">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="{{ page.url }}{{ image }}">
 
-  <meta name="twitter:title" content="{{ title }}">
-  <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
-  <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
-  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:creator" content="@{{ meta.author.twitter }}">
+<meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
+<meta name="twitter:card" content="summary_large_image">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "feed.xml" | absoluteUrl(meta.url) }}" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "feed.xml" | absoluteUrl(meta.url) }}" />
 
-  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+{% set css %}{% include "includes/css/fonts.css" %}{% endset %}
+<style>{{ css | cssmin | safe }}</style>
+<link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
 
-  <!-- Matomo -->
-  <script type="text/javascript">
-    var _paq = window._paq = window._paq || [];
-    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//reunionweb.org/matomo/";
-      _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-  </script>
-  <noscript><p><img src="//reunionweb.org/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-  <!-- End Matomo Code -->
+{% set matomo %}{% include "includes/js/matomo.js" %}{% endset %}
+<script>{{ matomo | jsmin | safe }}</script>
+<noscript><p><img src="//reunionweb.org/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>

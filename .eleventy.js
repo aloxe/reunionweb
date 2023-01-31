@@ -2,6 +2,8 @@ const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const format = require('date-fns/format');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
+const CleanCSS = require("clean-css");
+const { minify } = require("terser");
 
 const searchFilter = require("./src/filters/searchFilter");
 const NOT_FOUND_PATH = "_site/404.html";
@@ -84,6 +86,21 @@ module.exports = (eleventyConfig) => {
       let selectedl = categories.filter(a => categoriesInLiens.includes(a.slug));
       let selectedc = categories.filter(a => categorieParents.includes(a.slug));
       return [...new Set([...selectedl, ...selectedc])];
+    });
+
+    eleventyConfig.addFilter("cssmin", function(code) {
+      return new CleanCSS({}).minify(code).styles;
+    });
+
+    eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback ) {
+      try {
+        const minified = await minify(code);
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        // Fail gracefully.
+        callback(null, code);
+      }
     });
 
     // Pass-through files

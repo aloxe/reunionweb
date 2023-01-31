@@ -1,8 +1,14 @@
 {% extends 'base.njk' %}
 
+{% set js %}
+  {% include "includes/js/emailform.js" %}
+{% endset %}
+{% set css %}
+  {% include "includes/css/email.css" %}
+{% endset %}
+
 {% block head %}
   {% include "head.njk" %}
-  <link rel="stylesheet" href="{{ '/css/email.css' | url }}">
-
-  <script src="/js/emailform.js" defer></script>
+  <style>{{ css | cssmin | safe }}</style>
+  <script>{{ js | jsmin | safe }}</script>
 {% endblock %}
