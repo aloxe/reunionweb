@@ -38,7 +38,7 @@
   fetch("/indexable.json").then((response) =>
     response.json().then((rawIndex) => {
       window.searchIndex = elasticlunr.Index.load(rawIndex);
-      document.getElementById("searchField").addEventListener("input", search);
+      document.getElementById("search").addEventListener("input", search);
     })
   );
 })(window, document);

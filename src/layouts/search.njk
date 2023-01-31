@@ -1,5 +1,25 @@
 {% extends 'base.njk' %}
+    {% block head %}
+    <style>
+#search {
+	border: 2px solid #006fcf;
+	border-radius: 5px;
+	transition: all 0.3s;
+	padding: 13px;
+  display: block;
+  width: calc(100% - 4px);
+  font-size: 18px;
+  font-weight: 600;
+  color: #001c86;
+	opacity: 1;
+}
 
+#search:focus {
+  border-left: 12px solid #006fcf;
+}
+</style>
+
+{% endblock %}
 {% block main %}
   <main>
     <h1>{{ title }}</h1>
@@ -7,7 +27,7 @@
     <h4>Recherchez un mot, un nom, une phrase dans les articles du site</h4>
 
     <p class="field">
-      <input type="search" placeholder="votre recherche..." id="searchField">
+      <input type="search" placeholder="votre recherche..." id="search">
     </p>
     <ol id="searchResults"></ol>
     <div id="noResultsFound" style="display: none">

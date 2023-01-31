@@ -52,7 +52,7 @@ module.exports = (eleventyConfig) => {
   // postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z.-]*/)*[0-9a-z.-]*(html|md)",
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "parse",
-      postsMatching: "src/pages/{decouverte,article}{/*,/**/!(gouzou)/}*.{html,md}",
+      postsMatching: "src/pages/{decouverte,articles}{/*,/**/!(gouzou)/}*.{html,md}",
       recursive: false,
       hashAssets: false,
   });
