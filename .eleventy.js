@@ -40,13 +40,19 @@ module.exports = (eleventyConfig) => {
   // rss plugin https://www.11ty.dev/docs/plugins/rss/
   eleventyConfig.addPlugin(pluginRss);
 
+  // Short codes
   // Get the current year as {% year %}
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  // fnac affiliate
+  eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}"> 🛒 achetez sur</a>`);
+
   // copy linked images with pages
+  // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
+  // postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z.-]*/)*[0-9a-z.-]*(html|md)",
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "parse",
-      postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z]*/)*.(html|md)",
+      postsMatching: "src/pages/{decouverte,article}{/*,/**/!(gouzou)/}*.{html,md}",
       recursive: false,
       hashAssets: false,
   });

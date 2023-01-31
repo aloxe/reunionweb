@@ -176,6 +176,18 @@ main .right {
     text-align: right;
 }
 
+main .fleft {
+	padding: 8px;
+	float: left;
+  text-align: center;
+}
+
+main .fright {
+	padding: 8px;
+	float: right;
+	text-align: center;
+}
+
 main p {
   font-size: 18px;
   font-weight: 500;
@@ -285,7 +297,6 @@ a.ext:link:after, a.ext:visited:after, a.ext:active:after {
 }
 
 main img {
-    display: block;
     margin: 8px;
     max-width: calc(100% - 16px);
     height: auto;
@@ -560,7 +571,32 @@ footer p.left {
     line-height: 20px;
 }
 
-
 .clear {
     clear: both;
+}
+
+.boutonfnac {
+	display: inline-block;
+	padding: 10px 50px 10px 12px;
+	font-size: 14px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 7px;
+	background-image: url( '/img/fnac.svg' );
+	background-repeat: no-repeat;
+	background-size: 41px;
+	background-position: 105px 3px;
+	color: #E7AD0F;
+	font-weight: 700;
+	line-height: 1em;
+	letter-spacing: normal;
+}
+.boutonfnac.left {
+	float: left;
+	margin-right: 15px;
+}
+
+.boutonfnac.right {
+    float: right;
+    margin-left: 15px;
 }
