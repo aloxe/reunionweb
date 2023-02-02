@@ -42,7 +42,7 @@
       "parent": "fai",
       "importance": 0,
       "description": "Fournisseur d’accès ADSL pour entreprises et particuliers.",
-      "article": ["199803"]
+      "article": ["199803", "200312"]
   },
   {
       "id": 11,
@@ -171,6 +171,15 @@
       "article": ["200001"]
   },
   {
+      "id": 27,
+      "title": "Elyt.re",
+      "url": "https://www.elyt.re",
+      "parent": "presta",
+      "importance": 0,
+      "description": "Prestataire d'hébergement et réalisation de sites web.",
+      "article": ["200304"]
+  },
+  {
       "id": 29,
       "title": "Chat Réunion",
       "url": "http://www.chat-reunion.org/",
@@ -240,7 +249,7 @@
       "parent": "associations",
       "importance": 0,
       "description": "Associations de randonneurs. Conseils pratiques et parcours.",
-      "article": ["200203"]
+      "article": ["200203", "200310"]
   },
   {
       "id": 34,

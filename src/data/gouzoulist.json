@@ -363,20 +363,22 @@
    "thumb": "/img/gouzou/thumb-gouzou-et-poulet.jpeg",
    "author": "Stéphane Arlen",
    "title": "Le poulet est trop fort",
-   "legend": ""
+   "legend": "",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/gouzou-piment.jpg",
    "thumb": "/img/gouzou/thumb-gouzou-piment.jpeg",
    "author": "Stéphane Arlen",
    "title": "Piment lé fort!",
-   "legend": ""
+   "legend": "",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/gouzou-ravine-saint-leu.gif",
    "thumb": "/img/gouzou/thumb-gouzou-ravine-saint-leu.jpeg",
    "author": "inconnu",
-   "title": "Gouzou géant à La ravine saint Leu",
+   "title": "Gouzou géant à la Ravine-Saint-Leu",
    "legend": "",
    "flag": "🇷🇪"
  },
