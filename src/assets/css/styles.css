@@ -312,6 +312,7 @@ main .cadrimage {
 	border:1px dotted #006fd5;
 }
 
+main .center iframe,
 main .cadrimage iframe,
 main .cadrimage img {
     margin: 0 auto;
@@ -348,10 +349,14 @@ main table.ligne {
     border-collapse: collapse;
 }
 
+main table tr td {
+  padding: 5px;
+}
+
 main td.columns {
     border: 0;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     vertical-align: top;
 }
 
@@ -368,7 +373,7 @@ main tr.ligne {
     border-right: #0073d7 dotted 2px;
 }
 
-main tr.titre {
+main tr.titre, main tr th {
     color: #680e0e;
     text-decoration: none;
     font-weight: bold;
