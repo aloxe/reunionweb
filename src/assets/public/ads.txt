@@ -1,0 +1,4 @@
+#ads.txt Adsense
+google.com, pub-6770013384586203, DIRECT, f08c47fec0942fa0
+
+awin.com, 297165, DIRECT
