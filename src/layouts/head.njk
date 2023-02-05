@@ -5,33 +5,35 @@
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
 <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
+{% if not page.fileSlug === "404" %}
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
+{% endif %}
 <title>{{title}}</title>
 
-<meta itemprop="name" content="{{ title }}">
-<meta itemprop="description" content="{{ description }}">
-<meta itemprop="image" content="{{ page.url }}{{ image }}">
+{% if not page.fileSlug === "404" %}
+  <meta itemprop="name" content="{{ title }}">
+  <meta itemprop="description" content="{{ description }}">
+  <meta itemprop="image" content="{{ page.url }}{{ image }}">
+  <meta property="og:title" content="{{ title }}">
+  {%- if schema -%}
+  <meta property="og:type" content="{{schema}}">
+  {%- elif page.url.split("/")[1] === "decouverte" or page.date -%}
+  <meta property="og:type" content="article">
+  {%- else -%}
+  <meta property="og:type" content="website">
+  {%- endif -%}
+  <meta property="og:url" content="{{ meta.url }}{{ page.data.permalink or page.url }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:site_name" content="{{ meta.title }}">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:image" content="{{ page.url }}{{ image }}">
 
-<meta property="og:title" content="{{ title }}">
-{%- if schema -%}
-<meta property="og:type" content="{{schema}}">
-{%- elif page.url.split("/")[1] === "decouverte" or page.date -%}
-<meta property="og:type" content="article">
-{%- else -%}
-<meta property="og:type" content="website">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
+  <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
+  <meta name="twitter:card" content="summary_large_image">
 {%- endif -%}
-<meta property="og:url" content="{{ meta.url }}{{ page.data.permalink or page.url }}">
-<meta property="og:description" content="{{ description }}">
-<meta property="og:site_name" content="{{ meta.title }}">
-<meta property="og:locale" content="fr_FR">
-<meta property="og:image" content="{{ page.url }}{{ image }}">
-
-<meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:description" content="{{ description }}">
-<meta name="twitter:creator" content="@{{ meta.author.twitter }}">
-<meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
-<meta name="twitter:card" content="summary_large_image">
-
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "feed.xml" | absoluteUrl(meta.url) }}" />
 
 {% set css %}{% include "includes/css/fonts.css" %}{% endset %}
@@ -40,4 +42,3 @@
 
 {% set matomo %}{% include "includes/js/matomo.js" %}{% endset %}
 <script>{{ matomo | jsmin | safe }}</script>
-<noscript><p><img src="//reunionweb.org/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>

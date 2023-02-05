@@ -1,0 +1,10 @@
+{% extends 'base.njk' %}
+
+{% set js %}
+  {% include "includes/js/404email.js" %}
+{% endset %}
+
+{% block head %}
+  {% include "head.njk" %}
+  <script>{{ js | jsmin | safe }}</script>
+{% endblock %}

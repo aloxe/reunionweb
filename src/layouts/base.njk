@@ -6,20 +6,18 @@
     {% endblock %}
   </head>
   <body>
+    <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
+
     {% block header %}
       {% include "header.njk" %}
     {% endblock %}
 
     {% block main %}
-      {% if homepage %}
-      <main>
-          {{ content }}
-      </main>
-      {% else %}
       <main>
           <h1>{{ title }}</h1>
           {% include "breadcrumb.njk" %}
           {{ content | safe }}
+          {# TODO: include bottomnav #}
           {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
           {% set previousPost = collections.article | getNextCollectionItem(page) %}
           {%- if previousPost or nextPost -%}
@@ -30,8 +28,6 @@
             </div>
           {%- endif -%}
       </main>
-
-      {% endif %}
     {% endblock %}
 
     {% block footer %}
@@ -43,7 +39,7 @@
           <a href="{{ '/recherche/' | url }}">recherche</a><br>
           <a href="{{ '/liens/' | url }}">liens</a>
         </p>
-          {% if page.url !== "/about/" and page.url !== "/" %}
+          {% if page.url !== "/about/" %}
           <p>
             <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a>
           </p>
