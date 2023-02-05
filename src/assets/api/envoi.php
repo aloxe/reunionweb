@@ -45,7 +45,11 @@ $name = iconv("ISO-8859-1","ISO-8859-15",$name);
 $headname = encode_mail_header("$name", "iso-8859-1");
 include "../../homes/mailto.php"; // $to =
 
-$subject = "[reunionweb.org] message from $name";
+if ($name == "404") {
+  $subject = "[reunionweb.org] Page $name";
+} else {
+  $subject = "[reunionweb.org] message from $name";
+}
 $message = "FROM: $name\r\n Email: $email\r\n Message: $message";
 
 $header = "From: $headname <$email>\r\n";

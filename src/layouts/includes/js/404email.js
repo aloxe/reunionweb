@@ -3,7 +3,7 @@ function makeNotice() {
   const referer = Document.referrer;
   console.log(url);
   console.log("sendEmail");
-  sendEmail("Reunuionweb", "alix@lib.re", "404 not found: " + url + "\n and referer = " + referer);
+  sendEmail("404", "alx@lib.re", "404 not found on: " + url + "\n\n and referer = " + referer);
 }
 
 function sendEmail(name, email, message) {
