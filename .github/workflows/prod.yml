@@ -57,5 +57,5 @@ jobs:
           SSH_HOST: ${{ secrets.HOST }}
           SSH_PORT: ${{ secrets.PORT }}
 
-      - name: Add symlink to matomo
-        run: ssh staging "cd ~/domains/reunionweb.org/public_html/; ln -s ../matomo matomo"
+      - name: Add symlink to the logs
+        run: ssh staging "cd ~/domains/reunionweb.org/public_html/; ln -s ../../matomo matomo"

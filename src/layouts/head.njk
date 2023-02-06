@@ -9,8 +9,7 @@
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
 {% endif %}
 <title>{{title}}</title>
-
-{% if not page.fileSlug === "404" %}
+{% if page.fileSlug === "404" %}{% else %}
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
   <meta itemprop="image" content="{{ page.url }}{{ image }}">
@@ -33,7 +32,8 @@
   <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
   <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
   <meta name="twitter:card" content="summary_large_image">
-{%- endif -%}
+{% endif %}
+
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "feed.xml" | absoluteUrl(meta.url) }}" />
 
 {% set css %}{% include "includes/css/fonts.css" %}{% endset %}
