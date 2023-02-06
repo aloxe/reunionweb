@@ -35,6 +35,8 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "_site/*"
           target: "domains/reunionweb.org/public_html"
+          strip_components: 1
+          rm: true
 
       - name: Configure SSH
         run: |
