@@ -34,7 +34,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           source: "_site/"
-          target: "domains/test.xn--4lj4bfp6d.eu.org/public_html"
+          target: "domains/reunionweb.org/public_html"
 
       - name: Configure SSH
         run: |
@@ -56,4 +56,4 @@ jobs:
           SSH_PORT: ${{ secrets.PORT }}
 
       - name: Add symlink to the logs
-        run: ssh staging "cd ~/domains/test.xn--4lj4bfp6d.eu.org/public_html/; ln -s ../matomo matomo"
+        run: ssh staging "cd ~/domains/reunionweb.org/public_html/; ln -s ../matomo matomo"
