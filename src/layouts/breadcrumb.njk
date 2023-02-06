@@ -3,23 +3,23 @@
 {% set hasArticles = page.url.split("/")[1] and page.inputPath.split("/")[3] === "articles" %}
 
 <p class="f14{% if hasArticles %} articlebread{% endif %}">
-    {%- if page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] -%}
+    {%- if page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] %}
         <a href="/decouverte/">Découverte</a>
         {% set url2 = '/decouverte/'+page.url.split("/")[2]+'/' %}
-        {% if not page.url.split("/")[3] %}
+        {%- if not page.url.split("/")[3] -%}
             > {{ getTitle(url2) }}
-        {% elif not page.url.split("/")[4] %}
+        {%- elif not page.url.split("/")[4] -%}
             > {{ getLinkTitle(url2) }}
             > {{ getTitle(page.url) }}
-        {% else %}
+        {%- else -%}
             {% set url3 = '/decouverte/'+page.url.split("/")[2]+'/'+page.url.split("/")[3]+'/' %}
             > {{ getLinkTitle(url2) }}
             > {{ getLinkTitle(url3) }}
             > {{ getTitle(page.url) }}
-        {% endif %}
-    {%- elif page.url.split("/")[1] === "liens" and page.url.split("/")[2] -%}
+        {%- endif -%}
+    {% elif page.url.split("/")[1] === "liens" and page.url.split("/")[2] %}
       <a href="/liens/">Annuaire des liens</a>
-      {% if not page.url.split("/")[3] %}
+      {%- if not page.url.split("/")[3] %}
        > {{ getTitle(page.url.split("/")[2]) }}
       {% elif not page.url.split("/")[4] %}
           > {{ getLinkTitle(page.url.split("/")[2]) }}
@@ -28,19 +28,19 @@
           > {{ getLinkTitle(page.url.split("/")[2]) }}
           > {{ getLinkTitle(page.url.split("/")[3]) }}
           > {{ getTitle(page.url.split("/")[4]) }}
-      {% endif %}
-      {%- elif hasArticles -%}
+      {% endif -%}
+    {% elif hasArticles %}
           {% set currentPost = collections.article | getCollectionItem(page) %}
-          {% if currentPost %}
+          {%- if currentPost %}
               {{ currentPost.date.getFullYear() }}
-          {% endif %}
-
+          {% endif -%}
           {# collection is inverted #}
           {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
           {% set previousPost = collections.article | getNextCollectionItem(page) %}
-          {% if previousPost %}<br>← <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
-          {% if nextPost %}<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> →{% endif %}
+          {%- if previousPost %}<br>← <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif -%}
+          {%- if nextPost %}<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> →{% endif -%}
           <br> 
-    {%- else -%}
-    {%- endif -%}
+    {% else %}
+    {# about #}
+    {% endif -%}
 </p>

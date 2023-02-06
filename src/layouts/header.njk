@@ -1,24 +1,7 @@
     <header>
       <div id="titre">
-          <div class="h1">{% if homepage %}{{ meta.title }}{% else %}<a href="{{ '/' | url }}">{{ meta.title }}</a>{% endif %}</div>
-          <div class="h2">{% if homepage %}{{ meta.subtitle }}{% else %}<a href="{{ '/' | url }}">{{ meta.subtitle }}</a>{% endif %}</div>
+          <div class="h1">{% if page.fileSlug %}<a href="{{ '/' | url }}">{{ meta.title }}</a>{% else %}{{ meta.title }}{% endif %}</div>
+          <div class="h2">{% if page.fileSlug %}<a href="{{ '/' | url }}">{{ meta.subtitle }}</a>{% else %}{{ meta.subtitle }}{% endif %}</div>
       </div>
-
-      <div id="search">
-      {# <!-- SiteSearch Google -->
-      <script>
-        (function() {
-          var cx = 'partner-pub-6770013384586203:6910456247';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
-      <gcse:searchbox-only></gcse:searchbox-only>
-      <!-- SiteSearch Google Fin --> #}
-      </div>
-
     </header>
+    <noscript><img src="//reunionweb.org/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></noscript>

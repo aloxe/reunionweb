@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     {% block head %}
       {% include "head.njk" %}
     {% endblock %}
   </head>
   <body>
+    <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
+
     {% block header %}
       {% include "header.njk" %}
     {% endblock %}
 
     {% block main %}
-      {% if homepage %}
-      <main>
-          {{ content }}
-      </main>
-      {% else %}
       <main>
           <h1>{{ title }}</h1>
           {% include "breadcrumb.njk" %}
           {{ content | safe }}
+          {# TODO: include bottomnav #}
           {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
           {% set previousPost = collections.article | getNextCollectionItem(page) %}
           {%- if previousPost or nextPost -%}
@@ -30,19 +28,21 @@
             </div>
           {%- endif -%}
       </main>
-
-      {% endif %}
     {% endblock %}
 
     {% block footer %}
       <footer>
         <nav>
-          {% if page.url !== "/about/" and page.url !== "/" %}
-            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a><br>
-             ⋅ <a href="{{ '/articles/' | url }}">articles</a>
-             ⋅ <a href="{{ '/decouverte/' | url }}">découverte</a>
-             ⋅ <a href="{{ '/liens/' | url }}">liens</a>
-             ⋅
+        <p class="left">
+          <a href="{{ '/articles/' | url }}">articles</a><br>
+          <a href="{{ '/decouverte/' | url }}">découverte</a><br>
+          <a href="{{ '/recherche/' | url }}">recherche</a><br>
+          <a href="{{ '/liens/' | url }}">liens</a>
+        </p>
+          {% if page.url !== "/about/" %}
+          <p>
+            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a>
+          </p>
           {% endif %}
           <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
         </nav>

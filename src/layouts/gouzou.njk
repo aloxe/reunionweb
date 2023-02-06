@@ -1,9 +1,15 @@
 {% extends 'base.njk' %}
     {% block head %}
       {% include "head.njk" %}
-      <script src="/js/float-panel.js" defer></script>
-      <link rel="stylesheet" href="{{ '/css/cssbox.css' | url }}">
-      <link rel="stylesheet" href="{{ '/css/float-panel.css' | url }}">
+      {% set css %}
+        {% include "includes/css/float-panel.css" %}
+        {% include "includes/css/cssbox.css" %}
+      {% endset %}
+      {% set js %}
+        {% include "includes/js/float-panel.js" %}
+      {% endset %}
+      <style>{{ css | cssmin | safe }}</style>
+      <script>{{ js | jsmin | safe }}</script>
     {% endblock %}
 
     {% block main %}

@@ -1,15 +1,19 @@
-  <meta charSet="utf-8"/>
-  <meta name="author" content="{{ meta.author.name }}" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="title" content="{{ title }}">
-  <meta name="description" content="{{ description }}">
-  <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
+<meta charSet="utf-8"/>
+<meta name="author" content="{{ meta.author.name }}" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description }}">
+<link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
+{% if not page.fileSlug === "404" %}
+<link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
+{% endif %}
+<title>{{title}}</title>
 
+{% if not page.fileSlug === "404" %}
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
   <meta itemprop="image" content="{{ page.url }}{{ image }}">
-
   <meta property="og:title" content="{{ title }}">
   {%- if schema -%}
   <meta property="og:type" content="{{schema}}">
@@ -29,8 +33,12 @@
   <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
   <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
   <meta name="twitter:card" content="summary_large_image">
-
+{%- endif -%}
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "feed.xml" | absoluteUrl(meta.url) }}" />
 
-  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
-  <title>{{title}}</title>
+{% set css %}{% include "includes/css/fonts.css" %}{% endset %}
+<style>{{ css | cssmin | safe }}</style>
+<link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+
+{% set matomo %}{% include "includes/js/matomo.js" %}{% endset %}
+<script>{{ matomo | jsmin | safe }}</script>

@@ -1,0 +1,16 @@
+#search {
+	border: 2px solid #006fcf;
+	border-radius: 5px;
+	transition: all 0.3s;
+	padding: 13px;
+  display: block;
+  width: calc(100% - 4px);
+  font-size: 18px;
+  font-weight: 600;
+  color: #001c86;
+	opacity: 1;
+}
+
+#search:focus {
+  border-left: 12px solid #006fcf;
+}

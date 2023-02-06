@@ -58,17 +58,16 @@ html {
   box-sizing: inherit;
 }
 
+/*
+color_border = "FEFEAE";
+color_bg = "FEFEAE";
+title color_link = "006fcf";
+color_text = "333333";
+color_url = "001c86";
+*/
 
-@font-face {
-    font-family:'Devroye';
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    font-display: swap;
-    unicode-range: U+000D-FB02;
-    src: local('Devroye'),
-      url('/fonts/DEVROYUN-webfont.woff') format('woff'),
-      url('/fonts/DEVROYUN-webfont.ttf') format('truetype');
+html {
+  height: 100%;  /* sticky footer */
 }
 
 body {
@@ -81,15 +80,8 @@ body {
     -webkit-font-smoothing: antialiased !important;
     -moz-font-smoothing: antialiased !important;
     text-rendering: optimizelegibility !important;
+    height: 100%;  /* sticky footer */
 }
-
-/*
-color_border = "FEFEAE";
-color_bg = "FEFEAE";
-title color_link = "006fcf";
-color_text = "333333";
-color_url = "001c86";
-*/
 
 html, p, td, ul {
 	color: #111111;
@@ -118,7 +110,7 @@ body {
     font-family: Devroye, Sans-Serif;
     font-size: 26px;
     font-weight: bold;
-    margin: 20px 0 15px;
+    padding: 20px 0 15px;
 }
 
 #titre .h2 {
@@ -132,38 +124,20 @@ body {
     color: white;
 }
 
-#search {
-    position: absolute;
-    top: 5px;
-    right: 4px;
-    font-size: smaller;
-    margin: 10px 0 0 0;
-    width: 500px;
-}
-
-input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
-    border-color: #006FCF;
-    width: 400px;
-    border-radius: 5px;
-}
-
-#search .gsc-search-button, #search .gsc-search-button-v2 {
-    border-radius: 5px;
-}
-
 /* main content */
 
 main {
+  min-height: calc(100% - 190px); /* sticky footer */
   width: calc(65% - 30px);
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 10px 30px 90px; /* sticky footer */
   max-width: 840px;
 }
 
 @media (max-width: 840px) {
   main {
         max-width: 700px;
-        padding: 0 10px;
+        padding: 10px 10px 90px; /* sticky footer */
         width: calc(100% - 30px);
     }
 }
@@ -187,6 +161,18 @@ main .left {
 
 main .right {
     text-align: right;
+}
+
+main .fleft {
+	padding: 8px;
+	float: left;
+  text-align: center;
+}
+
+main .fright {
+	padding: 8px;
+	float: right;
+	text-align: center;
 }
 
 main p {
@@ -298,7 +284,6 @@ a.ext:link:after, a.ext:visited:after, a.ext:active:after {
 }
 
 main img {
-    display: block;
     margin: 8px;
     max-width: calc(100% - 16px);
     height: auto;
@@ -327,6 +312,7 @@ main .cadrimage {
 	border:1px dotted #006fd5;
 }
 
+main .center iframe,
 main .cadrimage iframe,
 main .cadrimage img {
     margin: 0 auto;
@@ -363,10 +349,14 @@ main table.ligne {
     border-collapse: collapse;
 }
 
+main table tr td {
+  padding: 5px;
+}
+
 main td.columns {
     border: 0;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     vertical-align: top;
 }
 
@@ -383,7 +373,7 @@ main tr.ligne {
     border-right: #0073d7 dotted 2px;
 }
 
-main tr.titre {
+main tr.titre, main tr th {
     color: #680e0e;
     text-decoration: none;
     font-weight: bold;
@@ -437,6 +427,9 @@ main .twocolumns h3 {
     margin: 14px 0 0;
     break-inside: avoid;
     break-after: avoid;   /* work not with firefox */
+}
+main .twocolumns > h3 {
+    margin: 0;
 }
 
 main .twocolumns p,
@@ -508,7 +501,7 @@ main h3 a.button:hover {
   text-decoration: none;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns on home */
 .homerow:after {
   content: "";
   display: table;
@@ -521,17 +514,64 @@ main h3 a.button:hover {
   margin: 0 20px 0 0;
 }
 
+input:focus::placeholder {
+	color: #d5e5f3;
+	opacity: 1;
+}
+
+body > footer {  /* sticky footer */
+  position: sticky;
+  top: 100vh;
+  margin-top: -90px;
+  overflow: hidden;
+  height: 90px;
+}
+
 footer {
-    font-size: 90%;
-    padding: 20px;
-    border-top: dotted #0073d7 1px;
-    text-align: center;
+  font-size: 90%;
+  padding: 16px;
+  border-top: dotted #0073d7 1px;
+  text-align: center;
 }
 
 footer p {
-    padding: 10px 0;
+    padding: 8px 0;
+}
+
+footer p.left {
+    float: left;
+    padding: 0;
+    margin: -10px 10px 0;
+    text-align: left;
+    line-height: 20px;
 }
 
 .clear {
     clear: both;
+}
+
+.boutonfnac {
+	display: inline-block;
+	padding: 10px 50px 10px 12px;
+	font-size: 14px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 7px;
+	background-image: url( '/img/fnac.svg' );
+	background-repeat: no-repeat;
+	background-size: 41px;
+	background-position: 105px 3px;
+	color: #E7AD0F;
+	font-weight: 700;
+	line-height: 1em;
+	letter-spacing: normal;
+}
+.boutonfnac.left {
+	float: left;
+	margin-right: 15px;
+}
+
+.boutonfnac.right {
+    float: right;
+    margin-left: 15px;
 }

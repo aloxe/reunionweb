@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - build
-
+      - test
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,3 +37,28 @@ jobs:
           target: "domains/test.xn--4lj4bfp6d.eu.org/public_html"
           strip_components: 1
           rm: true
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/staging.key
+          chmod 600 ~/.ssh/staging.key
+          cat >>~/.ssh/config <<END
+          Host staging
+            HostName $SSH_HOST
+            User $SSH_USER
+            Port $SSH_PORT
+            IdentityFile ~/.ssh/staging.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.USERNAME }}
+          SSH_KEY: ${{ secrets.KEY }}
+          SSH_HOST: ${{ secrets.HOST }}
+          SSH_PORT: ${{ secrets.PORT }}
+
+      - name: Copy htaccess to site
+        run: ssh staging "cd ~/domains/test.xn--4lj4bfp6d.eu.org/homes/; cp .htaccess ../public_html/"
+
+      - name: Add symlink to the logs
+        run: ssh staging "cd ~/domains/test.xn--4lj4bfp6d.eu.org/public_html/; ln -s ../logs logs"
