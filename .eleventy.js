@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [32, 120, 400, 640, 960, 1200],
+      widths: [32, 120, 380, 450, 640, 960, 1200],
       formats: ["jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
