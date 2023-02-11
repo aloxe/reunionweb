@@ -8,7 +8,7 @@
         {% if (loop.index < 2) %}
             <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
             <div class="homewrow">
-            <p class="homeimg"><img src="{{page.url}}{{page.data.image}}" alt="illustration {{ page.data.title }}"></p>
+            <p class="homeimg">{% thumb page, 150 %}</p>
             <p>{{ page.templateContent | safe | truncate(400) }}</p>
           </div>
             <p class="suite"><a href="{{page.url}}" class="button">…lire la suite</a></p>

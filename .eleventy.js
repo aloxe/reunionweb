@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [32, 120, 380, 450, 640, 764],
+      widths: [32, 80, 120, 150, 380, 450, 640, 764],
       formats: ["jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
@@ -106,10 +106,18 @@ module.exports = (eleventyConfig) => {
       hashAssets: false,
   });
 
+  eleventyConfig.addShortcode("thumb", (page, size) => {
+    if (! page.data.image) return;
+    let srcImage = page.data.image.split(".")
+    srcImage.pop();
+    srcImage = page.url+srcImage+"-"+size+"w.jpeg";
+    return `<img src="${srcImage}"width="${size} alt="${page.data.title}" />`;
+  });
+
   // add `date` filter thanks to format plugin
   eleventyConfig.addFilter('date', function (date, dateFormat) {
-    return format(date, dateFormat)
-  })
+    return format(date, dateFormat);
+  });
 
   // Filter for liens and categories
   eleventyConfig.addFilter("getLinksFromParent", (liens = [], slug = "") => {
