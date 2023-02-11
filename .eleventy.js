@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [32, 120, 380, 450, 640, 960, 1200],
+      widths: [32, 120, 380, 450, 640, 764],
       formats: ["jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
@@ -88,7 +88,7 @@ module.exports = (eleventyConfig) => {
 
     let imageAttributes = {
       alt,
-      sizes: '(min-width: 1024px) 1024px, 100vw',
+      sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px"',
       loading: "lazy",
       decoding: "async",
     }
