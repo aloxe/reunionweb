@@ -512,6 +512,7 @@ main h3 a.button:hover {
   float: left;
   width: 150px;
   margin: 0 20px 0 0;
+  padding: 0;
 }
 
 input:focus::placeholder {
@@ -519,6 +520,14 @@ input:focus::placeholder {
 	opacity: 1;
 }
 
+.snipet img {
+  float: left;
+  margin: 0 8px 0 0;
+}
+
+.snipet {
+  clear: both;
+}
 body > footer {  /* sticky footer */
   position: sticky;
   top: 100vh;

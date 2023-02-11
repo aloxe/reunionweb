@@ -5,14 +5,14 @@
 {% block main %}
   <main>
     {% for page in collections.article %}
-        {% if (loop.index < 2) %}
+        {%- if (loop.index < 2) %}
             <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
             <div class="homewrow">
-            <p class="homeimg">{% thumb page, 150 %}</p>
-            <p>{{ page.templateContent | safe | truncate(400) }}</p>
+            <p class="homeimg">{% thumb page, 180 %}</p>
+            {{ page.templateContent | safe | truncate(400) }}
           </div>
             <p class="suite"><a href="{{page.url}}" class="button">…lire la suite</a></p>
-        {% endif %}
+        {% endif -%}
     {% endfor %}
 
     <div class="twocolumns">
@@ -23,7 +23,13 @@
                 {% set lastyear = page.date.getFullYear() %}
                 <h3>{{ lastyear }}</h3>
             {% endif %}
-            <h4><a href="{{page.url}}">{{ page.data.title }}</a></h4>
+            <h4>
+              {% if page.data.title %}
+              <a href="{{page.url}}">{{ page.data.title }}<br>{% thumb page, 120 %}</a>
+              {% else %}
+              <a href="{{page.url}}">{{ page.data.title }}</a>
+              {% endif %}
+            </h4>
         {% endif %}
     {% endfor %}
     </div>

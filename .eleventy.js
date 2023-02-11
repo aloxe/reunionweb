@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [32, 80, 120, 150, 380, 450, 640, 764],
+      widths: [32, 80, 120, 180, 380, 450, 640, 764],
       formats: ["jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
@@ -107,7 +107,7 @@ module.exports = (eleventyConfig) => {
   });
 
   eleventyConfig.addShortcode("thumb", (page, size) => {
-    if (! page.data.image) return;
+    if (! page?.data?.image) return "";
     let srcImage = page.data.image.split(".")
     srcImage.pop();
     srcImage = page.url+srcImage+"-"+size+"w.jpeg";
