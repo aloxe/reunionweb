@@ -1,7 +1,9 @@
+const path = require("path");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const format = require('date-fns/format');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
+const Image = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 
@@ -49,9 +51,54 @@ module.exports = (eleventyConfig) => {
   // fnac affiliate
   eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}"> 🛒 achetez sur</a>`);
 
+  // images
+  eleventyConfig.addShortcode("Image", async (page, src, alt) => {
+    if (!alt) {
+      throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+    }
+
+    let inputFolder = page.inputPath.split("/")
+    inputFolder.pop()
+    inputFolder = inputFolder.join("/");
+    const srcImage = inputFolder+"/"+src;
+
+    let outputFolder = page.outputPath.split("/")
+    outputFolder.pop()
+    outputFolder = outputFolder.join("/");
+
+    let urlPath = page.outputPath.split("/")
+    urlPath.pop()
+    urlPath.shift()
+    urlPath = "/" + urlPath.join("/");
+
+    let options = {
+      widths: [32, 120, 380, 450, 640, 960, 1200],
+      formats: ["jpeg"],
+      urlPath: urlPath,
+      outputDir: outputFolder,
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    }
+
+    // generate images
+    Image(srcImage, options)
+
+    let imageAttributes = {
+      alt,
+      sizes: '(min-width: 1024px) 1024px, 100vw',
+      loading: "lazy",
+      decoding: "async",
+    }
+    // get metadata
+    let metadata = Image.statsSync(srcImage, options)
+    return Image.generateHTML(metadata, imageAttributes)
+  });
+
   // copy linked images with pages
   // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
-  // postsMatching: "src/pages/(decouverte|articles)/((?!gouzou/)[0-9a-z.-]*/)*[0-9a-z.-]*(html|md)",
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "parse",
       postsMatching: "src/pages/{decouverte,articles}{/*,/**/!(gouzou)/}*.{html,md}",
@@ -80,36 +127,38 @@ module.exports = (eleventyConfig) => {
     return selected;
   });
 
-    eleventyConfig.addFilter("getCategoriesWithLiens", (categories = [], liens = [], allCategories = []) => {
-      const categoriesInLiens = liens.map(l => l.parent);
-      const categorieParents = allCategories.map(c => c.parent);
-      let selectedl = categories.filter(a => categoriesInLiens.includes(a.slug));
-      let selectedc = categories.filter(a => categorieParents.includes(a.slug));
-      return [...new Set([...selectedl, ...selectedc])];
-    });
+  eleventyConfig.addFilter("getCategoriesWithLiens", (categories = [], liens = [], allCategories = []) => {
+    const categoriesInLiens = liens.map(l => l.parent);
+    const categorieParents = allCategories.map(c => c.parent);
+    let selectedl = categories.filter(a => categoriesInLiens.includes(a.slug));
+    let selectedc = categories.filter(a => categorieParents.includes(a.slug));
+    return [...new Set([...selectedl, ...selectedc])];
+  });
 
-    eleventyConfig.addFilter("cssmin", function(code) {
-      return new CleanCSS({}).minify(code).styles;
-    });
+  // filter to minify css
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
-    eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback ) {
-      try {
-        const minified = await minify(code);
-        callback(null, minified.code);
-      } catch (err) {
-        console.error("Terser error: ", err);
-        // Fail gracefully.
-        callback(null, code);
-      }
-    });
+  // filter to minify js
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback ) {
+    try {
+      const minified = await minify(code);
+      callback(null, minified.code);
+    } catch (err) {
+      console.error("Terser error: ", err);
+      // Fail gracefully.
+      callback(null, code);
+    }
+  });
 
-    // Pass-through files
-    eleventyConfig.addPassthroughCopy({ 'src/assets/public': '/' });
-    eleventyConfig.addPassthroughCopy({ 'src/assets/img': '/img' });
-    eleventyConfig.addPassthroughCopy({ 'src/assets/fonts': '/fonts' });
-    eleventyConfig.addPassthroughCopy({ 'src/assets/css': '/css' });
-    eleventyConfig.addPassthroughCopy({ 'src/assets/js': '/js' });
-    eleventyConfig.addPassthroughCopy({ 'src/assets/api': '/api' });
+  // Pass-through files
+  eleventyConfig.addPassthroughCopy({ 'src/assets/public': '/' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/img': '/img' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/fonts': '/fonts' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/css': '/css' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/js': '/js' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets/api': '/api' });
 
   return {
       pathPrefix: "/",
