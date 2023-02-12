@@ -510,7 +510,7 @@ main h3 a.button:hover {
 
 .homeimg {
   float: left;
-  width: 150px;
+  width: 260px;
   margin: 0 20px 0 0;
   padding: 0;
 }
@@ -519,15 +519,21 @@ input:focus::placeholder {
 	color: #d5e5f3;
 	opacity: 1;
 }
+.snipet span {
+  float: left;
+  max-height: 75px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
 
 .snipet img {
-  float: left;
   margin: 0 8px 0 0;
 }
 
 .snipet {
   clear: both;
 }
+
 body > footer {  /* sticky footer */
   position: sticky;
   top: 100vh;

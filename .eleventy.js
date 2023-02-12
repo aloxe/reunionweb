@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [32, 80, 120, 180, 380, 450, 640, 764],
+      widths: [380, 450, 640, 764],
       formats: ["jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
@@ -97,6 +97,53 @@ module.exports = (eleventyConfig) => {
     return Image.generateHTML(metadata, imageAttributes)
   });
 
+  // images thumbnails
+  eleventyConfig.addShortcode("thumb", (page, size) => {
+    if (! page?.data?.image) return "";
+    const alt = page.data.title || illustration;
+    const src = page.data.image;
+
+    let inputFolder = page.inputPath.split("/")
+    inputFolder.pop()
+    inputFolder = inputFolder.join("/");
+    const srcImage = inputFolder+"/"+src;
+
+    let outputFolder = page.outputPath.split("/")
+    outputFolder.pop()
+    outputFolder = outputFolder.join("/");
+
+    let urlPath = page.outputPath.split("/")
+    urlPath.pop()
+    urlPath.shift()
+    urlPath = "/" + urlPath.join("/");
+
+    let options = {
+      widths: [size],
+      formats: ["jpeg"],
+      urlPath: urlPath,
+      outputDir: outputFolder,
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    };
+
+    // generate images
+    Image(srcImage, options)
+
+    let imageAttributes = {
+      alt,
+      sizes: size+"px",
+      loading: "lazy",
+      decoding: "async",
+    };
+    // get metadata even if the images are not fully generated yet
+    let metadata = Image.statsSync(srcImage, options);
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
+
   // copy linked images with pages
   // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
   eleventyConfig.addPlugin(pageAssetsPlugin, {
@@ -104,14 +151,6 @@ module.exports = (eleventyConfig) => {
       postsMatching: "src/pages/{decouverte,articles}{/*,/**/!(gouzou)/}*.{html,md}",
       recursive: false,
       hashAssets: false,
-  });
-
-  eleventyConfig.addShortcode("thumb", (page, size) => {
-    if (! page?.data?.image) return "";
-    let srcImage = page.data.image.split(".")
-    srcImage.pop();
-    srcImage = page.url+srcImage+"-"+size+"w.jpeg";
-    return `<img src="${srcImage}"width="${size} alt="${page.data.title}" />`;
   });
 
   // add `date` filter thanks to format plugin

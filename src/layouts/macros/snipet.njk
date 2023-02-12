@@ -8,6 +8,6 @@
 {% if page.url === "/" %}
   <p>{{ item.data.homedesc or item.data.description }}</p>
 {% else %}
-  <p class="snipet">{% thumb item, 100 %}{{ item.description or  item.data.description }}</p>
+  <p class="snipet"><span>{% thumb item, 120 %}</span>{{ item.description or  item.data.description }}</p>
 {% endif %}
 {%- endmacro -%}
