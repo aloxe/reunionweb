@@ -4,10 +4,15 @@
   {% else %}
     {% set snipeturl = item.url %}
   {% endif %}
-<h3 class="snipet"><a href="{{ snipeturl }}">{{ item.title or item.data.short or item.data.title }}</a></h3>
-{% if page.url === "/" %}
-  <p>{{ item.data.homedesc or item.data.description }}</p>
-{% else %}
-  <p class="snipet"><span>{% thumb item, 120 %}</span>{{ item.description or  item.data.description }}</p>
-{% endif %}
+<div class="snipet">
+  <h3><a href="{{ snipeturl }}">{{ item.title or item.data.short or item.data.title }}</a></h3>
+  <p>
+    <span><a href="{{ snipeturl }}">{% thumb item, 120 %}</a></span>
+    {% if page.url === "/" %}
+      <a href="{{ snipeturl }}">{{ item.data.homedesc or item.data.description }}</a>
+    {% else %}
+       <a href="{{ snipeturl }}">{{ item.description or item.data.description }}</a>
+    {% endif %}
+  </p>
+</div>
 {%- endmacro -%}

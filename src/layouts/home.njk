@@ -3,13 +3,13 @@
 {% extends 'base.njk' %}
 
 {% block main %}
-  <main>
+  <main class="home">
     {% for page in collections.article %}
         {%- if (loop.index < 2) %}
             <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
-            <div class="homewrow">
-            <p class="homeimg">{% thumb page, 244 %}</p>
-            {{ page.templateContent | safe | truncate(400) }}
+          <div class="homerow">
+            <p class="homeimg"><a href="{{page.url}}">{% thumb page, 780 %}</a></p>
+            <a href="{{page.url}}">{{ page.templateContent | safe | truncate(400) }}</a>
           </div>
             <p class="suite"><a href="{{page.url}}" class="button">…lire la suite</a></p>
         {% endif -%}
@@ -19,38 +19,38 @@
     {% set lastyear = 0 %}
     {% for page in collections.article %}
         {% if (loop.index >= 2) and (loop.index < 9) %}
-            {% if page.date and page.date.getFullYear() !== lastyear %}
-                {% set lastyear = page.date.getFullYear() %}
-                <h3>{{ lastyear }}</h3>
-            {% endif %}
-            <h4>
-              {% if page.data.title %}
-              <a href="{{page.url}}">{{ page.data.title }}<br>{% thumb page, 200 %}</a>
-              {% else %}
-              <a href="{{page.url}}">{{ page.data.title }}</a>
+            <div class="newsblock">
+              {% if page.data.image %}
+              <a href="{{page.url}}">{% thumb page, 330 %}</a>
               {% endif %}
-            </h4>
+              <h3><a href="{{page.url}}">{{ page.data.title }}</a></h3>
+              {% if page.data.description %}
+              <p><a href="{{page.url}}">{{ page.data.description | safe | truncate(150) }}</a></p>
+              {% endif %}
+            </div>
         {% endif %}
     {% endfor %}
-    </div>
     <h3 class="center"><a href="{{ "articles" | url }}" class="button">tous les articles</a></h3>
+    </div>
 
-    <h1>Découvrez l'île de la Réunion</h1>
+
+    <h1><a href="/decouverte/">Découvrez l'île de la Réunion</a></h1>
 
     <div class="twocolumns">
     {% for post in collections.all %}
         {% if post.url.split("/")[1] === "decouverte" and post.url.split("/")[2] and not post.url.split("/")[3] %}
-        {{ snipet(post) }}
+          {{ snipet(post) }}
         {% endif %}
     {% endfor %}
     </div>
 
     <div class="clear"></div>
 
-    <h1>Le web réunionnais</h1>
+    <h1><a href="/liens/">Le web réunionnais</a></h1>
     <p>
-      Retrouvez tous les sites web abordés ici, classés dans un <a href="/liens/">annuaire du web réunionnais</a>.
+      Retrouvez tous les sites web abordés ici.
     </p>
+    <p class="suite"><a href="/liens/" class="button">annuaire du web réunionnais</a></p>
   </main>
 
 {% endblock %}
