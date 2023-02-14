@@ -3,7 +3,7 @@ title: Histoire de la Réunion
 description:
 short: Histoire
 homedesc: Histoire de l'île de la Réunion depuis sa découverte jusqu'à nos jours
-image:
+image: carte-ile-bourbon-1645.jpg
 keywords:
 layout: decouverte.njk
 ---

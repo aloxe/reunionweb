@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [32, 120, 380, 450, 640, 960, 1200],
+      widths: [380, 450, 640, 764],
       formats: ["jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
@@ -88,7 +88,7 @@ module.exports = (eleventyConfig) => {
 
     let imageAttributes = {
       alt,
-      sizes: '(min-width: 1024px) 1024px, 100vw',
+      sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px"',
       loading: "lazy",
       decoding: "async",
     }
@@ -96,6 +96,53 @@ module.exports = (eleventyConfig) => {
     let metadata = Image.statsSync(srcImage, options)
     return Image.generateHTML(metadata, imageAttributes)
   });
+
+  // images thumbnails
+  eleventyConfig.addShortcode("thumb", (page, size) => {
+    if (! page?.data?.image) return "";
+    const alt = page.data.title || illustration;
+    const src = page.data.image;
+
+    let inputFolder = page.inputPath.split("/")
+    inputFolder.pop()
+    inputFolder = inputFolder.join("/");
+    const srcImage = inputFolder+"/"+src;
+
+    let outputFolder = page.outputPath.split("/")
+    outputFolder.pop()
+    outputFolder = outputFolder.join("/");
+
+    let urlPath = page.outputPath.split("/")
+    urlPath.pop()
+    urlPath.shift()
+    urlPath = "/" + urlPath.join("/");
+
+    let options = {
+      widths: [size],
+      formats: ["jpeg"],
+      urlPath: urlPath,
+      outputDir: outputFolder,
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    };
+
+    // generate images
+    Image(srcImage, options)
+
+    let imageAttributes = {
+      alt,
+      sizes: size+"px",
+      loading: "lazy",
+      decoding: "async",
+    };
+    // get metadata even if the images are not fully generated yet
+    let metadata = Image.statsSync(srcImage, options);
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
 
   // copy linked images with pages
   // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
@@ -108,8 +155,8 @@ module.exports = (eleventyConfig) => {
 
   // add `date` filter thanks to format plugin
   eleventyConfig.addFilter('date', function (date, dateFormat) {
-    return format(date, dateFormat)
-  })
+    return format(date, dateFormat);
+  });
 
   // Filter for liens and categories
   eleventyConfig.addFilter("getLinksFromParent", (liens = [], slug = "") => {

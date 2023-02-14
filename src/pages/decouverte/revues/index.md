@@ -3,7 +3,7 @@ title: Ouvrages et articles sur la Réunion
 description:
 short: Revues
 homedesc: Des ouvrages, articles et des disques pour découvrir la Réunion
-image:
+image: carte-ign-4405RT.jpg
 keywords:
 layout: decouverte.njk
 ---

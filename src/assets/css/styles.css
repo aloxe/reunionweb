@@ -423,20 +423,19 @@ main .twocolumns {
   }
 }
 
-main .twocolumns h3 {
-    margin: 14px 0 0;
-    break-inside: avoid;
-    break-after: avoid;   /* work not with firefox */
-}
-main .twocolumns > h3 {
-    margin: 0;
+main .twocolumns div,
+main .twocolumns p,
+main .twocolumns .snipet,
+main .twocolumns h3,
+main .twocolumns h4,
+main .twocolumns h5 {
+  break-inside: avoid;
 }
 
 main .twocolumns p,
 main .twocolumns h4,
 main .twocolumns h5 {
-    font-size: 17px;
-    break-inside: avoid;
+  font-size: 17px;
 }
 
 main .twocolumns p {
@@ -501,22 +500,60 @@ main h3 a.button:hover {
   text-decoration: none;
 }
 
-/* Clear floats after the columns on home */
-.homerow:after {
-  content: "";
-  display: table;
-  clear: both;
+/* home blocks */
+.home h1 a,
+.homerow a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .homeimg {
-  float: left;
-  width: 150px;
-  margin: 0 20px 0 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-height: 350px;
+  overflow: hidden;
+}
+
+.homeimg img {
+  margin: 0 auto;
+}
+
+.newsblock {
+  max-width: 330px;
+  margin: 0 auto 30px;
+}
+
+.newsblock img {
+  margin: 0;
+}
+
+.newsblock h3 a , .newsblock p a {
+  color: inherit;
 }
 
 input:focus::placeholder {
 	color: #d5e5f3;
 	opacity: 1;
+}
+.snipet p > span {
+  float: left;
+  max-height: 75px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.snipet p span img {
+  margin: 0 8px 0 0;
+}
+
+.snipet {
+  clear: both;
+}
+
+.snipet a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 body > footer {  /* sticky footer */
