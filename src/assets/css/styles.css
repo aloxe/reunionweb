@@ -549,6 +549,7 @@ main h3 a.button:hover {
   padding: 0;
   max-height: 350px;
   overflow: hidden;
+  text-align: center;
 }
 
 .homeimg img {
