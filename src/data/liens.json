@@ -171,15 +171,6 @@
       "article": ["200001"]
   },
   {
-      "id": 27,
-      "title": "Elyt.re",
-      "url": "https://www.elyt.re",
-      "parent": "presta",
-      "importance": 0,
-      "description": "Prestataire d'hébergement et réalisation de sites web.",
-      "article": ["200304"]
-  },
-  {
       "id": 29,
       "title": "Chat Réunion",
       "url": "http://www.chat-reunion.org/",
@@ -1258,6 +1249,33 @@
       "importance": 0,
       "description": "Société publique locale qui a pris le relai de l’Agence régionale de l’énergie de La Réunion pour faciliter les économies d’énergie et favoriser l’utilisation des énergies renouvelables.",
       "article": ["201404"]
+  },
+  {
+      "id": 188,
+      "title": "Thierry Kasprowicz",
+      "url": "https://thierrykasprowicz.com/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Le blog perso de Thierry Kasprowicz, le critique gastronomique derrière le guide Kaspro.",
+      "article": ["202105"]
+  },
+  {
+      "id": 189,
+      "title": "Gastronomic",
+      "url": "https://gastronomic.re/",
+      "parent": "professionnels",
+      "importance": 0,
+      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
+      "article": ["202105"]
+  },
+  {
+      "id": 190,
+      "title": "Zest",
+      "url": "https://zest.re/",
+      "parent": "actualites",
+      "importance": 0,
+      "description": "L'actualité gastronomique et terroir à la Réunion par l'équipe derrière le guide Kaspro",
+      "article": ["202105"]
   },
   {
       "id": 191,
