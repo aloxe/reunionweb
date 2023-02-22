@@ -45,6 +45,15 @@
       "article": ["199803", "200312"]
   },
   {
+      "id": 10,
+      "title": "météo Réunion",
+      "url": "https://www.meteo-reunion.com/",
+      "parent": "meteo",
+      "importance": 0,
+      "description": "Collection complète de liens météo avec les informations escencielles du jour sur le temps qu'il fait et même plus.",
+      "article": ["200804"]
+  },
+  {
       "id": 11,
       "title": "Pole régional des musiques actuelles",
       "url": "http://www.prma-reunion.fr/",
