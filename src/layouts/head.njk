@@ -5,14 +5,14 @@
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
 <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
-{% if not page.fileSlug === "404" %}
+{% if page.fileSlug === "404" %}{% else %}
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
 {% endif %}
 <title>{{title}}</title>
 {% if page.fileSlug === "404" %}{% else %}
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
-  <meta itemprop="image" content="{{ page.url }}{{ image }}">
+  <meta itemprop="image" content="{{ meta.url }}{% getOGImageUri page, image %}">
   <meta property="og:title" content="{{ title }}">
   {%- if schema -%}
   <meta property="og:type" content="{{schema}}">
@@ -25,12 +25,12 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="{{ meta.title }}">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:image" content="{{ page.url }}{{ image }}">
+  <meta property="og:image" content="{% getOGImageUri page, image %}">
 
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
-  <meta name="twitter:image:src" content="{{ page.url }}{{ image }}">
+  <meta name="twitter:image:src" content="{% getOGImageUri page, image %}">
   <meta name="twitter:card" content="summary_large_image">
 {% endif %}
 
