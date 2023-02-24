@@ -25,12 +25,12 @@
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="{{ meta.title }}">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:image" content="{% getOGImageUri page, image %}">
+  <meta property="og:image" content="{{ meta.url }}{% getOGImageUri page, image %}">
 
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
   <meta name="twitter:creator" content="@{{ meta.author.twitter }}">
-  <meta name="twitter:image:src" content="{% getOGImageUri page, image %}">
+  <meta name="twitter:image:src" content="{{ meta.url }}{% getOGImageUri page, image %}">
   <meta name="twitter:card" content="summary_large_image">
 {% endif %}
 
