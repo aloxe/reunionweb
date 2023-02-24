@@ -190,8 +190,14 @@ main li {
     letter-spacing: .04em;
 }
 
+main p strong,
 main p b {
   font-weight: 700;
+}
+
+main p em,
+main p i {
+  font-style: italic;
 }
 
 main h1 {
@@ -387,11 +393,40 @@ main table img {
 
 /* TODO: itemleft faceitemleft legende cadreimage */
 
-main .note {
-  font-size: 16px;
+main p.note {
+  font-size: 17px;
   line-height: 20px;
   font-style: italic;
-  color: #666;
+  color: #777;
+  padding: 12px;
+}
+
+main p.chapo {
+  font-family: Devroye, serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: #001c86;
+}
+
+main p.retrait {
+  margin-left: 20px;
+  padding: 10px 30px;
+  border-left: 4px solid #006fd5;
+}
+
+main p.citation {
+  font-family: Devroye, serif;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+  color: #006fd5;
+}
+
+main p.lettrine::first-letter {
+  font-size: 24px;
+  font-style: italic;
+  color: #001c86;
 }
 
 main .f14 {
@@ -406,6 +441,7 @@ main .f16 {
 
 main p.articlebread {
   text-align: right;
+  padding-top: 0;
   margin-top: 0;
 }
 
@@ -513,6 +549,7 @@ main h3 a.button:hover {
   padding: 0;
   max-height: 350px;
   overflow: hidden;
+  text-align: center;
 }
 
 .homeimg img {

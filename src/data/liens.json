@@ -14,7 +14,7 @@
       "url": "http://www.dijoux.re",
       "parent": "portails",
       "importance": 2,
-      "description": "Le portail Réunionnais avec une actualité hebdomadaire, des photos et plein d'autres infos. C'est peut-être aujourd'hui le seul blog généraliste ayant une si grande longévité.",
+      "description": "Le portail Réunionnais avec une actualité hebdomadaire, des photos et plein d’autres infos. C’est peut-être aujourd’hui le seul blog généraliste ayant une si grande longévité.",
       "article": ["200203", "200701"]
   },
   {
@@ -32,7 +32,7 @@
       "url": "http://www.reunion.fr/",
       "parent": "touristiques",
       "importance": 0,
-      "description": "Site officiel de l'office de tourisme de la Réunion.",
+      "description": "Site officiel de l’office de tourisme de la Réunion.",
       "article": ["199902", "201410"]
   },
   {
@@ -41,8 +41,17 @@
       "url": "http://www.runnet.com",
       "parent": "fai",
       "importance": 0,
-      "description": "Fournisseur d'accès ADSL pour entreprises et particuliers.",
-      "article": ["199803"]
+      "description": "Fournisseur d’accès ADSL pour entreprises et particuliers.",
+      "article": ["199803", "200312"]
+  },
+  {
+      "id": 10,
+      "title": "météo Réunion",
+      "url": "https://www.meteo-reunion.com/",
+      "parent": "meteo",
+      "importance": 0,
+      "description": "Collection complète de liens météo avec les informations escencielles du jour sur le temps qu'il fait et même plus.",
+      "article": ["200804"]
   },
   {
       "id": 11,
@@ -50,7 +59,7 @@
       "url": "http://www.prma-reunion.fr/",
       "parent": "actualites",
       "importance": 0,
-      "description": "Le site musical de la Direction Régionale de l'Art Contemporain. Tous les dispositifs d'aides et de promotion de l'association PRMA  y sont exposés.",
+      "description": "Le site musical de la Direction Régionale de l’Art Contemporain. Tous les dispositifs d’aides et de promotion de l’association PRMA  y sont exposés.",
       "article": ["199907"]
   },
   {
@@ -68,7 +77,7 @@
       "url": "https://www.mtotec.com/",
       "parent": "meteo",
       "importance": 0,
-      "description": "Suivit et explications de tous les événements météo dans le bassin cyclonique du Sud-Ouest de l'Océan Indien.",
+      "description": "Suivit et explications de tous les événements météo dans le bassin cyclonique du Sud-Ouest de l’Océan Indien.",
       "article": ["199903", "200202"]
   },
   {
@@ -77,7 +86,7 @@
       "url": "http://tropic.ssec.wisc.edu/",
       "parent": "meteo",
       "importance": 0,
-      "description": "Images de Meteosat 5 sur l'Océan Indien.",
+      "description": "Images de Meteosat 5 sur l’Océan Indien.",
       "article": ["199903"]
   },
   {
@@ -86,7 +95,7 @@
       "url": "http://www.eglisealareunion.org/",
       "parent": "religieux",
       "importance": 0,
-      "description": "Site officiel de l'Église Catholique à la Réunion.",
+      "description": "Site officiel de l’Église Catholique à la Réunion.",
       "article": ["199912"]
   },
   {
@@ -104,7 +113,7 @@
       "url": "http://www.air-austral.com/",
       "parent": "air",
       "importance": 0,
-      "description": "La compagnie régionale de la Réunion. Basée à Saint-Denis, elle dessert la métropole et plusieurs destinations de l'Océan Indien.",
+      "description": "La compagnie régionale de la Réunion. Basée à Saint-Denis, elle dessert la métropole et plusieurs destinations de l’Océan Indien.",
       "article": ["200302"]
   },
   {
@@ -113,17 +122,8 @@
       "url": "http://www.cinor.org/",
       "parent": "communautes",
       "importance": 0,
-      "description": "Communauté agglomérations du nord de l'île de la Réunion.",
+      "description": "Communauté agglomérations du nord de l’île de la Réunion.",
       "article": [""]
-  },
-  {
-      "id": 156,
-      "title": "Association des Maires du Département de La Réunion",
-      "url": "http://www.amdr.asso.fr/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Instance pluraliste, qui représente les maires et des intérêts communaux dont ils ont la charge.",
-      "article": ["200309"]
   },
   {
       "id": 21,
@@ -140,17 +140,8 @@
       "url": "http://www.mi-aime-a-ou.com",
       "parent": "portails",
       "importance": 0,
-      "description": "Portail Réunionnais avec de très (trop) nombreux articles d'histoire et de culture de la Réunion",
+      "description": "Portail Réunionnais avec de très (trop) nombreux articles d’histoire et de culture de la Réunion",
       "article": ["200307"]
-  },
-  {
-      "id": 153,
-      "title": "Réunion 1ère",
-      "url": "http://reunion.la1ere.fr",
-      "parent": "radio",
-      "importance": 0,
-      "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811"]
   },
   {
       "id": 23,
@@ -167,7 +158,7 @@
       "url": "http://www.airmauritius.fr/",
       "parent": "air",
       "importance": 0,
-      "description": "Site français de la compagnie de l'île Maurice",
+      "description": "Site français de la compagnie de l’île Maurice",
       "article": ["200108"]
   },
   {
@@ -176,8 +167,17 @@
       "url": "https://www.ile-delareunion.com/",
       "parent": "touristiques",
       "importance": 0,
-      "description": "Portail touristique avec beaucoup d'infos et un annuaire web.",
+      "description": "Portail touristique avec beaucoup d’infos et un annuaire web.",
       "article": ["200608"]
+  },
+  {
+      "id": 26,
+      "title": "Saint-Philippe",
+      "url": "https://saintphilippe.re",
+      "parent": "villes",
+      "importance": 0,
+      "description": "Site de la mairie de Saint-Philippe, situé au nord est de l’île sur les flancs du Piton de la Fournaise.",
+      "article": ["200001"]
   },
   {
       "id": 29,
@@ -194,8 +194,26 @@
       "url": "http://www.arra.re/spoutnik/sppigno.html",
       "parent": "scolaires",
       "importance": 0,
-      "description": "Le site de la mise sur orbite d'une réplique de spoutnik par un collège réunionnais.",
+      "description": "Le site de la mise sur orbite d’une réplique de spoutnik par un collège réunionnais.",
       "article": ["199711"]
+  },
+  {
+      "id": 153,
+      "title": "Réunion 1ère",
+      "url": "http://reunion.la1ere.fr",
+      "parent": "radio",
+      "importance": 0,
+      "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
+      "article": ["199811"]
+  },
+  {
+      "id": 156,
+      "title": "Association des Maires du Département de La Réunion",
+      "url": "http://www.amdr.asso.fr/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Instance pluraliste, qui représente les maires et des intérêts communaux dont ils ont la charge.",
+      "article": ["200309"]
   },
   {
       "id": 159,
@@ -212,7 +230,7 @@
       "url": "http://runraid.free.fr",
       "parent": "pages",
       "importance": 0,
-      "description": "Toute l'actualité et l'histoire du grand raid de la Réunion par un fan de longue date de la course.",
+      "description": "Toute l’actualité et l’histoire du grand raid de la Réunion par un fan de longue date de la course.",
       "article": ["200310"]
   },
   {
@@ -231,7 +249,7 @@
       "parent": "associations",
       "importance": 0,
       "description": "Associations de randonneurs. Conseils pratiques et parcours.",
-      "article": ["200203"]
+      "article": ["200203", "200310"]
   },
   {
       "id": 34,
@@ -275,7 +293,7 @@
       "url": "http://www.clicanoo.com/",
       "parent": "actualites",
       "importance": 0,
-      "description": "La Journal de L'île de la Réunion. Informations quotidiennes",
+      "description": "La Journal de L’île de la Réunion. Informations quotidiennes",
       "article": ["200204", "200409", "200504", "200605"]
   },
   {
@@ -293,7 +311,7 @@
       "url": "http://www.franceo.fr/",
       "parent": "radio",
       "importance": 0,
-      "description": "Radio télévision d'Outre-mer à la Réunion. programmes, écoute live et émissions en replay.",
+      "description": "Radio télévision d’Outre-mer à la Réunion. programmes, écoute live et émissions en replay.",
       "article": ["199811"]
   },
   {
@@ -311,7 +329,7 @@
       "url": "http://www.20desamb.com/",
       "parent": "collectifs",
       "importance": 0,
-      "description": "Site aniversaire de l'abolition de l'esclavage à la Réunion.",
+      "description": "Site aniversaire de l’abolition de l’esclavage à la Réunion.",
       "article": ["199802", "200512"]
   },
   {
@@ -329,7 +347,7 @@
       "url": "http://linfo.re/",
       "parent": "radio",
       "importance": 0,
-      "description": "Le site info d'Antenne Réunion. Écoute en direct.",
+      "description": "Le site info d’Antenne Réunion. Écoute en direct.",
       "article": ["200409"]
   },
   {
@@ -356,7 +374,7 @@
       "url": "http://jeanmarc.itani.pagesperso-orange.fr/aquarell.html",
       "parent": "peinture",
       "importance": 0,
-      "description": "Aquarelles de l'exposition mémoires.",
+      "description": "Aquarelles de l’exposition mémoires.",
       "article": ["199709"]
   },
   {
@@ -365,7 +383,7 @@
       "url": "http://joellaroche-joubert.com/about.html",
       "parent": "peinture",
       "importance": 0,
-      "description": "Troisième site d'un artiste polymorphe. présente ses travaux des années 90.",
+      "description": "Troisième site d’un artiste polymorphe. présente ses travaux des années 90.",
       "article": ["199801"]
   },
   {
@@ -374,7 +392,7 @@
       "url": "http://www.odile-houot.fr/",
       "parent": "peinture",
       "importance": 0,
-      "description": "Galerie d'aquarelles créoles.",
+      "description": "Galerie d’aquarelles créoles.",
       "article": ["199808"]
   },
   {
@@ -419,7 +437,7 @@
       "url": "http://runtamtam.biz/",
       "parent": "musiques",
       "importance": 0,
-      "description": "Facteur d'instruments traditionnels de la Réunion. Présentation des instruments africains et indiens.",
+      "description": "Facteur d’instruments traditionnels de la Réunion. Présentation des instruments africains et indiens.",
       "article": ["200306"]
   },
   {
@@ -446,7 +464,7 @@
       "url": "http://udir.free.fr/",
       "parent": "litterature",
       "importance": 0,
-      "description": "L'ancien site de l'éditeur associatif UDIR, resté en ligne pour référence.",
+      "description": "L’ancien site de l’éditeur associatif UDIR, resté en ligne pour référence.",
       "article": ["200407"]
   },
   {
@@ -455,7 +473,7 @@
       "url": "https://www.la-reunion-des-livres.re/ouvrage/le-memorial-de-la-reunion/",
       "parent": "litterature",
       "importance": 0,
-      "description": "Ouvrage encyclopédique de Daniel Vaxelaire sur l'île de la Réunion.",
+      "description": "Ouvrage encyclopédique de Daniel Vaxelaire sur l’île de la Réunion.",
       "article": ["200412", "201412"]
   },
   {
@@ -464,7 +482,7 @@
       "url": "https://www.editions-orphie.com/",
       "parent": "litterature",
       "importance": 0,
-      "description": "Éditeur né à la Réunion en 1984 et qui publie des auteurs et des ouvrages de tout l'outre-mer. Présentation de l'éditeur de ses auteurs et boutique en ligne.",
+      "description": "Éditeur né à la Réunion en 1984 et qui publie des auteurs et des ouvrages de tout l’outre-mer. Présentation de l’éditeur de ses auteurs et boutique en ligne.",
       "article": ["200412"]
   },
   {
@@ -473,7 +491,7 @@
       "url": "http://sites.reunionweb.org/indo-musulmans/",
       "parent": "litterature",
       "importance": 0,
-      "description": "Présentation d'un livre de Koulsoum MOUSSA sur les Indo-musulmans de la Réunion.",
+      "description": "Présentation d’un livre de Koulsoum MOUSSA sur les Indo-musulmans de la Réunion.",
       "article": ["200106"]
   },
   {
@@ -495,48 +513,12 @@
       "article": ["199909"]
   },
   {
-      "id": 185,
-      "title": "comité opérationnel de réduction du risque requin à La Réunion ",
-      "url": "http://www.reunion.gouv.fr/le-comite-operationnel-de-reduction-du-risque-a870.html",
-      "parent": "agences",
-      "importance": 0,
-      "description": "(aussi appelé CO4R) Instaurée en septembre 2012 c'est une cellule opérationnelle de réduction du risque requins se réunit régulièrement sous l'égide de la préfecture et coordonne les actions de terrain pour réduire le risque requin.",
-      "article": ["201604"]
-  },
-  {
-      "id": 183,
-      "title": "Parc Marin de la Réunion",
-      "url": "http://jean-marc.charel.pagesperso-orange.fr/parcmarin.htm",
-      "parent": "agences",
-      "importance": 0,
-      "description": "Le site de l'ancienne structure de préservation du lagon réunionnais avec les règles de l'époque.",
-      "article": ["201107"]
-  },
-  {
-      "id": 184,
-      "title": "Réserve Naturelle Marine de la Réunion",
-      "url": "http://www.reservemarinereunion.fr/",
-      "parent": "agences",
-      "importance": 0,
-      "description": "Site de la Réserve naturelle marine de la Réunion, toutes les informations sur la protection du lagon mais aussi sa découverte.",
-      "article": ["201107"]
-  },
-  {
-      "id": 160,
-      "title": "Zeop",
-      "url": "http://www.zeop.re/",
-      "parent": "fai",
-      "importance": 0,
-      "description": "Fournisseur Internet champion de la fibre optique à la Réunion.",
-      "article": ["201503"]
-  },
-  {
       "id": 75,
       "title": "UDAR le blog",
       "url": "http://www.udarpeinture.canalblog.com/",
       "parent": "collectifs",
       "importance": 0,
-      "description": "Nouvelle présentation des artistes membres et compte-rendus d'expositions",
+      "description": "Nouvelle présentation des artistes membres et compte-rendus d’expositions",
       "article": ["200610"]
   },
   {
@@ -545,7 +527,7 @@
       "url": "http://barret.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Galerie d'art plastique de Micheline Barret",
+      "description": "Galerie d’art plastique de Micheline Barret",
       "article": [""]
   },
   {
@@ -590,7 +572,7 @@
       "url": "http://willypeintre.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Le peintre Wilfrid PAYET. Dessins à l'encre de Chine, pastel, paysages de la Réunion.",
+      "description": "Le peintre Wilfrid PAYET. Dessins à l’encre de Chine, pastel, paysages de la Réunion.",
       "article": [""]
   },
   {
@@ -608,7 +590,7 @@
       "url": "http://riegel2.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Galerie virtuelle. Peinture à l'huile et acrylique.",
+      "description": "Galerie virtuelle. Peinture à l’huile et acrylique.",
       "article": [""]
   },
   {
@@ -626,7 +608,7 @@
       "url": "http://sabinevergoz.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Peintre autodidacte. présentation et peintures de scènes de la Réunion d'autrefois.",
+      "description": "Peintre autodidacte. présentation et peintures de scènes de la Réunion d’autrefois.",
       "article": [""]
   },
   {
@@ -641,7 +623,7 @@
   {
       "id": 189,
       "title": "Tony Defaud Photographie",
-      "url": "https://www.facebook.com/tonydefaudphoto/",
+      "url": "https://tdefaud.photodeck.com/",
       "parent": "photos",
       "importance": 0,
       "description": "Photographe officiant dans le monde entier mais qui revient souvent à la Réunion. Sa marque de fabrique: les ciels étoilés.",
@@ -653,7 +635,7 @@
       "url": "https://www.instagram.com/axelle.paya",
       "parent": "pages",
       "importance": 0,
-      "description": "Site Perso d'Axelle Paya, 2e dauphine de miss Réunion. Axelle Paya avait son site sur missaxelle.com mais on peut maintenant la retrouver sur Instagram",
+      "description": "Site Perso d’Axelle Paya, 2e dauphine de miss Réunion. Axelle Paya avait son site sur missaxelle.com mais on peut maintenant la retrouver sur Instagram",
       "article": ["200609"]
   },
   {
@@ -707,7 +689,7 @@
       "url": "http://shovel.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Blog de l'auteur de Six runkels en Amborie. Nouvelles et dessins.",
+      "description": "Blog de l’auteur de Six runkels en Amborie. Nouvelles et dessins.",
       "article": ["200702"]
   },
   {
@@ -725,7 +707,7 @@
       "url": "http://www.rhum-charrette.com/",
       "parent": "pei",
       "importance": 0,
-      "description": "Présentation flash de l'entreprise et des rhums. Recettes au Rhum.",
+      "description": "Présentation flash de l’entreprise et des rhums. Recettes au Rhum.",
       "article": ["200612"]
   },
   {
@@ -736,42 +718,6 @@
       "importance": 0,
       "description": "Candidat aux élections législatives dans la 4ème circonscription",
       "article": ["200706"]
-  },
-  {
-      "id": 190,
-      "title": "Globice",
-      "url": "https://www.globice.org/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Groupe Local d’OBservation et d’Identification des CEtacés. Association d'étude et de protection des grands animaux marins. Membre de l'Union Internationale pour la Conservation de la Nature depuis 2010 et association de référence pour l'observation et",
-      "article": ["201809"]
-  },
-  {
-      "id": 186,
-      "title": "Shark Citizen",
-      "url": "http://www.sharkcitizen.fr/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Association de défense de la nature présente à la Réunion. Elle a pour but de faire face au risque requin tout en préservant le lagon et les poissons qui y vivent.",
-      "article": ["201604"]
-  },
-  {
-      "id": 187,
-      "title": "Ligue de Surf de la Réunion",
-      "url": "https://www.surfingreunion.com/",
-      "parent": "sport",
-      "importance": 0,
-      "description": "Information sur la pratique du surf à la Réunion. les compétitions et les risques lié à ce sport.",
-      "article": ["201604"]
-  },
-  {
-      "id": 188,
-      "title": "Peur sur les plages. Du « risque requin » à la « crise requin »",
-      "url": "http://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-thematiques/risques-et-societes/corpus-documentaire/peur-sur-les-plages-requins-reunion",
-      "parent": "rapports",
-      "importance": 0,
-      "description": "Dossier sur le risque requin à la Réunion, réalisé par Emmanuelle Surmont, agrégée de géographie à l'ENS de Lyon.",
-      "article": ["201604"]
   },
   {
       "id": 118,
@@ -788,7 +734,7 @@
       "url": "https://museesreunion.fr/kelonia/",
       "parent": "musees",
       "importance": 0,
-      "description": "L'observatoire des tortues marines à Saint Leu. Découvertes de nombreuses tortues et de l'ancienne ferme corail, d'élevage de tortues et de poissons.",
+      "description": "L’observatoire des tortues marines à Saint Leu. Découvertes de nombreuses tortues et de l’ancienne ferme corail, d’élevage de tortues et de poissons.",
       "article": [""]
   },
   {
@@ -797,53 +743,62 @@
       "url": "http://www.zinfos974.com/",
       "parent": "actualites",
       "importance": 0,
-      "description": "Quotidien en ligne avec le slogan « Le journal qui oze ». Actualités locates et Internationales et le billet d'humeur de Pierrot Dupuy.",
+      "description": "Quotidien en ligne avec le slogan « Le journal qui oze ». Actualités locates et Internationales et le billet d’humeur de Pierrot Dupuy.",
       "article": ["201809"]
   },
   {
-      "id": 124,
+      "id": 121,
       "title": "REUNIX",
       "url": "https://www.renater.fr/reseau/national-et-international/renaterix/",
       "parent": "internet",
       "importance": 0,
-      "description": "Point d'échange Internet à la Réunion. Tout ce qu'il faut savoir pour s'y connecter.",
+      "description": "Point d’échange Internet à la Réunion. Tout ce qu’il faut savoir pour s’y connecter.",
       "article": ["201010"]
   },
   {
-      "id": 125,
+      "id": 122,
       "title": "Le Margouillat",
       "url": "http://sites.reunionweb.org/margouillat/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Les 14 numéros et plus du mensuel endémique de l'île de La Réunion qui sortait tous les mois jusqu'en janvier 2002.",
+      "description": "Les 14 numéros et plus du mensuel endémique de l’île de La Réunion qui sortait tous les mois jusqu’en janvier 2002.",
       "article": ["200502", "201206"]
   },
   {
-      "id": 180,
+      "id": 123,
       "title": "Le blog de Li-An",
       "url": "https://www.li-an.fr/blog/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Le dessinateur du Margouillat auteur de nombreux albums donc certains sur la Réunion. Mais aussi la revue de c'est amis et d'autres artistes",
+      "description": "Le dessinateur du Margouillat auteur de nombreux albums donc certains sur la Réunion. Mais aussi la revue de c’est amis et d’autres artistes",
       "article": ["200502"]
   },
   {
-      "id": 126,
+      "id": 124,
+      "title": " Les offres Internet à La Réunion ",
+      "url": "https://www.echosdunet.net/dossiers/offres-internet-reunion",
+      "parent": "internet",
+      "importance": 0,
+      "description": "Page listant les nombreux fournisseurs d’accès à Internet commercialisent des offres Internet. semble être le plus à jour.",
+      "article": ["200804"]
+  },
+  {
+      "id": 125,
       "title": "Saint-Paul",
       "url": "http://www.mairie-saintpaul.fr",
       "parent": "villes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": [""]
+      "article": ["201404"]
   },
   {
-      "id": 125,
+      "id": 126,
       "title": "Saint-Pierre",
       "url": "https://www.saintpierre.re/",
       "parent": "villes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Pierre",
-      "article": [""]
+      "article": ["200004"]
   },
   {
       "id": 127,
@@ -851,7 +806,7 @@
       "url": "https://reunion.edf.fr/particulier/realiser-des-economies-d-energie/decouvrir-les-offres-d-edf/chauffe-eau-2",
       "parent": "insolite",
       "importance": 0,
-      "description": "Site d'information lancé par EDF et ses partenaires pour tous ceux qui veulent installer un chauffe-eau solaire sur leur maison.",
+      "description": "Site d’information lancé par EDF et ses partenaires pour tous ceux qui veulent installer un chauffe-eau solaire sur leur maison.",
       "article": ["201404"]
   },
   {
@@ -860,7 +815,7 @@
       "url": "http://www.qualit-enr.org/annuaire/installateurs-chauffe-eau-solaire/97417-saint-denis",
       "parent": "professionnels",
       "importance": 0,
-      "description": "L'annuaire des installateurs d'énergies renouvelables pour installer un système solaire thermique ou photovoltaïque à la Réunion.",
+      "description": "L’annuaire des installateurs d’énergies renouvelables pour installer un système solaire thermique ou photovoltaïque à la Réunion.",
       "article": ["201404"]
   },
   {
@@ -888,7 +843,7 @@
       "parent": "villes",
       "importance": 0,
       "description": "Mairie de Saint Leu. Information administratives et locales.",
-      "article": ["200508", "201412"]
+      "article": ["200110", "200508", "201404", "201412"]
   },
   {
       "id": 132,
@@ -914,7 +869,7 @@
       "url": "https://www.iedom.fr/la-reunion/publications/etudes-thematiques/article/le-tourisme-a-la-reunion",
       "parent": "rapports",
       "importance": 0,
-      "description": "Étude sur le développement du tourisme à la Réunion par l'Institut d'Émission des Départements d'Outre-Mer. Document publié en octobre 2014 et décortiqué sur la page liée ci-dessous:",
+      "description": "Étude sur le développement du tourisme à la Réunion par l’Institut d’Émission des Départements d’Outre-Mer. Document publié en octobre 2014 et décortiqué sur la page liée ci-dessous:",
       "article": ["201410"]
   },
   {
@@ -923,7 +878,7 @@
       "url": "http://www.iedom.fr/la-reunion/",
       "parent": "agences",
       "importance": 0,
-      "description": "L'IEDOM de la Réunion est l'organisme délégué par la Banque de France pour assurer en premier lieu la circulation et l’entretien des signes monétaires ayant cours légal. Elle fournit aussi d'autres missions de service public.",
+      "description": "L’IEDOM de la Réunion est l’organisme délégué par la Banque de France pour assurer en premier lieu la circulation et l’entretien des signes monétaires ayant cours légal. Elle fournit aussi d’autres missions de service public.",
       "article": ["201410"]
   },
   {
@@ -932,7 +887,7 @@
       "url": "https://www.reunion.fr/planifier/a-voir-a-faire/loisirs/ski-nautique-club-de-saint-paul-558815",
       "parent": "sport",
       "importance": 0,
-      "description": "Le club de ski nautique de la Réunion avec son plan d'eau mondialement connu à Saint-Paul. Site remplacé par une page sur le site de l'office du tourisme.",
+      "description": "Le club de ski nautique de la Réunion avec son plan d’eau mondialement connu à Saint-Paul. Site remplacé par une page sur le site de l’office du tourisme.",
       "article": ["201408"]
   },
   {
@@ -945,21 +900,12 @@
       "article": ["200804"]
   },
   {
-      "id": 125,
-      "title": " Les offres Internet à La Réunion ",
-      "url": "https://www.echosdunet.net/dossiers/offres-internet-reunion",
-      "parent": "internet",
-      "importance": 0,
-      "description": "Page listant les nombreux fournisseurs d'accès à Internet commercialisent des offres Internet. semble être le plus à jour.",
-      "article": ["200804"]
-  },
-  {
       "id": 138,
       "title": "Canalbox",
       "url": "https://www.canalbox.com/re",
       "parent": "fai",
       "importance": 0,
-      "description": "Anciennement médiaserv, fournisseur d'accès à Internet issu du groupe Loret présent aux Antilles et à la Réunion.",
+      "description": "Anciennement médiaserv, fournisseur d’accès à Internet issu du groupe Loret présent aux Antilles et à la Réunion.",
       "article": ["200804"]
   },
   {
@@ -968,7 +914,7 @@
       "url": "https://www.parcdelaluge.re/",
       "parent": "sport",
       "importance": 0,
-      "description": "Site du relais du Maïdo. Haut lieu touristique et seule piste de luge de l'île. Informations et réservations.",
+      "description": "Site du relais du Maïdo. Haut lieu touristique et seule piste de luge de l’île. Informations et réservations.",
       "article": ["201408"]
   },
   {
@@ -990,6 +936,15 @@
       "article": ["201303"]
   },
   {
+      "id": 142,
+      "title": "Société d’Etudes Ornithologiques de La Réunion",
+      "url": "http://www.seor.fr/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Association de conservation et de protection de l’avifaune indigène et de promotion des connaissances en ornithologie.",
+      "article": ["201303"]
+  },
+  {
       "id": 143,
       "title": "Réunionnais du Monde",
       "url": "http://www.reunionnaisdumonde.com/",
@@ -1004,7 +959,7 @@
       "url": "http://fournaise.info/",
       "parent": "musees",
       "importance": 0,
-      "description": "Le portail du piton de la Fournaise. Centre de ressource sur le volcan de la Réunion et d'ailleurs dans le monde.",
+      "description": "Le portail du piton de la Fournaise. Centre de ressource sur le volcan de la Réunion et d’ailleurs dans le monde.",
       "article": ["200107", "200308", "200609"]
   },
   {
@@ -1013,7 +968,7 @@
       "url": "http://www.chikungunya.net/",
       "parent": "insolite",
       "importance": 0,
-      "description": "Site démarré suite à l'épidémie de «chick» à la Réunion et qui est devenu la source d'information sur les foyers de chikungunya dans le monde.",
+      "description": "Site démarré suite à l’épidémie de «chick» à la Réunion et qui est devenu la source d’information sur les foyers de chikungunya dans le monde.",
       "article": ["200601", "200603"]
   },
   {
@@ -1041,15 +996,15 @@
       "parent": "villes",
       "importance": 0,
       "description": "Informations de la mairie, nouvelles et photos.",
-      "article": ["200701"]
+      "article": ["199908", "200701"]
   },
   {
       "id": 149,
-      "title": "Association pour le développement de l'apiculture à la Réunion",
+      "title": "Association pour le développement de l’apiculture à la Réunion",
       "url": "https://adar.adafrance.org/",
       "parent": "professionnels",
       "importance": 0,
-      "description": "Regroupement professionnel des apiculteurs de la Réunion. Le site n'est pas complet mais donne un bon état des lieu de la filière apicole à la Réunion.",
+      "description": "Regroupement professionnel des apiculteurs de la Réunion. Le site n’est pas complet mais donne un bon état des lieu de la filière apicole à la Réunion.",
       "article": ["200701"]
   },
   {
@@ -1085,8 +1040,80 @@
       "url": "http://www.reunion.aeroport.fr/",
       "parent": "transports",
       "importance": 0,
-      "description": "Le plus grand aéroport de l'île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
+      "description": "Le plus grand aéroport de l’île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
       "article": ["200108"]
+  },
+  {
+      "id": 160,
+      "title": "Zeop",
+      "url": "http://www.zeop.re/",
+      "parent": "fai",
+      "importance": 0,
+      "description": "Fournisseur Internet champion de la fibre optique à la Réunion.",
+      "article": ["201503"]
+  },
+  {
+      "id": 185,
+      "title": "comité opérationnel de réduction du risque requin à La Réunion ",
+      "url": "http://www.reunion.gouv.fr/le-comite-operationnel-de-reduction-du-risque-a870.html",
+      "parent": "agences",
+      "importance": 0,
+      "description": "(aussi appelé CO4R) Instaurée en septembre 2012 c’est une cellule opérationnelle de réduction du risque requins se réunit régulièrement sous l’égide de la préfecture et coordonne les actions de terrain pour réduire le risque requin.",
+      "article": ["201604"]
+  },
+  {
+      "id": 183,
+      "title": "Aller plonger à La Réunion, île intense, Jean Marc Charel",
+      "url": "http://jean-marc.charel.pagesperso-orange.fr/",
+      "parent": "pages",
+      "importance": 0,
+      "description": "Site perso sur plongée locale avec des info sur l’ancienne structure de préservation du lagon réunionnais.",
+      "article": ["201107"]
+  },
+  {
+      "id": 184,
+      "title": "Réserve Naturelle Marine de la Réunion",
+      "url": "http://www.reservemarinereunion.fr/",
+      "parent": "musees",
+      "importance": 0,
+      "description": "Site de la Réserve naturelle marine de la Réunion, toutes les informations sur la protection du lagon mais aussi sa découverte.",
+      "article": ["201107"]
+  },
+  {
+      "id": 186,
+      "title": "Shark Citizen",
+      "url": "http://www.sharkcitizen.fr/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Association de défense de la nature présente à la Réunion. Elle a pour but de faire face au risque requin tout en préservant le lagon et les poissons qui y vivent.",
+      "article": ["201604"]
+  },
+  {
+      "id": 187,
+      "title": "Ligue de Surf de la Réunion",
+      "url": "https://www.surfingreunion.com/",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Information sur la pratique du surf à la Réunion. les compétitions et les risques lié à ce sport.",
+      "article": ["201604"]
+  },
+  {
+      "id": 188,
+      "title": "Peur sur les plages. Du « risque requin » à la « crise requin »",
+      "url": "http://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-thematiques/risques-et-societes/corpus-documentaire/peur-sur-les-plages-requins-reunion",
+      "parent": "rapports",
+      "importance": 0,
+      "description": "Dossier sur le risque requin à la Réunion, réalisé par Emmanuelle Surmont, agrégée de géographie à l’ENS de Lyon.",
+      "article": ["201604"]
+  },
+  {
+      "id": 190,
+      "title": "Globice",
+      "url": "https://www.globice.org/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Groupe Local d’OBservation et d’Identification des CEtacés. Association d’étude et de protection des grands animaux marins. Membre de l’Union Internationale pour la Conservation de la Nature depuis 2010 et association de référence pour l’observation et",
+      "article": ["201809"]
   },
   {
       "id": 161,
@@ -1094,7 +1121,7 @@
       "url": "http://www.sfr.re/",
       "parent": "fai",
       "importance": 0,
-      "description": "Premier fournisseur d'accès à la Réunion, appelé Guetali à sa création est aujourd'hui opéré sous la marque nationale SFR.",
+      "description": "Premier fournisseur d’accès à la Réunion, appelé Guetali à sa création est aujourd’hui opéré sous la marque nationale SFR.",
       "article": ["200105"]
   },
   {
@@ -1103,7 +1130,7 @@
       "url": "http://reunion.orange.fr/",
       "parent": "fai",
       "importance": 0,
-      "description": "Les offres internet et mobile de l'opérateur historique français.",
+      "description": "Les offres internet et mobile de l’opérateur historique français.",
       "article": ["200105"]
   },
   {
@@ -1126,11 +1153,11 @@
   },
   {
       "id": 165,
-      "title": "Communauté d'aglomération du Sud CASUD",
+      "title": "Communauté d’aglomération du Sud CASUD",
       "url": "http://www.casud.re/",
       "parent": "communautes",
       "importance": 0,
-      "description": "Communauté de communes regroupant l'Entre-Deux, Saint-Joseph, Saint-Philippe et Le Tampon",
+      "description": "Communauté de communes regroupant l’Entre-Deux, Saint-Joseph, Saint-Philippe et Le Tampon",
       "article": [""]
   },
   {
@@ -1139,7 +1166,7 @@
       "url": "http://www.civis.re/",
       "parent": "communautes",
       "importance": 0,
-      "description": "Communayté de communes regroupant Cilaos, L'Étang-Salé, Les Avirons, Petite-Île, Saint-Louis, Saint-Pierre",
+      "description": "Communayté de communes regroupant Cilaos, L’Étang-Salé, Les Avirons, Petite-Île, Saint-Louis, Saint-Pierre",
       "article": [""]
   },
   {
@@ -1148,7 +1175,7 @@
       "url": "http://chikplanete.blogspot.cz/",
       "parent": "blogs",
       "importance": 0,
-      "description": "Blog en français sur le chikungunya. Les découvertes sur la maladie et les actions pour éviter sa propagation sur l'île de la Réunion.",
+      "description": "Blog en français sur le chikungunya. Les découvertes sur la maladie et les actions pour éviter sa propagation sur l’île de la Réunion.",
       "article": ["200603"]
   },
   {
@@ -1157,7 +1184,7 @@
       "url": "http://www.corail-helicopteres.com/",
       "parent": "helico",
       "importance": 0,
-      "description": "Société de location d'hélicoptères au départ de Saint Pierre ou de Saint-Gilles",
+      "description": "Société de location d’hélicoptères au départ de Saint Pierre ou de Saint-Gilles",
       "article": ["201505"]
   },
   {
@@ -1166,7 +1193,7 @@
       "url": "http://www.helilagon.com",
       "parent": "helico",
       "importance": 0,
-      "description": "Location et tours d'hélicoptères au départ de Saint-Denis et de Saint-Gilles.",
+      "description": "Location et tours d’hélicoptères au départ de Saint-Denis et de Saint-Gilles.",
       "article": ["201505"]
   },
   {
@@ -1180,11 +1207,11 @@
   },
   {
       "id": 177,
-      "title": "Rencontre avec Marie-France Mourrégot : L'islam à l'île de la Réunion",
+      "title": "Rencontre avec Marie-France Mourrégot : L’islam à l’île de la Réunion",
       "url": "http://www.lescahiersdelislam.fr/Rencontre-avec-Marie-France-Mourregot-L-islam-a-l-ile-de-la-reunion_a647.html",
       "parent": "religieux",
       "importance": 0,
-      "description": "Marie-France Mourrégot présente son livre «L'islam à l'île de la Réunion» dans les cahiers de l'Islam. Une étude complète sur cette religion à la Réunion après 10 ans d'observation.",
+      "description": "Marie-France Mourrégot présente son livre «L’islam à l’île de la Réunion» dans les cahiers de l’Islam. Une étude complète sur cette religion à la Réunion après 10 ans d’observation.",
       "article": ["199807"]
   },
   {
@@ -1198,11 +1225,11 @@
   },
   {
       "id": 179,
-      "title": "Société d'Étude Ornithologique de La Réunion",
+      "title": "Société d’Étude Ornithologique de La Réunion",
       "url": "http://www.seor.fr/",
       "parent": "associations",
       "importance": 0,
-      "description": "Créée en 1997, la Société d'Étude Ornithologique de La Réunion (SEOR) est une  association agréée « Protection de l'Environnement » garante de la protection des oiseaux de l'île. En moins de 20 ans, elle a organisé le sauvetage de plus de 25 à 30 000 oiseaux !",
+      "description": "Créée en 1997, la Société d’Étude Ornithologique de La Réunion (SEOR) est une  association agréée « Protection de l’Environnement » garante de la protection des oiseaux de l’île. En moins de 20 ans, elle a organisé le sauvetage de plus de 25 à 30 000 oiseaux !",
       "article": ["201303"]
   },
   {
@@ -1211,7 +1238,7 @@
       "url": "http://sophiebazin.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
-      "description": "Artiste plasticienne polymorphe, alias Mary Batiskaf qui est l'une des plus ancienne peintre sur le web réunionnais.",
+      "description": "Artiste plasticienne polymorphe, alias Mary Batiskaf qui est l’une des plus ancienne peintre sur le web réunionnais.",
       "article": ["199707"]
   },
   {
@@ -1222,6 +1249,42 @@
       "importance": 0,
       "description": "Le collège en plein cœur de Saint-Pierre de la Réunion. Le premier a avoir une page sur la toile.",
       "article": ["199710"]
+  },
+  {
+      "id": 183,
+      "title": "Horizon Réunion (es Éneries Réunion)",
+      "url": "https://energies-reunion.com/",
+      "parent": "agences",
+      "importance": 0,
+      "description": "Société publique locale qui a pris le relai de l’Agence régionale de l’énergie de La Réunion pour faciliter les économies d’énergie et favoriser l’utilisation des énergies renouvelables.",
+      "article": ["201404"]
+  },
+  {
+      "id": 188,
+      "title": "Thierry Kasprowicz",
+      "url": "https://thierrykasprowicz.com/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Le blog perso de Thierry Kasprowicz, le critique gastronomique derrière le guide Kaspro.",
+      "article": ["202105"]
+  },
+  {
+      "id": 189,
+      "title": "Gastronomic",
+      "url": "https://gastronomic.re/",
+      "parent": "professionnels",
+      "importance": 0,
+      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
+      "article": ["202105"]
+  },
+  {
+      "id": 190,
+      "title": "Zest",
+      "url": "https://zest.re/",
+      "parent": "actualites",
+      "importance": 0,
+      "description": "L'actualité gastronomique et terroir à la Réunion par l'équipe derrière le guide Kaspro",
+      "article": ["202105"]
   },
   {
       "id": 191,
@@ -1238,7 +1301,7 @@
       "url": "https://carolinel3fle.wordpress.com",
       "parent": "blogs",
       "importance": 0,
-      "description": "Blog d'une prof de français langue étrangère (FLE) créé pour ses apprenants mais intéressant pour tout le monde.",
+      "description": "Blog d’une prof de français langue étrangère (FLE) créé pour ses apprenants mais intéressant pour tout le monde.",
       "article": ["201809"]
   },
   {
@@ -1256,7 +1319,7 @@
       "url": "http://www.omar.fr/",
       "parent": "associations",
       "importance": 0,
-      "description": "Association offrant des ressources et des activités pour l'observation sur le milieu océanique à la Réunion. Les observations permettent de mieux connaitre l'environment et d'aider la recherche.",
+      "description": "Association offrant des ressources et des activités pour l’observation sur le milieu océanique à la Réunion. Les observations permettent de mieux connaitre l’environment et d’aider la recherche.",
       "article": ["201604"]
   },
   {
@@ -1274,7 +1337,7 @@
       "url": "http://www.reunion-parcnational.fr",
       "parent": "musees",
       "importance": 0,
-      "description": "Le site officiel du parc national de la Réunion, créé en 2007 en même temps que le parc. C'est une zone nationale de protection de la fragile biodiversité couvrant tous les hauts de l'île.",
+      "description": "Le site officiel du parc national de la Réunion, créé en 2007 en même temps que le parc. C’est une zone nationale de protection de la fragile biodiversité couvrant tous les hauts de l’île.",
       "article": ["200710"]
   },
   {
@@ -1283,7 +1346,7 @@
       "url": "http://www.nrj.re/",
       "parent": "radio",
       "importance": 0,
-      "description": "La première radio musicale de France a osse sa station dans l'Océan Indien",
+      "description": "La première radio musicale de France a osse sa station dans l’Océan Indien",
       "article": ["199903"]
   }
 ]

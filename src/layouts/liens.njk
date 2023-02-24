@@ -8,7 +8,7 @@
       <main>
         <h1>{{ pagetitle }}</h1>
         {% include "breadcrumb.njk" %}
-        <h4>{{ description }}</h4>
+        <p class="chapo">{{ description }}</p>
         {# sous catégories #}
 
         {% set subcategoriesall = categories | getCategoriesFromParent(slug) %}
