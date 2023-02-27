@@ -1,14 +1,13 @@
 function rewrite_url(title) {
+    console.log(title + " …reçu");
   const slug = title === 'Galerie des Gouzou de Jace' ? "/decouverte/culture/gouzou/" : slugify(title);
-  // console.log(this);
   console.log(slug);
   console.log(title);
   window.history.pushState({}, '', slug);
   document.title = title;
-  // console.log(index);
-
 }
-//
+
+// slugify soi même
 function slugify(str) {
   console.log("slug");
     str = str.replace(/^\s+|\s+$/g, '');
