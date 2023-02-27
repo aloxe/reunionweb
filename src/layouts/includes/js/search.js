@@ -12,6 +12,10 @@
 
     resEl.innerHTML = "";
     if (results) {
+      if (results.length < 1) {
+        // https://developer.matomo.org/guides/tracking-javascript-guide#internal-search-tracking
+        _paq.push(['trackSiteSearch',e.target.value, false, results.length]);
+      }
       noResultsEl.style.display = "none";
       results.map((r) => {
         const { id, title, description } = r.doc;
@@ -32,6 +36,8 @@
       });
     } else {
       noResultsEl.style.display = "block";
+      const keyword = e.target.value;
+      console.log("RIEN " + e.target.value);
     }
   };
 
@@ -41,4 +47,14 @@
       document.getElementById("search").addEventListener("input", search);
     })
   );
+
+  const searchInput = document.getElementById('search');
+  searchInput.onblur = function(e) {
+    const results = window.searchIndex.search(e.target.value, {
+      bool: "OR",
+      expand: true,
+    });
+    _paq.push(['trackSiteSearch',e.target.value, false, results?.length]);
+    }
+
 })(window, document);

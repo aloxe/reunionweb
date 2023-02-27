@@ -6,5 +6,24 @@
 
 {% block head %}
   {% include "head.njk" %}
-  <script>{{ js | jsmin | safe }}</script>
+  {% set css %}
+    {% include "includes/css/search.css" %}
+  {% endset %}
+  <style>{{ css | cssmin | safe }}</style>
+{% endblock %}
+
+
+{% block main %}
+<main>
+    <h1>{{ title }}</h1>
+    {% include "breadcrumb.njk" %}
+    {{ content | safe }}
+</main>
+
+{% set js %}
+  {% include "includes/js/search.js" %}
+  {% include "includes/js/elasticlunr.min.js" %}
+{% endset %}
+<script>{{ js | jsmin | safe }}</script>
+
 {% endblock %}

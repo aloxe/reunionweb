@@ -593,6 +593,13 @@ input:focus::placeholder {
   text-decoration: inherit;
 }
 
+.gouzoucherche img {
+  position: absolute;
+  z-index: 100;
+  bottom: 15px;
+  right: -15px;
+}
+
 body > footer {  /* sticky footer */
   position: sticky;
   top: 100vh;
