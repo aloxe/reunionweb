@@ -1,6 +1,7 @@
 function rewrite_url(title) {
     console.log(title + " …reçu");
-  const slug = title === 'Galerie des Gouzou de Jace' ? "/decouverte/culture/gouzou/" : slugify(title);
+  const base = "/decouverte/culture/gouzou/";
+  const slug = title === 'Galerie des Gouzou de Jace' ? base : base+slugify(title);
   console.log(slug);
   console.log(title);
   window.history.pushState({}, '', slug);
