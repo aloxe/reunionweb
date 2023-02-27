@@ -23,7 +23,7 @@
         {% if loop.index < 200 %}
         {% set gouzouslug = gouzoulist[loop.index-1].title | slugify %}
         <div class="cssbox{% if loop.index > 6 %} slideanim s{{ [1,2,3,4] | random }}{% endif %}">
-            <a href="#{{ gouzouslug }}" id="{{ gouzouslug }}" title="{{gouzou.title}}"><img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130" onclick="rewrite_url('{{ gouzouslug }}', '{{gouzou.title}}')">
+            <a href="#{{ gouzouslug }}" id="{{ gouzouslug }}" title="{{gouzou.title}}"><img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130" onclick="rewrite_url('{{gouzou.title}}')">
             <span class="cssbox_full">
                 <h2>{{ gouzou.title }}</h2>
                 <span>
@@ -38,13 +38,13 @@
                  </span>
             </span>
             </a>
-            <a class="cssbox_close" href="#void" onclick="rewrite_url('/decouverte/culture/gouzou/', 'Galerie des Gouzou de Jace')"></a>
+            <a class="cssbox_close" href="#void" onclick="rewrite_url('')"></a>
             {% if loop.first == false %}<a class="cssbox_prev"
               href="#{{ gouzoulist[loop.index-2].title | slugify }}"
-              onclick="rewrite_url('{{ gouzoulist[loop.index-2].title | slugify }}', '{{ gouzoulist[loop.index-2].title }}')">←</a> {% endif %}
+              onclick="rewrite_url('{{ gouzoulist[loop.index-2].title }}')">←</a> {% endif %}
             {% if loop.last == false %}<a class="cssbox_next"
               href="#{{ gouzoulist[loop.index].title | slugify}}"
-              onclick="rewrite_url('{{ gouzoulist[loop.index].title | slugify }}', '{{ gouzoulist[loop.index].title }}')">→</a>{% endif %}
+              onclick="rewrite_url('{{ gouzoulist[loop.index].title }}')">→</a>{% endif %}
             <div class="title">{{ gouzou.title }}</div>
         </div>
         {% endif %}

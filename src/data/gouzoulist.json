@@ -97,7 +97,8 @@
    "thumb": "/img/gouzou/thumb-gouzou-cosmonaute-aimant.jpeg",
    "author": "frankyrun54",
    "title": "Gouzou cosmonaute aimant les aimants",
-   "url": "https://www.flickr.com/photos/frankyrun/14251882639"
+   "url": "https://www.flickr.com/photos/frankyrun/14251882639",
+   "flag": "🇫🇷"
  },
  {
    "file": "/img/gouzou/jace-allo-chasse-aux-gouzou.jpg",
@@ -110,7 +111,8 @@
    "thumb": "/img/gouzou/thumb-location-de-grue.jpeg",
    "author": "frankyrun54",
    "title": "Location de grues fait sa pub",
-   "url": "https://www.flickr.com/photos/frankyrun/14027554796"
+   "url": "https://www.flickr.com/photos/frankyrun/14027554796",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/prisonier.jpg",
@@ -643,28 +645,32 @@
    "author": "nanafigue",
    "title": "Gouzou anti-chikoungounia",
    "url": "http://www.flickr.com/photos/nanafigue/325599863/",
-   "legend": "vu à la plaine des Palmistes."
+   "legend": "vu à la plaine des Palmistes.",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/ecartele.jpg",
    "thumb": "/img/gouzou/thumb-ecartele.jpeg",
    "author": "nanafigue",
    "title": "Gouzou écartelé",
-   "url": "http://www.flickr.com/photos/nanafigue/277240055/"
+   "url": "http://www.flickr.com/photos/nanafigue/277240055/",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/baigneurs.jpg",
    "thumb": "/img/gouzou/thumb-baigneurs.jpeg",
    "author": "nanafigue",
    "title": "Baigneurs gouzous dans un coupé",
-   "url": "http://www.flickr.com/photos/nanafigue/139052884"
+   "url": "http://www.flickr.com/photos/nanafigue/139052884",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/miam-gouzou.jpg",
    "thumb": "/img/gouzou/thumb-miam-gouzou.jpeg",
    "author": "nanafigue",
    "title": "Miam gouzou!",
-   "url": "http://www.flickr.com/photos/nanafigue/482630591"
+   "url": "http://www.flickr.com/photos/nanafigue/482630591",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/schtroumpf-mickey.jpg",
@@ -672,7 +678,8 @@
    "author": "nanafigue",
    "title": "Gouzou déguisé en Schtroumpf Mickey",
    "url": "http://www.flickr.com/photos/nanafigue/456420650",
-   "legend": "vu sur la route de Saint Leu."
+   "legend": "vu sur la route de Saint Leu.",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/gouzou-magicien.jpg",
@@ -757,7 +764,7 @@
    "thumb": "/img/gouzou/thumb-gouzou-hommage-plongeur.jpeg",
    "author": "nanafigue",
    "title": "Gouzou plongeur",
-   "legend": "Gouzou tout frais réalisé en direct par jace en hommage à Fabrice. plus de détails",
+   "legend": "Gouzou tout frais réalisé en direct par jace en hommage à Fabrice.",
    "url": "http://www.flickr.com/photos/nanafigue/387736020"
  },
  {
@@ -943,7 +950,8 @@
    "thumb": "/img/gouzou/thumb-paf-reunionnais.jpeg",
    "author": "frankyrun",
    "title": "P.A.F réunionnais...",
-   "url": "http://www.flickr.com/photos/frankyrun/2067079094/"
+   "url": "http://www.flickr.com/photos/frankyrun/2067079094/",
+   "flag": "🇷🇪"
  },
  {
    "file": "/img/gouzou/piton-l-eau.jpg",
@@ -978,7 +986,7 @@
    "thumb": "/img/gouzou/thumb-voisins-dessous.jpeg",
    "author": "frankyrun",
    "title": "Les voisins du dessus",
-   "legend": "Vu Pres de Sain Pierre",
+   "legend": "Vu Près de Saint Pierre",
    "url": "http://frankyrun.over-blog.com/photo-213957-2005-12-11-pres-de-st-pierre-01_jpg.html",
    "flag": "🇷🇪"
  },
@@ -987,7 +995,8 @@
    "thumb": "/img/gouzou/thumb-dans-la-pulpe.jpeg",
    "author": "frankyrun",
    "title": "Dans la Pulpe Orangina",
-   "legend": "Vieux mur de Saint-Pierre vu <a href=\"http://www.flickr.com/photos/frankyrun/2067059404/\">sur flickr</a>.",
+   "legend": "Vieux mur de Saint-Pierre",
+   "url": "http://www.flickr.com/photos/frankyrun/2067059404/",
    "flag": "🇷🇪"
  },
  {
