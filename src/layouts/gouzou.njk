@@ -7,6 +7,7 @@
       {% endset %}
       {% set js %}
         {% include "includes/js/float-panel.js" %}
+        {% include "includes/js/gouzou-urls.js" %}
       {% endset %}
       <style>{{ css | cssmin | safe }}</style>
       <script>{{ js | jsmin | safe }}</script>
@@ -20,8 +21,9 @@
         {% if gouzoulist %}
         {% for gouzou in gouzoulist %}
         {% if loop.index < 200 %}
+        {% set gouzouslug = gouzoulist[loop.index-1].title | slugify %}
         <div class="cssbox{% if loop.index > 6 %} slideanim s{{ [1,2,3,4] | random }}{% endif %}">
-            <a href="#{{loop.index}}" id="{{loop.index}}" title="{{gouzou.title}}"><img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130">
+            <a href="#{{ gouzouslug }}" id="{{ gouzouslug }}" title="{{gouzou.title}}"><img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130" onclick="rewrite_url('{{gouzou.title}}')">
             <span class="cssbox_full">
                 <h2>{{ gouzou.title }}</h2>
                 <span>
@@ -36,9 +38,13 @@
                  </span>
             </span>
             </a>
-            <a class="cssbox_close" href="#void"></a>
-            {% if loop.first == false %}<a class="cssbox_prev" href="#{{ loop.index - 1 }}">←</a> {% endif %}
-            {% if loop.last == false %}<a class="cssbox_next" href="#{{ loop.index + 1}}">→</a>{% endif %}
+            <a class="cssbox_close" href="#void" onclick="rewrite_url('Galerie des Gouzou de Jace')"></a>
+            {% if loop.first == false %}<a class="cssbox_prev"
+              href="#{{ gouzoulist[loop.index-2].title | slugify }}"
+              onclick="rewrite_url('{{ gouzoulist[loop.index-2].title }}')">←</a> {% endif %}
+            {% if loop.last == false %}<a class="cssbox_next"
+              href="#{{ gouzoulist[loop.index].title | slugify}}"
+              onclick="rewrite_url('{{ gouzoulist[loop.index].title }}')">→</a>{% endif %}
             <div class="title">{{ gouzou.title }}</div>
         </div>
         {% endif %}
