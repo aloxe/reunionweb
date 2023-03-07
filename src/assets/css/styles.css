@@ -506,7 +506,7 @@ main .lien img + p {
 }
 
 main .lien .url {
-  color: #339ff9;
+  color: #0EB600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

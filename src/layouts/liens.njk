@@ -33,12 +33,12 @@
           {% for lien in newLiens %}
 
             <div class="lien">
-              <img src="http://www.robothumb.com/src/?url={{ lien.url }}&size=100x65&alt=http%3A%2F%2Freunionweb.org%2Fimg%2Fnon-dispo.png" alt="site {{ lien.title }}" width="120" height="90">
+              <img src="https://www.robothumb.com/src/?url={{ lien.url }}&size=100x65&alt=http%3A%2F%2Freunionweb.org%2Fimg%2Fnon-dispo.png" alt="site {{ lien.title }}" width="120" height="90">
               <p>
                 <b><a href="{{ lien.url }}" class="ext">{{ lien.title }}</a></b><br>
                 <span class="url f14">{{ lien.url }}</span><br>
                 {{ lien.description }}<br><br>
-                {% if lien.article.length > 1 and lien.article[0] !== "" %}
+                {% if lien.article.length > 0 and lien.article[0] !== "" %}
                   {% if lien.article.length > 1 %}
                     <i class="f16">Articles qui en parlent :</i><br>
                   {% else %}
