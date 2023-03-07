@@ -588,6 +588,10 @@ input:focus::placeholder {
   margin: 0 8px 0 0;
 }
 
+.snipet p > span a {
+  display:inline-flex;
+}
+
 .snipet {
   clear: both;
 }
