@@ -580,6 +580,10 @@ input:focus::placeholder {
   margin-bottom: 8px;
 }
 
+.snipet p > span.h140 {
+  max-height: 140px;
+}
+
 .snipet p span img {
   margin: 0 8px 0 0;
 }
