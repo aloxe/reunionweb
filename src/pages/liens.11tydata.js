@@ -2,6 +2,7 @@ function getUrl(slug, list) {
   for (let item of list) {
     if (item.slug === slug) {
       if (item.parent !== 0) {
+        console.log("get Url " + item.slug);
         return getUrl(item.parent, list) + item.slug + "/";
       } else {
         return "/" + item.slug + "/";
@@ -13,7 +14,7 @@ function getUrl(slug, list) {
 module.exports = {
   eleventyComputed: {
     permalink: data => getUrl(data.categories[data.pagination.pageNumber].slug, data.categories),
-    title: data => data.categories[data.pagination.pageNumber].title,
+    title: data => (data.pagination.pageNumber === 0) ? data.categories[data.pagination.pageNumber].title : "Sites web réunionnais : " + data.categories[data.pagination.pageNumber].title,
     pagetitle: data => data.categories[data.pagination.pageNumber].title,
     description: data => data.categories[data.pagination.pageNumber].description,
     slug: data => data.categories[data.pagination.pageNumber].slug

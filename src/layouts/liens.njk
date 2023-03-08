@@ -15,10 +15,10 @@
         {% set subcategories = subcategoriesall | getCategoriesWithLiens(liens, categories) %}
         {% if subcategories.length > 0 %}
           {% if subcategories.length > 1 %}
-            {% if not slug === "liens" %}<h2>Sous catégories</h2>{% endif %}
+            {% if slug === "liens" %}{% else %}<h2>Sous catégories</h2>{% endif %}
             <div class="twocolumns">
           {% else %}
-            {% if not slug === "liens" %}<h2>Sous catégorie</h2>{% endif %}
+            {% if slug === "liens" %}{% else %}<h2>Sous catégorie</h2>{% endif %}
           {% endif %}
           {%- for lien in subcategories %}
             {{ snipet(lien) }}
