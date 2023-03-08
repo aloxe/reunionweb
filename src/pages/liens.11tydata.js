@@ -2,6 +2,7 @@ function getUrl(slug, list) {
   for (let item of list) {
     if (item.slug === slug) {
       if (item.parent !== 0) {
+        console.log("get Url " + item.slug);
         return getUrl(item.parent, list) + item.slug + "/";
       } else {
         return "/" + item.slug + "/";

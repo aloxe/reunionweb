@@ -12,12 +12,11 @@ _Le principe de ce site est de présenter un ou plusieurs site web en rapport av
 {% set year = "year" %}
 {% for post in collections.article.reverse() %}
   {% if year === post.date.getFullYear() %}{% else %}{% set year = post.date.getFullYear() %}
-## {{year}}
+<h2 class="clear">{{year}}</h2>
   {% endif%}
-<p style="float:right;"><a href="{{post.url}}" class="button" title="Lire la suite">➽</a>
-</p>
-
-### [{{post.data.title}}]({{post.url}})
-
-<p class="smaller">{% thumb post, 250 %}<br>{{post.data.description}}</p>
+<h3 class="clear center"><a href="{{post.url}}">{{post.data.title}}</a></h3>
+<div class="snipet clear"><p>
+<span class="h140"><a href="{{post.url}}">{% thumb post, 250 %}</a></span>
+<a href="{{post.url}}">{{post.data.description}}</a>
+</p></div>
 {% endfor %}

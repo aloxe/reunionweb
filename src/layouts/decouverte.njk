@@ -24,7 +24,7 @@
               and subpost.url.split("/")[section - 1] === post.url.split("/")[section - 1]
               and subpost.url.split("/")[section] %}
                   {% if not post.data.unlist %}
-                      <h5><a href="{{subpost.url}}">{{subpost.data.title}}</a></h5>
+                      <h4><a href="{{subpost.url}}">{{subpost.data.title}}</a></h4>
                   {% endif %}
               {% endif %}
             {% endfor %}
