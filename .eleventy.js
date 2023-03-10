@@ -6,8 +6,9 @@ const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
-
+const { minify: minify_html } = require("html-minifier-terser");
 const searchFilter = require("./src/filters/searchFilter");
+
 const NOT_FOUND_PATH = "_site/404.html";
 
 module.exports = (eleventyConfig) => {
@@ -228,6 +229,33 @@ module.exports = (eleventyConfig) => {
       callback(null, code);
     }
   });
+
+  // filter to minify html
+  eleventyConfig.addTransform("htmlmin", async function (source, output_path) {
+    if(!output_path.endsWith(".html")) return source;
+
+    const result = await minify_html(source, {
+      collapseBooleanAttributes: true,
+      collapseWhitespace: true,
+      preserveLineBreaks: true,
+      collapseInlineTagWhitespace: true,
+      continueOnParseError: true,
+      decodeEntities: true,
+      keepClosingSlash: true,
+      minifyCSS: true,
+      quoteCharacter: `"`,
+      removeComments: true,
+      removeAttributeQuotes: true,
+      removeRedundantAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      sortAttributes: true,
+      sortClassName: true,
+      useShortDoctype: true
+    });
+    console.log(`MINIFY ${output_path}`, source.length, `→`, result.length, `(${((1 - (result.length / source.length)) * 100).toFixed(2)}% reduction)`);
+    return result;
+});
 
   // Pass-through files
   eleventyConfig.addPassthroughCopy({ 'src/assets/public': '/' });

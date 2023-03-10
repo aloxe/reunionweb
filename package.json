@@ -19,6 +19,7 @@
     "elasticlunr": "^0.9.5",
     "fs": "^0.0.1-security",
     "glob-promise": "^6.0.0",
+    "html-minifier-terser": "^7.1.0",
     "terser": "^5.16.2"
   }
 }
