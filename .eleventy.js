@@ -10,6 +10,7 @@ const { minify: minify_html } = require("html-minifier-terser");
 const searchFilter = require("./src/filters/searchFilter");
 
 const NOT_FOUND_PATH = "_site/404.html";
+const IS_PROD = typeof process.env.ENVIRONMENT === "string" && process.env.ENVIRONMENT === "prod";
 
 module.exports = (eleventyConfig) => {
   // page 404 with --serve
@@ -219,7 +220,7 @@ module.exports = (eleventyConfig) => {
   });
 
   // filter to minify js
-  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback ) {
+  eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
     try {
       const minified = await minify(code);
       callback(null, minified.code);
@@ -230,14 +231,13 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  // filter to minify html
+  // minify html output files
   eleventyConfig.addTransform("htmlmin", async function (source, output_path) {
-    if(!output_path.endsWith(".html")) return source;
+    if(!output_path.endsWith(".html") || !IS_PROD) return source;
 
     const result = await minify_html(source, {
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
-      preserveLineBreaks: true,
       collapseInlineTagWhitespace: true,
       continueOnParseError: true,
       decodeEntities: true,
@@ -255,7 +255,7 @@ module.exports = (eleventyConfig) => {
     });
     console.log(`MINIFY ${output_path}`, source.length, `→`, result.length, `(${((1 - (result.length / source.length)) * 100).toFixed(2)}% reduction)`);
     return result;
-});
+  });
 
   // Pass-through files
   eleventyConfig.addPassthroughCopy({ 'src/assets/public': '/' });
