@@ -1,8 +1,9 @@
 ---
 title: Histoire de la musique réunionnaise
+short: La musique réunionnaise
 description: Histoire de toutes les musiques et de leur évolution depuis l’arrivée des premiers résidents français et malgaches en 1665 jusqu’à nos jours où les musiques traditionnelles fusionnent avec le reste du monde.
 Image: ti-fleur-fanee-georges-fourcade-guitare.jpg
-keywords: danse, chanson, transe, rituel, tradition, fusion, musique, électonique, percussion, batterie, tambours, déhanché, disques, cd, casettes, gramophone, scène, concert
+keywords: danse, chanson, transe, rituel, tradition, fusion, musique, électonique, percussion, batterie, tambours, déhanché, disques, cd, cassettes, gramophone, scène, concert
 ---
 
 ## Des chansons venues par bateau
