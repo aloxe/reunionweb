@@ -143,6 +143,11 @@ Les instruments de musique aussi se renouvellent. De nouveaux instruments rempla
 
 Le maloya qui connaissait un regain d’énergie grâce aux engagés indiens et à l’apparition d’un nouvel instrument, le kayamb vers 1870, va décroître jusqu’à disparaître totalement autour de 1930. L’arc musical malgache, le *bobre*,  aux vertus prétendument magiques s’utilise encore mais de plus en plus rarement.
 
+<p class="center legende cadrimage">
+  {% Image page, "joueur-de--bobre.jpg", "Carte postale ancienne avec un joueur de bobre et un danseur sous des bananiers. Légende: Île de la Réunion: joueur de bobre" %}<br>
+Joueur de bobre
+</p>
+
 Après la seconde Guerre Mondiale, le séga conserve un vif succès dans la population locale, mais il est surtout préservé pour son attrait exotique qui intéresse les touristes. La culture est surtout portée par les tenants de l’alignement culturel intégral sur la métropole.
 
 ### Un renouveau des musiques traditionnelles
