@@ -239,6 +239,7 @@ module.exports = (eleventyConfig) => {
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
       collapseInlineTagWhitespace: true,
+      conservativeCollapse: true,
       continueOnParseError: true,
       decodeEntities: true,
       keepClosingSlash: true,
