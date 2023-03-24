@@ -38,9 +38,10 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addFilter("search", searchFilter);
   eleventyConfig.addCollection("indexable", collection => {
     const collectionDecouverte = collection.getFilteredByGlob("./src/pages/decouverte/**/*.html");
+    const collectionDecouverteMd = collection.getFilteredByGlob("./src/pages/decouverte/**/*.md");
     const collectionArticles = collection.getFilteredByGlob("./src/pages/articles/**/*.html");
     const collectionArticlesMd = collection.getFilteredByGlob("./src/pages/articles/**/*.md");
-    return [...collectionDecouverte, ...collectionArticles, ...collectionArticlesMd];
+    return [...collectionDecouverte, ...collectionDecouverteMd, ...collectionArticles, ...collectionArticlesMd];
   });
 
   // rss plugin https://www.11ty.dev/docs/plugins/rss/
@@ -180,7 +181,7 @@ module.exports = (eleventyConfig) => {
   // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "parse",
-      postsMatching: "src/pages/{decouverte,articles}{/*,/**/!(gouzou)/}*.{html,md}",
+      postsMatching: "src/pages/{decouverte,articles}{/*,/**/!(gouzou)/}*.{md,html}",
       recursive: false,
       hashAssets: false,
   });
@@ -277,7 +278,7 @@ module.exports = (eleventyConfig) => {
           data: '../data',
       },
       templateFormats: ['md', 'njk', 'jpg', 'gif', 'png', 'html'],
-      markdownTemplateEngine: "njk",
+      markdownTemplateEngine: 'njk',
   };
 
 };
