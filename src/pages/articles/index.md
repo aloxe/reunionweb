@@ -1,5 +1,6 @@
 ---
 title: Un lien par mois vers la Réunion
+description: "Chaque mois un nouveau site ou un nouveau lien en rapport avec la Réunion vous est présenté et décortiqué."
 notitle: true
 image:
 tags: none

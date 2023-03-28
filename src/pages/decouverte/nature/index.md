@@ -1,6 +1,6 @@
 ---
 title: La Nature de la Réunion
-description:
+description: Présentation de la faune et de la flore de la Réunion.
 short: La nature
 homedesc: La riche faune et flore de l'île
 image: vacoas.jpg

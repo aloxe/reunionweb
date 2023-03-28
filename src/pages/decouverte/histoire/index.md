@@ -1,6 +1,6 @@
 ---
 title: Histoire de la Réunion
-description:
+description: Quelques épisodes marquant de l'histoire de la Réunion depuis sa découverte jusqu'à nos jours.
 short: Histoire
 homedesc: Histoire de l'île de la Réunion depuis sa découverte jusqu'à nos jours
 image: carte-ile-bourbon-1645.jpg
