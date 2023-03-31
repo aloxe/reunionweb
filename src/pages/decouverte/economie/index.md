@@ -1,7 +1,7 @@
 ---
 title: Économie de la Réunion
 short: Économie
-description:
+description: La description de quelques entreprises emblématiques de la Réunion et certains secteurs d'activité remarquables.
 homedesc: Quelques analyses économiques
 image: Vetiveria_zizanoides_ballots.jpg
 keywords:

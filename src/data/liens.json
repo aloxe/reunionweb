@@ -9,6 +9,15 @@
       "article": ["199706"]
   },
   {
+        "id": 2,
+        "title": "Parc des palmiers",
+        "url": "https://www.letampon.fr/visite-parc/",
+        "parent": "musees",
+        "importance": 0,
+        "description": "Visite virtuelle du parc des palmiers au Tampon.",
+        "article": ["199908"]
+    },
+  {
       "id": 3,
       "title": "dijoux.re",
       "url": "http://www.dijoux.re",
@@ -407,7 +416,7 @@
   {
       "id": 56,
       "title": "Photos de Gouzou",
-      "url": "http://www.reunionweb.org/decouverte/culture/gouzou",
+      "url": "https://www.reunionweb.org/decouverte/culture/gouzou",
       "parent": "photos",
       "importance": 0,
       "description": "Photos des Gouzou de Jace",

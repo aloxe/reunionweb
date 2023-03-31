@@ -229,6 +229,11 @@ main h2 {
     width: 100%;
 }
 
+main h2.articles {
+  border-top: #001c86 dotted 1px;
+  padding-top: 10px;
+}
+
 main h3 {
     font-family: Devroye, serif;
     font-size: 20px;

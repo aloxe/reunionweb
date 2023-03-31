@@ -524,7 +524,16 @@
    "thumb": "/img/gouzou/thumb-in-gouzou-we-trust.jpeg",
    "author": "Marc Inopinatus",
    "title": "Billet de Gouzouland",
-   "legend": ""
+   "legend": "dans les rues de Paris",
+   "flag": "🇫🇷"
+ },
+ {
+   "file": "/img/gouzou/in-gouzou-we-trust-2.jpg",
+   "thumb": "/img/gouzou/thumb-in-gouzou-we-trust-2.jpeg",
+   "author": "Lionel Belluteau",
+   "title": "Autre billet de Gouzouland",
+   "legend": "dans les rues d'Ivry",
+   "flag": "🇫🇷"
  },
  {
    "file": "/img/gouzou/maree-de-gouzou.jpg",
