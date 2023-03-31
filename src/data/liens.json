@@ -9,6 +9,15 @@
       "article": ["199706"]
   },
   {
+        "id": 2,
+        "title": "Parc des palmiers",
+        "url": "https://www.letampon.fr/visite-parc/",
+        "parent": "musees",
+        "importance": 0,
+        "description": "Visite virtuelle du parc des palmiers au Tampon.",
+        "article": ["199908"]
+    },
+  {
       "id": 3,
       "title": "dijoux.re",
       "url": "http://www.dijoux.re",
