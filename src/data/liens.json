@@ -28,12 +28,21 @@
   },
   {
       "id": 4,
-      "title": "Wikipedia Réunion",
+      "title": "Portail Wikipedia Réunion",
       "url": "https://fr.wikipedia.org/wiki/Portail:La_R%C3%A9union",
       "parent": "portails",
       "importance": 2,
       "description": "Le portail de la Réunion de la célèbre encyclopédie en ligne Wikipedia.",
       "article": ["200203"]
+  },
+  {
+      "id": 5,
+      "title": "Portail des Mascareignes",
+      "url": "https://fr.wikipedia.org/wiki/Portail:Mascareignes",
+      "parent": "portails",
+      "importance": 2,
+      "description": "Ce portail présente les Mascareignes thème par thème et île par île.",
+      "article": ["202205"]
   },
   {
       "id": 8,
@@ -798,7 +807,7 @@
       "parent": "villes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": ["201404"]
+      "article": ["201404", "202205"]
   },
   {
       "id": 126,
