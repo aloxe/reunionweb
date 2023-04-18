@@ -45,6 +45,33 @@
       "article": ["202205"]
   },
   {
+      "id": 161,
+      "title": "SFR",
+      "url": "http://www.sfr.re/",
+      "parent": "fai",
+      "importance": 0,
+      "description": "Premier fournisseur d’accès à la Réunion, appelé Guetali à sa création est aujourd’hui opéré sous la marque nationale SFR.",
+      "article": ["200105", "201503"]
+  },
+  {
+      "id": 5,
+      "title": "Telco OI",
+      "url": "https://telco.re",
+      "parent": "fai",
+      "importance": 0,
+      "description": "Opérateur téléphonie mobile à la Réunion et à Mayotte",
+      "article": ["201503"]
+  },
+  {
+      "id": 6,
+      "title": "Free mobile",
+      "url": "https://mobile.free.re/",
+      "parent": "fai",
+      "importance": 0,
+      "description": "Quatrième opérateur téléphonie mobile à la Réunion",
+      "article": ["201503"]
+  },
+  {
       "id": 8,
       "title": "Réunion tourisme",
       "url": "http://www.reunion.fr/",
@@ -1067,7 +1094,7 @@
       "url": "http://www.zeop.re/",
       "parent": "fai",
       "importance": 0,
-      "description": "Fournisseur Internet champion de la fibre optique à la Réunion.",
+      "description": "Fournisseur Internet champion de la fibre optique à la Réunion. Propose aussi une offre mobile.",
       "article": ["201503"]
   },
   {
@@ -1140,7 +1167,7 @@
       "parent": "fai",
       "importance": 0,
       "description": "Premier fournisseur d’accès à la Réunion, appelé Guetali à sa création est aujourd’hui opéré sous la marque nationale SFR.",
-      "article": ["200105"]
+      "article": ["200105", "201503"]
   },
   {
       "id": 162,
