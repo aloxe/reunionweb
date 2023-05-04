@@ -215,12 +215,12 @@ module.exports = (eleventyConfig) => {
     return [...new Set([...selectedl, ...selectedc])];
   });
 
-  // filter to minify css
+  // filter to minify inline css
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
   });
 
-  // filter to minify js
+  // filter to minify inline js
   eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (code, callback) {
     try {
       const minified = await minify(code);
@@ -230,6 +230,17 @@ module.exports = (eleventyConfig) => {
       // Fail gracefully.
       callback(null, code);
     }
+  });
+
+  // filter to minify inline css
+  eleventyConfig.addTransform("cssmin", async function(source, output_path) {
+    if(!output_path.endsWith(".css") || !IS_PROD) return source;
+
+    const result = new CleanCSS({
+        level: 2
+    }).minify(source).styles.trim();
+    console.log(`MINIFY ${output_path}`, source.length, `→`, result.length, `(${((1 - (result.length / source.length)) * 100).toFixed(2)}% reduction)`);
+    return result;
   });
 
   // minify html output files
@@ -263,7 +274,6 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ 'src/assets/public': '/' });
   eleventyConfig.addPassthroughCopy({ 'src/assets/img': '/img' });
   eleventyConfig.addPassthroughCopy({ 'src/assets/fonts': '/fonts' });
-  eleventyConfig.addPassthroughCopy({ 'src/assets/css': '/css' });
   eleventyConfig.addPassthroughCopy({ 'src/assets/js': '/js' });
   eleventyConfig.addPassthroughCopy({ 'src/assets/api': '/api' });
 
