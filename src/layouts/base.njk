@@ -1,3 +1,7 @@
+{% set isArticle = page.url.split("/")[1] and page.inputPath.split("/")[3] === "articles" %}
+{% set isDecouverte = page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] %}
+{% set isLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[2] %}
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>

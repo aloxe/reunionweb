@@ -5,14 +5,14 @@
 {% block main %}
   <main class="home">
     {% for page in collections.article %}
-        {%- if (loop.index < 2) %}
+        {% if (loop.index < 2) %}
             <h1><a href="{{page.url}}">{{ page.data.title }}</a></h1>
           <div class="homerow">
             <p class="homeimg"><a href="{{page.url}}">{% thumb page, 780 %}</a></p>
-            <a href="{{page.url}}">{{ page.templateContent | safe | truncate(400) }}</a>
+            {{ page.templateContent | safe | truncate(400) }}
           </div>
             <p class="suite"><a href="{{page.url}}" class="button">…lire la suite</a></p>
-        {% endif -%}
+        {% endif %}
     {% endfor %}
 
     <div class="twocolumns">
