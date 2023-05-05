@@ -8,7 +8,20 @@
 {% if page.fileSlug === "404" %}{% else %}
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
 {% endif %}
-<title>{{title}}</title>
+
+<title>
+  {% if isDecouverte %}
+    {% if 'Réunion' in title %}
+    {{title}} | Reunionweb
+    {% else %}
+    {{title}} | Découvrez la Réunion | Reunionweb
+    {% endif %}
+  {% elif isArticle or isLiens %}
+    {{title}} | Reunionweb
+  {% else %}
+    {{title}}
+  {% endif %}
+</title>
 {% if page.fileSlug === "404" %}{% else %}
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
