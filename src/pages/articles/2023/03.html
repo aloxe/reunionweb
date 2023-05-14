@@ -8,48 +8,105 @@ permalink: "{{ title | slugify }}/"
 date: 2023-03
 ---
 
-<h2>Alerte cyclonique</h2>
-En mettant à jour mon site que je me suis rendu compte que l'image météo qui affichait automatiquement la situation cyclônique avec la <a href="/decouverte/geographie/cyclones/alertes-cycloniques/">description des alertes cycloniques</a> ne fonctionnait plus. Alors que la prefecture annonçait le passage en alerte orange le 19 février, j'ai du ajouter le message à la main. Le lendemain, je changeais à nouveau la page pour relayer l'alerte submersion de Météo France avec une carte des zones concernées.
-
-Puis, la page a été mise à jour avec une alerte jaune le 21 février suivie d'une absence d'alarte le 22 alors que le cyclone Freddy s'éloignant de l'île laissait derrière lui des dégats plutôt limitsé en comparaison avec d'autres cyclones qui ont frapé l'île de la Réunion ces dernières années (<a href="/decouverte/geographie/cyclones/cyclone-dina/">Coomme le cyclonne Dina en 2002</a>). Il faut dire que l'œil du cyclone était à 190km au nord, suffisement loin de la côte pour que les vents ne soient « que » de 100 km/h sur l'île avec des rafales atteignant quand même les 140km/h dans les hauts. Pas de quoi <a href="https://www.clicanoo.re/article/societe/2023/02/20/en-direct-point-de-situation-sur-freddy-le-prefet-va-t-il-declencher-lalerte-rouge" class="ext">déclancher l'alerte rouge</a> selon le préfet. La Réunion peut se réjouir d'avoir des dégats limités.
+<p class="chapo">
+En mettant à jour mon site que je me suis rendu compte que l'image météo, qui affichait automatiquement la situation cyclonique avec la <a href="/decouverte/geographie/cyclones/alertes-cycloniques/">description des alertes cycloniques</a>, ne fonctionnait plus.
+</p>
+  <h2>Alerte cyclonique</h2>
+ <p>
+   Le 19 février, alors que la prefecture annonçait le passage en <b>alerte orange à cause du cyclone Freddy</b>, j'ai dû mettre à jour le message à la main. Le lendemain, je changeais à nouveau la page pour relayer <b>l'alerte submersion de Météo France</b> avec une carte des zones concernées.
+</p>
+<p class="center legende">
+  {% Image page, "alerte-orange-cyclonique.png", "carte de la Réunion avec alerte orage cyclonique et risque submersion sur le litoral nord-est." %}<br>
+Carte de la Réunion avec alerte orage cyclonique et risque submersion sur le litoral nord-est.
+</p>
+<p>
+Puis, la page a été mise à jour avec une alerte jaune le 21 février suivie d'une absence d'alarte le 22 février pendant que le cyclone Freddy, s'éloignant de l'île, laissait derrière lui des dégats plutôt limités en comparaison avec d'autres cyclones qui ont frappé l'île de la Réunion ces dernières années (<a href="/decouverte/geographie/cyclones/cyclone-dina/">Comme le cyclonne Dina en 2002</a>). Il faut dire que l'œil du cyclone était à 190km au nord, suffisement loin de la côte pour que les vents ne soient « que » de 100 km/h sur l'île avec des rafales atteignant quand même les 140km/h dans les hauts. Pas de quoi <a href="https://www.clicanoo.re/article/societe/2023/02/20/en-direct-point-de-situation-sur-freddy-le-prefet-va-t-il-declencher-lalerte-rouge" class="ext">déclancher l'alerte rouge</a> selon le préfet. La Réunion peut se réjouir d'avoir des dégats limités.
+</p>
 
 <h3>Note: surveiller les prochaines alertes cycloniques</h3>
-
-Auparavant j'affichais une image de Météo France qui donnait le statut cyclonique pour le département de la Réunion. Maintenant le site de Meteo France a évolué et cette image est remplacée par une page qui donne en plus des alertes cycloniques, toutes les vigilances météorologiques possibles : vent, orages, canicule, fortes pluies… J'ai donc ajouté le <i>widget</i> qui va avec pour vous donner tous ces renseignements. Si vous ne voulez pas revenir sur ma page pour connaitre la situation cyclonique, je ne peux que vous rediriger vers les sites spécialisés de <a href="https://www.meteo-reunion.com/" class="ext">Metéo Réunion</a>, déjè présenté ici, et <a href="https://www.cycloneoi.com/" class="ext">Cycloneoi</a>, la nouveauté du mois, qui vous permettent de vous abonner à leurs newsletter d'alerte. <b>Meteo Réunon</b> est spécialisé dans le temps qu'il fait à la Réunion et <b>Cyclone OI</b> (OI pour Océan Indien) surveille tous les cyclones et dépressions tropicales de cette partie de la planète.
+<p>
+Auparavant j'affichais une image de Météo France qui donnait le statut cyclonique pour le département de la Réunion. Maintenant le site de Meteo France a évolué et cette image est remplacée par une page qui donne, en plus des alertes cycloniques, toutes les vigilances météorologiques possibles : vent, orages, canicule, fortes pluies… J'ai donc ajouté le <i>widget</i> qui va avec pour relayer aussi tous ces renseignements.
+</p>
+<p class="center">
+<!-- Debut code vignette vigilance départementale  Météo-France https://vigilance.meteofrance.fr/fr/la-reunion -->
+<iframe src="https://vigilance.meteofrance.fr/fr/widget-vigilance/vigilance/reunion"  width="302" height="122" frameborder="0">
+</iframe>
+</p>
+<p>
+Si vous ne voulez pas revenir sur ma page pour connaitre la situation cyclonique, je ne peux que vous rediriger vers les sites spécialisés de <a href="https://www.meteo-reunion.com/" class="ext">Metéo Réunion</a>, déjà présenté ici, et <a href="https://www.cycloneoi.com/" class="ext">Cycloneoi</a>, la nouveauté du mois, qui vous permettent de vous abonner à leurs newsletter d'alerte. <b>Meteo Réunion</b> est spécialisé dans le temps qu'il fait à la Réunion et <b>Cyclone OI</b> (OI pour Océan Indien) surveille tous les cyclones et dépressions tropicales de tout le bassin ouest de l'Océan Indien.
+</p>
 
 <h2>La taille de Freddy</h2>
-
-Après le passde de Freddy à la Réunion, la page facebook de <b>Actus Météo 974</b> compare les trois derniers cyclones qui ont affecté la Réunion en deux ans : Le <b>cyclone intense Batsirai</b> passé à 190 km de la Réunion les 2 et 3 février 2022, suivi du <b>cyclone intense Emnati</b> passé à 360 km au nord de la Réunion le 20 février de la même année et enfin le <b>cyclone intense Freddy</b> décrit plus haut. En alignant les photos satellite des trois phénomènes cycloniques, l'amateur météo constate que Freddy est plus « petit » et que la Réunion a bien de la chance de ne pas avoir été touchée directement depuis presque 20 ans (<a href="/decouverte/geographie/cyclones/cyclone-dina/">avec Dina</a>).
+<p>
+Après le passage de de Freddy à la Réunion, la page facebook de <b>Actus Météo 974</b> compare les trois derniers cyclones qui ont affecté la Réunion en deux ans : Le <b>cyclone intense Batsirai</b> passé à 190 km de la Réunion les 2 et 3 février 2022, suivi du <b>cyclone intense Emnati</b> passé à 360 km au nord de la Réunion le 20 février de la même année et enfin le <b>cyclone intense Freddy</b> décrit plus haut. En alignant les photos satellite des trois phénomènes cycloniques, l'amateur météo constate que Freddy est plus « petit » et que la Réunion a bien de la chance de ne pas avoir été touchée directement depuis presque 20 ans (<a href="/decouverte/geographie/cyclones/cyclone-dina/">avec Dina</a>).
+</p>
 
 <!-- https://www.facebook.com/ActusMeteo974/posts/pfbid02i3frQgwaGPDSKUZkB4gRQzB5iq5faZ2tHvSbnQJR2u6xsU9dgqza6jV2aNJDkNNZl -->
-
+<p class="center legende">
+  {% Image page, "batsirai-emnati-freddy.png", "photos satélitte de 3 cyclones Batsirai, Emnati et Freddy" %}<br>
+Triptique de photos satellite des cyclones Batsirai, Emnati et Freddy par <b>Actus Météo 974</b>
+</p>
+<p>
 Mais la taille des couronnes nuageuses de Freddy sur les photos satellite ne doivent pas nous induire en erreur. Freddy est un cyclone très puissant et il vient de traverer tout l'océan Indien d'est en ouest en se renforçant jusqu'à devenir cyclone tropical très intense (vents suppérieurs à 212 km/h) à l'approche de Rodrigues. Les météorologues constate déjà sa singularité : une taille relativement petite pour un cyclone de cette intensité mais une grosse puissance autour de l'œil. Généralement les cyclones qui naissent à l'est de l'Océan Indien se dirigent vers le sud et se dissolvent sous les latitudes des chevaux, la région des calmes subtropicaux. La trajectoire presque rectiligne de Freddy surprend. Elle s'explique par une absence de perturbation sur la zone traversée qui a permit au cyclone de se renforcer.
+</p>
 
 <h2>La longue traversée</h2>
 
-https://zoom.earth/maps/satellite-hd/#view=-18.6,74.6,3.8z/date=2023-02-18,pm
-Image salellite de l'Océan Indien traversé par le cyclone Freddy ainsi que le cyclone Enala qui présente une trajectoire plus habituelle.
+<p class="center legende">
+  {% Image page, "trajectoire-cyclone-freddy-ocean-indien.png", "carte de l'Océan Indien avec tracé du cyclone Freddy avec code couleur pour l'intensité du violet (catégorie 1) à rouge (catégorie 5)" %}<br>
+Image salellite de l'Océan Indien traversé par le cyclone Freddy ainsi que le cyclone Enala qui présente une trajectoire plus habituelle. Source : zoom.earth
+</p>
 
-le phénomène météoroligique Freddy a commencé a être observé au large de l'Indonésie le 3 février. C'est là que le service de météo Australien lui a donné ce nom de film d'horreur. À cette date, il se dirigait vers Bali et présentait des vents à 30 km/h. Il s'est alors renforcé, devenant une dépression tropicale puis tempête tropicale modérée en faisant presque demi-tour plein ouest. Tout au lon de son trajet il s'est renforcé passant à forte tempête tropicale, cyclone tropical puis cyclone tropical intense et enfin cyclone tropical très intense avant de réduire un peu la force de ses vents à l'approche des Mascareignes. Après son passage au large de la Réunion il s'est dirigé vers la grande île de Madagascar et l'a traversée violemment les 21 et 22 février.
-
-De l'autre coté de la grande île, le cyclone a repris de la vigueur au dessus des eaux chaudes du canal du Mozambique et s'est dirigé vers le continent qu'il a touché le 24 février au sud de Vilanculos.
+<!-- https://zoom.earth/maps/satellite-hd/#view=-18.6,74.6,3.8z/date=2023-02-18,pm -->
 
 
-Le cyclone le plus long du monde
-https://www.temoignages.re/developpement/changement-climatique/freddy-pourrait-etre-le-cyclone-le-plus-long-de-l-histoire-selon-l-organisation-meteorologique-mondiale-omm,106665
+<p>
+  Le phénomène météoroligique Freddy a commencé a être observé au large de l'Indonésie le 3 février. C'est là que le service de météo Australien lui a donné ce nom de film d'horreur. À cette date, il se dirigait vers Bali et présentait des vents à 30 km/h. Il s'est alors renforcé, devenant une dépression tropicale puis tempête tropicale modérée en faisant presque demi-tour plein ouest. Tout au lon de son trajet il s'est renforcé passant à forte tempête tropicale, cyclone tropical puis cyclone tropical intense et enfin cyclone tropical très intense avant de réduire un peu la force de ses vents à l'approche des Mascareignes. Après son passage au large de la Réunion il s'est dirigé vers la grande île de Madagascar et l'a traversée violemment les 21 et 22 février.
+</p>
+<p>
+  De l'autre coté de la grande île, le cyclone a repris de la vigueur au dessus des eaux chaudes du canal du Mozambique et s'est dirigé vers le continent qu'il a touché le 24 février au sud de Vilanculos.
+</p>
+
+<!-- Le cyclone le plus long du monde
+https://www.temoignages.re/developpement/changement-climatique/freddy-pourrait-etre-le-cyclone-le-plus-long-de-l-histoire-selon-l-organisation-meteorologique-mondiale-omm,106665 -->
 
 <h2>Les allées et venues meurtrières en Afrique</h2>
 
+<p>
 Un cyclone puise son énergie de la surface chaude des océans, lorsqu'il s'approche des terres, il perd rapidement de la vigueur. Mais son arrivée au dessus des terres provoque aussi des vents verticaux et des brusques changements de direction dus aux perturbations causées par les reliefs. Pour son premier passage au dessus du Mozambique le cyclone Freddy a d'abbord stationné le long des côtes avant d'entrer sur le continent pour dégénérer en dépression tropicale. La dépression tropicale reste un phénomène assez puissant pour provoquer de grandes destructions. Les vents violents et les fortes pluies ont aussi causé des dégats à des milliers de kilometres au Zimbabwe, en Afrique du sud et même au Eswatini.
+</p>
 
-https://twitter.com/Firinga_le_site/status/1634471394556690433
+<p class="center legende">
+<blockquote class="twitter-tweet"><p lang="fr" dir="ltr">⚠️ <a href="https://twitter.com/hashtag/FREDDY?src=hash&amp;ref_src=twsrc%5Etfw">#FREDDY</a> va rester plusieurs heures quasi-stationnaire à proximité immédiate du Mozambique et de la ville Quélimane...<br>🙏 Grosse pensée à la population Mozambicaine, grande prudence !<br><br>© Modèle AROME MF <a href="https://t.co/LFjBKBRjPA">pic.twitter.com/LFjBKBRjPA</a></p>&mdash; L&#39;œil du cyclone (@Firinga_le_site) <a href="https://twitter.com/Firinga_le_site/status/1634471394556690433?ref_src=twsrc%5Etfw">March 11, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
+<!-- https://twitter.com/Firinga_le_site/status/1634471394556690433 -->
 
+<p>
 Le système a tourné plusieurs fois à l'intérieur des terres puis s'en est retourné vers le canal du Mozambique en direction du sud de Madagascar. Les eaux chaudes du canal du Mozambique ont à nouveau redonné de la vigueur au cyclone dont l'œil est resté presque deux jours (6 et 7 mars) au large des côtes malgaches. Il a ensuite tourné vers le nord reprenant de la force et touchant à nouveau le Mozambique en la ville de Quelimane le 11 mars 2023 avec des vents d'une vitesse moyenne de 130 km/h. Il s'est ensuite enfoncé dans les terres pour toucher le Malawi le 12 mars et enfin se dissiper au sud de ce pays le 15 mars non sans avoir causé d'énnormes dégats.
+</p>
+<p class="center legende">
+  {% Image page, "freddy-retour-sur-madagascar.png", "carte du canal du Mozambique avec la fin du tracé du cyclone Freddy avec code couleur pour l'intensité" %}<br>
+Détail de la fin du tracé du cyclone Freddy avec son allé-retour sur Madagascar et ses deux atterrissages ravageurs sur le continent africain. Source : zoom.earth
+</p>
+<p>
+La période estivale est plutôt seche dans ces pays, surtout l'ouest de Madagascar qui est sous le vent. En temps normal ces régions reçoivent entre 200 et 300mm de pluie pour le mois de mars. Avec Freddy, elles en on reçu 500mm par jour. Le grain et les fortes pluies ammenées par Freddy on rapidement provoqué des coulées de boue et des glissements de terrain. Les vents violents ont parfois tout emporté sur leur passage, arrachant les toitures, les ponts, emportant les véhicules… Même si les populations étaient prévenues plusieurs jours à l'avance, que les écoles étaient fermées, le bilan des allées et venues de Freddy est catastrophique. presque 30 morts à Madagascar, plus de 150 morts à chaque passage au Mozambique et plus d'un millier au Malawi.
+</p>
 
-La période estivale est plutôt seche dans ces pays, surtout l'ouest de Madagascar qui est sous le vent. En temps normal ces régions reçoivent entre 200 et 300mm de pluie pour le mois de mars. Avec Freddy, elles en on reçu 500mm par jour. Le grain et les fortes pluies ammenées par Freddy on rapidement provoqué des coulées de boue et des glissements de terrain. Les vents violents peuvent tout emporter sur leur passage, arrache les toitures, les ponts, les véhicules… Les vents peuvent se transformer localement en tornades qui fait tournoyer toutes sortes d'objets meurtriers. Même si les populations étaient prévenues plusieurs jours à l'avance, que les écoles étaient fermées, le bilan des allées et venues de Freddy est catastrophique. presque 30 morts à Madagascar, plus de 150 morts à chaque passage au Mozambique et plus d'un millier au Malawi. Nombre d'habitants ont dût être déplacés dans chaque pays parce que leur maison est soit détruite soit innondée. 28,300 maisons on été détruites au Mozambique lors du premier passage et 103,000 lors du second passage déplaçant des centaines de milliers de personnes. A Madagascar, 24,358 on été déplacées dans des camps d'urgence, au Malawi, ce sont 508,244 personnes qui été déplacées.
+<p>
+  Après la disparition du cyclone Freddy, la situation n'est pas résolue pour les survivants.
+  Nombre d'habitants ont dût être déplacés dans chaque pays parce que leur maison est soit détruite soit innondée. 28,300 maisons on été détruites au Mozambique lors du premier passage et 103,000 lors du second passage déplaçant des centaines de milliers de personnes. A Madagascar, 24,358 on été déplacées dans des camps d'urgence, au Malawi, ce sont 508,244 personnes qui été déplacées. Par endroit Freddy a détruit des chantiers de reconstruction suite au passage du cyclone Eloise en 2021.
+</p>
+<p class="center legende">
+  {% Image page, "mozambique-zones-touchees-ocha.png", "After its passage over Mozambique, Severe Tropical Storm Freddy returned to the Mozambique channel and moved towards the south-western coast of Madagascar, where it brought heavy rains to the city of Toliara and surrounding areas. (carte avec explication des zones touchées)" %}<br>
+Mise à jour de la situation au 6 mars 2023 par l'Office for the Coordination of Humanitarian Affairs (OCHA). La carte montre le passage du cyclone, les populations affectées et les foyers de choléras. <a href="https://reliefweb.int/report/mozambique/southern-africa-tropical-cyclone-freddy-flash-update-no-5-06-march-2023" class="ext">Source: OCHA</a>
+</p>
+<p>
+Pire, les destructions des réseaux sanitaires et d'eau potable sont source de prolifération de microbes à l'origine d'épidémies. Le cholera qui est apparu au Mozambique un peu avant le premier passage de Freddy s'est largement diffusé et le nombre de cas a explosé. Cette épidémie est d'autant plus difficile à endiguer que les centres de soins et les voies de communication ont eux aussi été détruits. Une catastrophe humanitaire que l'ONU surveille au plus près pour que les agences et les ONG puissent apporter l'aide au mieux.
+</p>
 
-Après la disparition du cyclone Freddy, la situation n'est pas résolue pour autant pour ces milliers de personnes. Les destructions rapides sont arrivées alors que certaines destructions dues au cyclone Eloise en 2021 n'étaient pas encore réparées. Pire, les destructions des réseaux sanitaires et d'eau potable sont source de prolifération de microbes à l'origine d'épidémies. Le cholera qui est apparu au Mozambique un peu avant le premier passage de Freddy s'est largement diffusé et le nombre de cas a explosé. Cette épidémie est d'autant plus difficile à endiguer que les centres de soins et les voies de communication ont eux aussi été détruits. Une catastrophe humanitaire que l'ONU surveille au plus près pour que les agences et les ONG puissent apporter l'aide au mieux.
+mozambique-zones-touchees-ocha
 
+<!--
 https://www.lemonde.fr/planete/article/2023/03/13/retour-du-cyclone-freddy-au-moins-quinze-morts-au-malawi-et-au-mozambique_6165292_3244.html?utm_medium=Social&utm_source=Mastodon
 
 chiffres de l'ONU
@@ -73,49 +130,39 @@ https://news.un.org/fr/story/2023/03/1133167
 https://www.bbc.com/news/world-africa-64978492
 https://en.wikipedia.org/wiki/Cyclone_Freddy
 https://www.cycloneoi.com/archives-blog/cyclone/la-catastrophe-freddy.html
-
+ -->
 
 
 <h2>Les reccords de Freddy</h2>
 
+<p>
 Comme l'article de Témoignage cité plus haut le titre au 13 mars, le Cyclone Freddy pourrait être le cyclone à la durée la plus longe jamais enregistrée (<i>le cyclone le plus long de l'histoire</i>). À cette date, le cyclone entrait sur le continent une seconde fois après 34 jours d'activité ce qui devait encore être confirmé par l'Organisation météorologique mondiale. Le record précédent de 31 jours était détenu par le cyclone John qui en 1994 a traversé le Pacifique nord et conserve encore aujourd'hui le record de la distance parcourue. <a href="https://www.washingtonpost.com/weather/2023/03/12/cyclone-freddy-records-ace-longevity/" class="ext">Le Washignton Post relevait</a> quant à lui, un reccord déjà avéré d'énergie cumulative (ACE en anglais <i>Accumulated cyclone energy</i>). L'ACE est la quantité d'énergie globale du cyclone estimée à partir de la vitesse maximale des vents relevée pour chaque période de six heures. L'indice ACE représente des nœuds<sup>2</sup> divisé par 10000. À la fin de sa vie Freddy avait accumulé l'ACE reccord de 87. Pour donner un ordre d'idée, <a href="https://public.wmo.int/en/media/news/tropical-cyclone-freddy-may-set-new-record" class="ext">l'Organisation météorologique mondiale indique</a> que c'est l'indice ACE global d'une saison cyclonique entière pour la zone Atlantique nord.
+</p>
 
+<p>
 Quand à la longévité elle a été validé à 37 jours d'activité, un reccord pulvérisé. <a href="https://www.cycloneoi.com/archives-blog/cyclone/cyclone-freddy-pourquoi-une-telle-longevite.html" class="ext">Cycloneoi revient sur cette longévité</a> et tente de l'expliquer par l'absence d'ostacles sur la première partie de son trajet puis par les perturbations dans le canal du Mozambique pour ses derniers moments en zig-zag.
+</p>
 
+<p>
 Un autre record pas souvent rapporté par la presse est le nombre d'intensifications rapides. Freddy est le premier cyclone tropical à subir <b>7 cycles distincts d'intensification rapide</b>, une augmentation brutale de la vitesse des vents de plus de 30 nœuds en moins de 24 heures. Le précédent reccord de 4 cycles, détenus par l'ouragan John (1994 Pacifique), l'ouragan Emily (2005 Atlantique nord) et l'ouragan Norman (2018 Pacifique), a ici aussi été pulvérisé.
+</p>
 
 <!-- https://www.downtoearth.org.in/news/natural-disasters/the-cyclone-that-lived-longest-how-freddy-broke-all-kinds-of-records-88258 -->
 
 <h2>Cyclones et changement climatique</h2>
 
-Sur un commentaire de son site cycloneoi, un visiteur demande à Patrick Rabeson si la longévité de Freddy peut avoir un lien avec <b>le changement climatique</b> ? Il est toujours difficile de faire un lien direct entre un événements exceptionel précis et le changement climatique qui est une tendence de fond. C'est d'ailleurs à peu de choses près la réponse de Patrick sur ce sujet qui mérite quand même d'être soulevé.
+<p>
+Sur un commentaire de son site cycloneoi, un visiteur demande à Patrick Rabeson si la longévité de Freddy peut avoir un lien avec <b>le changement climatique</b> ? Il est toujours difficile de faire un lien direct entre un événements exceptionel précis dépend de nombreuses conditions à un moment précis et le changement climatique qui est une tendence de fond. C'est d'ailleurs à peu de choses près la réponse de Patrick sur ce sujet qui mérite quand même d'être soulevée.
+</p>
 
-Patrick relève aussi même si le passage d'un cyclone est une événement exceptionnel, il est normal d'en observer pendant la saison cyclonique, c'est à dire entre le 15 novembre et le 30 avril. Pour
+<p>
+Patrick relève aussi même si le passage d'un cyclone est une événement exceptionnel, il est courant d'en observer pendant la saison cyclonique, c'est à dire entre le 15 novembre et le 30 avril. Même si le réchauffement climatique favorise certaines conditions favorables au développement des cyclones comme la température de la mer, on ne peut affirmer que c'est la seule cause ni de la naissance ni de l'intensité du cyclone Freddy.
+</p>
+<p>
+L'impact de changement climatique sur les cyclone est un sujet d'étude depuis plusieurs années et le sujet fait encore débat. <a href="/decouverte/geographie/cyclones/rechauffement-climatique/">Je fait le point dans un article qui résume ce que l'on sait aujourd'hui</a> et ce que les scientifique étudient encore. En gros, le réchauffement climatique semble avoir un influance sur la formation des cyclones. On ne devrait pas en voir plus mais en voir de plus intenses et peut-être avec des trajectoires plus inhabituelles selon les bassins.
+</p>
 
-<h3>Le nombre des Cyclones</h3>
-
-https://meteofrance.com/le-changement-climatique/observer-le-changement-climatique/cyclones-et-changement-climatique
-
-http://www.firinga.com/archives.php
-
-diminution
-https://www.lemonde.fr/planete/article/2022/04/27/climat-les-cyclones-tropicaux-les-plus-intenses-devraient-etre-au-moins-deux-fois-plus-frequents-d-ici-a-2050_6123956_3244.html
-
-<h3>La distribution</h3>
-
-https://www.nature.com/articles/nature13278
-https://theconversation.com/avec-le-changement-climatique-des-cyclones-et-des-ouragans-plus-intenses-66862
-
-<h3>L'intensité</h3>
-
-https://www.notre-planete.info/actualites/699-cyclones_rechauffement_climatique 2005
-
-Le rapport du Giec de 2013 fait état d’une tendance à l’intensification des phénomènes les plus violents avec le réchauffement climatique. En effet, lorsque l’atmosphère se réchauffe, sa capacité à contenir de l’humidité augmente également suivant la formule de Clausius-Clapeyron, ce qui, lors d’un évènement extrême, permet de mobiliser plus d’énergie liée à la chaleur latente.
-
-https://www.nature.com/articles/s41467-022-34321-6
-
-
-TODO
+<!-- TODO
 refaire alertes cycloniques
 https://www.lequotidien.re/actualites/societe/alertes-mode-demploi/
 https://www.cycloneoi.com/pages/infos-generales/les-alertes-a-la-reunion.html
@@ -128,6 +175,5 @@ https://www.mtotec.com/page-satellite
 cartes:\
 https://cimss.ssec.wisc.edu/satellite-blog/archives/50664
 
-
 https://www.nesdis.noaa.gov/news/tropical-cyclone-freddy-breaks-records-lashing-madagascar
-https://www.nesdis.noaa.gov/news/tropical-cyclone-freddy-breaks-records-lashing-madagascar
+-->
