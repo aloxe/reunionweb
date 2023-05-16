@@ -316,20 +316,20 @@ main tr.rows {
 }
 
 main td.ligne {
-    border-bottom: #0073d7 dotted 2px;
+    border-bottom: #0060df dotted 2px;
 }
 
 main tr.ligne {
-    border-left: #0073d7 dotted 2px;
-    border-right: #0073d7 dotted 2px;
+    border-left: #0060df dotted 2px;
+    border-right: #0060df dotted 2px;
 }
 
 main tr.titre, main tr th {
-    color: #680e0e;
+    color: #FFF;
     text-decoration: none;
     font-weight: bold;
-    border: #f7d25b solid 2px;
-    background-color: #f7d25b;
+    border: #003eaa solid 2px;
+    background-color: #003eaa;
 }
 
 main table img {
