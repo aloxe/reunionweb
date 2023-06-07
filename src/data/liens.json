@@ -243,6 +243,15 @@
       "article": ["200703"]
   },
   {
+      "id": 27,
+      "title": "ROD Immo",
+      "url": "https://www.rodimmo.com/",
+      "parent": "professionnels",
+      "importance": 0,
+      "description": "Agence immobilière présentant des biens exclusifs en ligne.",
+      "article": ["200504"]
+  },
+  {
       "id": 29,
       "title": "Chat Réunion",
       "url": "http://www.chat-reunion.org/",
@@ -770,7 +779,7 @@
       "url": "http://www.rhum-charrette.com/",
       "parent": "pei",
       "importance": 0,
-      "description": "Présentation flash de l’entreprise et des rhums. Recettes au Rhum.",
+      "description": "Présentation de l’entreprise et des rhums. Recettes au Rhum.",
       "article": ["200612"]
   },
   {
