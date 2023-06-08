@@ -1,16 +1,12 @@
 function rewrite_url(title) {
-    console.log(title + " …reçu");
   const base = "/decouverte/culture/gouzou/";
-  const slug = title === 'Galerie des Gouzou de Jace' ? base : base+slugify(title);
-  console.log(slug);
-  console.log(title);
+  const slug = title === 'Galerie des Gouzou de Jace' ? base : base+slugify(title)+"/";
   window.history.pushState({}, '', slug);
   document.title = title;
 }
 
 // slugify soi même
 function slugify(str) {
-  console.log("slug");
     str = str.replace(/^\s+|\s+$/g, '');
 
     // Make the string lowercase
