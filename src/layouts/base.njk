@@ -9,8 +9,7 @@
       {% include "head.njk" %}
     {% endblock %}
   </head>
-  <body>
-    <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
+  <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
 
     {% block header %}
       {% include "header.njk" %}
