@@ -1,6 +1,9 @@
 {% set isArticle = page.url.split("/")[1] and page.inputPath.split("/")[3] === "articles" %}
 {% set isDecouverte = page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] %}
+{% set isIndexLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[1] %}
 {% set isLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[2] %}
+{% set isAbout = page.url.split("/")[1] === "about" and page.url.split("/")[2] %}
+{% set isNewsletter = page.url.split("/")[2] === "newsletter" %}
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,8 +12,7 @@
       {% include "head.njk" %}
     {% endblock %}
   </head>
-  <body>
-    <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
+  <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
 
     {% block header %}
       {% include "header.njk" %}
