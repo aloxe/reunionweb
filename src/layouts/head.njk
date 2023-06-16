@@ -17,8 +17,12 @@
     {% else %}
     {{title}} | Découvrez la Réunion
     {% endif %}
-  {% elif isArticle or isLiens %}
+  {% elif isNewsletter %}
+        {{title}} | Abonnez-vous
+  {% elif isArticle or isLiens or isAbout %}
     {{title}} | Reunionweb
+  {% elif isIndexLiens %}
+      {{title}} de Reunionweb
   {% else %}
     {{title}}
   {% endif %}
