@@ -3,5 +3,13 @@
           <div class="h1">{% if page.fileSlug %}<a href="{{ '/' | url }}">{{ meta.title }}</a>{% else %}{{ meta.title }}{% endif %}</div>
           <div class="h2">{% if page.fileSlug %}<a href="{{ '/' | url }}">{{ meta.subtitle }}</a>{% else %}{{ meta.subtitle }}{% endif %}</div>
       </div>
+      <div class="search">
+        <input id="search" placeholder="recherche…" type="search"><span>🔍</span>
+      </div>
     </header>
     <noscript><img src="//reunionweb.org/matomo/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></noscript>
+
+    {% set js %}
+      {% include "includes/js/searchinput.js" %}
+    {% endset %}
+    <script>{{ js | jsmin | safe }}</script>
