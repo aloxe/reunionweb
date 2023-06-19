@@ -70,7 +70,7 @@ body {
 	padding: 13px;
   width: calc(100% - 492px);
 	opacity: 1;
-  position: fixed;
+  position: absolute;
   top: 10px;
   right: 10px;
   text-align: right;
@@ -81,7 +81,7 @@ body {
   border: 2px solid #006fcf;
   border-radius: 25px;
   width: 94px;
-  padding: 5px 0;
+  padding: 5px 24px 5px 4px;
   background: white;
 }
 
@@ -94,6 +94,26 @@ body {
   padding: 5px 10px;
   width: 100%;
 }
+
+.searchblock h4 {
+  border: 2px solid #006fcf;
+  border-radius: 20px;
+  padding: 2px;
+  width: 100%;
+  transition: all .3s;
+}
+
+.searchblock h4 button {
+  float: right;
+  margin: 2px;
+  padding: 2px 8px 5px;
+  border: 2px solid #006fcf;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 /* main content */
 
 main {
@@ -539,7 +559,7 @@ main h3 a.button:hover {
 .newsblock img {
   margin: 0;
 }
-
+.searchblock h3 a , .searchblock p a,
 .newsblock h3 a , .newsblock p a {
   color: inherit;
 }
@@ -574,13 +594,6 @@ input:focus::placeholder {
 .snipet a {
   color: inherit;
   text-decoration: inherit;
-}
-
-.gouzoucherche img {
-  position: absolute;
-  z-index: 100;
-  bottom: 15px;
-  right: -15px;
 }
 
 body > footer {  /* sticky footer */

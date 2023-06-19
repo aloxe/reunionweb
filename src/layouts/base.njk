@@ -4,6 +4,7 @@
 {% set isLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[2] %}
 {% set isAbout = page.url.split("/")[1] === "about" and page.url.split("/")[2] %}
 {% set isNewsletter = page.url.split("/")[2] === "newsletter" %}
+{% set is404 = page.fileSlug === "404" %}
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -12,7 +13,7 @@
       {% include "head.njk" %}
     {% endblock %}
   </head>
-  <body {% if page.fileSlug === "404" %}onload="makeNotice()"{% endif %}>
+  <body {% if is404 %}onload="makeNotice()" class="p404"{% endif %}>
 
     {% block header %}
       {% include "header.njk" %}
@@ -42,7 +43,6 @@
         <p class="left">
           <a href="{{ '/articles/' | url }}">articles</a><br>
           <a href="{{ '/decouverte/' | url }}">découverte</a><br>
-          <a href="{{ '/recherche/' | url }}">recherche</a><br>
           <a href="{{ '/liens/' | url }}">liens</a>
         </p>
           {% if page.url !== "/about/" %}

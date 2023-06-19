@@ -1,4 +1,4 @@
-/* #search {
+#search {
 	border: 2px solid #006fcf;
 	border-radius: 5px;
 	transition: all 0.3s;
@@ -13,4 +13,11 @@
 
 #search:focus {
   border-left: 12px solid #006fcf;
-} */
+}
+
+.gouzoucherche img {
+  position: absolute;
+  z-index: 100;
+  bottom: 15px;
+  right: -15px;
+}

@@ -48,7 +48,4 @@
     })
   );
 
-  // const searchInput = document.getElementById('search');
-
-
 })(window, document);

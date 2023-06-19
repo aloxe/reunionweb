@@ -177,7 +177,7 @@ module.exports = (eleventyConfig) => {
     return data.url
   })
 
-  // copy linked images with pages
+  // COPY IMAGES LINKED in PAGES
   // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "parse",
