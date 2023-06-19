@@ -37,6 +37,17 @@ body {
 	background-repeat: no-repeat;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #0d1c3e;
+      background-image: url("/img/tete-2023.png");
+  }
+
+  html, body, p, td, ul {
+    color: #cfcbc3;
+  }
+}
+
 /* header */
 
 #titre {
@@ -62,7 +73,13 @@ body {
 
 #titre a {
     text-decoration: none;
-    color: white;
+    color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  #titre {
+    color: #ffecb4;
+  }
 }
 
 .search {
@@ -113,7 +130,13 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-
+@media (prefers-color-scheme: dark) {
+  .search input,
+  .searchblock h4 button {
+    background: #0a152f;
+    color: #a4aab7;
+  }
+}
 /* main content */
 
 main {
@@ -130,15 +153,6 @@ main {
         padding: 10px 10px 80px; /* sticky footer */
         width: calc(100% - 30px);
     }
-}
-
-.button {
-  border: 1px solid #001c86;
-  display: inline-flex;
-  border-radius: 14px;
-  margin: 0.5em auto;
-  width: fit-content;
-  padding: 0 0.5em;
 }
 
 main .center {
@@ -257,9 +271,37 @@ main h5 {
 
 }
 
+@media (prefers-color-scheme: dark) {
+  main h1 {
+      border-bottom: #fbd35c dotted 1px;
+      color: #fbd35c;
+  }
+
+  main h2, main h3, main h4, main h5 {
+      color: #006fd5;
+  }
+  main h2.articles {
+    border-top: #fbd35c dotted 1px;
+  }
+}
+
 main hr {
   border: 0;
   border-bottom: #001c86 dotted 1px;
+}
+
+.button {
+  border: 1px solid #001c86;
+  display: inline-flex;
+  border-radius: 14px;
+  margin: 0.5em auto;
+  width: fit-content;
+  padding: 0 0.5em;
+}
+
+.button:hover {
+  text-decoration: none;
+  border: 1px solid #0073d7;
 }
 
 span.link,
@@ -282,6 +324,35 @@ a:hover {
 
 a.ext:link:after, a.ext:visited:after, a.ext:active:after {
    	content:url("/img/puce-url-out.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  span.link,
+  a {
+    color: #81c6ff;
+  }
+
+  a:visited {
+      color: #a3d5ff;
+
+  }
+
+  span.link:hover,
+  a:hover {
+        color: #8187ff;
+  }
+
+  a.ext:link:after, a.ext:visited:after, a.ext:active:after {
+     	content:url("/img/puce-url-out-dark.png");
+  }
+
+  .button {
+    border: 1px solid #81c6ff;
+  }
+
+  .button:hover {
+    border: 1px solid #8187ff;
+  }
 }
 
 main img {
@@ -313,6 +384,16 @@ main .cadrimage {
 	border:1px dotted #006fd5;
 }
 
+@media (prefers-color-scheme: dark) {
+  main img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  main img:hover {
+    opacity: 1;
+  }
+}
+
 main .center iframe,
 main .cadrimage iframe,
 main .cadrimage img {
@@ -326,9 +407,14 @@ main .legende {
     line-height: 18px;
     color: #006fd5;
 }
+@media (prefers-color-scheme: dark) {
+  main .legende {
+      color: #ffecb4;
+  }
+}
 
 main .legende a {
-	color: #006fd5;
+	color: inherit;
   text-decoration: underline;
 }
 
@@ -343,6 +429,12 @@ main li {
 	text-align : justify;
 	margin : 0 0 1em 2em;
 	list-style-image : url("/img/puce-reunion.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  main li {
+  	list-style-image : url("/img/puce-reunion-dark.png");
+  }
 }
 
 main table.ligne {
@@ -404,6 +496,15 @@ main p.chapo {
   color: #001c86;
 }
 
+main p.chapo {
+  color: #001c86;
+}
+
+main p.chapo a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 main p.retrait {
   margin-left: 20px;
   padding: 10px 30px;
@@ -422,6 +523,21 @@ main p.lettrine::first-letter {
   font-size: 24px;
   font-style: italic;
   color: #001c86;
+}
+
+@media (prefers-color-scheme: dark) {
+  main p.chapo,
+  main p.lettrine::first-letter {
+    color: #fec92b;
+  }
+
+  main p.retrait {
+    border-left: 4px solid #ffecb4;
+  }
+
+  main p.citation {
+    color: #ffecb4;
+  }
 }
 
 main .f14 {
@@ -517,18 +633,9 @@ main p.suite {
   padding-top: 0;
 }
 
-main p.suite a:hover {
-  border-color: #006fd5;
-}
-
 main h3 a.button {
   padding: 8px;
   border-radius: 20px;
-}
-
-main h3 a.button:hover {
-  border-color: #006fd5;
-  text-decoration: none;
 }
 
 /* home blocks */
@@ -606,7 +713,7 @@ body > footer {  /* sticky footer */
 
 footer {
   font-size: 90%;
-  padding: 0 16px;
+  padding: 8px 16px;
   border-top: dotted #0073d7 1px;
   text-align: center;
 }
