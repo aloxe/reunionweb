@@ -45,13 +45,14 @@
           <a href="{{ '/decouverte/' | url }}">découverte</a><br>
           <a href="{{ '/liens/' | url }}">liens</a>
         </p>
-          {% if page.url !== "/about/" %}
-          <p>
-            <a href="{{ '/about/' | url }}" rel="author">à propos de Reunionweb</a>
-          </p>
-          {% endif %}
-          <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
         </nav>
+        {% if page.url !== "/about/" %}
+          <p>
+            <a href="{{ '/about/' | url }}" rel="author">à propos de reunionweb</a> | <a href="{{ '/about/newsletter/' | url }}" rel="newsletter">newsletter</a>
+          </p>
+        {% endif %}
+        <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
+
       </footer>
     {% endblock %}
 
