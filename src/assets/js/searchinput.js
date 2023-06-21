@@ -58,4 +58,10 @@ searchInput.onblur = function(e) {
   mainBlock = document.getElementsByTagName('main')[0];
   searchInput.value = "";
   mainBlock.style.opacity = 1;
+
+  const results = window.searchIndex.search(e.target.value, {
+    bool: "OR",
+    expand: true,
+  });
+  _paq.push(['trackSiteSearch',e.target.value, false, results?.length]);
 }
