@@ -48,13 +48,4 @@
     })
   );
 
-  const searchInput = document.getElementById('search');
-  searchInput.onblur = function(e) {
-    const results = window.searchIndex.search(e.target.value, {
-      bool: "OR",
-      expand: true,
-    });
-    _paq.push(['trackSiteSearch',e.target.value, false, results?.length]);
-    }
-
 })(window, document);

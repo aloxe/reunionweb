@@ -44,6 +44,7 @@ body {
     height: 100px;
     margin: 0;
     color: white;
+    width: 490px;
 }
 
 #titre .h1 {
@@ -64,20 +65,69 @@ body {
     color: white;
 }
 
+.search {
+	transition: all 0.3s;
+	padding: 13px;
+  width: calc(100% - 492px);
+	opacity: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+}
+
+.search input {
+	transition: all 0.3s;
+  border: 2px solid #006fcf;
+  border-radius: 25px;
+  width: 94px;
+  padding: 5px 24px 5px 4px;
+  background: white;
+}
+
+.search > input + span {
+  margin-left: -25px
+}
+
+.search input:focus {
+  border: 2px solid green;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.searchblock h4 {
+  border: 2px solid #006fcf;
+  border-radius: 20px;
+  padding: 2px;
+  width: 100%;
+  transition: all .3s;
+}
+
+.searchblock h4 button {
+  float: right;
+  margin: 2px;
+  padding: 2px 8px 5px;
+  border: 2px solid #006fcf;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
 /* main content */
 
 main {
-  min-height: calc(100% - 190px); /* sticky footer */
+  min-height: calc(100% - 180px); /* sticky footer */
   width: calc(65% - 30px);
   margin: 0 auto;
-  padding: 10px 30px 90px; /* sticky footer */
+  padding: 10px 30px 80px; /* sticky footer */
   max-width: 840px;
 }
 
 @media (max-width: 840px) {
   main {
         max-width: 700px;
-        padding: 10px 10px 90px; /* sticky footer */
+        padding: 10px 10px 80px; /* sticky footer */
         width: calc(100% - 30px);
     }
 }
@@ -509,7 +559,7 @@ main h3 a.button:hover {
 .newsblock img {
   margin: 0;
 }
-
+.searchblock h3 a , .searchblock p a,
 .newsblock h3 a , .newsblock p a {
   color: inherit;
 }
@@ -546,19 +596,12 @@ input:focus::placeholder {
   text-decoration: inherit;
 }
 
-.gouzoucherche img {
-  position: absolute;
-  z-index: 100;
-  bottom: 15px;
-  right: -15px;
-}
-
 body > footer {  /* sticky footer */
   position: sticky;
   top: 100vh;
-  margin-top: -90px;
+  margin-top: -80px;
   overflow: hidden;
-  height: 90px;
+  height: 80px;
 }
 
 footer {
@@ -568,14 +611,19 @@ footer {
   text-align: center;
 }
 
-footer p {
-    padding: 8px 0;
+footer > nav + p {
+    margin-top: 12px;
+}
+
+footer > p {
+    padding: 2px 0;
+    margin: 2px 0;
 }
 
 footer p.left {
     float: left;
     padding: 0;
-    margin: -10px 10px 0;
+    margin: 0 10px;
     text-align: left;
     line-height: 20px;
 }

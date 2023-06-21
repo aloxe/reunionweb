@@ -14,3 +14,10 @@
 #search:focus {
   border-left: 12px solid #006fcf;
 }
+
+.gouzoucherche img {
+  position: absolute;
+  z-index: 100;
+  bottom: 10px;
+  right: -15px;
+}
