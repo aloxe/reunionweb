@@ -71,7 +71,7 @@ body {
   width: calc(100% - 492px);
 	opacity: 1;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 10px;
   text-align: right;
 }
@@ -90,9 +90,40 @@ body {
 }
 
 .search input:focus {
-  border: 2px solid green;
   padding: 5px 10px;
   width: 100%;
+}
+
+@media (max-width: 650px) {
+  .search {
+    width: 60%;
+  }
+  .search input {
+    position: relative;
+    z-index: 10;
+    border: 2px solid #006fcf;
+    background: transparent;
+    width: 10px;
+    cursor: pointer;
+  }
+  .search > input + span {
+    position: relative;
+    margin-left: -29px;
+    z-index: 0;
+    background: white;
+    padding: 5px;
+    border-radius: 25px;
+  }
+  .search input:focus {
+    padding: 5px 10px;
+    width: 100%;
+    margin-top: 70px;
+    background: white;
+  }
+  .search input:focus + span {
+    z-index: 20;
+    padding: 0;
+  }
 }
 
 .searchblock h4 {
