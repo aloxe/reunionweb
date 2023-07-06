@@ -9,7 +9,6 @@
 {% elif page.url.split("/")[3] === "gouzou" and page.url.split("/")[4] %}{% else %}
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
 {% endif %}
-
 <title>
   {% if isDecouverte %}
     {% if 'Réunion' in title %}
