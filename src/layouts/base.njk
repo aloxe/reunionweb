@@ -1,8 +1,11 @@
+{# SEO: savoir ou on est pour changer les titres #}
 {% set isArticle = page.url.split("/")[1] and page.inputPath.split("/")[3] === "articles" %}
 {% set isDecouverte = page.url.split("/")[1] === "decouverte" and page.url.split("/")[2] %}
-{% set isIndexLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[1] %}
+{% set isIndexDecouverte = page.url.split("/")[1] === "decouverte" and page.url.split("/")[1] %}
 {% set isLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[2] %}
+{% set isIndexLiens = page.url.split("/")[1] === "liens" and page.url.split("/")[1] %}
 {% set isAbout = page.url.split("/")[1] === "about" and page.url.split("/")[2] %}
+{% set isIndexAbout = page.url.split("/")[1] === "about" and page.url.split("/")[1] %}
 {% set isNewsletter = page.url.split("/")[2] === "newsletter" %}
 {% set is404 = page.fileSlug === "404" %}
 

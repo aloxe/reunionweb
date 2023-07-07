@@ -12,6 +12,8 @@
 <title>
   {% if title | length > 57 %}
     {{title}}
+  {% elif isIndexDecouverte %}
+    {{title}} avec Reunionweb
   {% elif isDecouverte %}
     {% if 'Réunion' in title %}
     {{title}} | Reunionweb
@@ -23,7 +25,9 @@
   {% elif isArticle or isLiens or isAbout %}
     {{title}} | Reunionweb
   {% elif isIndexLiens %}
-      {{title}} de Reunionweb
+    {{title}} de Reunionweb
+  {% elif isIndexAbout %}
+    Tout savoir sur Reunionweb (et sans doute plus)
   {% else %}
     {{title}}
   {% endif %}
