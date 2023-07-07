@@ -10,7 +10,9 @@
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
 {% endif %}
 <title>
-  {% if isDecouverte %}
+  {% if title | length > 57 %}
+    {{title}}
+  {% elif isDecouverte %}
     {% if 'Réunion' in title %}
     {{title}} | Reunionweb
     {% else %}
