@@ -9,9 +9,12 @@
 {% elif page.url.split("/")[3] === "gouzou" and page.url.split("/")[4] %}{% else %}
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
 {% endif %}
-
 <title>
-  {% if isDecouverte %}
+  {% if title | length > 57 %}
+    {{title}}
+  {% elif isIndexDecouverte %}
+    {{title}} avec Reunionweb
+  {% elif isDecouverte %}
     {% if 'Réunion' in title %}
     {{title}} | Reunionweb
     {% else %}
@@ -22,7 +25,9 @@
   {% elif isArticle or isLiens or isAbout %}
     {{title}} | Reunionweb
   {% elif isIndexLiens %}
-      {{title}} de Reunionweb
+    {{title}} de Reunionweb
+  {% elif isIndexAbout %}
+    Tout savoir sur Reunionweb (et sans doute plus)
   {% else %}
     {{title}}
   {% endif %}

@@ -425,7 +425,7 @@
   {
       "id": 49,
       "title": "La Réunion Lontan",
-      "url": "http://sites.reunionweb.org/labuse-reunion/",
+      "url": "https://sites.reunionweb.org/labuse-reunion/",
       "parent": "photos",
       "importance": 0,
       "description": "Photos anciennes collectées par le site Labuse.",
@@ -434,7 +434,7 @@
   {
       "id": 50,
       "title": "Sophie Bazin",
-      "url": "http://sites.reunionweb.org/sbazin/",
+      "url": "https://sites.reunionweb.org/sbazin/",
       "parent": "peinture",
       "importance": 0,
       "description": "Les premières toiles de Sophie Bazin.",
@@ -560,7 +560,7 @@
   {
       "id": 65,
       "title": "Indos Musulmans",
-      "url": "http://sites.reunionweb.org/indo-musulmans/",
+      "url": "https://sites.reunionweb.org/indo-musulmans/",
       "parent": "litterature",
       "importance": 0,
       "description": "Présentation d’un livre de Koulsoum MOUSSA sur les Indo-musulmans de la Réunion.",
@@ -830,7 +830,7 @@
   {
       "id": 122,
       "title": "Le Margouillat",
-      "url": "http://sites.reunionweb.org/margouillat/",
+      "url": "https://sites.reunionweb.org/margouillat/",
       "parent": "artistes",
       "importance": 0,
       "description": "Les 14 numéros et plus du mensuel endémique de l’île de La Réunion qui sortait tous les mois jusqu’en janvier 2002.",

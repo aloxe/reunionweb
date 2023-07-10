@@ -14,8 +14,9 @@ module.exports = {
   eleventyComputed: {
     permalink: data => getUrl(data.categories[data.pagination.pageNumber].slug, data.categories),
     title: data => (data.pagination.pageNumber === 0) ? data.categories[data.pagination.pageNumber].title : "Sites web réunionnais : " + data.categories[data.pagination.pageNumber].title,
+    description: data => (data.pagination.pageNumber === 0) ? data.categories[data.pagination.pageNumber].description : data.categories[data.pagination.pageNumber].description + " Sont listés ici les sites web qui ont été visités et présentés sur reunionweb, tant qu'ils sont en ligne.",
     pagetitle: data => data.categories[data.pagination.pageNumber].title,
-    description: data => data.categories[data.pagination.pageNumber].description,
+    chapo: data => data.categories[data.pagination.pageNumber].description,
     slug: data => data.categories[data.pagination.pageNumber].slug
   }
 };

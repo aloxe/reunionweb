@@ -196,7 +196,7 @@
     "slug": "thematiques",
     "parent": "portails",
     "importance": 0,
-    "description": "Portails spécialisés dans un domaine précis mais aussi réunionnais"
+    "description": "Portails spécialisés dans un domaine précis mais aussi un rapport avec la Réunion"
   },
   {
     "title": "Portails touristiques",
@@ -204,7 +204,7 @@
     "parent": "portails",
     "associe": ["musees"],
     "importance": 0,
-    "description": "Portail essentielement sur le tourisme à la Réunion"
+    "description": "Portails essentielement sur les activités et l'hébergement de tourisme à la Réunion"
   },
   {
     "title": "Sports & loisirs",
