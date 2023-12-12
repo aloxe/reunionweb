@@ -360,6 +360,15 @@
       "article": ["200204", "200409", "200504", "200605"]
   },
   {
+      "id": 41,
+      "title": "SysDevRun",
+      "url": "https://www.sys-dev-run.fr/",
+      "parent": "presta",
+      "importance": 0,
+      "description": "Théophile Helleboid, consultant informatique, internet et spécialiste de l'Internet par Satellite",
+      "article": ["202312"]
+  },
+  {
       "id": 42,
       "title": "Imaz press Réunion",
       "url": "http://www.ipreunion.com/",
@@ -385,6 +394,15 @@
       "importance": 0,
       "description": "Programmes, boutique et écoute en ligne des deux stations du groupe Free DOM.",
       "article": [""]
+  },
+  {
+      "id": 45,
+      "title": "coworkings.re",
+      "url": "https://www.coworkings.re/",
+      "parent": "professionnels",
+      "importance": 0,
+      "description": "L'annuaire de tous les espaces de coworking à la Réunion",
+      "article": ["202312"]
   },
   {
       "id": 46,
