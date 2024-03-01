@@ -211,6 +211,11 @@ main li {
     letter-spacing: .04em;
 }
 
+main p.concis {
+  margin-top: 0;
+  padding: 0;
+}
+
 main p strong,
 main p b {
   font-weight: 700;
@@ -321,6 +326,11 @@ main img {
     height: auto;
 }
 
+main img.center {
+    display: block;
+    margin: 5px auto;
+}
+
 main img.left {
     float: left;
     margin-right: 15px;
@@ -329,7 +339,19 @@ main img.left {
 main img.right {
     float: right;
     margin-left: 15px;
+}
+@media (max-width: 650px) {
+  .search {
+    width: 60%;
   }
+}
+main img.maxh250 {
+    max-height: 250px;
+    width: auto;
+    @media (max-width: 650px) {
+      max-height: 180px;
+    }
+}
 
 main iframe {
     display: block;
