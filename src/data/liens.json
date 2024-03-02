@@ -423,6 +423,15 @@
       "article": ["200303"]
   },
   {
+      "id": 48,
+      "title": "Prix Célimène",
+      "url": "https://www.departement974.fr/aide/aide-soutien-creation-artistique-prix-celimene",
+      "parent": "art",
+      "importance": 0,
+      "description": "Concours de créativité, destiné aux femmes artistes amateurs, dans les disciplines de la peinture, de la sculpture et de la photographie.",
+      "article": ["202401"]
+  },
+  {
       "id": 49,
       "title": "La Réunion Lontan",
       "url": "https://sites.reunionweb.org/labuse-reunion/",
@@ -457,6 +466,15 @@
       "importance": 0,
       "description": "Troisième site d’un artiste polymorphe. présente ses travaux des années 90.",
       "article": ["199801"]
+  },
+  {
+      "id": 53,
+      "title": "Académie de la Réunuion",
+      "url": "https://www.ac-reunion.fr/",
+      "parent": "scolaires",
+      "importance": 0,
+      "description": "Le site de la Région académique Réunion. héberge tous les établissements scolaires de l'île mais aussi les infos administratives et pédagogiques.",
+      "article": ["199909", "202401"]
   },
   {
       "id": 54,
@@ -504,15 +522,6 @@
       "article": ["200106"]
   },
   {
-      "id": 60,
-      "title": "Philippe Morel",
-      "url": "http://runtamtam.biz/",
-      "parent": "musiques",
-      "importance": 0,
-      "description": "Facteur d’instruments traditionnels de la Réunion. Présentation des instruments africains et indiens.",
-      "article": ["200306"]
-  },
-  {
       "id": 59,
       "title": "Salon du livre insulaire",
       "url": "http://www.livre-insulaire.fr/",
@@ -520,6 +529,15 @@
       "importance": 0,
       "description": "Un festival de la littérature insulaire, pas que ultramarine, basé à Ouessant",
       "article": ["200407"]
+  },
+  {
+      "id": 60,
+      "title": "Philippe Morel",
+      "url": "http://runtamtam.biz/",
+      "parent": "musiques",
+      "importance": 0,
+      "description": "Facteur d’instruments traditionnels de la Réunion. Présentation des instruments africains et indiens.",
+      "article": ["200306"]
   },
   {
       "id": 61,
@@ -555,7 +573,7 @@
       "parent": "litterature",
       "importance": 0,
       "description": "Éditeur né à la Réunion en 1984 et qui publie des auteurs et des ouvrages de tout l’outre-mer. Présentation de l’éditeur de ses auteurs et boutique en ligne.",
-      "article": ["200412"]
+      "article": ["200412", "202401"]
   },
   {
       "id": 65,
@@ -583,6 +601,33 @@
       "importance": 0,
       "description": "Université de la Réunion, présentation, unités et inscriptions, services aux étudiants.",
       "article": ["199909"]
+  },
+  {
+      "id": 68,
+      "title": "Alice Aucuit",
+      "url": "https://aliceaucuit.com/",
+      "parent": "peinture",
+      "importance": 0,
+      "description": "Artiste céramiste établie à Saint-Pierre. Propose aussi des installations et des formations.",
+      "article": ["202401"]
+  },
+  {
+      "id": 69,
+      "title": "Julie Joly",
+      "url": "https://www.juliejoly.com/",
+      "parent": "peinture",
+      "importance": 0,
+      "description": "Artiste sculpteuse de fils de fer, originaire de la Réunion.",
+      "article": ["202401"]
+  },
+  {
+      "id": 70,
+      "title": "Galerie 33",
+      "url": "https://lagalerie33.re/",
+      "parent": "peinture",
+      "importance": 0,
+      "description": "Galerie à La Casa Blanca à Saint-Denis hébergeant une vingtaine d'artistes contemporains",
+      "article": ["202401"]
   },
   {
       "id": 75,
@@ -691,15 +736,6 @@
       "importance": 0,
       "description": "Une photo humouristique de bière bourbon par jour.",
       "article": [""]
-  },
-  {
-      "id": 189,
-      "title": "Tony Defaud Photographie",
-      "url": "https://tdefaud.photodeck.com/",
-      "parent": "photos",
-      "importance": 0,
-      "description": "Photographe officiant dans le monde entier mais qui revient souvent à la Réunion. Sa marque de fabrique: les ciels étoilés.",
-      "article": ["201903"]
   },
   {
       "id": 90,
@@ -1127,7 +1163,7 @@
   {
       "id": 159,
       "title": "Lycée Roland Garros du Tampon",
-      "url": "http://lycee-roland-garros.ac-reunion.fr/spip/",
+      "url": "https://etab.ac-reunion.fr/lyc-roland-garros/",
       "parent": "scolaires",
       "importance": 0,
       "description": "Lycée au nom du célèbre aviateur. Beaucoup de projets pédagogiques en ligne.",
@@ -1141,15 +1177,6 @@
       "importance": 0,
       "description": "Lionel Suz parle de lui et de ses activités sur son blog.",
       "article": ["200707"]
-  },
-  {
-      "id": 176,
-      "title": " La communauté juive à la Réunion",
-      "url": "http://journalisme-infocom974.over-blog.com/article-la-communaute-juive-a-la-reunion-87446873.html",
-      "parent": "religieux",
-      "importance": 0,
-      "description": "Page décrivant la communauté juive de la Réunion, autour de la Synagogue de Champ Fleuri à Sainte Clotilde.",
-      "article": ["200311"]
   },
   {
       "id": 155,
@@ -1170,76 +1197,13 @@
       "article": ["201503"]
   },
   {
-      "id": 185,
+      "id": 161,
       "title": "comité opérationnel de réduction du risque requin à La Réunion ",
       "url": "http://www.reunion.gouv.fr/le-comite-operationnel-de-reduction-du-risque-a870.html",
       "parent": "agences",
       "importance": 0,
       "description": "(aussi appelé CO4R) Instaurée en septembre 2012 c’est une cellule opérationnelle de réduction du risque requins se réunit régulièrement sous l’égide de la préfecture et coordonne les actions de terrain pour réduire le risque requin.",
       "article": ["201604"]
-  },
-  {
-      "id": 183,
-      "title": "Aller plonger à La Réunion, île intense, Jean Marc Charel",
-      "url": "http://jean-marc.charel.pagesperso-orange.fr/",
-      "parent": "pages",
-      "importance": 0,
-      "description": "Site perso sur plongée locale avec des info sur l’ancienne structure de préservation du lagon réunionnais.",
-      "article": ["201107"]
-  },
-  {
-      "id": 184,
-      "title": "Réserve Naturelle Marine de la Réunion",
-      "url": "http://www.reservemarinereunion.fr/",
-      "parent": "musees",
-      "importance": 0,
-      "description": "Site de la Réserve naturelle marine de la Réunion, toutes les informations sur la protection du lagon mais aussi sa découverte.",
-      "article": ["201107"]
-  },
-  {
-      "id": 186,
-      "title": "Shark Citizen",
-      "url": "http://www.sharkcitizen.fr/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Association de défense de la nature présente à la Réunion. Elle a pour but de faire face au risque requin tout en préservant le lagon et les poissons qui y vivent.",
-      "article": ["201604"]
-  },
-  {
-      "id": 187,
-      "title": "Ligue de Surf de la Réunion",
-      "url": "https://www.surfingreunion.com/",
-      "parent": "sport",
-      "importance": 0,
-      "description": "Information sur la pratique du surf à la Réunion. les compétitions et les risques lié à ce sport.",
-      "article": ["201604"]
-  },
-  {
-      "id": 188,
-      "title": "Peur sur les plages. Du « risque requin » à la « crise requin »",
-      "url": "http://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-thematiques/risques-et-societes/corpus-documentaire/peur-sur-les-plages-requins-reunion",
-      "parent": "rapports",
-      "importance": 0,
-      "description": "Dossier sur le risque requin à la Réunion, réalisé par Emmanuelle Surmont, agrégée de géographie à l’ENS de Lyon.",
-      "article": ["201604"]
-  },
-  {
-      "id": 190,
-      "title": "Globice",
-      "url": "https://www.globice.org/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Groupe Local d’OBservation et d’Identification des CEtacés. Association d’étude et de protection des grands animaux marins. Membre de l’Union Internationale pour la Conservation de la Nature depuis 2010 et association de référence pour l’observation et",
-      "article": ["201809"]
-  },
-  {
-      "id": 161,
-      "title": "SFR",
-      "url": "http://www.sfr.re/",
-      "parent": "fai",
-      "importance": 0,
-      "description": "Premier fournisseur d’accès à la Réunion, appelé Guetali à sa création est aujourd’hui opéré sous la marque nationale SFR.",
-      "article": ["200105", "201503"]
   },
   {
       "id": 162,
@@ -1287,6 +1251,15 @@
       "article": [""]
   },
   {
+      "id": 167,
+      "title": "SFR",
+      "url": "http://www.sfr.re/",
+      "parent": "fai",
+      "importance": 0,
+      "description": "Premier fournisseur d’accès à la Réunion, appelé Guetali à sa création est aujourd’hui opéré sous la marque nationale SFR.",
+      "article": ["200105", "201503"]
+  },
+  {
       "id": 170,
       "title": "Chik Planète",
       "url": "http://chikplanete.blogspot.cz/",
@@ -1321,6 +1294,15 @@
       "importance": 0,
       "description": "Services de drônes pour photos et vidéos et apprentissage.",
       "article": ["201505"]
+  },
+  {
+      "id": 176,
+      "title": " La communauté juive à la Réunion",
+      "url": "http://journalisme-infocom974.over-blog.com/article-la-communaute-juive-a-la-reunion-87446873.html",
+      "parent": "religieux",
+      "importance": 0,
+      "description": "Page décrivant la communauté juive de la Réunion, autour de la Synagogue de Champ Fleuri à Sainte Clotilde.",
+      "article": ["200311"]
   },
   {
       "id": 177,
@@ -1361,7 +1343,7 @@
   {
       "id": 182,
       "title": "Collège Les tamarins",
-      "url": "http://college-les-tamarins.ac-reunion.fr",
+      "url": "https://etab.ac-reunion.fr/clg-tamarins/",
       "parent": "scolaires",
       "importance": 0,
       "description": "Le collège en plein cœur de Saint-Pierre de la Réunion. Le premier a avoir une page sur la toile.",
@@ -1377,31 +1359,67 @@
       "article": ["201404"]
   },
   {
-      "id": 188,
-      "title": "Thierry Kasprowicz",
-      "url": "https://thierrykasprowicz.com/",
-      "parent": "blogs",
+      "id": 184,
+      "title": "Aller plonger à La Réunion, île intense, Jean Marc Charel",
+      "url": "http://jean-marc.charel.pagesperso-orange.fr/",
+      "parent": "pages",
       "importance": 0,
-      "description": "Le blog perso de Thierry Kasprowicz, le critique gastronomique derrière le guide Kaspro.",
-      "article": ["202105"]
+      "description": "Site perso sur plongée locale avec des info sur l’ancienne structure de préservation du lagon réunionnais.",
+      "article": ["201107"]
+  },
+  {
+      "id": 185,
+      "title": "Réserve Naturelle Marine de la Réunion",
+      "url": "http://www.reservemarinereunion.fr/",
+      "parent": "musees",
+      "importance": 0,
+      "description": "Site de la Réserve naturelle marine de la Réunion, toutes les informations sur la protection du lagon mais aussi sa découverte.",
+      "article": ["201107"]
+  },
+  {
+      "id": 186,
+      "title": "Shark Citizen",
+      "url": "http://www.sharkcitizen.fr/",
+      "parent": "associations",
+      "importance": 0,
+      "description": "Association de défense de la nature présente à la Réunion. Elle a pour but de faire face au risque requin tout en préservant le lagon et les poissons qui y vivent.",
+      "article": ["201604"]
+  },
+  {
+      "id": 187,
+      "title": "Ligue de Surf de la Réunion",
+      "url": "https://www.surfingreunion.com/",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Information sur la pratique du surf à la Réunion. les compétitions et les risques lié à ce sport.",
+      "article": ["201604"]
+  },
+  {
+      "id": 188,
+      "title": "Peur sur les plages. Du « risque requin » à la « crise requin »",
+      "url": "http://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-thematiques/risques-et-societes/corpus-documentaire/peur-sur-les-plages-requins-reunion",
+      "parent": "rapports",
+      "importance": 0,
+      "description": "Dossier sur le risque requin à la Réunion, réalisé par Emmanuelle Surmont, agrégée de géographie à l’ENS de Lyon.",
+      "article": ["201604"]
   },
   {
       "id": 189,
-      "title": "Gastronomic",
-      "url": "https://gastronomic.re/",
-      "parent": "professionnels",
+      "title": "Tony Defaud Photographie",
+      "url": "https://tdefaud.photodeck.com/",
+      "parent": "photos",
       "importance": 0,
-      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
-      "article": ["202105"]
+      "description": "Photographe officiant dans le monde entier mais qui revient souvent à la Réunion. Sa marque de fabrique: les ciels étoilés.",
+      "article": ["201903"]
   },
   {
       "id": 190,
-      "title": "Zest",
-      "url": "https://zest.re/",
-      "parent": "actualites",
+      "title": "Globice",
+      "url": "https://www.globice.org/",
+      "parent": "associations",
       "importance": 0,
-      "description": "L'actualité gastronomique et terroir à la Réunion par l'équipe derrière le guide Kaspro",
-      "article": ["202105"]
+      "description": "Groupe Local d’OBservation et d’Identification des CEtacés. Association d’étude et de protection des grands animaux marins. Membre de l’Union Internationale pour la Conservation de la Nature depuis 2010 et association de référence pour l’observation et",
+      "article": ["201809"]
   },
   {
       "id": 191,
@@ -1465,5 +1483,32 @@
       "importance": 0,
       "description": "La première radio musicale de France a osse sa station dans l’Océan Indien",
       "article": ["199903"]
+  },
+  {
+      "id": 198,
+      "title": "Thierry Kasprowicz",
+      "url": "https://thierrykasprowicz.com/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Le blog perso de Thierry Kasprowicz, le critique gastronomique derrière le guide Kaspro.",
+      "article": ["202105"]
+  },
+  {
+      "id": 199,
+      "title": "Gastronomic",
+      "url": "https://gastronomic.re/",
+      "parent": "professionnels",
+      "importance": 0,
+      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
+      "article": ["202105"]
+  },
+  {
+      "id": 200,
+      "title": "Zest",
+      "url": "https://zest.re/",
+      "parent": "actualites",
+      "importance": 0,
+      "description": "L'actualité gastronomique et terroir à la Réunion par l'équipe derrière le guide Kaspro",
+      "article": ["202105"]
   }
 ]
