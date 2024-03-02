@@ -8,6 +8,8 @@
 {% set isIndexAbout = page.url.split("/")[1] === "about" and page.url.split("/")[1] %}
 {% set isNewsletter = page.url.split("/")[2] === "newsletter" %}
 {% set is404 = page.fileSlug === "404" %}
+{% from 'macros/url.njk' import categoryUrl with context %}
+{% from 'macros/title.njk' import getLinkTitle with context %}
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -31,6 +33,19 @@
           {% set nextPost = collections.article | getPreviousCollectionItem(page) %}
           {% set previousPost = collections.article | getNextCollectionItem(page) %}
           {%- if previousPost or nextPost -%}
+            <hr>
+            <div class="bothside">
+                <p class="f16">
+                  {% if isArticle %}{% if categorie %}
+                    <b>➽ Thèmes abordés :</b>
+                    {% for url in categorie %}
+                      <i class="f16">{{ getLinkTitle(url) }}</i> ·
+                    {% endfor %}
+                  {% endif %}{% endif %}</p>
+                <p class="f16">
+
+                </p>
+            </div>
             <hr>
             <div class="bothside">
                 <p class="f16">{% if previousPost %}<b>←</b> <a class='text-sky-600' href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
