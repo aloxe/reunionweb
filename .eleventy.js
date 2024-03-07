@@ -10,7 +10,9 @@ const { minify: minify_html } = require("html-minifier-terser");
 const searchFilter = require("./src/filters/searchFilter");
 
 const NOT_FOUND_PATH = "_site/404.html";
+const IS_TEST = typeof process.env.ENVIRONMENT === "string" && process.env.ENVIRONMENT === "test";
 const IS_PROD = typeof process.env.ENVIRONMENT === "string" && process.env.ENVIRONMENT === "prod";
+const IS_RELEASE = IS_TEST || IS_PROD
 
 module.exports = (eleventyConfig) => {
   // page 404 with --serve
@@ -232,9 +234,9 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  // filter to minify inline css
+  // filter to minify output css
   eleventyConfig.addTransform("cssmin", async function(source, output_path) {
-    if(!output_path.endsWith(".css") || !IS_PROD) return source;
+    if(!output_path.endsWith(".css") || !IS_RELEASE) return source;
 
     const result = new CleanCSS({
         level: 2
@@ -245,7 +247,7 @@ module.exports = (eleventyConfig) => {
 
   // minify html output files
   eleventyConfig.addTransform("htmlmin", async function (source, output_path) {
-    if(!output_path.endsWith(".html") || !IS_PROD) return source;
+    if(!output_path.endsWith(".html") || !IS_RELEASE) return source;
 
     const result = await minify_html(source, {
       collapseBooleanAttributes: true,
