@@ -4,8 +4,10 @@
   "description": "reunionweb.org",
   "scripts": {
     "build": "npx @11ty/eleventy",
+    "build:test": "ENVIRONMENT=test npx @11ty/eleventy",
     "build:prod": "ENVIRONMENT=prod npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
+    "serve:test": "ENVIRONMENT=test npx @11ty/eleventy --serve",
     "serve:prod": "ENVIRONMENT=prod npx @11ty/eleventy --serve",
     "debug": "DEBUG=* npx @11ty/eleventy",
     "test": "jest"
