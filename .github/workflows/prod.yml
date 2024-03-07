@@ -1,8 +1,5 @@
 name: Build Eleventy
 
-env:
-  ENVIRONMENT: prod
-
 on:
   push:
     branches:
