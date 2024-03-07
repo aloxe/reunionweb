@@ -20,7 +20,7 @@ searchInput.onfocus = function(e) {
   if (!elasticLoaded) {
     var script = document.createElement('script');
     script.setAttribute('type', 'text/javascript');
-    script.setAttribute('src', '/js/search.js');
+    script.setAttribute('src', '/js/search.min.js');
     document.head.appendChild(script);
     var script = document.createElement('script');
     script.setAttribute('type', 'text/javascript');
