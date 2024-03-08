@@ -23,11 +23,14 @@
         {% if loop.index < 200 %}
         {% set gouzouslug = gouzoulist[loop.index-1].title | slugify %}
         <div class="cssbox{% if loop.index > 6 %} slideanim s{{ [1,2,3,4] | random }}{% endif %}">
-            <a href="#{{ gouzouslug }}" id="{{ gouzouslug }}" title="{{gouzou.title}}"><img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130" onclick="rewrite_url('{{gouzou.title}}')">
+            <a href="#{{ gouzouslug }}" id="{{ gouzouslug }}" title="{{gouzou.title}}" onclick="rewrite_url('{{gouzou.title}}')">
+              {% gzthumb gouzou.file, gouzou.title %}
+              {# <img src="{{gouzou.thumb}}" class="cssbox_thumb" alt="{{ gouzou.title }}" width="130" > #}
+              {# <span >TOTO</span> #}
             <span class="cssbox_full">
                 <h2>{{ gouzou.title }}</h2>
                 <span>
-                    <img src="{{gouzou.file}}" alt="{{ gouzou.title }}" /><br>
+                    <img src="/img/gouzou/{{ gouzou.file }}" alt="{{ gouzou.title }}" /><br>
                     {% if gouzou.license %}{{ gouzou.license }} {% endif %}
                     {% if gouzou.author %}
                         {% if gouzou.url %}<span onclick="location='{{ gouzou.url }}'" class="link">{% endif %}
