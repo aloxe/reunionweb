@@ -100,7 +100,7 @@ module.exports = (eleventyConfig) => {
     return Image.generateHTML(metadata, imageAttributes)
   });
 
-  // images thumbnails
+  // images thumbnails of pages
   eleventyConfig.addShortcode("thumb", (page, size) => {
     if (! page?.data?.image) return "";
     const alt = page.data.title || illustration;
@@ -140,6 +140,46 @@ module.exports = (eleventyConfig) => {
       sizes: size+"px",
       loading: "lazy",
       decoding: "async",
+    };
+    // get metadata even if the images are not fully generated yet
+    let metadata = Image.statsSync(srcImage, options);
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
+  // images thumbnails for gouzou
+  eleventyConfig.addShortcode("gzthumb", (filename, alt) => {
+    if (!filename) return "";
+    const THUMB = 130
+    const FULL = 650; // should we resize also big images (TODO)
+    const src = filename;
+    const inputFolder = "./src/assets/img/gouzou/";
+    const srcImage = inputFolder+src;
+    const outputFolder = "./_site/img/gouzou/thumb/";
+    const urlPath = "/img/gouzou/thumb/";
+
+
+    let options = {
+      widths: [THUMB],
+      formats: ["jpeg"],
+      urlPath: urlPath,
+      outputDir: outputFolder,
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    };
+
+    // generate images
+    Image(srcImage, options)
+
+    let imageAttributes = {
+      alt,
+      sizes: THUMB+"px",
+      loading: "lazy",
+      decoding: "async",
+      class: "cssbox_thumb",
+      onclick:"rewrite_url('{{gouzou.title}}')"
     };
     // get metadata even if the images are not fully generated yet
     let metadata = Image.statsSync(srcImage, options);
