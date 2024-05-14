@@ -16,7 +16,8 @@ _Le principe de ce site est de présenter un ou plusieurs site web en rapport av
   {% endif%}
 <h3 class="clear center"><a href="{{post.url}}">{{post.data.title}}</a></h3>
 <div class="snipet clear"><p>
-<span class="h140"><a href="{{post.url}}">{% thumb post, 250 %}</a></span>
-<a href="{{post.url}}">{{post.data.description}}</a>
+<a href="{{post.url}}">
+<span class="h140">{% thumb post, 250 %}</span>
+{{post.data.description}}</a>
 </p></div>
 {% endfor %}

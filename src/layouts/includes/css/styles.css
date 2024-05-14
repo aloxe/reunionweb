@@ -621,14 +621,16 @@ input:focus::placeholder {
 	color: #d5e5f3;
 	opacity: 1;
 }
+
+.snipet p > a > span.h140,
 .snipet p > span {
   float: left;
-  max-height: 75px;
+  max-height: 80px;
   overflow: hidden;
   margin-bottom: 8px;
 }
 
-.snipet p > span.h140 {
+.snipet p > a > span.h140 {
   max-height: 140px;
 }
 
