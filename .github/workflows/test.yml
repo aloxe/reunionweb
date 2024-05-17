@@ -1,6 +1,15 @@
-name: Build Eleventy
-
+name: 'Build Eleventy test'
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: 'Environment'
+        default: 'test'
+        required: true
+        options:
+        - test
+        - rien
   push:
     branches:
       - build
