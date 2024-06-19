@@ -9,10 +9,8 @@ on:
         required: true
         options:
         - test
-        - rien
   push:
     branches:
-      - build
       - test
 jobs:
   build:
