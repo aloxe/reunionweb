@@ -24,7 +24,7 @@
       "parent": "portails",
       "importance": 2,
       "description": "Le portail Réunionnais avec une actualité hebdomadaire, des photos et plein d’autres infos. C’est peut-être aujourd’hui le seul blog généraliste ayant une si grande longévité.",
-      "article": ["200203", "200701"]
+      "article": ["200203", "200204", "200701", "202407"]
   },
   {
       "id": 4,
@@ -630,6 +630,42 @@
       "article": ["202401"]
   },
   {
+      "id": 71,
+      "title": "Le Tangue",
+      "url": "https://www.letangue.re/",
+      "parent": "actualites",
+      "importance": 0,
+      "description": "Site réunionnais d'informations satirique et indépendant",
+      "article": ["202407"]
+  },
+  {
+      "id": 72,
+      "title": "Thierry Kasprowicz",
+      "url": "https://thierrykasprowicz.com/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Le blog perso de Thierry Kasprowicz, le critique gastronomique derrière le guide Kaspro.",
+      "article": ["202105"]
+  },
+  {
+      "id": 73,
+      "title": "Gastronomic",
+      "url": "https://gastronomic.re/",
+      "parent": "professionnels",
+      "importance": 0,
+      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
+      "article": ["202105"]
+  },
+  {
+      "id": 74,
+      "title": "Zest",
+      "url": "https://zest.re/",
+      "parent": "actualites",
+      "importance": 0,
+      "description": "L'actualité gastronomique et terroir à la Réunion par l'équipe derrière le guide Kaspro",
+      "article": ["202105"]
+  },
+  {
       "id": 75,
       "title": "UDAR le blog",
       "url": "http://www.udarpeinture.canalblog.com/",
@@ -648,13 +684,22 @@
       "article": [""]
   },
   {
+      "id": 77,
+      "title": "Elie Hoarau",
+      "url": "http://eliehoarau.canalblog.com/",
+      "parent": "politiques",
+      "importance": 0,
+      "description": "Candidat aux élections législatives dans la 4ème circonscription",
+      "article": ["200706"]
+  },
+  {
       "id": 78,
       "title": "Nelson",
       "url": "http://sculpture.canalblog.com/",
       "parent": "artistes",
       "importance": 0,
       "description": "Peintre et sculpteur à la Réunion",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 79,
@@ -663,7 +708,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Galerie des peintures de Pierre-Paul Bellemène",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 80,
@@ -672,7 +717,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Aquarelles de Goubet Rachell",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 81,
@@ -681,7 +726,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Artiste Peintre Lebon Micheline : Galerie virtuelle.",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 82,
@@ -690,7 +735,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Le peintre Wilfrid PAYET. Dessins à l’encre de Chine, pastel, paysages de la Réunion.",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 83,
@@ -699,7 +744,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Peinture figurative, riche en couleurs avec des scènes de la vie créole.",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 84,
@@ -708,7 +753,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Galerie virtuelle. Peinture à l’huile et acrylique.",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 85,
@@ -717,7 +762,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Galerie virtuelle et liste des expositions où le peintre est présent.",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 86,
@@ -726,19 +771,10 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Peintre autodidacte. présentation et peintures de scènes de la Réunion d’autrefois.",
-      "article": [""]
+      "article": ["200610"]
   },
   {
       "id": 87,
-      "title": "Bière dodo",
-      "url": "http://bieredodo.canalblog.com/",
-      "parent": "blogs",
-      "importance": 0,
-      "description": "Une photo humouristique de bière bourbon par jour.",
-      "article": [""]
-  },
-  {
-      "id": 90,
       "title": "Miss Axelle",
       "url": "https://www.instagram.com/axelle.paya",
       "parent": "pages",
@@ -747,7 +783,7 @@
       "article": ["200609"]
   },
   {
-      "id": 92,
+      "id": 88,
       "title": "Pardon!",
       "url": "http://www.pardon.re/",
       "parent": "pei",
@@ -756,7 +792,7 @@
       "article": ["199906", "201604", "200502"]
   },
   {
-      "id": 93,
+      "id": 89,
       "title": "Colipays",
       "url": "http://www.colipays.com/",
       "parent": "pei",
@@ -765,7 +801,7 @@
       "article": ["199805", "200404"]
   },
   {
-      "id": 157,
+      "id": 90,
       "title": "La dodo",
       "url": "http://www.ladodo.com/",
       "parent": "pei",
@@ -774,7 +810,7 @@
       "article": ["200003"]
   },
   {
-      "id": 95,
+      "id": 91,
       "title": "Stéphane Bénard",
       "url": "http://jeanbenard.canalblog.com/",
       "parent": "artistes",
@@ -783,7 +819,7 @@
       "article": [""]
   },
   {
-      "id": 96,
+      "id": 92,
       "title": "Jean Bénard Peintre",
       "url": "http://www.stephbenard.canalblog.com/",
       "parent": "artistes",
@@ -792,7 +828,7 @@
       "article": [""]
   },
   {
-      "id": 100,
+      "id": 93,
       "title": "Shovel Tatoo",
       "url": "http://shovel.canalblog.com/",
       "parent": "artistes",
@@ -801,7 +837,7 @@
       "article": ["200702"]
   },
   {
-      "id": 103,
+      "id": 94,
       "title": "Temoignages",
       "url": "http://www.temoignages.re/",
       "parent": "actualites",
@@ -810,7 +846,7 @@
       "article": ["200703", "200805", "201404"]
   },
   {
-      "id": 104,
+      "id": 95,
       "title": "Rhum Charrette",
       "url": "http://www.rhum-charrette.com/",
       "parent": "pei",
@@ -819,13 +855,40 @@
       "article": ["200612"]
   },
   {
-      "id": 107,
-      "title": "Elie Hoarau",
-      "url": "http://eliehoarau.canalblog.com/",
-      "parent": "politiques",
-      "importance": 0,
-      "description": "Candidat aux élections législatives dans la 4ème circonscription",
-      "article": ["200706"]
+        "id": 96,
+        "title": "Résultat des législatives 2024",
+        "url": "https://www.resultats-elections.interieur.gouv.fr/legislatives2024/ensemble_geographique/04/974/index.html",
+        "parent": "politiques",
+        "importance": 0,
+        "description": "Publication des candidatures et des résultats aux élections Législatives 2024",
+        "article": ["202407"]
+  },
+  {
+        "id": 97,
+        "title": "Résultat de l'élection présidentielle 2007",
+        "url": "https://www.archives-resultats-elections.interieur.gouv.fr/resultats/presidentielle_2007/index.php",
+        "parent": "politiques",
+        "importance": 0,
+        "description": "Résultat de l'élection présidentielle 2007 par le ministère de l'intérieur.",
+        "article": ["200705"]
+  },
+  {
+        "id": 98,
+        "title": "candidats.fr",
+        "url": "https://www.candidats.fr/",
+        "parent": "politiques",
+        "importance": 0,
+        "description": "Site ou les candidats peuvent s'engager pour le logiciel libre",
+        "article": ["200705", "200706"]
+  },
+  {
+        "id": 99,
+        "title": "La Plaine-des-Palmistes",
+        "url": "https://www.ville-plainedespalmistes.fr/",
+        "parent": "villes",
+        "importance": 0,
+        "description": "Site de la municipalité de la Plaine des Palmistes",
+        "article": ["202407"]
   },
   {
       "id": 118,
@@ -1136,11 +1199,11 @@
   {
       "id": 153,
       "title": "Réunion 1ère",
-      "url": "http://reunion.la1ere.fr",
+      "url": "https://la1ere.francetvinfo.fr/reunion/",
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811"]
+      "article": ["199811", "202407"]
   },
   {
       "id": 156,
@@ -1483,32 +1546,5 @@
       "importance": 0,
       "description": "La première radio musicale de France a osse sa station dans l’Océan Indien",
       "article": ["199903"]
-  },
-  {
-      "id": 198,
-      "title": "Thierry Kasprowicz",
-      "url": "https://thierrykasprowicz.com/",
-      "parent": "blogs",
-      "importance": 0,
-      "description": "Le blog perso de Thierry Kasprowicz, le critique gastronomique derrière le guide Kaspro.",
-      "article": ["202105"]
-  },
-  {
-      "id": 199,
-      "title": "Gastronomic",
-      "url": "https://gastronomic.re/",
-      "parent": "professionnels",
-      "importance": 0,
-      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
-      "article": ["202105"]
-  },
-  {
-      "id": 200,
-      "title": "Zest",
-      "url": "https://zest.re/",
-      "parent": "actualites",
-      "importance": 0,
-      "description": "L'actualité gastronomique et terroir à la Réunion par l'équipe derrière le guide Kaspro",
-      "article": ["202105"]
   }
 ]
