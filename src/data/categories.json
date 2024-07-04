@@ -231,6 +231,7 @@
     "title": "Blogs politiques",
     "slug": "politiques",
     "parent": "blogs",
+    "associe": ["politique", "villes"],
     "importance": 0,
     "description": "Blogs des hommes et femmes politiques, blogs de campagnes réunionnaises."
   },
@@ -296,5 +297,13 @@
     "parent": "liens",
     "importance": 0,
     "description": "Site web érotiques et pornographiques juste à la Réunion."
-  }
+  },
+  {
+    "title": "Vie politique",
+    "slug": "politique",
+    "parent": "liens",
+    "associe": ["politiques", "villes"],
+    "importance": 0,
+    "description": "Pages et sites sur la vie politique de la Réunion"
+  },
 ]
