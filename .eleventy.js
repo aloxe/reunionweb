@@ -103,7 +103,7 @@ module.exports = (eleventyConfig) => {
   // images thumbnails of pages
   eleventyConfig.addShortcode("thumb", (page, size, nolazy) => {
     if (! page?.data?.image) return "";
-    const alt = page.data.title || illustration;
+    const alt = page.data.imagealt || page.data.title || illustration;
     const src = page.data.image;
 
     let inputFolder = page.inputPath.split("/")
