@@ -48,7 +48,7 @@
             </div>
             {% if isArticle %}{% if categorie %}
               <hr>
-            {% endif %}
+            {% endif %}{% endif %}
             <div class="bothside">
                 <p class="f16">{% if previousPost %}<b>←</b> <a class='text-sky-600' href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}</p>
                 <p class="f16">{% if nextPost %}<a class='text-sky-600' href="{{ nextPost.url }}">{{ nextPost.data.title }}</a> <b>→</b>{% endif %}</p>
