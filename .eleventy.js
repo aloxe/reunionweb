@@ -101,9 +101,9 @@ module.exports = (eleventyConfig) => {
   });
 
   // images thumbnails of pages
-  eleventyConfig.addShortcode("thumb", (page, size) => {
+  eleventyConfig.addShortcode("thumb", (page, size, nolazy) => {
     if (! page?.data?.image) return "";
-    const alt = page.data.title || illustration;
+    const alt = page.data.imagealt || page.data.title || illustration;
     const src = page.data.image;
 
     let inputFolder = page.inputPath.split("/")
@@ -138,9 +138,10 @@ module.exports = (eleventyConfig) => {
     let imageAttributes = {
       alt,
       sizes: size+"px",
-      loading: "lazy",
       decoding: "async",
     };
+    if (!nolazy) imageAttributes.loading = "lazy";
+
     // get metadata even if the images are not fully generated yet
     let metadata = Image.statsSync(srcImage, options);
     return Image.generateHTML(metadata, imageAttributes);
