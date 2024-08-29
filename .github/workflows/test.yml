@@ -1,4 +1,4 @@
-name: 'Build Eleventy test'
+name: 'Build Eleventy 🛠️ test'
 on:
   workflow_dispatch:
     inputs:
@@ -18,22 +18,22 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [20.x]
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: ⛓️ Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies & build
+      - name: 🛠️ Install dependencies & build
         run: |
           npm ci
           npm run build:test
 
-      - name: Copy Site recursively to remote
+      - name: 📋 Copy Site recursively to remote
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -45,7 +45,7 @@ jobs:
           strip_components: 1
           rm: true
 
-      - name: Configure SSH
+      - name: Configure SSH ヾ( ͝° ͜ʖ͡°)ノ♪
         run: |
           mkdir -p ~/.ssh/
           echo "$SSH_KEY" > ~/.ssh/staging.key
