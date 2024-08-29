@@ -33,7 +33,7 @@ jobs:
           npm ci
           npm run build:test
 
-      - name: 📋 Copy Site recursively to remote
+      - name: Copy Site recursively to remote (╯ ͡° ͜ʖ ͡°）╯／/┴┬┴┬┴ 
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
