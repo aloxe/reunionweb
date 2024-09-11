@@ -7,7 +7,20 @@ media_folder: "media/uploads"
 collections:
   - name: "articles" # Used in routes, e.g., /admin/collections/blog
     label: "Articles" # Used in the UI
-    folder: "pages/articles" # The path to the folder where the documents are stored
+    folder: "src/pages/articles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "description", name: "description", widget: "string"}
+      - {label: "keywords", name: "keywords", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM", format: "YYYY-MM"}
+      - {label: "categorie", name: "categorie", widget: "array"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "decouverte" # Used in routes, e.g., /admin/collections/blog
+    label: "Découverte" # Used in the UI
+    folder: "src/pages/decouverte" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
