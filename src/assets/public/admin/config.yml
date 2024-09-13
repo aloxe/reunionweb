@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: aloxe/reunionweb # Path to your GitHub repository
-  branch: test
+  branch: ecrire
   base_url: https://my.reunionweb.org # Path to ext auth provider
 media_folder: "media/uploads"
 
@@ -32,3 +32,19 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM", format: "YYYY-MM"}
       - {label: "categorie", name: "categorie", widget: "array"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Liens"
+        name: "liens"
+        file: "src/data/liens.yaml"
+        fields:
+          - { label: Id, name: id, widget: number }
+          - { label: title, name: title, widget: string }
+          - { label: url, name: url, widget: string }
+          - { label: parent, name: parent, widget: string }
+          - { label: importance, name: importance, widget: number }
+          - { label: description, name: description, widget: string }
+          - { label: article, name: article, widget: array }
