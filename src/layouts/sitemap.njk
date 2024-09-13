@@ -5,7 +5,6 @@
 {%- for item in collections.article %}
   <url>
     <loc>{{ item.url | absoluteUrl(meta.url) }}</loc>
-    <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
     <changefreq>{{ item.data.sitemapChangefreq | default("monthly") }}</changefreq>
     <priority>{{ item.data.sitemapPriority | default(0.8) }}</priority>
   </url>
@@ -14,7 +13,6 @@
     {%- if item.url.split("/")[1] === "" %}
     <url>
       <loc>{{ item.url | absoluteUrl(meta.url) }}</loc>
-      <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
       <changefreq>{{ item.data.sitemapChangefreq | default("weekly") }}</changefreq>
       <priority>{{ item.data.sitemapPriority | default(0.8) }}</priority>
     </url>
@@ -22,7 +20,6 @@
     {%- if item.url.split("/")[1] === "decouverte" %}
     <url>
       <loc>{{ item.url | absoluteUrl(meta.url) }}</loc>
-      <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
       <changefreq>{{ item.data.sitemapChangefreq | default("yearly") }}</changefreq>
       <priority>{{ item.data.sitemapPriority | default(0.7) }}</priority>
     </url>
@@ -30,7 +27,6 @@
     {%- if item.url.split("/")[1] === "liens" %}
     <url>
       <loc>{{ item.url | absoluteUrl(meta.url) }}</loc>
-      <lastmod>{{ item.date | date("yyyy-MM-dd")}}</lastmod>
       <changefreq>{{ item.data.sitemapChangefreq | default("monthly") }}</changefreq>
       <priority>{{ item.data.sitemapPriority | default(0.5) }}</priority>
     </url>
@@ -41,7 +37,6 @@
 {%- set snipeturl = "/"+categoryUrl(item.slug) | trim %}
     <url>
       <loc>{{ snipeturl | absoluteUrl(meta.url) }}</loc>
-      <lastmod>{{ page.date | date("yyyy-MM-dd")}}</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.3</priority>
     </url>
