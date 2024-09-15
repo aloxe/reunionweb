@@ -3,14 +3,14 @@ backend:
   repo: aloxe/reunionweb # Path to your GitHub repository
   branch: ecrire
   base_url: https://my.reunionweb.org # Path to ext auth provider
-media_folder: "media/uploads"
+
+media_folder: "src/static/img"
 
 collections:
   - name: "articles" # Used in routes, e.g., /admin/collections/blog
     label: "Articles" # Used in the UI
     folder: "src/pages/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
@@ -19,21 +19,19 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM", format: "YYYY-MM"}
       - label: "categorie"
         name: "categorie"
-        widget: "list"
-        fields:
-          - { label: "Source", name: "src", widget: "string" }
-          - { label: "Alt Text", name: "alt", widget: "string" }
+        widget: "select"
+        multiple: true
+        options: ["news", "portails", "blogs"]
+        default: ["news"]
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "decouverte" # Used in routes, e.g., /admin/collections/blog
-    label: "Découverte" # Used in the UI
-    folder: "src/pages/decouverte" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+
+  - name: "decouverte"
+    label: "Découverte"
+    folder: "src/pages/decouverte"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", default: "decouverte"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "description", name: "description", widget: "string"}
       - {label: "keywords", name: "keywords", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", time_format: false, date_format: "YYYY-MM", format: "YYYY-MM"}
-      - {label: "categorie", name: "categorie",    widget: "select", multiple: true, options: ["news", "portails", "blogs"], default: ["news"]}
       - {label: "Body", name: "body", widget: "markdown"}
