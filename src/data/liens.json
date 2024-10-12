@@ -897,7 +897,7 @@
         "parent": "villes",
         "importance": 0,
         "description": "Le Conseil Départemental de la Réunion est responsable de la gestion des affaires sociales, de l'éducation, des infrastructures routières, du développement économique et des collèges du département.",
-        "article": ["200309"]
+        "article": ["199912", "200309", "200401", "202401"]
   },
   {
         "id": 101,
@@ -906,7 +906,7 @@
         "parent": "villes",
         "importance": 0,
         "description": "Le Conseil Régional de la Réunion est responsable du développement économique, de la formation professionnelle, des transports, de l'aménagement du territoire, de l'environnement et de la culture au niveau régional.",
-        "article": ["200309"]
+        "article": ["199909", "200309", "200401"]
   },
   {
       "id": 118,
