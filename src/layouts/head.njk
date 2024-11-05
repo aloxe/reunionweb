@@ -33,6 +33,7 @@
   {% endif %}
 </title>
 {% if page.fileSlug === "404" %}{% else %}
+  <meta name="fediverse:creator" content="@aloxe@mast.eu.org" />
   <meta itemprop="name" content="{{ title }}">
   <meta itemprop="description" content="{{ description }}">
   <meta itemprop="image" content="{{ meta.url }}{% getOGImageUri page, image %}">
