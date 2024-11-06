@@ -52,7 +52,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // fnac affiliate
-  eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}"> 🛒 achetez sur</a>`);
+  eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}" rel="nofollow, sponsored">achetez sur</a>`);
 
   // images
   eleventyConfig.addShortcode("Image", async (page, src, alt) => {
