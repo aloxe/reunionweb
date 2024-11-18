@@ -241,7 +241,7 @@
     "parent": "liens",
     "associe": ["rapports"],
     "importance": 0,
-    "description": "Sites officiels des communes de la Réunion et les communautés de communes et des agences départementales ou gouvernementales."
+    "description": "Sites officiels des communes de la Réunion et les communautés de communes. Cette section liste aussi les conseils départemental et régional de la Réunion ainsi que des agences départementales ou gouvernementales."
   },
   {
     "title": "professionnels",
