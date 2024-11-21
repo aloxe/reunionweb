@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}" xml:lang="{{ meta.language }}">
   <title>{{ meta.title }}</title>
   <subtitle>{{ meta.subtitle }}</subtitle>
   <link href="{{ permalink | absoluteUrl(meta.url) }}" rel="self"/>
@@ -9,14 +9,17 @@
   <author>
     <name>{{ meta.author.name }}</name>
   </author>
-  {%- for post in collections.article | reverse %}
+  {%- for post in collections.article %}
   {%- set absolutePostUrl = post.url | absoluteUrl(meta.url) %}
-  <entry>
-    <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | dateToRfc3339 }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-      <content xml:lang="{{ meta.language }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-  </entry>
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <published>{{ post.date | dateToRfc3339 }}</published>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ post.url }}</id>
+      <content xml:lang="{{ meta.language }}" type="html">
+        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+      </content>
+    </entry>
   {%- endfor %}
 </feed>
