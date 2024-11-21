@@ -286,6 +286,25 @@ module.exports = (eleventyConfig) => {
 
   // minify html output files
   eleventyConfig.addTransform("htmlmin", async function (source, output_path) {
+    
+    if(output_path.endsWith("feed.xml")) {
+      // remove comments from atom feed
+      const pattern = /&lt;!--([\s\S]*?)--&gt;/g;
+      const cleanSource = source.replace(pattern, "")
+      // minify
+      const rssResult = await minify_html(cleanSource, {
+        collapseWhitespace: true,
+        preserveLineBreaks: true,
+        conservativeCollapse: true,
+        continueOnParseError: true,
+        keepClosingSlash: true,
+        quoteCharacter: `"`,
+        removeComments: true
+      });
+      console.log(`CLEAN ATOM FEED ${output_path}`, source.length, `→`, rssResult.length, `(${((1 - (rssResult.length / source.length)) * 100).toFixed(2)}% reduction)`);
+      return rssResult;
+    }
+
     if(!output_path.endsWith(".html") || !IS_PROD) return source;
 
     const result = await minify_html(source, {
