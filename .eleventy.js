@@ -91,12 +91,12 @@ module.exports = (eleventyConfig) => {
 
     let imageAttributes = {
       alt,
-      sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px"',
+      sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px',
       loading: "lazy",
       decoding: "async",
     }
     // get metadata
-    let metadata = Image.statsSync(srcImage, options)
+    let metadata = Image.statsSync(srcImage, options)  
     return Image.generateHTML(metadata, imageAttributes)
   });
 
