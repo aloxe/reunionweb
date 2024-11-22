@@ -103,11 +103,19 @@
     "description": "Éditeurs réunionnais et spécialisés"
   },
   {
-    "title": "Transports",
+    "title": "Transports & tourisme",
     "slug": "transports",
     "parent": "liens",
     "importance": 0,
     "description": "Les Compagnies aériennes qui desservent la Réunion et les autres moyens de transport."
+  },
+  {
+    "title": "Hébergement de tourisme",
+    "slug": "hebergement",
+    "parent": "transports",
+    "associe": ["touristiques"],
+    "importance": 0,
+    "description": "Hébergements touristiques à la Réunion cités sur Reunionweb."
   },
   {
     "title": "Radio & télévision",
@@ -202,7 +210,7 @@
     "title": "Portails touristiques",
     "slug": "touristiques",
     "parent": "portails",
-    "associe": ["musees"],
+    "associe": ["musees", "hebergement"],
     "importance": 0,
     "description": "Portails essentielement sur les activités et l'hébergement de tourisme à la Réunion"
   },
