@@ -15,7 +15,11 @@
       <title>{{ post.data.title }}</title>
       <link  rel="alternate" type="text/html" href="{{ absolutePostUrl }}"/>
       <published>{{ post.date | dateToRfc3339 }}</published>
-      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      {%- if (post.data.update) -%}
+        <updated>{{ post.data.update | dateToRfc3339 }}</updated>
+      {%- else -%}
+        <updated>{{ post.date | dateToRfc3339 }}</updated>
+      {%- endif -%}
       <id>{{ absolutePostUrl }}</id>
       <content type="html">
         {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl)}}
