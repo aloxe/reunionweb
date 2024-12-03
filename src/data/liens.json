@@ -284,8 +284,8 @@
       "url": "http://www.grandraid-reunion.com",
       "parent": "sport",
       "importance": 0,
-      "description": "Site officiel du Grand Raid de la Réunion, le diagonale des fous.",
-      "article": ["200310"]
+      "description": "Site officiel du Grand Raid de la Réunion, le diagonale des fous. Inscriptions, conseils, classements et données de la course.",
+      "article": ["200310", "202411"]
   },
   {
       "id": 33,
@@ -909,6 +909,42 @@
         "article": ["199909", "200309", "200401"]
   },
   {
+      "id": 102,
+      "title": "Runraid",
+      "url": "https://www.runraid.fr/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Blog sur la diagonale des fous et les ultra-trails dans le monde. C'est le blog de http://runraid.free.fr",
+      "article": ["202411"]
+  },
+  {
+      "id": 103,
+      "title": "Runraid",
+      "url": "http://runraid.free.fr",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Site perso sur le grand raid et d'autres ultra-trails. On y retrouve tous les classements de la la diagonale des fous.",
+      "article": ["202411"]
+  },
+  {
+      "id": 104,
+      "title": "En diagonale",
+      "url": "https://en-diagonale.com/",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Site pour se préparer à courrir la diagonale des fous par Jeremy Vaucher qui l'a faite en 2015",
+      "article": ["202411"]
+  },
+  {
+      "id": 105,
+      "title": "Raidlight",
+      "url": "https://raidlight.com/collections/gamme-exclusive-pour-le-grr",
+      "parent": "produits",
+      "importance": 0,
+      "description": "Vêtements techniques pour courrir les trails et les raids. La marque décline une gamme made in France aux couleur du Grand Raid.",
+      "article": ["202411"]
+  },
+  {
       "id": 118,
       "title": "Le Quotidien de la Réunion",
       "url": "http://www.lequotidien.re/",
@@ -1221,7 +1257,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407"]
+      "article": ["199811", "202407", "202411"]
   },
   {
       "id": 156,
