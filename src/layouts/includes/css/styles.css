@@ -697,11 +697,9 @@ footer p.left {
 	background-image: url( '/img/fnac.svg' );
 	background-repeat: no-repeat;
 	background-size: 41px;
-	background-position: 90px 3px;
+	background-position: 98px 3px;
 	color: #E7AD0F;
-	font-weight: 700;
 	line-height: 1em;
-	letter-spacing: normal;
 }
 .boutonfnac.left {
 	float: left;
