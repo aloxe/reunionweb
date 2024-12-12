@@ -52,7 +52,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   // fnac affiliate
-  eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}"> 🛒 achetez sur</a>`);
+  eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}" rel="nofollow, sponsored">achetez sur</a>`);
 
   // images
   eleventyConfig.addShortcode("Image", async (page, src, alt) => {
@@ -91,12 +91,12 @@ module.exports = (eleventyConfig) => {
 
     let imageAttributes = {
       alt,
-      sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px"',
+      sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px',
       loading: "lazy",
       decoding: "async",
     }
     // get metadata
-    let metadata = Image.statsSync(srcImage, options)
+    let metadata = Image.statsSync(srcImage, options)  
     return Image.generateHTML(metadata, imageAttributes)
   });
 
@@ -286,6 +286,25 @@ module.exports = (eleventyConfig) => {
 
   // minify html output files
   eleventyConfig.addTransform("htmlmin", async function (source, output_path) {
+    
+    if(output_path.endsWith("feed.xml")) {
+      // remove comments from atom feed
+      const pattern = /&lt;!--([\s\S]*?)--&gt;/g;
+      const cleanSource = source.replace(pattern, "")
+      // minify
+      const rssResult = await minify_html(cleanSource, {
+        collapseWhitespace: true,
+        preserveLineBreaks: true,
+        conservativeCollapse: true,
+        continueOnParseError: true,
+        keepClosingSlash: true,
+        quoteCharacter: `"`,
+        removeComments: true
+      });
+      console.log(`CLEAN ATOM FEED ${output_path}`, source.length, `→`, rssResult.length, `(${((1 - (rssResult.length / source.length)) * 100).toFixed(2)}% reduction)`);
+      return rssResult;
+    }
+
     if(!output_path.endsWith(".html") || !IS_PROD) return source;
 
     const result = await minify_html(source, {

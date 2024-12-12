@@ -284,8 +284,8 @@
       "url": "http://www.grandraid-reunion.com",
       "parent": "sport",
       "importance": 0,
-      "description": "Site officiel du Grand Raid de la Réunion, le diagonale des fous.",
-      "article": ["200310"]
+      "description": "Site officiel du Grand Raid de la Réunion, le diagonale des fous. Inscriptions, conseils, classements et données de la course.",
+      "article": ["200310", "202411"]
   },
   {
       "id": 33,
@@ -407,7 +407,7 @@
   {
       "id": 46,
       "title": "20 desamb",
-      "url": "http://www.20desamb.com/",
+      "url": "https://web.archive.org/web/20030329125336/http://www.20desamb.com/",
       "parent": "collectifs",
       "importance": 0,
       "description": "Site aniversaire de l’abolition de l’esclavage à la Réunion.",
@@ -653,7 +653,7 @@
       "url": "https://gastronomic.re/",
       "parent": "professionnels",
       "importance": 0,
-      "description": "L'actualité et les bons plans pour les professionels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
+      "description": "L'actualité et les bons plans pour les professiomnels de la gastronomie des métiers de bouche, les producteurs et restaurateurs de l'île.",
       "article": ["202105"]
   },
   {
@@ -889,6 +889,69 @@
         "importance": 0,
         "description": "Site de la municipalité de la Plaine des Palmistes",
         "article": ["202407"]
+  },
+  {
+        "id": 100,
+        "title": "Conseil Départemental de la Réunion",
+        "url": "https://www.departement974.fr",
+        "parent": "villes",
+        "importance": 0,
+        "description": "Le Conseil Départemental de la Réunion est responsable de la gestion des affaires sociales, de l'éducation, des infrastructures routières, du développement économique et des collèges du département.",
+        "article": ["199912", "200309", "200401", "202401"]
+  },
+  {
+        "id": 101,
+        "title": "Conseil Régional de la Réunion",
+        "url": "https://regionreunion.com/",
+        "parent": "villes",
+        "importance": 0,
+        "description": "Le Conseil Régional de la Réunion est responsable du développement économique, de la formation professionnelle, des transports, de l'aménagement du territoire, de l'environnement et de la culture au niveau régional.",
+        "article": ["199909", "200309", "200401"]
+  },
+  {
+      "id": 103,
+      "title": "Runraid",
+      "url": "https://www.runraid.fr/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Blog sur la diagonale des fous et les ultra-trails dans le monde. C'est le blog de http://runraid.free.fr",
+      "article": ["202411"]
+  },
+  {
+      "id": 104,
+      "title": "En diagonale",
+      "url": "https://en-diagonale.com/",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Site pour se préparer à courrir la diagonale des fous par Jeremy Vaucher qui l'a faite en 2015",
+      "article": ["202411"]
+  },
+  {
+      "id": 105,
+      "title": "Raidlight",
+      "url": "https://raidlight.com/collections/gamme-exclusive-pour-le-grr",
+      "parent": "produits",
+      "importance": 0,
+      "description": "Vêtements techniques pour courrir les trails et les raids. La marque décline une gamme made in France aux couleur du Grand Raid.",
+      "article": ["202411"]
+  },
+  {
+      "id": 106,
+      "title": "Runraid",
+      "url": "http://runraid.free.fr/",
+      "parent": "sport",
+      "importance": 0,
+      "description": "Site perso sur le grand raid et d'autres ultra-trails. On y retrouve tous les classements de la la diagonale des fous.",
+      "article": ["200310", "202411"]
+  },
+  {
+      "id": 107,
+      "title": "Gîtes de France à la Réunion",
+      "url": "https://www.gites-de-france.com/en/search?destination=La%20R%C3%A9union&regions=4&seed=2364b6ad",
+      "parent": "hebergement",
+      "importance": 0,
+      "description": "Hébergements en gîtes de France à la Réunion. Réservation en ligne.",
+      "article": ["200403"]
   },
   {
       "id": 118,
@@ -1203,7 +1266,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407"]
+      "article": ["199811", "202407", "202411"]
   },
   {
       "id": 156,

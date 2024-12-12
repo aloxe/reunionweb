@@ -20,7 +20,7 @@
     <div class="twocolumns">
     {% set lastyear = 0 %}
     {% for page in collections.article %}
-        {% if (loop.index >= 2) and (loop.index < 9) %}
+        {% if (loop.index >= 2) and (loop.index < 8) %}
             <div class="newsblock">
               {% if page.data.image %}
               <a href="{{page.url}}">{% thumb page, 330 %}</a>
