@@ -14,7 +14,7 @@
         "url": "https://www.letampon.fr/visite-parc/",
         "parent": "musees",
         "importance": 0,
-        "description": "Visite virtuelle du parc des palmiers au Tampon.",
+        "description": "Visite virtuelle du parc des palmiers, anciennement parc à palm, au Tampon.",
         "article": ["199908"]
     },
   {
@@ -24,7 +24,7 @@
       "parent": "portails",
       "importance": 2,
       "description": "Le portail Réunionnais avec une actualité hebdomadaire, des photos et plein d’autres infos. C’est peut-être aujourd’hui le seul blog généraliste ayant une si grande longévité.",
-      "article": ["200203", "200204", "200701", "202407"]
+      "article": ["200203", "200206", "200701", "202407"]
   },
   {
       "id": 4,
@@ -123,7 +123,7 @@
       "parent": "meteo",
       "importance": 0,
       "description": "Suivit et explications de tous les événements météo dans le bassin cyclonique du Sud-Ouest de l’Océan Indien.",
-      "article": ["199903", "200202", "200203"]
+      "article": ["199903", "200203", "200204"]
   },
   {
       "id": 15,
@@ -294,7 +294,7 @@
       "parent": "associations",
       "importance": 0,
       "description": "Associations de randonneurs. Conseils pratiques et parcours.",
-      "article": ["200203", "200310"]
+      "article": ["200204", "200310"]
   },
   {
       "id": 34,
@@ -357,7 +357,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "La Journal de L’île de la Réunion. Informations quotidiennes",
-      "article": ["200204", "200409", "200504", "200605"]
+      "article": ["200205", "200409", "200504", "200605"]
   },
   {
       "id": 41,
@@ -1041,7 +1041,7 @@
       "parent": "villes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": ["201404", "202205"]
+      "article": ["200204", "201404", "202205"]
   },
   {
       "id": 126,
