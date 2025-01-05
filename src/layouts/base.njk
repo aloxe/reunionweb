@@ -61,16 +61,16 @@
       <footer>
         {% if page.url !== "/about/" %}
           <p>
-            <a href="{{ '/about/' | url }}" rel="author">à propos de reunionweb</a> | <a href="{{ '/about/newsletter/' | url }}" rel="newsletter">newsletter</a>
+            <a href="{{ '/about/' | url }}" rel="author">À propos de reunionweb</a> | <a href="{{ '/about/newsletter/' | url }}" rel="newsletter">newsletter</a>
           </p>
         {% endif %}
         {% if page.url !== "/" %}
           <nav>
-          <p>
-            <a href="{{ '/articles/' | url }}">articles</a> | 
-            <a href="{{ '/decouverte/' | url }}">découverte</a> |
-            <a href="{{ '/liens/' | url }}">liens</a>
-          </p>
+            <p>
+              <a href="{{ '/articles/' | url }}">articles</a> | 
+              <a href="{{ '/decouverte/' | url }}">découverte</a> |
+              <a href="{{ '/liens/' | url }}">liens</a>
+            </p>
           </nav>
         {% endif %}
         <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
