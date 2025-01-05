@@ -59,20 +59,21 @@
 
     {% block footer %}
       <footer>
-        <nav>
-        <p class="left">
-          <a href="{{ '/articles/' | url }}">articles</a><br>
-          <a href="{{ '/decouverte/' | url }}">découverte</a><br>
-          <a href="{{ '/liens/' | url }}">liens</a>
-        </p>
-        </nav>
         {% if page.url !== "/about/" %}
           <p>
             <a href="{{ '/about/' | url }}" rel="author">à propos de reunionweb</a> | <a href="{{ '/about/newsletter/' | url }}" rel="newsletter">newsletter</a>
           </p>
         {% endif %}
-        <p>cc-by-sa (<a href="https://artlibre.org/">Licence Art Libre 1.3</a>) Alix Guillard 1997 - {% year %}</p>
-
+        {% if page.url !== "/" %}
+          <nav>
+          <p>
+            <a href="{{ '/articles/' | url }}">articles</a> | 
+            <a href="{{ '/decouverte/' | url }}">découverte</a> |
+            <a href="{{ '/liens/' | url }}">liens</a>
+          </p>
+          </nav>
+        {% endif %}
+        <p>cc-by-sa Alix Guillard 1997 - {% year %}</p>
       </footer>
     {% endblock %}
 
