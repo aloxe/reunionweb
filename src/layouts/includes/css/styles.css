@@ -244,6 +244,7 @@ main h1::after {
   margin-top: 0;
 }
 
+.drawer h2,
 main h2 {
     font-family: Devroye, serif;
     font-size: 28px;
