@@ -57,6 +57,142 @@
       </main>
     {% endblock %}
 
+        <!-- Bottom drawer container with transition -->
+        <div id="bottomDrawer"
+          class="drawer translate-y-0">
+          <button type="button"
+            id="rejectButton"
+            style="float:right;">
+            ×
+          </button>
+          <div>
+            <!-- Drawer content -->
+            <h2>Abonnez-vous</h2>
+            <p>Recevez les mises à jour par mail.</p>
+<form data-v-291e79e2="" action="https://api.follow.it/subscription-form/U0t4S2p5UWJmL1F0NFNuRzhXeVJpYjNvcVd5OTYxNmVldWdOZ21rUUdMMGtleVIyOFJDZjVTdm1aUENocFBKZXJ5TVlXbXI5NExMVU5pTnpJQ0xOY1o4Y0RDYTRFS3pSUTVvSkNnRFhDU1hucDF5Y0FrZDlyd29aRUkrL09JbHl8WjJISUJNQ2VHY1A3NG5WNGljQnhFSlF2aTBLNUVTY0ZHTWpLMk5vbkY4VT0=/8" method="post"><div data-v-291e79e2="" class="form-preview"  style="display:inline;">
+<div data-v-291e79e2="" class="preview-input-field"   style="display:inline-block;">
+  <input data-v-291e79e2="" type="email" name="email" required="required" placeholder="votre adresse mail" spellcheck="false" style="text-transform: none !important; color: rgb(0, 0, 0); text-align: left; background-color: rgb(255, 255, 255);
+  border: 2px solid #006fcf;
+  border-right: 0;
+  border-radius: 1em 0 0 1em;
+  padding: 0.3em 0 0.3em 0.5em ;
+  ">
+</div>
+<div data-v-291e79e2="" class="preview-submit-button"   style="display:inline-block;">
+    <button data-v-291e79e2="" type="submit" style="
+    background-color: #006fcf;
+    border: 2px solid #006fcf;
+    border-left: 0;
+    border-radius: 0 1em 1em 0;
+    padding: 0.3em 0.5em;
+    color: white;
+    font-weight: bold;
+    margin-left: -5px;
+    ">Subscribe</button>
+  </div>
+</div>
+</form>
+<p style="font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: .04em;
+><a href="https://follow.it" class="powered-by-line">Powered by <img src="https://follow.it/static/img/colored-logo.svg" alt="follow.it" height="17px"/></a>
+</p>
+
+          </div>
+        </div>
+        <!-- END Bottom drawer container with transition -->
+
+
+<script type="module">
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const bottomDrawer = document.getElementById("bottomDrawer");
+    const rejectButton = document.getElementById("rejectButton");
+
+    function openDrawer() {
+      bottomDrawer.classList.remove("translate-y-0");
+      bottomDrawer.classList.add("translate-y-full");
+    }
+
+    function closeDrawer() {
+      bottomDrawer.classList.add("translate-y-0");
+      bottomDrawer.classList.remove("translate-y-full");
+    }
+
+    rejectButton.addEventListener("click", closeDrawer);
+
+    document.addEventListener("click", (event) => {
+      if (
+        !bottomDrawer.contains(event.target)
+      ) {
+        closeDrawer();
+      }
+    });
+
+  window.onscroll = function() {
+    // document.body is window height because of the sticky footer
+    const pageHeight = document.getElementsByTagName("main")[0].offsetHeight + document.getElementsByTagName("header")[0].offsetHeight;
+
+    if (window.innerHeight + Math.ceil(window.pageYOffset) + 100 >= pageHeight) {
+        openDrawer();
+    }
+    if (window.innerHeight + Math.ceil(window.pageYOffset) + 100 <= pageHeight) {
+        closeDrawer();
+    }
+  }
+
+  });
+
+
+</script>
+
+<style>
+.drawer {
+  padding: 1rem 1rem 0 1rem;
+  border: 2px solid #006fcf;
+  border-radius: 1em 1em 0 0;
+  background-color: #ffffce;
+  width: 80%;
+  margin: 0 auto;
+
+  position: fixed;
+  bottom: -1px;
+  left: 10%;
+  z-index: 1;
+
+  transition-duration: .3s;
+  transition-property: transform,translate,scale,rotate;
+
+  
+}
+
+.translate-y-0 {
+  transform: translate(0, 14em);
+}
+
+.translate-y-full {
+  transform: translate(0);
+}
+
+.powered-by-line {
+  color: #231f20 !important;
+  font-family: "Montserrat" !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: flex !important;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 10px !important;
+}
+
+</style>
+
+
     {% block footer %}
       <footer>
         {% if page.url !== "/about/" %}
