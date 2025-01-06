@@ -5,6 +5,9 @@
 <meta name="title" content="{{ title }}">
 <meta name="description" content="{{ description }}">
 <link rel="icon" type="image/png" href="{{ '/favicon.ico' | url }}" />
+<meta name="theme-color" content="#006fcf">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/logo180.png">
+<link rel="manifest" href="/webmanifest.json">
 {% if page.fileSlug === "404" %}
 {% elif page.url.split("/")[3] === "gouzou" and page.url.split("/")[4] %}{% else %}
 <link rel="canonical" href="{{ meta.url }}{{ page.data.permalink or page.url }}" />
