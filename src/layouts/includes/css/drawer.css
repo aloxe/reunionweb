@@ -23,6 +23,10 @@
     transform: translate(0);
   }
   
+  button#closeButton {
+    float: right;
+  }
+
   .powered-by-line {
     color: #231f20 !important;
     font-family: "Montserrat" !important;

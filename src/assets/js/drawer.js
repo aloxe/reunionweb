@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // cookies are only used here. No need to create a library
     const setCookie = (name, value, days = 7, path = '/') => {
         const expires = new Date(Date.now() + days * 864e5).toUTCString()
-        document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=' + path;
+        document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=' + path + ';SameSite=Strict';
     }
       
     const getCookie = (name) => {
@@ -21,19 +21,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const bottomDrawer = document.getElementById("bottomDrawer");
     const closeButton = document.getElementById("closeButton");
 
-    function openDrawer() {
+    const openDrawer = () => {
         bottomDrawer.classList.remove("translate-y-0");
         bottomDrawer.classList.add("translate-y-full");
     }
 
-    function closeDrawer() {
-        bottomDrawer.classList.add("translate-y-0");
+    const closeDrawer = () => {
         bottomDrawer.classList.remove("translate-y-full");
+        bottomDrawer.classList.add("translate-y-0");
     }
 
-    closeButton.addEventListener("click", (event) => {
+    closeButton.addEventListener("click", () => {
         setCookie('newsletter', "closed", 1);
-        canShowNewsletter = false;
         closeDrawer();
     });
 
@@ -47,10 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.onscroll = canShowNewsletter && function() {
         // document.body is window height because of the sticky footer
+        // so we use header + main
         const pageHeight = document.getElementsByTagName("main")[0].offsetHeight + document.getElementsByTagName("header")[0].offsetHeight;
 
         if (window.innerHeight + Math.ceil(window.pageYOffset) + 300 >= pageHeight) {
-            openDrawer();
+            const canShowNewsletter = getCookie('newsletter') !== 'closed';
+            canShowNewsletter && openDrawer();
         }
         if (window.innerHeight + Math.ceil(window.pageYOffset) + 300 <= pageHeight) {
             closeDrawer();
