@@ -57,11 +57,19 @@
       </main>
     {% endblock %}
 
+    {% if isArticle %}
+      {% set css %}
+        {% include "includes/css/drawer.css" %}
+      {% endset %}
+      <style>{{ css | cssmin | safe }}</style>
+
+      <script type="text/javascript" src="/js/drawer.js" defer></script>
+
         <!-- Bottom drawer container with transition -->
         <div id="bottomDrawer"
           class="drawer translate-y-0">
           <button type="button"
-            id="rejectButton"
+            id="closeButton"
             style="float:right;">
             ×
           </button>
@@ -102,96 +110,7 @@
           </div>
         </div>
         <!-- END Bottom drawer container with transition -->
-
-
-<script type="module">
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const bottomDrawer = document.getElementById("bottomDrawer");
-    const rejectButton = document.getElementById("rejectButton");
-
-    function openDrawer() {
-      bottomDrawer.classList.remove("translate-y-0");
-      bottomDrawer.classList.add("translate-y-full");
-    }
-
-    function closeDrawer() {
-      bottomDrawer.classList.add("translate-y-0");
-      bottomDrawer.classList.remove("translate-y-full");
-    }
-
-    rejectButton.addEventListener("click", closeDrawer);
-
-    document.addEventListener("click", (event) => {
-      if (
-        !bottomDrawer.contains(event.target)
-      ) {
-        closeDrawer();
-      }
-    });
-
-  window.onscroll = function() {
-    // document.body is window height because of the sticky footer
-    const pageHeight = document.getElementsByTagName("main")[0].offsetHeight + document.getElementsByTagName("header")[0].offsetHeight;
-
-    if (window.innerHeight + Math.ceil(window.pageYOffset) + 100 >= pageHeight) {
-        openDrawer();
-    }
-    if (window.innerHeight + Math.ceil(window.pageYOffset) + 100 <= pageHeight) {
-        closeDrawer();
-    }
-  }
-
-  });
-
-
-</script>
-
-<style>
-.drawer {
-  padding: 1rem 1rem 0 1rem;
-  border: 2px solid #006fcf;
-  border-radius: 1em 1em 0 0;
-  background-color: #ffffce;
-  width: 80%;
-  margin: 0 auto;
-
-  position: fixed;
-  bottom: -1px;
-  left: 10%;
-  z-index: 1;
-
-  transition-duration: .3s;
-  transition-property: transform,translate,scale,rotate;
-
-  
-}
-
-.translate-y-0 {
-  transform: translate(0, 14em);
-}
-
-.translate-y-full {
-  transform: translate(0);
-}
-
-.powered-by-line {
-  color: #231f20 !important;
-  font-family: "Montserrat" !important;
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  line-height: 25px !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  display: flex !important;
-  width: 100% !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin-top: 10px !important;
-}
-
-</style>
-
+    {% endif %}
 
     {% block footer %}
       <footer>
