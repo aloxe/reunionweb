@@ -62,54 +62,24 @@
         {% include "includes/css/drawer.css" %}
       {% endset %}
       <style>{{ css | cssmin | safe }}</style>
-
       <script type="text/javascript" src="/js/drawer.js" defer></script>
 
         <!-- Bottom drawer container with transition -->
         <div id="bottomDrawer"
           class="drawer translate-y-0">
           <button type="button"
-            id="closeButton"
-            style="float:right;">
+            id="closeButton">
             ×
           </button>
           <div>
             <!-- Drawer content -->
             <h2>Abonnez-vous</h2>
             <p>Recevez les mises à jour par mail.</p>
-<form data-v-291e79e2="" action="https://api.follow.it/subscription-form/U0t4S2p5UWJmL1F0NFNuRzhXeVJpYjNvcVd5OTYxNmVldWdOZ21rUUdMMGtleVIyOFJDZjVTdm1aUENocFBKZXJ5TVlXbXI5NExMVU5pTnpJQ0xOY1o4Y0RDYTRFS3pSUTVvSkNnRFhDU1hucDF5Y0FrZDlyd29aRUkrL09JbHl8WjJISUJNQ2VHY1A3NG5WNGljQnhFSlF2aTBLNUVTY0ZHTWpLMk5vbkY4VT0=/8" method="post"><div data-v-291e79e2="" class="form-preview"  style="display:inline;">
-<div data-v-291e79e2="" class="preview-input-field"   style="display:inline-block;">
-  <input data-v-291e79e2="" type="email" name="email" required="required" placeholder="votre adresse mail" spellcheck="false" style="text-transform: none !important; color: rgb(0, 0, 0); text-align: left; background-color: rgb(255, 255, 255);
-  border: 2px solid #006fcf;
-  border-right: 0;
-  border-radius: 1em 0 0 1em;
-  padding: 0.3em 0 0.3em 0.5em ;
-  ">
-</div>
-<div data-v-291e79e2="" class="preview-submit-button"   style="display:inline-block;">
-    <button data-v-291e79e2="" type="submit" style="
-    background-color: #006fcf;
-    border: 2px solid #006fcf;
-    border-left: 0;
-    border-radius: 0 1em 1em 0;
-    padding: 0.3em 0.5em;
-    color: white;
-    font-weight: bold;
-    margin-left: -5px;
-    ">Subscribe</button>
-  </div>
-</div>
-</form>
-<p style="font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: .04em;
-><a href="https://follow.it" class="powered-by-line">Powered by <img src="https://follow.it/static/img/colored-logo.svg" alt="follow.it" height="17px"/></a>
-</p>
-
+            {% include "newsletter-form.njk" %}
           </div>
         </div>
-        <!-- END Bottom drawer container with transition -->
+        <!-- END Bottom drawer -->
+
     {% endif %}
 
     {% block footer %}
