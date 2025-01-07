@@ -1,0 +1,39 @@
+.drawer {
+    padding: 1rem 1rem 0 1rem;
+    border: 2px solid #006fcf;
+    border-radius: 1em 1em 0 0;
+    background-color: #ffffce;
+    width: 80%;
+    margin: 0 auto;
+  
+    position: fixed;
+    bottom: -1px;
+    left: 10%;
+    z-index: 1;
+  
+    transition-duration: .3s;
+    transition-property: transform,translate,scale,rotate;
+  }
+  
+  .translate-y-0 {
+    transform: translate(0, 14em);
+  }
+  
+  .translate-y-full {
+    transform: translate(0);
+  }
+  
+  .powered-by-line {
+    color: #231f20 !important;
+    font-family: "Montserrat" !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 10px !important;
+  }
