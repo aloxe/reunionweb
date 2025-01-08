@@ -14,7 +14,7 @@
     transition-duration: .3s;
     transition-property: transform,translate,scale,rotate;
   }
-  
+
   .translate-y-0 {
     transform: translate(0, 14em);
   }
@@ -23,6 +23,14 @@
     transform: translate(0);
   }
   
+  @media (max-width: 500px) {
+    .drawer {
+      width: 100vw;
+      left: 0;
+      padding: 0.6em;
+    }
+  }
+
   button#closeButton {
     float: right;
   }
