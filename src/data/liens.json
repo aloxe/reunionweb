@@ -167,7 +167,7 @@
       "url": "http://www.air-austral.com/",
       "parent": "air",
       "importance": 0,
-      "description": "La compagnie régionale de la Réunion. Basée à Saint-Denis, elle dessert la métropole et plusieurs destinations de l’Océan Indien.",
+      "description": "La compagnie régionale de la Réunion. Basée à Saint-Denis, elle dessert Paris et plusieurs destinations de l’Océan Indien.",
       "article": ["200302"]
   },
   {
@@ -1202,7 +1202,7 @@
       "url": "http://www.reunionnaisdumonde.com/",
       "parent": "associations",
       "importance": 0,
-      "description": "Site web fédérant les Réunionnais qui se sont expatriés en métropole ou ailleurs dans le monde. Forum, produits pays, actu et interviews.",
+      "description": "Site web fédérant les Réunionnais qui se sont expatriés en Europe ou ailleurs dans le monde. Forum, produits pays, actu et interviews.",
       "article": ["200712"]
   },
   {
