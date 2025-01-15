@@ -34,18 +34,3 @@
   button#closeButton {
     float: right;
   }
-
-  .powered-by-line {
-    color: #231f20 !important;
-    font-family: "Montserrat" !important;
-    font-size: 13px !important;
-    font-weight: 400 !important;
-    line-height: 25px !important;
-    text-align: center !important;
-    text-decoration: none !important;
-    display: flex !important;
-    width: 100% !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-top: 10px !important;
-  }
