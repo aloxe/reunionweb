@@ -429,7 +429,7 @@
       "parent": "art",
       "importance": 0,
       "description": "Concours de créativité, destiné aux femmes artistes amateurs, dans les disciplines de la peinture, de la sculpture et de la photographie.",
-      "article": ["202401"]
+      "article": ["199709", "202401"]
   },
   {
       "id": 49,
@@ -798,7 +798,7 @@
       "parent": "pei",
       "importance": 0,
       "description": "Présentation et commande de colis exotiques, premier modèle du genre à la Réunion.",
-      "article": ["199805", "200404"]
+      "article": ["199709", "199805", "200404"]
   },
   {
       "id": 90,
@@ -909,6 +909,15 @@
         "article": ["199909", "200309", "200401"]
   },
   {
+        "id": 102,
+        "title": "Artothèque de la Réunion",
+        "url": "https://artotheque-reunion.fr/",
+        "parent": "musees",
+        "importance": 0,
+        "description": "Musée d’art contemporain qui organise des résidences d'artiste et des près d'œuvres d'art. Visite en ligne et sur place à Saint-Pierre.",
+        "article": ["199709"]
+  },
+  {
       "id": 103,
       "title": "Runraid",
       "url": "https://www.runraid.fr/",
@@ -978,7 +987,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "Quotidien en ligne avec le slogan « Le journal qui oze ». Actualités locates et Internationales et le billet d’humeur de Pierrot Dupuy.",
-      "article": ["201809"]
+      "article": ["199709", "201809"]
   },
   {
       "id": 111,
@@ -997,6 +1006,51 @@
       "importance": 0,
       "description": "Site en anglais et portugais de la micronation de l'empire sacrée de Réunion",
       "article": ["201708"]
+  },
+  {
+        "id": 113,
+        "title": "OPUS Galerie",
+        "url": "https://www.opusartreunion.com/",
+        "parent": "art",
+        "importance": 0,
+        "description": "Galerie d'art en ligne du marchand d'art Olivier Poudou. Présente des artistes de la Réunion et de l'océan Indien et vend leurs productions dans le monde entier.",
+        "article": ["199709"]
+  },
+  {
+      "id": 114,
+      "title": "Réserve naturalle de Mare-Longue",
+      "url": "http://www.mare-longue.reserves-naturelles.org/",
+      "parent": "musees",
+      "importance": 0,
+      "description": "Petit site de présentation de ce site naturel de préservation de la faune et de la flore à Saint-Philippe.",
+      "article": ["200710"]
+  },
+  {
+        "id": 115,
+        "title": "Art & Toiles",
+        "url": "https://artetoiles.re/",
+        "parent": "art",
+        "importance": 0,
+        "description": "Magazin de fournitures et de matériel pour artistes platiciens, artisants d'art, peintres, scuplteurs et sculptrices au Port à la Réunion. Le magasin proose aussi des ateliers d'initiation.",
+        "article": ["199709"]
+  },
+  {
+      "id": 116,
+      "title": "Le blog de Lionel Suz",
+      "url": "http://lionel.suz.free.fr/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Lionel Suz parle de lui et de ses activités sur son blog.",
+      "article": ["200707"]
+  },
+  {
+      "id": 117,
+      "title": "Aéroport Roland Garros de la Réunion",
+      "url": "http://www.reunion.aeroport.fr/",
+      "parent": "transports",
+      "importance": 0,
+      "description": "Le plus grand aéroport de l’île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
+      "article": ["200108"]
   },
   {
       "id": 121,
@@ -1260,15 +1314,6 @@
       "article": ["200701"]
   },
   {
-      "id": 151,
-      "title": "Réserve naturalle de Mare-Longue",
-      "url": "http://www.mare-longue.reserves-naturelles.org/",
-      "parent": "musees",
-      "importance": 0,
-      "description": "Petit site de présentation de ce site naturel de préservation de la faune et de la flore à Saint-Philippe.",
-      "article": ["200710"]
-  },
-  {
       "id": 153,
       "title": "Réunion 1ère",
       "url": "https://la1ere.francetvinfo.fr/reunion/",
@@ -1303,24 +1348,6 @@
       "importance": 0,
       "description": "Lycée au nom du célèbre aviateur. Beaucoup de projets pédagogiques en ligne.",
       "article": ["199909"]
-  },
-  {
-      "id": 152,
-      "title": "Le blog de Lionel Suz",
-      "url": "http://lionel.suz.free.fr/",
-      "parent": "blogs",
-      "importance": 0,
-      "description": "Lionel Suz parle de lui et de ses activités sur son blog.",
-      "article": ["200707"]
-  },
-  {
-      "id": 155,
-      "title": "Aéroport Roland Garros de la Réunion",
-      "url": "http://www.reunion.aeroport.fr/",
-      "parent": "transports",
-      "importance": 0,
-      "description": "Le plus grand aéroport de l’île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
-      "article": ["200108"]
   },
   {
       "id": 160,
