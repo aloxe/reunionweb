@@ -5,7 +5,13 @@
       </div>
       {% if is404 %}{% else %}
         <div class="search">
-          <input id="search" placeholder="recherche…" type="search"><span>🔍</span>
+          <input id="search" 
+            title="recherche"
+            placeholder="recherche…" 
+            type="search"
+            aria-label="Rechercher sur reunionweb"
+          >
+          <span>🔍</span>
         </div>
       {% endif %}
     </header>
