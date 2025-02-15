@@ -105,7 +105,7 @@
       "parent": "meteo",
       "importance": 0,
       "description": "Site de surveillance des cyclones et tempêtes sur l'ouest de l'Océan Indien. Actualité régulière et explications. Newsletter d'alerte.",
-      "article": ["202303"]
+      "article": ["202303", "202502"]
   },
   {
       "id": 13,
@@ -909,6 +909,15 @@
         "article": ["199909", "200309", "200401"]
   },
   {
+      "id": 102,
+      "title": "Préfecture de la Réunion ",
+      "url": "http://www.reunion.gouv.fr/",
+      "parent": "villes",
+      "importance": 0,
+      "description": "Les services de l'État à la Réunion",
+      "article": ["201604", "202502"]
+  },
+  {
       "id": 103,
       "title": "Runraid",
       "url": "https://www.runraid.fr/",
@@ -978,7 +987,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "Quotidien en ligne avec le slogan « Le journal qui oze ». Actualités locates et Internationales et le billet d’humeur de Pierrot Dupuy.",
-      "article": ["201809"]
+      "article": ["201809", "202502"]
   },
   {
       "id": 111,
@@ -998,6 +1007,60 @@
       "description": "Site en anglais et portugais de la micronation de l'empire sacrée de Réunion",
       "article": ["201708"]
   },
+  {
+      "id": 113,
+      "title": "CISE Réunion",
+      "url": "https://cise-reunion.re/",
+      "parent": "public",
+      "importance": 0,
+      "description": "CISE Réunion assure la production et la distribution de l’eau potable sur les communes de Sainte-Marie, Saint-André, Salazie, Saint-Benoit, Les Avirons et le traitement des eaux dans d'autres communes.",
+      "article": ["202502"]
+  },
+  {
+      "id": 114,
+      "title": "Eau du robinet",
+      "url": "https://www.eaudurobinet.re/",
+      "parent": "agence",
+      "importance": 0,
+      "description": "Site de l'agence Régionale de Santé et les différents gestionnaires des réseaux d'eau pour informer les usagers sur la qualité de l'eau.",
+      "article": ["202502"]
+  },
+  {
+    "id": 115,
+    "title": "ARS, Votre santé, nout lambition",
+    "url": "https://www.lareunion.ars.sante.fr/",
+    "parent": "agence",
+    "importance": 0,
+    "description": "Agence Régionale de la Santé de la Réunion. Toutes les informations sanitaires et les politiques de santé.",
+    "article": ["202502"]
+    },
+    {
+    "id": 116,
+    "title": "Portail BRIO",
+    "url": "http://climat.coi-ioc.org/",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Portail de la commission Building Resilience in Indian Ocean offrant accès à de nombreuses données sur le climat et la météo dans le sud ouest de l'océan indien.",
+    "article": ["202502"]
+    },
+    {
+    "id": 117,
+    "title": "Developing climate services for vulnerable islands in the Southwest Indian Ocean",
+    "url": "https://doi.org/10.1016/j.cliser.2024.100491",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Etude de 2024 sur le climat et la météo dans le sud ouest de l'océan indien et la Réunion, menée par Marie-Dominique Leroux.",
+    "article": ["202502"]
+    },
+    {
+    "id": 118,
+    "title": "L’eau, pilier du développement durable en milieu insulaire",
+    "url": "https://books.openedition.org/irdeditions/5745",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Livre de David Lorion sur la gestion de l'eau dans les îles avec l'exemple de la Réunion.",
+    "article": ["202502"]
+    },
   {
       "id": 121,
       "title": "REUNIX",
@@ -1189,7 +1252,7 @@
   },
   {
       "id": 142,
-      "title": "Société d’Etudes Ornithologiques de La Réunion",
+      "title": "Sociétvillvillé d’Etudes Ornithologiques de La Réunion",
       "url": "http://www.seor.fr/",
       "parent": "associations",
       "importance": 0,
@@ -1275,7 +1338,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407", "202411"]
+      "article": ["199811", "202407", "202411", "202502"]
   },
   {
       "id": 156,
