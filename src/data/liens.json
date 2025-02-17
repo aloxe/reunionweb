@@ -105,7 +105,7 @@
       "parent": "meteo",
       "importance": 0,
       "description": "Site de surveillance des cyclones et tempêtes sur l'ouest de l'Océan Indien. Actualité régulière et explications. Newsletter d'alerte.",
-      "article": ["202303"]
+      "article": ["202303", "202502"]
   },
   {
       "id": 13,
@@ -228,7 +228,7 @@
       "id": 26,
       "title": "Saint-Philippe",
       "url": "https://saintphilippe.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie de Saint-Philippe, situé au nord est de l’île sur les flancs du Piton de la Fournaise.",
       "article": ["200001"]
@@ -237,7 +237,7 @@
       "id": 27,
       "title": "Le Port",
       "url": "https://www.ville-port.re/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie du Port, petite commune, centre économique, situé au nord-ouest de l’île.",
       "article": ["200703", "201708"]
@@ -876,7 +876,7 @@
         "id": 99,
         "title": "La Plaine-des-Palmistes",
         "url": "https://www.ville-plainedespalmistes.fr/",
-        "parent": "villes",
+        "parent": "communes",
         "importance": 0,
         "description": "Site de la municipalité de la Plaine des Palmistes",
         "article": ["202407"]
@@ -900,13 +900,13 @@
         "article": ["199909", "200309", "200401"]
   },
   {
-        "id": 102,
-        "title": "Artothèque de la Réunion",
-        "url": "https://artotheque-reunion.fr/",
-        "parent": "musees",
-        "importance": 0,
-        "description": "Musée d’art contemporain qui organise des résidences d'artiste et des près d'œuvres d'art. Visite en ligne et sur place à Saint-Pierre.",
-        "article": ["199709"]
+      "id": 102,
+      "title": "Préfecture de la Réunion ",
+      "url": "http://www.reunion.gouv.fr/",
+      "parent": "villes",
+      "importance": 0,
+      "description": "Les services de l'État à la Réunion",
+      "article": ["201604", "202502"]
   },
   {
       "id": 103,
@@ -978,7 +978,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "Quotidien en ligne avec le slogan « Le journal qui oze ». Actualités locates et Internationales et le billet d’humeur de Pierrot Dupuy.",
-      "article": ["199709", "201809"]
+      "article": ["199709", "201809", "202502"]
   },
   {
       "id": 111,
@@ -999,50 +999,77 @@
       "article": ["201708"]
   },
   {
-        "id": 113,
-        "title": "OPUS Galerie",
-        "url": "https://www.opusartreunion.com/",
-        "parent": "art",
-        "importance": 0,
-        "description": "Galerie d'art en ligne du marchand d'art Olivier Poudou. Présente des artistes de la Réunion et de l'océan Indien et vend leurs productions dans le monde entier.",
-        "article": ["199709"]
+      "id": 113,
+      "title": "CISE Réunion",
+      "url": "https://cise-reunion.re/",
+      "parent": "public",
+      "importance": 0,
+      "description": "CISE Réunion assure la production et la distribution de l’eau potable sur les communes de Sainte-Marie, Saint-André, Salazie, Saint-Benoit, Les Avirons et le traitement des eaux dans d'autres communes.",
+      "article": ["202502"]
   },
   {
       "id": 114,
-      "title": "Réserve naturalle de Mare-Longue",
-      "url": "http://www.mare-longue.reserves-naturelles.org/",
-      "parent": "musees",
+      "title": "Eau du robinet",
+      "url": "https://www.eaudurobinet.re/",
+      "parent": "agence",
       "importance": 0,
-      "description": "Petit site de présentation de ce site naturel de préservation de la faune et de la flore à Saint-Philippe.",
-      "article": ["200710"]
+      "description": "Site de l'agence Régionale de Santé et les différents gestionnaires des réseaux d'eau pour informer les usagers sur la qualité de l'eau.",
+      "article": ["202502"]
   },
   {
-        "id": 115,
-        "title": "Art & Toiles",
-        "url": "https://artetoiles.re/",
-        "parent": "art",
+    "id": 115,
+    "title": "ARS, Votre santé, nout lambition",
+    "url": "https://www.lareunion.ars.sante.fr/",
+    "parent": "agence",
+    "importance": 0,
+    "description": "Agence Régionale de la Santé de la Réunion. Toutes les informations sanitaires et les politiques de santé.",
+    "article": ["202502"]
+    },
+    {
+    "id": 116,
+    "title": "Portail BRIO",
+    "url": "http://climat.coi-ioc.org/",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Portail de la commission Building Resilience in Indian Ocean offrant accès à de nombreuses données sur le climat et la météo dans le sud ouest de l'océan indien.",
+    "article": ["202502"]
+    },
+    {
+    "id": 117,
+    "title": "Developing climate services for vulnerable islands in the Southwest Indian Ocean",
+    "url": "https://doi.org/10.1016/j.cliser.2024.100491",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Etude de 2024 sur le climat et la météo dans le sud ouest de l'océan indien et la Réunion, menée par Marie-Dominique Leroux.",
+    "article": ["202502"]
+    },
+    {
+    "id": 118,
+    "title": "L’eau, pilier du développement durable en milieu insulaire",
+    "url": "https://books.openedition.org/irdeditions/5745",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Livre de David Lorion sur la gestion de l'eau dans les îles avec l'exemple de la Réunion.",
+    "article": ["202502"]
+    },
+    {
+        "id": 119,
+        "title": "Saint-André",
+        "url": "https://www.saint-andre.re",
+        "parent": "communes",
         "importance": 0,
-        "description": "Magazin de fournitures et de matériel pour artistes platiciens, artisants d'art, peintres, scuplteurs et sculptrices au Port à la Réunion. Le magasin proose aussi des ateliers d'initiation.",
-        "article": ["199709"]
-  },
-  {
-      "id": 116,
-      "title": "Le blog de Lionel Suz",
-      "url": "http://lionel.suz.free.fr/",
-      "parent": "blogs",
-      "importance": 0,
-      "description": "Lionel Suz parle de lui et de ses activités sur son blog.",
-      "article": ["200707"]
-  },
-  {
-      "id": 117,
-      "title": "Aéroport Roland Garros de la Réunion",
-      "url": "http://www.reunion.aeroport.fr/",
-      "parent": "transports",
-      "importance": 0,
-      "description": "Le plus grand aéroport de l’île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
-      "article": ["200108"]
-  },
+        "description": "Les services de mairie de la ville de Saint-André.",
+        "article": ["202502"]
+    },
+    {
+        "id": 120,
+        "title": "Ville de Salazie",
+        "url": "https://www.ville-salazie.fr/",
+        "parent": "communes",
+        "importance": 0,
+        "description": "Site municipal de Salazie. Permet aussi de lire le magazine municipal ICI' ANLÉR en ligne.",
+        "article": ["202502"]
+    },
   {
       "id": 121,
       "title": "REUNIX",
@@ -1083,16 +1110,16 @@
       "id": 125,
       "title": "Saint-Paul",
       "url": "http://www.mairie-saintpaul.fr",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": ["200204", "201404", "202205"]
+      "article": ["200204", "201404", "202205", "202502"]
   },
   {
       "id": 126,
       "title": "Saint-Pierre",
       "url": "https://www.saintpierre.re/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Pierre",
       "article": ["200004", "201708"]
@@ -1119,7 +1146,7 @@
       "id": 129,
       "title": "Saint-Denis",
       "url": "http://www.saintdenis.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie de Saint-Denis de la Réunion.",
       "article": ["200402", "201412"]
@@ -1128,7 +1155,7 @@
       "id": 130,
       "title": "La Possession",
       "url": "http://www.ville-lapossession.fr",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site officiel de la ville de la Possession.",
       "article": ["199709", "201412"]
@@ -1137,7 +1164,7 @@
       "id": 131,
       "title": "Saint-Leu",
       "url": "http://www.saintleu.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Mairie de Saint Leu. Information administratives et locales.",
       "article": ["200110", "200508", "201404", "201412"]
@@ -1146,7 +1173,7 @@
       "id": 132,
       "title": "Petite-Ile",
       "url": "http://www.petite-ile.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site officiel de la ville de petite-ile. Actualités et informations municipales.",
       "article": ["201412"]
@@ -1155,7 +1182,7 @@
       "id": 133,
       "title": "Trois-Bassins",
       "url": "http://www.trois-bassins.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Commune de Trois-Bassins se situe à l’ouest de la Réunion. Présentations et vie pratique.",
       "article": ["201412"]
@@ -1234,7 +1261,7 @@
   },
   {
       "id": 142,
-      "title": "Société d’Etudes Ornithologiques de La Réunion",
+      "title": "Sociétvillvillé d’Etudes Ornithologiques de La Réunion",
       "url": "http://www.seor.fr/",
       "parent": "associations",
       "importance": 0,
@@ -1290,7 +1317,7 @@
       "id": 148,
       "title": "Le Tampon",
       "url": "http://www.letampon.fr/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Informations de la mairie, nouvelles et photos.",
       "article": ["199908", "200701"]
@@ -1323,13 +1350,22 @@
       "article": ["200512"]
   },
   {
+        "id": 152,
+        "title": "Artothèque de la Réunion",
+        "url": "https://artotheque-reunion.fr/",
+        "parent": "musees",
+        "importance": 0,
+        "description": "Musée d’art contemporain qui organise des résidences d'artiste et des près d'œuvres d'art. Visite en ligne et sur place à Saint-Pierre.",
+        "article": ["199709"]
+  },
+  {
       "id": 153,
       "title": "Réunion 1ère",
       "url": "https://la1ere.francetvinfo.fr/reunion/",
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407", "202411"]
+      "article": ["199811", "202407", "202411", "202502"]
   },
   {
       "id": 156,
@@ -1654,5 +1690,50 @@
       "importance": 0,
       "description": "La première radio musicale de France a osse sa station dans l’Océan Indien",
       "article": ["199903"]
+  },
+  {
+        "id": 213,
+        "title": "OPUS Galerie",
+        "url": "https://www.opusartreunion.com/",
+        "parent": "art",
+        "importance": 0,
+        "description": "Galerie d'art en ligne du marchand d'art Olivier Poudou. Présente des artistes de la Réunion et de l'océan Indien et vend leurs productions dans le monde entier.",
+        "article": ["199709"]
+  },
+  {
+      "id": 214,
+      "title": "Réserve naturalle de Mare-Longue",
+      "url": "http://www.mare-longue.reserves-naturelles.org/",
+      "parent": "musees",
+      "importance": 0,
+      "description": "Petit site de présentation de ce site naturel de préservation de la faune et de la flore à Saint-Philippe.",
+      "article": ["200710"]
+  },
+  {
+        "id": 215,
+        "title": "Art & Toiles",
+        "url": "https://artetoiles.re/",
+        "parent": "art",
+        "importance": 0,
+        "description": "Magazin de fournitures et de matériel pour artistes platiciens, artisants d'art, peintres, scuplteurs et sculptrices au Port à la Réunion. Le magasin proose aussi des ateliers d'initiation.",
+        "article": ["199709"]
+  },
+  {
+      "id": 216,
+      "title": "Le blog de Lionel Suz",
+      "url": "http://lionel.suz.free.fr/",
+      "parent": "blogs",
+      "importance": 0,
+      "description": "Lionel Suz parle de lui et de ses activités sur son blog.",
+      "article": ["200707"]
+  },
+  {
+      "id": 217,
+      "title": "Aéroport Roland Garros de la Réunion",
+      "url": "http://www.reunion.aeroport.fr/",
+      "parent": "transports",
+      "importance": 0,
+      "description": "Le plus grand aéroport de l’île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
+      "article": ["200108"]
   }
 ]
