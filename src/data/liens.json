@@ -1257,7 +1257,7 @@
       "parent": "associations",
       "importance": 0,
       "description": "Site web fédérant les Réunionnais qui se sont expatriés en Europe ou ailleurs dans le monde. Forum, produits pays, actu et interviews.",
-      "article": ["200712"]
+      "article": ["200109", "200712"]
   },
   {
       "id": 144,
@@ -1312,6 +1312,15 @@
       "importance": 0,
       "description": "Regroupement professionnel des apiculteurs de la Réunion. Le site n’est pas complet mais donne un bon état des lieu de la filière apicole à la Réunion.",
       "article": ["200701"]
+  },
+  {
+      "id": 150,
+      "title": "ville de Saint-Joseph",
+      "url": "https://saintjoseph.re/",
+      "parent": "communes",
+      "importance": 0,
+      "description": "Actualitées et services de la ville de Saint-Joseph de la Réunion.",
+      "article": []
   },
   {
       "id": 153,
