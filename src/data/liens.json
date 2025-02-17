@@ -1314,6 +1314,15 @@
       "article": []
   },
   {
+      "id": 151,
+      "title": "Village de l'Entre Deux",
+      "url": "https://entredeux.re/",
+      "parent": "communes",
+      "importance": 0,
+      "description": "Site de la mairie avec imformation pratiques et choses à faire à l'Entre-Deux.",
+      "article": ["200512"]
+  },
+  {
       "id": 153,
       "title": "Réunion 1ère",
       "url": "https://la1ere.francetvinfo.fr/reunion/",
