@@ -247,9 +247,17 @@
     "title": "Villes & Communautés",
     "slug": "villes",
     "parent": "liens",
-    "associe": ["rapports"],
+    "associe": ["rapports", "public"],
     "importance": 0,
-    "description": "Sites officiels des communes de la Réunion et les communautés de communes. Cette section liste aussi les conseils départemental et régional de la Réunion ainsi que des agences départementales ou gouvernementales."
+    "description": "Collectivités locales, communes de la Réunion et les communautés de communes. Cette section liste aussi des agences départementales ou gouvernementales."
+  },
+  {
+    "title": "Communes",
+    "slug": "communes",
+    "parent": "villes",
+    "associe": ["communautes", "public"],
+    "importance": 0,
+    "description": "Sites officiels des communes de la Réunion."
   },
   {
     "title": "professionnels",
@@ -263,7 +271,7 @@
     "title": "Agences gouvernementales",
     "slug": "agences",
     "parent": "villes",
-    "associe": ["rapports"],
+    "associe": ["rapports", "public"],
     "importance": 0,
     "description": "Le gouvernement ou les agences d'état s'intéressent aux DOM TOM en général ou à la Réunion en particulier."
   },
@@ -313,5 +321,13 @@
     "associe": ["politiques", "villes"],
     "importance": 0,
     "description": "Pages et sites sur la vie politique de la Réunion"
+  },
+  {
+    "title": "Services publics",
+    "slug": "public",
+    "parent": "liens",
+    "associe": ["professionnels", "villes"],
+    "importance": 0,
+    "description": "Les services publics dans le département et les communes de la Réunion."
   }
 ]

@@ -105,7 +105,7 @@
       "parent": "meteo",
       "importance": 0,
       "description": "Site de surveillance des cyclones et tempêtes sur l'ouest de l'Océan Indien. Actualité régulière et explications. Newsletter d'alerte.",
-      "article": ["202303"]
+      "article": ["202303", "202502"]
   },
   {
       "id": 13,
@@ -228,7 +228,7 @@
       "id": 26,
       "title": "Saint-Philippe",
       "url": "https://saintphilippe.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie de Saint-Philippe, situé au nord est de l’île sur les flancs du Piton de la Fournaise.",
       "article": ["200001"]
@@ -237,7 +237,7 @@
       "id": 27,
       "title": "Le Port",
       "url": "https://www.ville-port.re/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie du Port, petite commune, centre économique, situé au nord-ouest de l’île.",
       "article": ["200703", "201708"]
@@ -885,7 +885,7 @@
         "id": 99,
         "title": "La Plaine-des-Palmistes",
         "url": "https://www.ville-plainedespalmistes.fr/",
-        "parent": "villes",
+        "parent": "communes",
         "importance": 0,
         "description": "Site de la municipalité de la Plaine des Palmistes",
         "article": ["202407"]
@@ -907,6 +907,15 @@
         "importance": 0,
         "description": "Le Conseil Régional de la Réunion est responsable du développement économique, de la formation professionnelle, des transports, de l'aménagement du territoire, de l'environnement et de la culture au niveau régional.",
         "article": ["199909", "200309", "200401"]
+  },
+  {
+      "id": 102,
+      "title": "Préfecture de la Réunion ",
+      "url": "http://www.reunion.gouv.fr/",
+      "parent": "villes",
+      "importance": 0,
+      "description": "Les services de l'État à la Réunion",
+      "article": ["201604", "202502"]
   },
   {
       "id": 103,
@@ -978,7 +987,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "Quotidien en ligne avec le slogan « Le journal qui oze ». Actualités locates et Internationales et le billet d’humeur de Pierrot Dupuy.",
-      "article": ["201809"]
+      "article": ["201809", "202502"]
   },
   {
       "id": 111,
@@ -998,6 +1007,78 @@
       "description": "Site en anglais et portugais de la micronation de l'empire sacrée de Réunion",
       "article": ["201708"]
   },
+  {
+      "id": 113,
+      "title": "CISE Réunion",
+      "url": "https://cise-reunion.re/",
+      "parent": "public",
+      "importance": 0,
+      "description": "CISE Réunion assure la production et la distribution de l’eau potable sur les communes de Sainte-Marie, Saint-André, Salazie, Saint-Benoit, Les Avirons et le traitement des eaux dans d'autres communes.",
+      "article": ["202502"]
+  },
+  {
+      "id": 114,
+      "title": "Eau du robinet",
+      "url": "https://www.eaudurobinet.re/",
+      "parent": "agence",
+      "importance": 0,
+      "description": "Site de l'agence Régionale de Santé et les différents gestionnaires des réseaux d'eau pour informer les usagers sur la qualité de l'eau.",
+      "article": ["202502"]
+  },
+  {
+    "id": 115,
+    "title": "ARS, Votre santé, nout lambition",
+    "url": "https://www.lareunion.ars.sante.fr/",
+    "parent": "agence",
+    "importance": 0,
+    "description": "Agence Régionale de la Santé de la Réunion. Toutes les informations sanitaires et les politiques de santé.",
+    "article": ["202502"]
+    },
+    {
+    "id": 116,
+    "title": "Portail BRIO",
+    "url": "http://climat.coi-ioc.org/",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Portail de la commission Building Resilience in Indian Ocean offrant accès à de nombreuses données sur le climat et la météo dans le sud ouest de l'océan indien.",
+    "article": ["202502"]
+    },
+    {
+    "id": 117,
+    "title": "Developing climate services for vulnerable islands in the Southwest Indian Ocean",
+    "url": "https://doi.org/10.1016/j.cliser.2024.100491",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Etude de 2024 sur le climat et la météo dans le sud ouest de l'océan indien et la Réunion, menée par Marie-Dominique Leroux.",
+    "article": ["202502"]
+    },
+    {
+    "id": 118,
+    "title": "L’eau, pilier du développement durable en milieu insulaire",
+    "url": "https://books.openedition.org/irdeditions/5745",
+    "parent": "rapport",
+    "importance": 0,
+    "description": "Livre de David Lorion sur la gestion de l'eau dans les îles avec l'exemple de la Réunion.",
+    "article": ["202502"]
+    },
+    {
+        "id": 119,
+        "title": "Saint-André",
+        "url": "https://www.saint-andre.re",
+        "parent": "communes",
+        "importance": 0,
+        "description": "Les services de mairie de la ville de Saint-André.",
+        "article": ["202502"]
+    },
+    {
+        "id": 120,
+        "title": "Ville de Salazie",
+        "url": "https://www.ville-salazie.fr/",
+        "parent": "communes",
+        "importance": 0,
+        "description": "Site municipal de Salazie. Permet aussi de lire le magazine municipal ICI' ANLÉR en ligne.",
+        "article": ["202502"]
+    },
   {
       "id": 121,
       "title": "REUNIX",
@@ -1038,16 +1119,16 @@
       "id": 125,
       "title": "Saint-Paul",
       "url": "http://www.mairie-saintpaul.fr",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": ["200204", "201404", "202205"]
+      "article": ["200204", "201404", "202205", "202502"]
   },
   {
       "id": 126,
       "title": "Saint-Pierre",
       "url": "https://www.saintpierre.re/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Pierre",
       "article": ["200004", "201708"]
@@ -1074,7 +1155,7 @@
       "id": 129,
       "title": "Saint-Denis",
       "url": "http://www.saintdenis.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie de Saint-Denis de la Réunion.",
       "article": ["200402", "201412"]
@@ -1083,7 +1164,7 @@
       "id": 130,
       "title": "La Possession",
       "url": "http://www.ville-lapossession.fr",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site officiel de la ville de la Possession.",
       "article": ["201412"]
@@ -1092,7 +1173,7 @@
       "id": 131,
       "title": "Saint-Leu",
       "url": "http://www.saintleu.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Mairie de Saint Leu. Information administratives et locales.",
       "article": ["200110", "200508", "201404", "201412"]
@@ -1101,7 +1182,7 @@
       "id": 132,
       "title": "Petite-Ile",
       "url": "http://www.petite-ile.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site officiel de la ville de petite-ile. Actualités et informations municipales.",
       "article": ["201412"]
@@ -1110,7 +1191,7 @@
       "id": 133,
       "title": "Trois-Bassins",
       "url": "http://www.trois-bassins.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Commune de Trois-Bassins se situe à l’ouest de la Réunion. Présentations et vie pratique.",
       "article": ["201412"]
@@ -1189,7 +1270,7 @@
   },
   {
       "id": 142,
-      "title": "Société d’Etudes Ornithologiques de La Réunion",
+      "title": "Sociétvillvillé d’Etudes Ornithologiques de La Réunion",
       "url": "http://www.seor.fr/",
       "parent": "associations",
       "importance": 0,
@@ -1245,7 +1326,7 @@
       "id": 148,
       "title": "Le Tampon",
       "url": "http://www.letampon.fr/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Informations de la mairie, nouvelles et photos.",
       "article": ["199908", "200701"]
@@ -1275,7 +1356,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407", "202411"]
+      "article": ["199811", "202407", "202411", "202502"]
   },
   {
       "id": 156,
