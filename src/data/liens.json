@@ -228,7 +228,7 @@
       "id": 26,
       "title": "Saint-Philippe",
       "url": "https://saintphilippe.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie de Saint-Philippe, situé au nord est de l’île sur les flancs du Piton de la Fournaise.",
       "article": ["200001"]
@@ -237,7 +237,7 @@
       "id": 27,
       "title": "Le Port",
       "url": "https://www.ville-port.re/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie du Port, petite commune, centre économique, situé au nord-ouest de l’île.",
       "article": ["200703", "201708"]
@@ -885,7 +885,7 @@
         "id": 99,
         "title": "La Plaine-des-Palmistes",
         "url": "https://www.ville-plainedespalmistes.fr/",
-        "parent": "villes",
+        "parent": "communes",
         "importance": 0,
         "description": "Site de la municipalité de la Plaine des Palmistes",
         "article": ["202407"]
@@ -1061,6 +1061,24 @@
     "description": "Livre de David Lorion sur la gestion de l'eau dans les îles avec l'exemple de la Réunion.",
     "article": ["202502"]
     },
+    {
+        "id": 119,
+        "title": "Saint-André",
+        "url": "https://www.saint-andre.re",
+        "parent": "communes",
+        "importance": 0,
+        "description": "Les services de mairie de la ville de Saint-André.",
+        "article": ["202502"]
+    },
+    {
+        "id": 120,
+        "title": "Ville de Salazie",
+        "url": "https://www.ville-salazie.fr/",
+        "parent": "communes",
+        "importance": 0,
+        "description": "Site municipal de Salazie. Permet aussi de lire le magazine municipal ICI' ANLÉR en ligne.",
+        "article": ["202502"]
+    },
   {
       "id": 121,
       "title": "REUNIX",
@@ -1101,16 +1119,16 @@
       "id": 125,
       "title": "Saint-Paul",
       "url": "http://www.mairie-saintpaul.fr",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Paul",
-      "article": ["200204", "201404", "202205"]
+      "article": ["200204", "201404", "202205", "202502"]
   },
   {
       "id": 126,
       "title": "Saint-Pierre",
       "url": "https://www.saintpierre.re/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "site officiel de la mairie de Saint-Pierre",
       "article": ["200004", "201708"]
@@ -1137,7 +1155,7 @@
       "id": 129,
       "title": "Saint-Denis",
       "url": "http://www.saintdenis.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site de la mairie de Saint-Denis de la Réunion.",
       "article": ["200402", "201412"]
@@ -1146,7 +1164,7 @@
       "id": 130,
       "title": "La Possession",
       "url": "http://www.ville-lapossession.fr",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site officiel de la ville de la Possession.",
       "article": ["201412"]
@@ -1155,7 +1173,7 @@
       "id": 131,
       "title": "Saint-Leu",
       "url": "http://www.saintleu.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Mairie de Saint Leu. Information administratives et locales.",
       "article": ["200110", "200508", "201404", "201412"]
@@ -1164,7 +1182,7 @@
       "id": 132,
       "title": "Petite-Ile",
       "url": "http://www.petite-ile.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Site officiel de la ville de petite-ile. Actualités et informations municipales.",
       "article": ["201412"]
@@ -1173,7 +1191,7 @@
       "id": 133,
       "title": "Trois-Bassins",
       "url": "http://www.trois-bassins.re",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Commune de Trois-Bassins se situe à l’ouest de la Réunion. Présentations et vie pratique.",
       "article": ["201412"]
@@ -1308,7 +1326,7 @@
       "id": 148,
       "title": "Le Tampon",
       "url": "http://www.letampon.fr/",
-      "parent": "villes",
+      "parent": "communes",
       "importance": 0,
       "description": "Informations de la mairie, nouvelles et photos.",
       "article": ["199908", "200701"]
