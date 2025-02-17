@@ -450,15 +450,6 @@
       "article": ["199707"]
   },
   {
-      "id": 51,
-      "title": "Claire Dardel",
-      "url": "http://jeanmarc.itani.pagesperso-orange.fr/aquarell.html",
-      "parent": "peinture",
-      "importance": 0,
-      "description": "Aquarelles de l’exposition mémoires.",
-      "article": ["199709"]
-  },
-  {
       "id": 52,
       "title": "Joël Laroche Joubert",
       "url": "http://joellaroche-joubert.com/about.html",
@@ -488,7 +479,7 @@
   {
       "id": 55,
       "title": "UDAR",
-      "url": "http://www.runisland.com/udar/",
+      "url": "https://www.uniondesartistesdelareunion.com/",
       "parent": "collectifs",
       "importance": 0,
       "description": "Union des Artistes de la Réunion. Présentation des artistes et Galerie",
