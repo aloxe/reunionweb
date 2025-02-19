@@ -1261,7 +1261,7 @@
   },
   {
       "id": 142,
-      "title": "Sociétvillvillé d’Etudes Ornithologiques de La Réunion",
+      "title": "Société d’Etudes Ornithologiques de La Réunion",
       "url": "http://www.seor.fr/",
       "parent": "associations",
       "importance": 0,
@@ -1275,7 +1275,7 @@
       "parent": "associations",
       "importance": 0,
       "description": "Site web fédérant les Réunionnais qui se sont expatriés en Europe ou ailleurs dans le monde. Forum, produits pays, actu et interviews.",
-      "article": ["200109", "200712"]
+      "article": ["200109", "200307", "200712"]
   },
   {
       "id": 144,
