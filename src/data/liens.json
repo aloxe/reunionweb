@@ -1029,7 +1029,7 @@
     "id": 116,
     "title": "Portail BRIO",
     "url": "http://climat.coi-ioc.org/",
-    "parent": "rapport",
+    "parent": "rapports",
     "importance": 0,
     "description": "Portail de la commission Building Resilience in Indian Ocean offrant accès à de nombreuses données sur le climat et la météo dans le sud ouest de l'océan indien.",
     "article": ["202502"]
@@ -1038,7 +1038,7 @@
     "id": 117,
     "title": "Developing climate services for vulnerable islands in the Southwest Indian Ocean",
     "url": "https://doi.org/10.1016/j.cliser.2024.100491",
-    "parent": "rapport",
+    "parent": "rapports",
     "importance": 0,
     "description": "Etude de 2024 sur le climat et la météo dans le sud ouest de l'océan indien et la Réunion, menée par Marie-Dominique Leroux.",
     "article": ["202502"]
@@ -1047,7 +1047,7 @@
     "id": 118,
     "title": "L’eau, pilier du développement durable en milieu insulaire",
     "url": "https://books.openedition.org/irdeditions/5745",
-    "parent": "rapport",
+    "parent": "rapports",
     "importance": 0,
     "description": "Livre de David Lorion sur la gestion de l'eau dans les îles avec l'exemple de la Réunion.",
     "article": ["202502"]
@@ -1690,6 +1690,24 @@
       "importance": 0,
       "description": "La première radio musicale de France a osse sa station dans l’Océan Indien",
       "article": ["199903"]
+  },
+  {
+      "id": 198,
+      "title": "Le changement climatique dans l’Indianocéanie",
+      "url": "http://regionalclimate-change.sc/",
+      "parent": "rapports",
+      "importance": 0,
+      "description": "Portail informant sur le changement climatique dans le sud ouest de l'Océan indien",
+      "article": ["202502"]
+  },
+  {
+      "id": 199,
+      "title": "Office de l'eau de la Réunion",
+      "url": "https://www.eaureunion.fr",
+      "parent": "public",
+      "importance": 0,
+      "description": "Office public de l'eau à la Réunion",
+      "article": ["202502"]
   },
   {
         "id": 213,
