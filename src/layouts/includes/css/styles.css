@@ -368,6 +368,18 @@ main .cadrimage {
 	border:1px dotted #006fd5;
 }
 
+main .expo {
+	padding: 0;
+  font-family: Devroye, serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #022241;
+}
+main .expo img {
+  margin: 0;
+  border:1px solid #022241;
+}
+
 main .center iframe,
 main .cadrimage iframe,
 main .cadrimage img {
