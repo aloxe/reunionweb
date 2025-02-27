@@ -76,7 +76,7 @@ module.exports = (eleventyConfig) => {
 
     let options = {
       widths: [380, 450, 640, 764],
-      formats: ["jpeg"],
+      formats: ["webp"],
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
@@ -122,7 +122,7 @@ module.exports = (eleventyConfig) => {
 
     let options = {
       widths: [size],
-      formats: ["jpeg"],
+      formats: ["webp", "jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
@@ -161,7 +161,7 @@ module.exports = (eleventyConfig) => {
 
     let options = {
       widths: [THUMB],
-      formats: ["jpeg"],
+      formats: ["webp", "jpeg"],
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
@@ -203,7 +203,7 @@ module.exports = (eleventyConfig) => {
     // TODO: limit to a certain max height 200x200 min 1200×1200 max
     let metadata = await Image(imageSrc, {
       widths: [1200],
-      formats: ["webp"],
+      formats: ["webp", "jpeg"],
       urlPath: urlPath,
       outputDir: `./_site/${page.url}`,
       filenameFormat: function (id, src, width, format, options) {
