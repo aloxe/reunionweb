@@ -2,7 +2,9 @@ module.exports = {
   ci: {
     collect: {
       "url": [
-        "http://localhost/index.html"
+        "http://localhost/index.html",
+        "http://localhost/decouverte/",
+        "http://localhost/liens"
       ],
       staticDistDir: './_site',
       staticDirFileDiscoveryDepth: 1,

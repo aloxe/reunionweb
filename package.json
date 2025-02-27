@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "reunionweb.org",
   "scripts": {
+    "start": "eleventy --serve",
     "build": "npx @11ty/eleventy",
     "build:test": "ENVIRONMENT=test npx @11ty/eleventy",
     "build:prod": "ENVIRONMENT=prod npx @11ty/eleventy",
