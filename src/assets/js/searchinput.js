@@ -63,5 +63,6 @@ searchInput.onblur = function(e) {
     bool: "OR",
     expand: true,
   });
-  _paq.push(['trackSiteSearch',e.target.value, false, results?.length]);
+  // no tracking on reunionweb
+  // _paq.push(['trackSiteSearch',e.target.value, false, results?.length]);
 }

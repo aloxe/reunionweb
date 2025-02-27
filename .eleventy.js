@@ -55,7 +55,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addShortcode("fnac", (ref, link, align = "left") => `<a href="https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=${ref}&ued=${link}" class="boutonfnac ${align}" rel="nofollow, sponsored">achetez sur</a>`);
 
   // images
-  eleventyConfig.addShortcode("Image", async (page, src, alt) => {
+  eleventyConfig.addShortcode("Image", async (page, src, alt, loading) => {
     if (!alt) {
       throw new Error(`Missing \`alt\` on myImage from: ${src}`);
     }
@@ -76,7 +76,7 @@ module.exports = (eleventyConfig) => {
 
     let options = {
       widths: [380, 450, 640, 764],
-      formats: ["jpeg"],
+      formats: ["webp"],
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
@@ -92,9 +92,10 @@ module.exports = (eleventyConfig) => {
     let imageAttributes = {
       alt,
       sizes: '(max-width: 400px) 380px, (max-width: 470px) 450px, (max-width: 841px) 640px, (max-width: 1100px) 640px, 764px',
-      loading: "lazy",
+      loading: loading || "lazy",
       decoding: "async",
     }
+
     // get metadata
     let metadata = Image.statsSync(srcImage, options)  
     return Image.generateHTML(metadata, imageAttributes)
@@ -122,7 +123,7 @@ module.exports = (eleventyConfig) => {
 
     let options = {
       widths: [size],
-      formats: ["jpeg"],
+      formats: ["webp"],
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
@@ -161,7 +162,7 @@ module.exports = (eleventyConfig) => {
 
     let options = {
       widths: [THUMB],
-      formats: ["jpeg"],
+      formats: ["webp"],
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
@@ -203,7 +204,7 @@ module.exports = (eleventyConfig) => {
     // TODO: limit to a certain max height 200x200 min 1200×1200 max
     let metadata = await Image(imageSrc, {
       widths: [1200],
-      formats: ["webp"],
+      formats: ["webp", "jpeg"],
       urlPath: urlPath,
       outputDir: `./_site/${page.url}`,
       filenameFormat: function (id, src, width, format, options) {
