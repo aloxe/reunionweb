@@ -33,7 +33,7 @@
     } else {
       noResultsEl.style.display = "block";
       const keyword = e.target.value;
-      console.log("RIEN " + e.target.value);
+      // TODO: search with typo
     }
   };
 
