@@ -273,7 +273,7 @@ main h3 {
     color: #006fd5;
 }
 
-main h4 {
+main h4, main p.lientitre {
     font-family: Devroye, serif;
     font-size: 18px;
     font-weight: 400;
@@ -630,8 +630,8 @@ input:focus::placeholder {
 .snipet p > a > span.h140,
 .snipet p > span {
   float: left;
-  max-height: 80px;
-  overflow: hidden;
+  /* max-height: 80px; */
+  /* overflow: hidden; */
   margin-bottom: 8px;
 }
 
