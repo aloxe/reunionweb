@@ -3,8 +3,7 @@ module.exports = {
     collect: {
       "url": [
         "http://localhost/index.html",
-        "http://localhost/decouverte/",
-        "http://localhost/liens"
+        "http://localhost/liens/"
       ],
       staticDistDir: './_site',
       staticDirFileDiscoveryDepth: 1,

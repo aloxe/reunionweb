@@ -628,23 +628,14 @@ input:focus::placeholder {
 }
 
 .snipet p > a > span.h140,
-.snipet p > span {
+.snipet p > a > span {
   float: left;
-  /* max-height: 80px; */
-  /* overflow: hidden; */
-  margin-bottom: 8px;
+  max-height: 100px;
+  overflow: hidden;
 }
 
 .snipet p > a > span.h140 {
   max-height: 140px;
-}
-
-.snipet p span img {
-  margin: 0 8px 0 0;
-}
-
-.snipet p > span a {
-  display:inline-flex;
 }
 
 .snipet {

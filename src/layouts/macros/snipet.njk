@@ -8,7 +8,7 @@
   <h2><a href="{{ snipeturl }}">{{ item.title or item.data.short or item.data.title }}</a></h2>
   <p>
     {% if item.data.image %}
-      <span><a href="{{ snipeturl }}">{% thumb item, 120 %}</a></span>
+      <a href="{{ snipeturl }} "class="thumb"><span>{% thumb item, 120 %}</span></a>
     {% endif %}
     {% if page.url === "/" %}
       {% if item.data.homedesc or item.data.description %}
