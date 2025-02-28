@@ -283,6 +283,10 @@ main h4, main p.lientitre {
     color: #001c86;
 }
 
+main p.lientitre {
+  line-height: 1.3em;
+}
+
 main h5 {
     font-family: Devroye, serif;
     font-weight: normal;
