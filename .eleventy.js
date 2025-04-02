@@ -72,7 +72,7 @@ module.exports = (eleventyConfig) => {
 
     let urlPath = page.outputPath.split("/")
     urlPath.pop()
-    urlPath.shift()
+    urlPath.splice(0, 2)
     urlPath = "/" + urlPath.join("/");
 
     let options = {
@@ -119,7 +119,7 @@ module.exports = (eleventyConfig) => {
 
     let urlPath = page.outputPath.split("/")
     urlPath.pop()
-    urlPath.shift()
+    urlPath.splice(0, 2)
     urlPath = "/" + urlPath.join("/");
 
     let options = {
