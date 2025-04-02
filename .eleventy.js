@@ -34,8 +34,9 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  //search filter
+  // content filter for search
   eleventyConfig.addFilter("search", searchFilter);
+  // collection for search
   eleventyConfig.addCollection("indexable", collection => {
     const collectionDecouverte = collection.getFilteredByGlob("./src/pages/decouverte/**/*.html");
     const collectionDecouverteMd = collection.getFilteredByGlob("./src/pages/decouverte/**/*.md");

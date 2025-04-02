@@ -10,11 +10,12 @@ module.exports = function (collection) {
   });
 
   // loop through each page and add it to the index
-  collection.forEach((page) => {
+  collection.forEach( async (page) => {
+    const frontMatter = await page.template.read(); // read is async since 11ty 3.0
     index.addDoc({
       id: page.url,
-      title: page.template.frontMatter.data.title,
-      description: page.template.frontMatter.data.description,
+      title: frontMatter.data.title,
+      description: frontMatter.data.description,
       content: page.templateContent.replace(/<[^>]*>?|\r\n/gm, ' ').trim(),
     });
   });
