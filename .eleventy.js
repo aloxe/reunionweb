@@ -1,4 +1,5 @@
 const path = require("path");
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const format = require('date-fns/format');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
@@ -218,6 +219,15 @@ module.exports = (eleventyConfig) => {
     // data.url might be /blog/hello-world/xfO_genLg4-600.jpeg
     return data.url
   })
+
+  // COPY IMAGES LINKED in PAGES
+  // this is not regexp but Glob patern (picomatch https://npm.devtool.tech/picomatch)
+  eleventyConfig.addPlugin(pageAssetsPlugin, {
+      mode: "parse",
+      postsMatching: "src/pages/{decouverte,articles}{/*,/**/!(gouzou)/}*.{md,html}",
+      recursive: false,
+      hashAssets: false,
+  });
 
   // add `date` filter thanks to format plugin
   eleventyConfig.addFilter('date', function (date, dateFormat) {
