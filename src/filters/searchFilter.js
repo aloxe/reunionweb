@@ -10,12 +10,12 @@ module.exports = function (collection) {
   });
 
   // loop through each page and add it to the index
-  collection.forEach((page) => {
+  collection.forEach( (page) => {
     index.addDoc({
       id: page.url,
-      title: page.template.frontMatter.data.title,
-      description: page.template.frontMatter.data.description,
-      content: page.templateContent.replace(/<[^>]*>?|\r\n/gm, ' ').trim(),
+      title: page.data.title,
+      description: page.data.description,
+      content: page.data.page.rawInput.replace(/<[^>]*>?|\r\n/gm, ' ').trim(),
     });
   });
 

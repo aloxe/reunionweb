@@ -693,7 +693,11 @@ footer p.left {
 }
 
 .clear {
-    clear: both;
+  clear: both;
+}
+
+.fitflex {
+  display: flex;
 }
 
 .boutonfnac {

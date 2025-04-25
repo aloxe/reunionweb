@@ -34,8 +34,9 @@ module.exports = (eleventyConfig) => {
     }
   });
 
-  //search filter
+  // content filter for search
   eleventyConfig.addFilter("search", searchFilter);
+  // collection for search
   eleventyConfig.addCollection("indexable", collection => {
     const collectionDecouverte = collection.getFilteredByGlob("./src/pages/decouverte/**/*.html");
     const collectionDecouverteMd = collection.getFilteredByGlob("./src/pages/decouverte/**/*.md");
@@ -71,7 +72,7 @@ module.exports = (eleventyConfig) => {
 
     let urlPath = page.outputPath.split("/")
     urlPath.pop()
-    urlPath.shift()
+    urlPath.splice(0, 2)
     urlPath = "/" + urlPath.join("/");
 
     let options = {
@@ -118,7 +119,7 @@ module.exports = (eleventyConfig) => {
 
     let urlPath = page.outputPath.split("/")
     urlPath.pop()
-    urlPath.shift()
+    urlPath.splice(0, 2)
     urlPath = "/" + urlPath.join("/");
 
     let options = {
