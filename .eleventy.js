@@ -58,7 +58,7 @@ module.exports = (eleventyConfig) => {
   // images
   eleventyConfig.addShortcode("Image", async (page, src, alt, loading) => {
     if (!alt) {
-      throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+      throw new Error(`Missing \`alt\` on myImage from: ${src} on ${page.data.title}`);
     }
 
     let inputFolder = page.inputPath.split("/")

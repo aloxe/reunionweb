@@ -105,7 +105,7 @@
       "parent": "meteo",
       "importance": 0,
       "description": "Site de surveillance des cyclones et tempêtes sur l'ouest de l'Océan Indien. Actualité régulière et explications. Newsletter d'alerte.",
-      "article": ["202303", "202502"]
+      "article": ["202303", "202502", "202503"]
   },
   {
       "id": 13,
@@ -906,7 +906,7 @@
       "parent": "villes",
       "importance": 0,
       "description": "Les services de l'État à la Réunion",
-      "article": ["201604", "202502"]
+      "article": ["201604", "202502", "202503"]
   },
   {
       "id": 103,
@@ -1365,7 +1365,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407", "202411", "202502"]
+      "article": ["199811", "202407", "202411", "202502", "202503"]
   },
   {
       "id": 156,
@@ -1647,15 +1647,6 @@
       "article": ["201809"]
   },
   {
-      "id": 193,
-      "title": "Impact économique de la crise requin à la Réunion",
-      "url": "http://www.info-requin.re/IMG/pdf/Impact_economique_crise_requin_a_la_Reunion_-_Sagis_-_Rapport_final_novembre_2014.pdf",
-      "parent": "rapports",
-      "importance": 0,
-      "description": "Rapport sous la direction de Philippe Fabing de la Sagis remis le 30 septembre 2014. La lecture du rapport d’Arnold Jaccoud, psychosociologue, « Mieux connaître pour mieux agir ; approche sociale de la crise requin » est indispensable…",
-      "article": ["201604"]
-  },
-  {
       "id": 194,
       "title": "Observatoire Marin de La Réunion ",
       "url": "http://www.omar.fr/",
@@ -1753,5 +1744,32 @@
       "importance": 0,
       "description": "Le plus grand aéroport de l’île de la Réunion. Liste les vols du jour et donne des informations pratiques.",
       "article": ["200108"]
-  }
+  },
+  {
+        "id": 218,
+        "title": "Parallèle Sud",
+        "url": "https://parallelesud.com",
+        "parent": "actualites",
+        "importance": 0,
+        "description": "Média réunionnais indépendant en ligne. Le journal est géré par une association et emploie une équipe de journalistes professionnels, et de nombreux contributeurs.",
+        "article": ["202503"]
+    },
+    {
+        "id": 219,
+        "title": "Alvéoles",
+        "url": "https://alveoles.re",
+        "parent": "professionnels",
+        "importance": 0,
+        "description": "Coopérative d’Intérêt Collectif dédiée à l’innovation durable dans le bâti tropical. Elle a un rôle de conseil et d'accompagnement des aménageurs, des collectivités et des entreprises.",
+        "article": ["202503"]
+    },
+    {
+        "id": 220,
+        "title": "LEU Réunion",
+        "url": "https://leureunion.fr/",
+        "parent": "professionnels",
+        "importance": 0,
+        "description": "Laboratoire de recherche et développement en architecture et urbanisme dédié au monde tropical. Elle veut offrir aux architectes, promoteurs et maîtres d’ouvrage un cadre règlementaire et conceptuel favorable à la production de la ville tropicale de demain.",
+        "article": ["202503"]
+    }
 ]
