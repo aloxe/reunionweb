@@ -1176,9 +1176,9 @@
    "file": "adidas.jpg",
    "author": "Miwok",
    "title": "Course de basquettes: Gouzou champion sur adidas allstar",
-   "url": " Vu à Saint-Denis",
-    "url": "https://www.flickr.com/photos/miwok/8654027093",
-    "flag": "🇷🇪"
+   "legend": " Vu à Saint-Denis",
+   "url": "https://www.flickr.com/photos/miwok/8654027093",
+   "flag": "🇷🇪"
  },
  {
    "file": "mue-de-gouzou.jpg",
@@ -1220,5 +1220,45 @@
    "legend": "Vu le 29 mars 2025",
    "flag": "🇷🇪",
    "date": "2025-03"
+ },
+ {
+   "file": "gouzou-pendulaire.jpg",
+   "author": "frankyrun54",
+   "title": "Gouzou pendulaire",
+   "legend": "Un petit gouzou pendu au plafond",
+   "license": "cc-nc-by-sa",
+   "url": "https://www.flickr.com/photos/frankyrun/2573228437/",
+   "date": "2008-06",
+   "flag": "🇷🇪"
+ },
+ {
+   "file": "gouzou-volcan.jpg",
+   "author": "Katell-Ar-Gow",
+   "title": "Gouzou qui fabrique un volcan",
+   "license": "cc-nc-by-sa",
+   "url": "https://www.flickr.com/photos/16967950@N00/31116083868/",
+   "legend": "Vu le 15 septembre 2018 au Havre",
+   "flag": "🇫🇷",
+   "date": "2018-09"
+ },
+ {
+   "file": "sous-les-cloches.jpg",
+   "author": "Katell-Ar-Gow",
+   "title": "Gouzou marin sous une paire de cloches",
+   "license": "cc-nc-by-sa",
+   "url": "https://www.flickr.com/photos/16967950@N00/31116180408/",
+   "legend": "Vu le 15 septembre 2018 au Havre",
+   "flag": "🇫🇷",
+   "date": "2018-09"
+ },
+ {
+   "file": "gouzou-plante-20250329.png",
+   "author": " Frédéric Séraphine",
+   "title": "Gouzou qui se retient aux tuyaux",
+   "license": "cc-nc-by",
+   "url": "https://www.flickr.com/photos/khizard/5175115887/",
+   "legend": "Vu le 13 novembre 2010 sur le sentier de Grand Bassin",
+   "flag": "🇷🇪",
+   "date": "2010-11"
  }
 ]
