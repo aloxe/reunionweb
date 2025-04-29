@@ -1,0 +1,31 @@
+# to allow responsive formating of images from the right source
+media:
+  - name: images
+    label: Images
+    input: src/assets/img
+    output: /img
+    extensions: [ png, webp ]
+
+content:
+  - name: articles
+    label: Articles
+    path: src/pages/articles
+    type: collection
+    fields: 
+      - { name: tags, type: string, hidden: true, default: article }
+      - { name: title, label: Title, type: string }
+      - { name: description, label: Description, type: string, options: { maxlength: 160 } }
+      - { name: date, label: Date, type: date }
+      - { name: update, label: Update, type: date }
+      - { name: body, label: Body, type: rich-text }
+      - { name: image, label: Image, type: image }
+
+  - name: decouverte
+    label: Découverte
+    path: src/pages/decouverte
+    type: collection
+    fields: 
+      - { name: title, label: Title, type: string }
+      - { name: description, label: Description, type: string, options: { maxlength: 160 } }
+      - { name: body, label: Body, type: rich-text }
+      - { name: image, label: Image, type: image }
