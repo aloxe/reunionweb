@@ -1522,12 +1522,12 @@
   },
   {
       "id": 178,
-      "title": "Booking.com",
-      "url": "http://www.booking.com/country/re.fr.html?aid=387173",
+      "title": "lastminute.com",
+      "url": "https://www.awin1.com/cread.php?awinmid=6989&awinaffid=297165&clickref=liens&ued=https%3A%2F%2Fwww.fr.lastminute.com%2Fhotel%2Fre_la-reunion",
       "parent": "touristiques",
       "importance": 0,
-      "description": "Lien sponsorisé: Tous les hotels à la Réunion sur booking.com",
-      "article": ["199810", "199901"]
+      "description": "Lien sponsorisé: Tous les hotels à la Réunion sur lastminute.com",
+      "article": ["199810", "199901", "201410"]
   },
   {
       "id": 179,
