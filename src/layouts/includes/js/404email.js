@@ -1,8 +1,7 @@
 function makeNotice() {
   const url = window.location.href;
-  const referer = Document.referrer;
-  console.log(url);
-  console.log("sendEmail");
+  const referer = document.referrer;
+  // console.log(url);
   sendEmail("404", "alx@lib.re", "\n404 not found on: \n" + url + "\n\n and referer = \n" + referer);
 }
 
