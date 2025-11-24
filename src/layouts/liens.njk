@@ -1,74 +1,62 @@
-{% from 'macros/url.njk' import categoryUrl with context %}
-{% from 'macros/snipet.njk' import snipet with context %}
-{% from 'macros/title.njk' import getLinkTitle with context %}
+{% from 'macros/url.njk' import categoryUrl with context %} {% from
+'macros/snipet.njk' import snipet with context %} {% from 'macros/title.njk'
+import getLinkTitle with context %} {% extends 'base.njk' %} {% block main %}
+<main>
+  <h1>{{ pagetitle }}</h1>
+  {% include "breadcrumb.njk" %}
+  <p class="chapo">{{ chapo }}</p>
+  {# sous catégories #} {% set subcategoriesall = categories |
+  getCategoriesFromParent(slug) %} {% set subcategories = subcategoriesall |
+  getCategoriesWithLiens(liens, categories) %} {% if subcategories.length > 0 %}
+  {% if subcategories.length > 1 %} {% if slug === "liens" %}{% else %}
+  <h2>Sous catégories</h2>
+  {% endif %}
+  <div class="twocolumns">
+    {% else %} {% if slug === "liens" %}{% else %}
+    <h2>Sous catégorie</h2>
+    {% endif %} {% endif %} {%- for lien in subcategories %}
+    {{ snipet(lien) }}
+    {% endfor %} {% if subcategories.length > 1 %}
+  </div>
+  {% endif %} {% endif %} {# liens #} {% set newLiens = liens |
+  getLinksFromParent(slug) %} {% if newLiens.length > 0 %}
+  <h2>Sites web</h2>
+  {% for lien in newLiens %}
 
-{% extends 'base.njk' %}
+  <div class="lien">
+    <img
+      src="https://www.robothumb.com/src/?url={{ lien.url }}&size=100x65&alt=http%3A%2F%2Freunionweb.org%2Fimg%2Fnon-dispo.png" alt="site {{ lien.title }}" width="120" height="90" />
+    <p>
+      <b
+        ><a href="{{ lien.url }}" class="ext">{{ lien.title }}</a></b
+      ><br />
+      <span class="url f14">{{ lien.url }}</span
+      ><br />
+      {{ lien.description }}<br /><br />
+      {% if lien.article.length > 0 and lien.article[0] !== "" %} {% if
+      lien.article.length > 1 %}
+      <i class="f16">Articles qui en parlent :</i><br />
+      {% else %}
+      <i class="f16">Article qui en parle :</i><br />
+      {% endif %} {% for article in lien.article %} ➽
+      <i class="f16">{{ getLinkTitle(article) }}</i
+      ><br />
+      {% endfor %} {% endif %}
+    </p>
+  </div>
 
-    {% block main %}
-      <main>
-        <h1>{{ pagetitle }}</h1>
-        {% include "breadcrumb.njk" %}
-        <p class="chapo">{{ chapo }}</p>
-        {# sous catégories #}
-
-        {% set subcategoriesall = categories | getCategoriesFromParent(slug) %}
-        {% set subcategories = subcategoriesall | getCategoriesWithLiens(liens, categories) %}
-        {% if subcategories.length > 0 %}
-          {% if subcategories.length > 1 %}
-            {% if slug === "liens" %}{% else %}<h2>Sous catégories</h2>{% endif %}
-            <div class="twocolumns">
-          {% else %}
-            {% if slug === "liens" %}{% else %}<h2>Sous catégorie</h2>{% endif %}
-          {% endif %}
-          {%- for lien in subcategories %}
-            {{ snipet(lien) }}
-          {% endfor %}
-          {% if subcategories.length > 1 %}</div>{% endif %}
-        {% endif %}
-
-        {# liens #}
-        {% set newLiens = liens | getLinksFromParent(slug) %}
-        {% if newLiens.length > 0 %}
-          <h2>Sites web</h2>
-          {% for lien in newLiens %}
-
-            <div class="lien">
-              <img src="https://www.robothumb.com/src/?url={{ lien.url }}&size=100x65&alt=http%3A%2F%2Freunionweb.org%2Fimg%2Fnon-dispo.png" alt="site {{ lien.title }}" width="120" height="90">
-              <p>
-                <b><a href="{{ lien.url }}" class="ext">{{ lien.title }}</a></b><br>
-                <span class="url f14">{{ lien.url }}</span><br>
-                {{ lien.description }}<br><br>
-                {% if lien.article.length > 0 and lien.article[0] !== "" %}
-                  {% if lien.article.length > 1 %}
-                    <i class="f16">Articles qui en parlent :</i><br>
-                  {% else %}
-                    <i class="f16">Article qui en parle :</i><br>
-                  {% endif %}
-                  {% for article in lien.article %}
-                  ➽ <i class="f16">{{ getLinkTitle(article) }}</i><br>
-                  {% endfor %}
-                {% endif %}
-              </p>
-            </div>
-
-          {% endfor %}
-        {% endif %}
-
-        {# Catégories associées #}
-        {% set assocat = categories | getCategoryFromSlug(slug) %}
-        {% if assocat.associe %}
-          {% if assocat.associe.length > 1 %}
-            <h2>Catégories associées</h2>
-            <div class="twocolumns">
-          {% else %}
-            <h2>Catégorie associée</h2>
-          {% endif %}
-          {%- for aslug in assocat.associe %}
-            {% set lien =  categories | getCategoryFromSlug(aslug) %}
-            {{ snipet(lien) }}
-          {% endfor %}
-          {% if assocat.associe.length > 1 %}</div>{% endif %}
-        {% endif %}
-
-      </main>
-    {% endblock %}
+  {% endfor %} {% endif %} {# Catégories associées #} {% set assocat =
+  categories | getCategoryFromSlug(slug) %} {% if assocat.associe %} {% if
+  assocat.associe.length > 1 %}
+  <h2>Catégories associées</h2>
+  <div class="twocolumns">
+    {% else %}
+    <h2>Catégorie associée</h2>
+    {% endif %} {%- for aslug in assocat.associe %} {% set lien = categories |
+    getCategoryFromSlug(aslug) %}
+    {{ snipet(lien) }}
+    {% endfor %} {% if assocat.associe.length > 1 %}
+  </div>
+  {% endif %} {% endif %}
+</main>
+{% endblock %}
