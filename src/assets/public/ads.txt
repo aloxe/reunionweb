@@ -1,2 +1,3 @@
 #ads.txt
 awin.com, 297165, DIRECT
+google.com, pub-6770013384586203, DIRECT, f08c47fec0942fa0
