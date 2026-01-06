@@ -15,6 +15,12 @@
   border-left: 12px solid #006fcf;
 }
 
+@media (max-width: 650px) {
+.gouzoucherche img {
+    display: none;
+  }
+}
+
 .gouzoucherche img {
   position: absolute;
   z-index: 100;
