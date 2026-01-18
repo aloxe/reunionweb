@@ -1202,10 +1202,12 @@
    "url": "https://www.flickr.com/photos/frankyrun/2505756451"
  },
  {
-   "file": "pile-de-pont-braguette.jpg",
-   "author": "Fabien Nachiar",
-   "title": "Pile de pont-braguette",
-   "url": "https://www.flickr.com/photos/frankyrun/13335049225"
+  "file": "pile-de-pont-braguette.jpg",
+  "author": "Fabien Nachiar",
+  "title": "Pile de pont-braguette",
+  "legend": " Vu à Saint-Pierre",
+  "url": "https://www.flickr.com/photos/frankyrun/13335049225",
+  "flag": "🇷🇪"
  },
  {
    "file": "charlie-par-jace-au-tampon.jpg",
@@ -1270,5 +1272,98 @@
    "legend": "Vu le 13 novembre 2010 sur le sentier de Grand Bassin",
    "flag": "🇷🇪",
    "date": "2010-11"
+ },
+  {
+  "file": "beton-nature.jpg",
+  "author": "frankyrun54",
+  "title": "Béton et nature, alias Pile de pont-braguette",
+  "license": "cc-nc-by",
+  "legend": " Vu à Saint-Pierre",
+  "url": "https://www.flickr.com/photos/frankyrun/9366081655/",
+  "flag": "🇷🇪",
+  "date": "2013-07"
+ },
+  {
+  "file": "dodo-paneau.jpg",
+  "author": "frankyrun54",
+  "title": "dodo dans un paneau ",
+  "license": "cc-nc-by",
+  "legend": " (a été subtilisé)",
+  "url": "https://www.flickr.com/photos/frankyrun/895979024/",
+  "flag": "🇷🇪",
+  "date": "2005-12"
+ },
+  {
+  "file": "brode-sur-mur.jpg",
+  "author": "frankyrun54",
+  "title": "Brodé sur un mur",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/7833372572/",
+  "flag": "🇷🇪",
+  "date": "2012-17"
+ },
+  {
+  "file": "brode-sur-mur.jpg",
+  "author": "frankyrun54",
+  "title": "Brodé sur un mur",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/7833372572/",
+  "flag": "🇷🇪",
+  "date": "2012-17"
+ },
+  {
+  "file": "cni-gouzou-jace.jpg",
+  "author": "frankyrun54",
+  "title": "La carte d'identité de Gouzou",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/4298155301/",
+  "flag": "🇷🇪",
+  "date": "2009-11"
+ },
+  {
+  "file": "cni-gouzou-jace.jpg",
+  "author": "frankyrun54",
+  "title": "La carte d'identité de Gouzou",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/4298155301/",
+  "flag": "🇷🇪",
+  "date": "2009-11"
+ },
+  {
+  "file": "I-love-gouzou-uae.jpg",
+  "author": "frankyrun54",
+  "title": "On aime Gouzou à Abu Dhabi",
+  "license": "cc-nc-by",
+  "legend": "Vu à Abu Dhabi",
+  "url": "https://www.flickr.com/photos/frankyrun/4603636513/",
+  "flag": "🇦🇪",
+  "date": "2010-03"
+ },
+  {
+  "file": "dealer-price.jpg",
+  "author": "frankyrun54",
+  "title": "La bonne poudre de Dealer Price",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/5155156296/",
+  "date": "2010-11"
+ },
+  {
+  "file": "plage-beton.jpg",
+  "author": "frankyrun54",
+  "title": "Gouzou se dore le bidon sur une belle plage en béton",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/887946128/",
+  "flag": "🇷🇪",
+  "date": "2005-12"
+ },
+  {
+  "file": "enfants-et-argent.jpg",
+  "author": "frankyrun54",
+  "title": "Les enfants c'est l'argent c'est l'avenir c'est les enfants",
+  "license": "cc-nc-by",
+  "url": "https://www.flickr.com/photos/frankyrun/4332119407/",
+  "flag": "🇷🇪",
+  "date": "2010-01"
  }
 ]
+
