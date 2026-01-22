@@ -1272,7 +1272,7 @@
    "legend": "Vu le 13 novembre 2010 sur le sentier de Grand Bassin",
    "flag": "🇷🇪",
    "date": "2010-11"
- },
+  },
   {
   "file": "beton-nature.jpg",
   "author": "frankyrun54",
@@ -1282,7 +1282,7 @@
   "url": "https://www.flickr.com/photos/frankyrun/9366081655/",
   "flag": "🇷🇪",
   "date": "2013-07"
- },
+  },
   {
   "file": "dodo-paneau.jpg",
   "author": "frankyrun54",
@@ -1292,7 +1292,7 @@
   "url": "https://www.flickr.com/photos/frankyrun/895979024/",
   "flag": "🇷🇪",
   "date": "2005-12"
- },
+  },
   {
   "file": "brode-sur-mur.jpg",
   "author": "frankyrun54",
@@ -1301,16 +1301,7 @@
   "url": "https://www.flickr.com/photos/frankyrun/7833372572/",
   "flag": "🇷🇪",
   "date": "2012-17"
- },
-  {
-  "file": "brode-sur-mur.jpg",
-  "author": "frankyrun54",
-  "title": "Brodé sur un mur",
-  "license": "cc-nc-by",
-  "url": "https://www.flickr.com/photos/frankyrun/7833372572/",
-  "flag": "🇷🇪",
-  "date": "2012-17"
- },
+  },
   {
   "file": "cni-gouzou-jace.jpg",
   "author": "frankyrun54",
@@ -1319,16 +1310,7 @@
   "url": "https://www.flickr.com/photos/frankyrun/4298155301/",
   "flag": "🇷🇪",
   "date": "2009-11"
- },
-  {
-  "file": "cni-gouzou-jace.jpg",
-  "author": "frankyrun54",
-  "title": "La carte d'identité de Gouzou",
-  "license": "cc-nc-by",
-  "url": "https://www.flickr.com/photos/frankyrun/4298155301/",
-  "flag": "🇷🇪",
-  "date": "2009-11"
- },
+  },
   {
   "file": "I-love-gouzou-uae.jpg",
   "author": "frankyrun54",
@@ -1338,7 +1320,7 @@
   "url": "https://www.flickr.com/photos/frankyrun/4603636513/",
   "flag": "🇦🇪",
   "date": "2010-03"
- },
+  },
   {
   "file": "dealer-price.jpg",
   "author": "frankyrun54",
@@ -1346,7 +1328,7 @@
   "license": "cc-nc-by",
   "url": "https://www.flickr.com/photos/frankyrun/5155156296/",
   "date": "2010-11"
- },
+  },
   {
   "file": "plage-beton.jpg",
   "author": "frankyrun54",
@@ -1356,7 +1338,7 @@
   "url": "https://www.flickr.com/photos/frankyrun/887946128/",
   "flag": "🇷🇪",
   "date": "2005-12"
- },
+  },
   {
   "file": "enfants-et-argent.jpg",
   "author": "frankyrun54",
@@ -1366,6 +1348,6 @@
   "url": "https://www.flickr.com/photos/frankyrun/4332119407/",
   "flag": "🇷🇪",
   "date": "2010-01"
- }
+  }
 ]
 
