@@ -50,7 +50,7 @@ Dans les années 2000, les lazarets de la Grande-Chaloupe, longtemps laissés à
  Lazaret de la Grande Chaloupe avant sa restauration. Photo par Alain dans les années 2000.
 </p>
 
-Aujourd'hui, leur importance historique est reconnue. En 1998, les vestiges ont été classés Monuments Historiques, soulignant leur rôle dans l’histoire de La Réunion. Un des dortoirs et le pavillon d'isolement/d'infirmerie ont été restaurés entre 2004 et 2011 par l'association  Chantiers Histoire et Architecture Médiévales. Le deuxième dortoir est toujours occupé par les Ponts et Chaussées devenus la Direction départementale de l'Équipement.
+Aujourd'hui, leur importance historique est reconnue. En 1998, les vestiges ont été [classés Monuments Historiques](https://museedupatrimoine.fr/lazarets-de-la-grande-chaloupe-/58523.html), soulignant leur rôle dans l’histoire de La Réunion. Un des dortoirs et le pavillon d'isolement/d'infirmerie ont été restaurés entre 2004 et 2011 par l'association  Chantiers Histoire et Architecture Médiévales. Le deuxième dortoir est toujours occupé par les Ponts et Chaussées devenus la Direction départementale de l'Équipement.
 
 Le site est désormais accessible par le public et intégré à des circuits touristiques. Les visiteurs peuvent y découvrir les murs de pierre et les fondations des bâtiments, ainsi que des panneaux explicatifs qui racontent l’histoire de ce lieu. Les lazarets de la Grande-Chaloupe sont ainsi devenus un lieu de mémoire, rappelant les conditions de vie difficiles des immigrants et des malades qui y ont été enfermés.
 
@@ -65,5 +65,7 @@ https://web.archive.org/web/20080801020547/http://www.mi-aime-a-ou.com/lazaret_i
 
 image a rajouter? https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/GrandeChaloupe.vers.1900.jpg/960px-GrandeChaloupe.vers.1900.jpg
 
+
+https://museedupatrimoine.fr/lazarets-de-la-grande-chaloupe-/58523.html
 
 --->
