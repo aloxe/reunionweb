@@ -5,7 +5,7 @@ image: Lazaret.Gde.Chaloupe.jpg
 keywords: leproserie, centre de détention, immigration, malbar, zarab, ruine, visite touristique, randonnée 
 ---
 
-**Situés sur la côte nord-ouest de La Réunion, les lazarets de la Grande-Chaloupe sont un lieu chargé d’histoire. Peu connus du grand public, ces bâtiments ont pourtant joué un rôle crucial dans la gestion des épidémies qui frappaient l’île aux XVIIIe et XIXe siècles. Aujourd’hui, ces vestiges rappellent une époque où la quarantaine était synonyme d’isolement et de souffrance.**
+**Situés sur la côte nord-ouest de La Réunion, les lazarets de la Grande-Chaloupe sont un lieu chargé d’histoire. Peu connus du grand public, ces bâtiments ont pourtant joué un rôle crucial dans la gestion des épidémies aux XVIIIe et XIXe siècles. Aujourd’hui, ces vestiges rappellent une époque où la quarantaine était synonyme d’isolement et de souffrance.**
 
 <p class="center cadrimage legende">
    {% Image page, "Lazaret.Gde.Chaloupe.jpg", "Premier Lazaret de la Grande Chaloupe" %}<br>

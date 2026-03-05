@@ -11,7 +11,7 @@ Le **Chemin Crémont**, appelé communément et à tort le **Chemin des Anglais*
 
 ![carte de Saint-Paul à Saint-Denis montrant le chemin en rouge](carte-avec-chemin-des-anglais.png)
 
-En 1767, par l'ordonnateur Crémont fit paver cette route afin d'assurer une liaison à travers le massif de la montagne, entre Saint-Denis et la Possession. C'est ainsi que le chemin prendra son nom. Le chemin se prolonge ensuite vers Saint-Denis à partir de la Grande Chaloupe.
+En 1767, l'ordonnateur Crémont fit paver cette route afin d'assurer une liaison à travers le massif de la montagne, entre Saint-Denis et la Possession. C'est ainsi que le chemin prendra son nom. Le chemin se prolonge ensuite vers Saint-Denis à partir de la Grande Chaloupe.
 
  <p class="center cadrimage legende">
    {% Image page, "Chemin_des_Anglais-mai_2015-arbustes.jpg", "Chemin des Anglais pavé de basalte" %}<br>
@@ -35,8 +35,7 @@ Pas de grande difficulté pour cette balade, vous pourrez admirer le point de vu
 Le chemin des Anglais a donné son nom au **Trail des Anglais**, un court trail de 27 km de long avec un dénivelé positif de 1.500 m. Le départ a lieu au Port sur l'île de La Réunion et l'arrivée est jugée sur le stade de la Redoute à Saint-Denis. Une grande partie de l'épreuve se déroule sur le chemin des Anglais.
 
 ![Panneau touristique au début du chemin](chemin_des_anglais_panneau.jpg)
-
-Panneau touristique à l'entrée du chemin (photo: Alain)
+Panneau touristique à l'entrée du chemin (photo: Alain){.legende}
 
 <!---
 
