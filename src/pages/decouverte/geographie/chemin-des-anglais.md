@@ -22,7 +22,7 @@ Plus ou moins abandonné au profit du transport par chaloupe en mer, le chemin e
 
 ## Les Anglais prennent le chemin puis l'île
 
-En 1810 débarquent les troupes Anglaises, en guerre contre la France dans [les guerres napoléoniennes](/decouverte/histoire/guerre-anglais/) débarquent à la Chaloupe d'où ils marchent vers la capitale Saint-Denis afin de la conquérir. Depuis cet évènement, le nom de Chemin des Anglais désigne la totalité du chemin.
+En 1810 débarquent les troupes anglaises, en guerre contre la France dans [les guerres napoléoniennes](/decouverte/histoire/guerre-anglais/) débarquent à la Chaloupe d'où ils marchent vers la capitale Saint-Denis afin de la conquérir. Depuis cet évènement, le nom de Chemin des Anglais désigne la totalité du chemin.
 
 En 1948, le chemin devient la propriété du département de la Réunion et il est [classé aux monuments historiques](https://museedupatrimoine.fr/chemin-dit-des-anglais/58565.html) en 2014. Le chemin est classé en totalité, d'une longueur de onze kilomètres depuis la barrière située à Saint-Bernard jusqu'à celle de La Possession, à l'exclusion de l'emprise située entre les deux accès du chemin à la Grande-Chaloupe. À cet endroit, les sites classés sont [les deux lazarets de la Grande-Chaloupe](/decouverte/histoire/lazarets-grande-chaloupe/) qui ont été érigés en 1860.
 
