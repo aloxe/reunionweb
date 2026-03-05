@@ -8,6 +8,8 @@ const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 const { minify: minify_html } = require("html-minifier-terser");
 const searchFilter = require("./src/filters/searchFilter");
+const mdit = require('markdown-it');
+const mditAttrs = require('markdown-it-attrs');
 
 const NOT_FOUND_PATH = "_site/404.html";
 const IS_PROD = typeof process.env.ENVIRONMENT === "string" && process.env.ENVIRONMENT === "prod";
@@ -33,6 +35,16 @@ module.exports = (eleventyConfig) => {
       }
     }
   });
+
+  // Markdown
+  const mditOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  }
+  const mdLib = mdit(mditOptions).use(mditAttrs)
+  eleventyConfig.setLibrary('md', mdLib)
 
   // content filter for search
   eleventyConfig.addFilter("search", searchFilter);
