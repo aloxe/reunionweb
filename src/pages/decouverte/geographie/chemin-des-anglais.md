@@ -24,18 +24,13 @@ Plus ou moins abandonné au profit du transport par chaloupe en mer, le chemin e
 
 En 1810 débarquent les troupes Anglaises, en guerre contre la France dans [les guerres napoléoniennes](/decouverte/histoire/guerre-anglais/) débarquent à la Chalouppe d'où ils marchent vers la capitale Saint-Denis afin de la conquérir. Depuis cet évènement, le nom de Chemin des Anglais désigne la totalité du chemin.
 
-En 1948, le chemin devient la propriété du département de la Réunion et il est [classé aux monuments historiques](https://museedupatrimoine.fr/chemin-dit-des-anglais/58565.html) en 2014. Le chemin est classé en totalité, d'une longueur de onze kilomètres depuis la barrière située à Saint-Bernard jusqu'à celle de La Possession, à l'exclusion de l'emprise située entre les deux accès du chemin à la Grande-Chaloupe. À cet endroit, les sites classés somt les deux lazarets de la Grande-Chaloupe qui ont été errigés en 1860.
+En 1948, le chemin devient la propriété du département de la Réunion et il est [classé aux monuments historiques](https://museedupatrimoine.fr/chemin-dit-des-anglais/58565.html) en 2014. Le chemin est classé en totalité, d'une longueur de onze kilomètres depuis la barrière située à Saint-Bernard jusqu'à celle de La Possession, à l'exclusion de l'emprise située entre les deux accès du chemin à la Grande-Chaloupe. À cet endroit, les sites classés somt [les deux lazarets de la Grande-Chaloupe](/decouverte/histoire/lazarets-grande-chaloupe/) qui ont été errigés en 1860.
 
 ## Un chemin prisé des randonneurs
 
 Ce chemin est facillement accessible du centre de la Possession et offre une belle vue et permet de fouller du pied le patrimoine de la Réunion. Le chemin faisant 9km de long, on peut compter 18km aller-retour depuis la Possession, soit une randonnée de 3 heures.
 
-Pas de grande difficulté pour cette balade, vous pourrez admirer le point de vue, d'un côté sur la Possession et le Port, de l'autre  la Grande Chaloupe, sans oublier la vue sur l'océan. Prenez le temps une fois arrivé à la Grande Chaloupe de visiter les ruines des lazarets et la gare du p'tit train.
-
-<p class="center cadrimage legende">
-   {% Image page, "Lazaret.Gde.Chaloupe.jpg", "Premier Lazaret de la Grande Chaloupe" %}<br>
- Lazaret de la Grande Chaloupe, Réunion, une ancienne station de quarantaine. Bâtiment du Dortoir No.1, 2 avril 2012 par Tonton Bernardo (<a href="https://commons.wikimedia.org/wiki/File:Lazaret.Gde.Chaloupe06.jpg?uselang=fr">CC-BY-SA</a>)
-</p>
+Pas de grande difficulté pour cette balade, vous pourrez admirer le point de vue, d'un côté sur la Possession et le Port, de l'autre  la Grande Chaloupe, sans oublier la découverte de la vielle route et la vue sur l'océan. Prenez le temps une fois arrivé à la Grande Chaloupe de visiter les ruines des lazarets et la gare du petit train.
 
 Le chemin des Anglais a donné son nom au **Trail des Anglais**, un trail court de 27 km de longueur et de 1 500 m de dénivelé positif. Le départ a lieu au Port sur l'île de La Réunion et l'arrivée est jugée sur le stade de la Redoute à Saint-Denis. Une grande partie de l'épreuve se déroule sur le chemin des Anglais.
 
@@ -60,4 +55,4 @@ https://web.archive.org/web/20080920085431/http://www.mi-aime-a-ou.com/photos_il
 
 
 
----
+--->
