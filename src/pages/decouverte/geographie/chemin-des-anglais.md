@@ -7,7 +7,7 @@ keywords: Route, chemin, randonnée, passage, pavés
 
 ## Histoire du chemin Crémont
 
-Le **Chemin Crémont**, appelé communément et à tort le **Chemin des Anglais** au départ de la Possession débouche à la Grande Chaloupe après une heure et demie environ de marche. Ce chemin pavé de dalles de basalte d'une longueur de presque 9 km, longe le haut de la falaise et surplombe l'océan. Cette route est la plus ancienne de l'île, les travaux ont été réalisés entre 1730 et 1732 par deux entrepreneurs Boisson et Muron.
+Le **Chemin Crémont**, appelé communément et à tort le **Chemin des Anglais** au départ de la Possession débouche à la Grande Chaloupe après une heure et demie environ de marche. Ce chemin pavé de dalles de basalte d'une longueur de presque 9 km, longe le haut de la falaise et surplombe l'océan. Cette route est la plus ancienne de l'île, les travaux ont été réalisés entre 1730 et 1732 par deux entrepreneurs Boisson et Muron.{.chapo}
 
 ![carte de Saint-Paul à Saint-Denis montrant le chemin en rouge](carte-avec-chemin-des-anglais.png)
 
