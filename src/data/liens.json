@@ -1104,7 +1104,7 @@
       "parent": "internet",
       "importance": 0,
       "description": "Page listant les nombreux fournisseurs d’accès à Internet commercialisent des offres Internet. semble être le plus à jour.",
-      "article": ["200804"]
+      "article": ["200804", "201503"]
   },
   {
       "id": 125,
@@ -1213,15 +1213,6 @@
       "importance": 0,
       "description": "Le club de ski nautique de la Réunion avec son plan d’eau mondialement connu à Saint-Paul. Site remplacé par une page sur le site de l’office du tourisme.",
       "article": ["201408"]
-  },
-  {
-      "id": 137,
-      "title": "DOM TOM ADSL",
-      "url": "http://www.domtom-adsl.com/comparatifs/internet/reunion.html",
-      "parent": "internet",
-      "importance": 0,
-      "description": "Site comparatif des offres internet de tous les opérateurs présent à la Réunion et dans les autres DOM TOM. Les offres ne sont peut-être pas à jour.",
-      "article": ["200804"]
   },
   {
       "id": 138,
