@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" width="200mm" height="200mm" version="1.2" viewBox="0 0 200 200">
+<title>Reunionweb</title>
+<defs>
+<linearGradient xlink:href="#a" id="b" x1="6.736" x2="193.889" y1="47.98" y2="47.98" gradientUnits="userSpaceOnUse"/>
+<linearGradient id="a">
+<stop offset="0" style="stop-color:#0c68cf;stop-opacity:1"/>
+<stop offset="1" style="stop-color:#f9fbad;stop-opacity:1"/>
+</linearGradient>
+</defs>
+<path fill="#f9fbad" d="M.056-.155h200.517v200.517H.056z" style="stroke-width:0;fill:#f9fbad;stroke:none;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"/>
+<path d="m6.747 20.852 187.049 13.292.093 72.643s-6.163.458-32.365-.436-53.327 19.28-68.28 19.366c-14.954.087-43.78-30.818-86.505-23.386z" style="fill:#0db805;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"/>
+<path fill="#2187cb" d="M6.74 6.529h187.149v56.813c-5.57-1.114-5.57-1.114-8.007-4.178-3.078-5.574-2.55-10.737-7.675-13.096-5.124-2.36-15.284-3.57-21.08 5.02s6.018 14.703 4.456 21.166c-.782 3.024-4.296 2.339-6.056 1.263-5.66-3.459-5.47-10.2-5.27-19.19.015-.714.033-3.387.707-4.253s2.931-3.393.84-5.566c-2.093-2.173-4.867-2.62-7.226-.922-.844.608-2.498 3.454-2.125 4.743.47 1.62 2.012 2.332 3.146 3.238 3.938 3.803 2.284 25.397-2.071 26.756-6.81 1.193 3.09-13.53-1.426-20.019s-27.475-7.306-31.897-2.259-1.72 3.594-3.386 4.72c-4.074 1.541-4.67-7.302-7.123-2.746-2.452 4.557-1.409 5.342-4.081 4.55-.35-4.937-6.264-4.639-7.446.78-8.491 14.469-17.834 20.369-19.795 19.628-1.609-.607 12.661-16.863 11.885-29.661q-4.597.754-9.19 1.532l-2.625.426c-6.047 1.027-8.761 1.878-14.293 4.463 3.45 1.399 4.564 1.177 5.917 5.886 0 0-6.997-3.471-11.76-3.296s-9.651 4.666-12.9 5.455c3.71 1.677 5.86 4.968 5.861 7.814-12.742-7.538-14.302-3.439-20.469.79 4.279 3.607 4.469 5.228 5.984 8.258-7.25.144-8.78-2.641-13.546-3.523l-.932 2.273c-4.472-.51-2.65 6.155-5.42 6.037l-.15-82.902Z" style="mix-blend-mode:normal;fill:url(#b);fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+<path fill="#036ed8" d="M62.282 107.472c10.382 6.934 18.878 14.497 32.976 15.006 14.099.509 15.269-10.806 37.356-17.77s43.047-3.754 61.275 2.08v16.709c-7.326-.047-14.769-1.198-21.525-1.235-34.255-1.238-55.432 3.218-89.74 19.112-23.98 11.411-50.063 17.88-75.885 17.77v-56.813c23.496-9.804 45.162-1.793 55.543 5.141" style="fill:#0c68cf;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"/>
+<path fill="#0c6bcf" d="M193.889 133.523v4.456l-2.785.087c-21.488 1.055-38.781 8.705-57.044 20.339s-47.906 22.876-72.735-.375c43.207 9.028 40.017-11.444 79.066-25.43 35.38-11.206 39.04-2.281 53.498.923" style="fill:#0c68cf;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+<path fill="#0cbb06" d="M6.74 111.243c35.622 4.128 47.626 20.049 60.533 22.465 12.906 2.416 20.706-1.407 26.756-2.276-10.727 8.21-23.39 14.643-46.048 11.753s-24.402-5.929-41.148-8.173z" style="fill:#0db805;fill-opacity:1;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
+<path fill="#0965d1" d="M181.217 170.01c8.713 5.149 6.432 5.752 12.672 8.072v8.912c-25.266.305-26.21-3.72-38.825-7.932s-21.033 1.775-29.128-3.208c8.634-2.073 10.039-5.538 20.716-8.918s25.853-2.074 34.565 3.074" style="stroke-width:0;fill:#0c68cf;stroke:none;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"/>
+<path fill="#2c6ecb" d="M179.407 150.233s9.327 1.936 14.482 2.228v4.455c-11.196-2.169-14.482-6.683-14.482-6.683" style="stroke-width:0;fill:#0c68cf;stroke:none;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"/>
+</svg>
