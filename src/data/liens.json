@@ -1530,15 +1530,6 @@
       "article": ["199810", "199901", "201410"]
   },
   {
-      "id": 179,
-      "title": "Société d’Étude Ornithologique de La Réunion",
-      "url": "http://www.seor.fr/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Créée en 1997, la Société d’Étude Ornithologique de La Réunion (SEOR) est une  association agréée « Protection de l’Environnement » garante de la protection des oiseaux de l’île. En moins de 20 ans, elle a organisé le sauvetage de plus de 25 à 30 000 oiseaux !",
-      "article": ["201303"]
-  },
-  {
       "id": 181,
       "title": "Sophie Bazin",
       "url": "http://sophiebazin.canalblog.com/",
@@ -1645,15 +1636,6 @@
       "importance": 0,
       "description": "Blog d’une prof de français langue étrangère (FLE) créé pour ses apprenants mais intéressant pour tout le monde.",
       "article": ["201809"]
-  },
-  {
-      "id": 194,
-      "title": "Observatoire Marin de La Réunion ",
-      "url": "http://www.omar.fr/",
-      "parent": "associations",
-      "importance": 0,
-      "description": "Association offrant des ressources et des activités pour l’observation sur le milieu océanique à la Réunion. Les observations permettent de mieux connaitre l’environment et d’aider la recherche.",
-      "article": ["201604"]
   },
   {
       "id": 195,
