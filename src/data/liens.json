@@ -564,7 +564,7 @@
       "parent": "litterature",
       "importance": 0,
       "description": "Éditeur né à la Réunion en 1984 et qui publie des auteurs et des ouvrages de tout l’outre-mer. Présentation de l’éditeur de ses auteurs et boutique en ligne.",
-      "article": ["200412", "202401"]
+      "article": ["200412", "202401", "202604"]
   },
   {
       "id": 65,
@@ -1086,7 +1086,7 @@
       "parent": "artistes",
       "importance": 0,
       "description": "Les 14 numéros et plus du mensuel endémique de l’île de La Réunion qui sortait tous les mois jusqu’en janvier 2002.",
-      "article": ["200502", "201206"]
+      "article": ["200205", "200502", "201206", "202604"]
   },
   {
       "id": 123,
@@ -1753,5 +1753,23 @@
         "importance": 0,
         "description": "Laboratoire de recherche et développement en architecture et urbanisme dédié au monde tropical. Elle veut offrir aux architectes, promoteurs et maîtres d’ouvrage un cadre règlementaire et conceptuel favorable à la production de la ville tropicale de demain.",
         "article": ["202503"]
+    },
+    {
+        "id": 221,
+        "title": "La Réunion des Livres",
+        "url": "https://www.la-reunion-des-livres.re/",
+        "parent": "associations",
+        "importance": 1,
+        "description": "Association interprofessionnelle des métiers du livre à La Réunion, organisatrice de nombreux événements et concours autour du livre réunionnais",
+        "article": ["202604"]
+    },
+    {
+        "id": 221,
+        "title": "Salon du livre péi",
+        "url": "https://www.salondulivrepei.com/",
+        "parent": "litterature",
+        "importance": 1,
+        "description": "Salon qui réunit et met en avant toutes les maisons d’édition et tous les auteurs de La Réunion pendant trois jours et qui est le point d’orgue de l’opération Je lis un livre péi organisé par La Réunion des Livres.",
+        "article": ["202604"]
     }
 ]
