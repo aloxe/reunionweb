@@ -1701,15 +1701,6 @@
       "article": ["200710"]
   },
   {
-        "id": 215,
-        "title": "Art & Toiles",
-        "url": "https://artetoiles.re/",
-        "parent": "art",
-        "importance": 0,
-        "description": "Magazin de fournitures et de matériel pour artistes platiciens, artisants d'art, peintres, scuplteurs et sculptrices au Port à la Réunion. Le magasin proose aussi des ateliers d'initiation.",
-        "article": ["199709"]
-  },
-  {
       "id": 216,
       "title": "Le blog de Lionel Suz",
       "url": "http://lionel.suz.free.fr/",
@@ -1764,12 +1755,84 @@
         "article": ["202604"]
     },
     {
-        "id": 221,
+        "id": 222,
         "title": "Salon du livre péi",
         "url": "https://www.salondulivrepei.com/",
         "parent": "litterature",
-        "importance": 1,
+        "importance": 0,
         "description": "Salon qui réunit et met en avant toutes les maisons d’édition et tous les auteurs de La Réunion pendant trois jours et qui est le point d’orgue de l’opération Je lis un livre péi organisé par La Réunion des Livres.",
+        "article": ["202604"]
+    },
+    {
+        "id": 223,
+        "title": "Zébulo éditions",
+        "url": "https://www.zebuloeditions.com/",
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Maison d'édition spécialisée dans les ouvrages jeunesse et les livres musicaux",
+        "article": ["202604"]
+    },
+    {
+        "id": 224,
+        "title": "Chakouat éditons",
+        "url": "https://chakouat-editions.com/", 
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Maison d'édition réunionnaise, tournée vers la nature ainsi que la vulgarisation scientifique pour les plus jeunes et les tout petits.",
+        "article": ["202604"]
+    },
+    {
+        "id": 225,
+        "title": "Éditions Poisson Rouge",
+        "url": "https://www.editionspoissonrouge.com/", 
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Maison d'édition réunionnaise, ayant pour objectif de traduire la diversité culturelle de la Réunion à travers d'une production variée de romans, d'essais et de témoignages.",
+        "article": ["202604"]
+    },
+    {
+        "id": 226,
+        "title": "Éditions Poisson Rouge",
+        "url": "https://www.editionspoissonrouge.com/", 
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Maison d'édition réunionnaise, ayant pour objectif de traduire la diversité culturelle de la Réunion à travers d'une production variée de romans, d'essais et de témoignages.",
+        "article": ["202604"]
+    },
+    {
+        "id": 227,
+        "title": "La p'tite scène qui bouge",
+        "url": "https://www.laptitescenequibouge.fr/", 
+        "parent": "collectifs",
+        "importance": 0,
+        "description": "Théâtre itinérant qui s’emboîte dans un grand camion magique proposant plein d'activités jeunesse et qui présente aussi la production de son édition jeunesse : Coccinelle édition",
+        "article": ["202604"]
+    },
+    {
+        "id": 228,
+        "title": "Des livres et des îles",
+        "url": "https://dldi.re/", 
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Distributeur et diffuseur de culture à la Réunion. Vente de livres, ouvrages jeunesse, bande dessinée et de compact discs en ligne.",
+        "article": ["202604"]
+    },
+    {
+        "id": 229,
+        "title": "Gaëlle Gonthier – Vétyver éditions",
+        "url": "https://vetyvereditions.re/", 
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Petit éditeur réunionnais au cœur du Sud sauvage, spécialisé dans les ouvrages liés au reigne végétal",
+        "article": ["202604"]
+    },
+    {
+        "id": 230,
+        "title": "Novo Libris",
+        "url": "hhttps://www.novolibris.re/", 
+        "parent": "litterature",
+        "importance": 0,
+        "description": "Distributeur et diffuseur de livres à la Réunion et nottamment de nombreux éditeurs réunionnais comme Epsilon éditions, Epica ou Océan éditions",
         "article": ["202604"]
     }
 ]

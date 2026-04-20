@@ -7,5 +7,14 @@
       "importance": 0,
       "description": "Association offrant des ressources et des activités pour l’observation sur le milieu océanique à la Réunion. Les observations permettent de mieux connaitre l’environment et d’aider la recherche.",
       "article": ["201604"]
+  },
+  {
+        "id": 215,
+        "title": "Art & Toiles",
+        "url": "https://artetoiles.re/",
+        "parent": "art",
+        "importance": 0,
+        "description": "Magazin de fournitures et de matériel pour artistes platiciens, artisants d'art, peintres, scuplteurs et sculptrices au Port à la Réunion. Le magasin proose aussi des ateliers d'initiation.",
+        "article": ["199709"]
   }
 ]
