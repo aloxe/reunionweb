@@ -1792,15 +1792,6 @@
     },
     {
         "id": 226,
-        "title": "Éditions Poisson Rouge",
-        "url": "https://www.editionspoissonrouge.com/", 
-        "parent": "litterature",
-        "importance": 0,
-        "description": "Maison d'édition réunionnaise, ayant pour objectif de traduire la diversité culturelle de la Réunion à travers d'une production variée de romans, d'essais et de témoignages.",
-        "article": ["202604"]
-    },
-    {
-        "id": 227,
         "title": "La p'tite scène qui bouge",
         "url": "https://www.laptitescenequibouge.fr/", 
         "parent": "collectifs",
@@ -1809,7 +1800,7 @@
         "article": ["202604"]
     },
     {
-        "id": 228,
+        "id": 227,
         "title": "Des livres et des îles",
         "url": "https://dldi.re/", 
         "parent": "litterature",
@@ -1818,7 +1809,7 @@
         "article": ["202604"]
     },
     {
-        "id": 229,
+        "id": 228,
         "title": "Gaëlle Gonthier – Vétyver éditions",
         "url": "https://vetyvereditions.re/", 
         "parent": "litterature",
@@ -1827,7 +1818,7 @@
         "article": ["202604"]
     },
     {
-        "id": 230,
+        "id": 229,
         "title": "Novo Libris",
         "url": "hhttps://www.novolibris.re/", 
         "parent": "litterature",
