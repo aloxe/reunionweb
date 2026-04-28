@@ -33,4 +33,5 @@
 
   button#closeButton {
     float: right;
+    cursor: pointer;
   }

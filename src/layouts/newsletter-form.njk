@@ -1,4 +1,4 @@
-<section class="mailform">
+<section style="margin: 10px 0;" >
   <form method="post" action="https://lm.chim.re/subscription/form" class="listmonk-form">
     <div style="display:inline-block;">
       <input type="email" name="email" required="required" placeholder="votre adresse mail" data-validation-required-message="votre adresse mail" data-validation-validemail-message="cette adresse n'est pas bonne"
@@ -9,11 +9,8 @@
       padding: 0.3em 0 0.3em 0.5em ;
       ">
     </div>
-    <input id="2abfe" type="hidden" name="l" checked value="2abfeb59-a78d-4de0-a2d6-fc56a9dbff7e" />
-    <altcha-widget challengeurl="https://lm.chim.re/api/captcha/altcha"></altcha-widget>
-    <script type="module" src="https://lm.chim.re/public/static/altcha.umd.js" async defer></script>
     <div style="display:inline-block;">
-        <input type="submit" value="Souscrire " style="
+        <input type="submit" value="Souscrire" style="
         background-color: #006FCF;
         border: 2px solid #006FCF;
         border-left: 0;
@@ -25,5 +22,19 @@
         cursor: pointer;
         ">
     </div>
-  </form>
+    <input id="2abfe" type="hidden" name="l" checked value="2abfeb59-a78d-4de0-a2d6-fc56a9dbff7e" />
+    <altcha-widget challengeurl="https://lm.chim.re/api/public/captcha/altcha"></altcha-widget>
+    <script type="module" src="https://lm.chim.re/public/static/altcha.umd.js" async defer></script>
 </section>
+<style>
+  .altcha {
+    background: white;
+    margin: 10px auto -9px;
+  }
+    @media screen and (max-width: 999px) {
+    .altcha {
+      float: right;
+      margin-top: -20px;
+    }
+  }
+</style>
