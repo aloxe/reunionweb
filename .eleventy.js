@@ -13,6 +13,15 @@ const mditAttrs = require('markdown-it-attrs');
 const NOT_FOUND_PATH = "_site/404.html";
 const IS_PROD = typeof process.env.ENVIRONMENT === "string" && process.env.ENVIRONMENT === "prod";
 
+// sizes and formats of resized images to make them responsive
+// it can be overwriten when using the "Picture" short code
+const Images = {
+  WIDTHS: [426], // WIDTHS: [426, 460, 580, 768, 1200], // sizes of generated images
+  FORMATS: ['jpeg'], // ['webp', 'jpeg'], // formats of generated images
+  SIZES: '(max-width: 1200px) 70vw, 1200px' // size of image rendered
+}
+
+
 module.exports = (eleventyConfig) => {
   // page 404 with --serve
   eleventyConfig.setBrowserSyncConfig({
@@ -43,6 +52,51 @@ module.exports = (eleventyConfig) => {
     typographer: true,
   }
   const mdLib = mdit(mditOptions).use(mditAttrs)
+
+  // generate responsive images from Markdown
+  mdLib.renderer.rules.image = (tokens, idx, options, env) => {
+
+    if (Object.keys(env).length === 0) {
+      return ""; //"<!--"+ tokens[idx].attrGet('src') + "-->";
+    }
+
+    const token = tokens[idx]
+    const imgPath = token.attrGet('src')
+    const imgSrc = imgPath.slice(0,1) === "/" 
+        ? env.eleventy.directories.input.slice(0, -1) + imgPath
+        : env.page.inputPath.substring(0, env.page.inputPath.lastIndexOf('/')+1) + imgPath
+    const type = imgSrc.slice(-3)
+    const imgAlt = token.content
+    const imgTitle = token.attrGet('title') ?? ''
+    const className = token.attrGet('class')
+    
+    if (!env.page.outputPath) {
+      // comments don't have output path for images we create it with the comment folder name
+      const output = env.page.inputPath.split("/");
+      env.page.outputPath = env.eleventy.directories.output + output[output.length-2] + "/index.html"
+    }
+    // we force gif format whet it's a gif (TODO: but this doesn't maintain animation)
+    const ImgOptions = getImgOptions(env.page, imgSrc, imgAlt, className, Images.WIDTHS, type === "gif" ? ["gif"] : Images.FORMATS, Images.SIZES);
+    const htmlOptions = {
+      alt: imgAlt,
+      class: className,
+      sizes: Images.SIZES,
+      loading: className?.includes('lazy') ? 'lazy' : undefined,
+      decoding: 'async',
+      title: imgTitle
+    }
+    Image(imgSrc, ImgOptions)
+    const metadata = Image.statsSync(imgSrc, ImgOptions)
+    const picture = Image.generateHTML(metadata, htmlOptions)
+
+    // DEBUG IMAGES WITH:
+    // console.log("metadata", metadata);
+    // console.log("ImgOptions", ImgOptions);
+    // console.log("picture", picture);
+    // console.log("::::::::::::: ::::::::::::");
+    return picture
+  }
+
   eleventyConfig.setLibrary('md', mdLib)
 
   // content filter for search
@@ -351,8 +405,39 @@ module.exports = (eleventyConfig) => {
           includes: '../layouts',
           data: '../data',
       },
-      templateFormats: ['md', 'njk', 'jpg', 'gif', 'png', 'html'],
+      templateFormats: ['md', 'njk', 'jpg', 'gif', 'png', 'html', 'jpeg', 'webp'],
       markdownTemplateEngine: 'njk',
   };
 
 };
+
+// helpers
+
+const getImgOptions = (page, src, alt, className, widths, formats, sizes) => {
+  if (!page.outputPath) return;
+  let outputFolder = page.outputPath.slice(0, page.outputPath.lastIndexOf('/')+1) // remove index.html
+  
+  let urlPath = outputFolder.split("/")
+  urlPath.shift() // remove ./
+  urlPath.shift() // remove _site
+  urlPath = "/" + urlPath.join("/");
+  
+  const options = {
+    widths: widths
+      .concat(widths.map((w) => w * 2)) // generate 2x sizes
+      .filter((v, i, s) => s.indexOf(v) === i), // dedupe
+    formats: [...formats, null],
+    sharpOptions: {
+      animated: true,
+    },
+    outputDir: outputFolder,
+    urlPath: urlPath,
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension);
+      return `${name}-${width}w.${format}`;
+    }
+  }
+  return options;
+}
+
