@@ -9,11 +9,42 @@ keywords: 974, dessinatrice, peintre, sculpteuse, photographe
 Le <a href="/celimene-ou-l-art-plastique-au-feminin/">prix Célimène</a> récompense chaque année depuis 2005 une femme et une de ses œuvres d'art plastique, peinture, sculpture, photographie. Avec ce concours, le département de la Réunion encourage l’expression des femmes artistes amateurs dont le travail est peu connu.
 </p>
 
+## 2026
+
+<p class="center legende cadrimage">
+  {% Image page, "celimene/laureates-celimene-2026.jpg", "Plusieurs personnes bien habillées debout sur un parquet ciré. Quatre femmes portent des tableaux." %}<br>
+  Remise du Prix Thérèse Baillif et du Prix Célimène à l'hotel du département
+</p>
+
+### 1<sup>er</sup> prix
+**Claire Laizier** (Aquarelle)
+
+### 2<sup>ème</sup> prix
+**Ida Chéru** (Aquarelle)
+
+### 3<sup>ème</sup> prix</h3>
+**Murielle Pausé** (Aquarelle)
+
+### 4<sup>ème</sup> prix</h3>
+**Isabelle Turquet** (Gouache)
+
+## 2025
+### 1<sup>er</sup> prix
+**Katherine Goyon** (dessin au feutre noir) 
+
+### 2<sup>ème</sup> prix
+**Marie-Claude Técher** (peinture chinoise)
+
+### 3<sup>ème</sup> prix</h3>
+**Patricia Richauvet** (aquarelle) 
+
+### 4<sup>ème</sup> prix</h3>
+**Amélie Grondin** (aquarelle)
+
 <h2>2024</h2>
 <h3>1<sup>er</sup> prix</h3>
 <p class="concis">
 « Rachel ». tableau de <b>Marine Hibert</b><br/>
-<img src="celimene/femme-multiple-Catherine-Ragonnet.jpg" alt="Femme multiple, sculpture de Catherine Ragonnet" class="center maxh250" />
 </p>
 <p class="center legende cadrimage">
   {% Image page, "celimene/Rachel-Marine-Hibert.jpg", "Marine Hibert pose devant son tableau intitulé Rachel (un portrait aux couleurs vives qui tient une pomme) en compagnie du président du département." %}<br>
@@ -43,7 +74,7 @@ Le <a href="/celimene-ou-l-art-plastique-au-feminin/">prix Célimène</a> récom
   <h3>1<sup>er</sup> prix</h3>
   <p class="concis">
   « Femme multiple » sculpture de <b>Catherine Ragonnet</b><br/>
-  <img src="celimene/femme-multiple-Catherine-Ragonnet.jpg" alt="Femme multiple, sculpture de Catherine Ragonnet" class="center maxh250" />
+  {% Image page, "celimene/femme-multiple-Catherine-Ragonnet.jpg", "Femme multiple, sculpture de Catherine Ragonnet", "lazy" %}
   </p>
   <h3>2<sup>ème</sup> prix</h3>
   <p class="concis">
@@ -68,11 +99,11 @@ Le <a href="/celimene-ou-l-art-plastique-au-feminin/">prix Célimène</a> récom
 
 <h2>2022</h2>
 
+  ![1928-1992, peinture de Marie Lebian](celimene/marie-lebian-1928-1992.jpg){.maxh250 .right}
 <h3>1<sup>er</sup> prix
-<img src="celimene/marie-lebian-1928-1992.jpg" alt="1928-1992, peinture de Marie Lebian" class="right maxh250" />
 </h3>
 <p class="concis">
-  « 1928-1992 » de <b>Marie LEBIAN</b>
+  « 1928-1992 » de <b>Marie LEBIAN</b><br/>
 </p>
 <h3>2<sup>ème</sup> prix</h3>
 <p class="concis">
@@ -98,9 +129,10 @@ Le <a href="/celimene-ou-l-art-plastique-au-feminin/">prix Célimène</a> récom
 
 
 <h2>2021</h2>
-<p class="legende cadrimage">
-  <img src="celimene/prix-celimene-2021.jpg" alt="Les lauréates de 2021 sans le public pour cause de confinement" class="center maxh250" /><br/>
-Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qui n'était pas ouverte au public.
+
+<p class="center legende cadrimage">
+  {% Image page, "celimene/prix-celimene-2021.jpg", "Les lauréates de 2021 sans le public pour cause de confinement", "lazy" %}<br>
+  Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qui n'était pas ouverte au public.
 </p>
 <h3>1<sup>er</sup> prix</h3>
 <p class="concis">
@@ -131,14 +163,12 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
   https://imazpress.com/conseil-general/prix-celimene-fugitive-remporte-le-trophee-2021
    -->
 
-  <h2>
-  <img src="celimene/je-taime-neal-bei-ling.jpg" alt="Je t’aime Neal, peinture de Bei Ling" class="right maxh250" />
-  2020</h2>
-  <h3>1<sup>er</sup> prix
+  <h2>2020</h2>
 
-  </h3>
+  ![Je t’aime Neal, peinture de Bei Ling](celimene/je-taime-neal-bei-ling.jpg){.maxh250 .right}
+  <h3>1<sup>er</sup> prix</h3>
   <p class="concis">
-« Je t’aime Neal » peinture de <b>Bei Ling</b>
+« Je t’aime Neal » peinture de <b>Bei Ling</b><br>
   </p>
   <h3>2<sup>ème</sup> prix</h3>
   <p class="concis">
@@ -161,8 +191,8 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
     <h2>2019</h2>
     <h3>1<sup>er</sup> prix</h3>
     <p class="concis">
-« Métissage » de <b>Guylène LAURET</b><br/>
-      <img src="celimene/Metissage-Guylene-Lauret-avec-Cyrille-Melchior.jpg" alt="Guylène LAURET avec Cyrille Melchior lors de la soirée de remise des prix" class="center maxh250" />
+  « Métissage » de <b>Guylène LAURET</b><br/>
+  {% Image page, "celimene/Metissage-Guylene-Lauret-avec-Cyrille-Melchior.jpg", "Guylène LAURET avec Cyrille Melchior lors de la soirée de remise des prix", "lazy" %}
       <!-- https://www.departement974.fr/actualite/metissage-de-guylene-lauret-remporte-prix-celimene-2019 -->
     </p>
     <h3>2<sup>ème</sup> prix</h3>
@@ -185,8 +215,8 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 
 </h3>
 <p class="concis">
-« Une seconde chance pour mes mains » de <b>Larissa BALTHAZAR</b><br/>
-<img src="celimene/larrissa-balthazar.png" alt="Larrissa Balthazar lors de la soirée de remise des prix" class="center maxh250" />
+  « Une seconde chance pour mes mains » de <b>Larissa BALTHAZAR</b><br/>
+  {% Image page, "celimene/larrissa-balthazar.png", "Larrissa Balthazar lors de la soirée de remise des prix", "lazy" %}
 </p>
 <h3>2<sup>ème</sup> prix</h3>
 <p class="concis">
@@ -212,7 +242,7 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 <h3>1<sup>er</sup> prix</h3>
 <p class="concis">
 « Béatitude » sculpture de <b>Béatrice TANZILLI-BASSEREAU</b>
-<img src="celimene/beatitude-Tanzilli-Bassereau.png" alt="« Béatitude » de Béatrice TANZILLI-BASSEREAU " class="center maxh250" />
+  {% Image page, "celimene/beatitude-Tanzilli-Bassereau.png", "« Béatitude » de Béatrice TANZILLI-BASSEREAU »", "lazy" %}
 <!-- https://www.facebook.com/watch/?v=2225381277687534 -->
 </p>
 <h3>2<sup>ème</sup> prix</h3>
@@ -232,7 +262,7 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 <h3>1<sup>er</sup> prix</h3>
 <p class="concis">
 « Repos » d'<b>Anne BEGUIN</b><br/>
-  <img src="celimene/repos-anne-beguin.jpg" alt="Repos, toile par Anne Beguin" class="center maxh250" />
+  {% Image page, "celimene/repos-anne-beguin.jpg", "Repos, toile par Anne Beguin", "lazy" %}
 </p>
 <h3>2<sup>ème</sup> prix</h3>
 <p class="concis">
@@ -251,7 +281,7 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 <h3>1<sup>er</sup> prix</h3>
 <p class="concis">
 « Sculpture au fil : Mayaj » de <b>Julie JOLY</b><br/>
-<img src="celimene/julie-joly-mayaj-fil-de-fer.jpg" alt="Julie Joly et sa sculpture: Mayaj" class="center maxh250" />
+  {% Image page, "celimene/julie-joly-mayaj-fil-de-fer.jpg", "Julie Joly et sa sculpture: Mayaj", "lazy" %}
 <!-- https://www.juliejoly.com/ -->
 </p>
 <h3>2<sup>ème</sup> prix</h3>
@@ -271,7 +301,12 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 
 
 <h2>2014</h2>
-<p><img src="celimene/prix-celimene-2014.jpg" alt="photo de groupe en 2014" class="center maxh250" /></p>
+
+<p class="center legende cadrimage">
+  {% Image page, "celimene/prix-celimene-2014.jpg", "photo de femmes dans un cercle dont certaines ont des bouquets de fleurs", "lazy" %}<br>
+  Photo du groupe des artistes participates en 2014
+</p>
+
 <h3>1<sup>er</sup> prix</h3>
 <p class="concis">
 « Femme fatale » de <b>Miguy HOAREAU</b>
@@ -290,9 +325,12 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 
 
 <h2>2013</h2>
-<h3>1<sup>er</sup> prix
-<img src="celimene/geraldine-gabin.jpg" alt="Portrait de Géraldine Gabin" class="right maxh250" />
-</h3>
+<h3>1<sup>er</sup> prix</h3>
+<p class="center legende maxh250">
+
+  ![Portrait noir et blanc de Géraldine Gabin avec un chapeau](celimene/geraldine-gabin.jpg){.maxh250 .right}
+  Portrait de Géraldine Gabin
+</p>
 <p class="concis">
 « Bardzour » de <b>Géraldine GABIN</b>
 <!-- https://lagalerie33.re/geraldine-gabin -->
@@ -324,13 +362,10 @@ Confinement oblige, les lauréates ont reçu leur prix lors d'une cérémonie qu
 « Zénération » de <b>Séverine IMIZA</b>
 </p>
 
-<h2>
-2011</h2>
-<h3>1<sup>er</sup> prix
-  <img src="celimene/Odile-Sauve-Mahoraise.jpg" alt="femmes du monde: Mahoraise par Odile Sauvé" class="right maxh250" />
-  <!-- https://www.odilesauve.com -->
+<h2>2011</h2>
 
-</h3>
+![femmes du monde: tableau coloré de Mahoraise par Odile Sauvé](celimene/Odile-Sauve-Mahoraise.jpg){.maxh250 .right}
+<h3>1<sup>er</sup> prix  <!-- https://www.odilesauve.com --></h3>
 <p class="concis">
 « Femme du Monde - Mahoraise » peinture d'<b>Odile SAUVE</b>
 </p>
@@ -394,8 +429,9 @@ https://imazpress.com/culture/le-prix-celimene-pour-odile-sauve
 </p>
 
 <h2>2008</h2>
+
+  ![photo noir et blanc d'une femme accroupie un peu dans l'ombre](celimene/reve-d-enfants-Sylvie-Chan-Liat.jpg){.maxh250 .right}
   <h3>1<sup>er</sup> prix
-    <img src="celimene/reve-d-enfants-Sylvie-Chan-Liat.jpg" alt="Alice Aucuit Artiste Céramiste" class="right maxh250" />
   </h3>
   <p class="concis">
     « Rêves d’enfant » photographie de <b>Sylvie CHAN-LIAT</b>
@@ -414,9 +450,9 @@ https://imazpress.com/culture/le-prix-celimene-pour-odile-sauve
   </p>
 
 <h2>2007</h2>
-  <h3>1<sup>er</sup> prix
-    <img src="celimene/alice-aucuit-artiste-ceramiste-10.jpg" alt="Alice Aucuit Artiste Céramiste" class="right maxh250" />
-  </h3>
+
+![Alice Aucuit Artiste Céramiste, debout devant une toile sombre tendue avec une syloette à plusieurs bras](celimene/alice-aucuit-artiste-ceramiste-10.jpg){.maxh250 .right}
+  <h3>1<sup>er</sup> prix</h3>
   <p class="concis">
     « Tram trap mémwar » sculpture d'<b>Alice Aucuit</b>
     <!-- https://aliceaucuit.com/ -->
@@ -434,10 +470,10 @@ https://imazpress.com/culture/le-prix-celimene-pour-odile-sauve
   </p>
 
 <h2>2006</h2>
+
+![Kadounkor de Yannick Connan: deux personnages noir en costumes blancs et couleurs](celimene/kadounkor-Yannick-Connan.jpg){.maxh250 .right}
   <!-- https://artotheque-reunion.fr/kadounkor/ -->
-  <h3>1<sup>er</sup> prix
-<img src="celimene/kadounkor-Yannick-Connan.jpg" alt="Kadounkor de Yannick Connan" class="right maxh250" />
-  </h3>
+  <h3>1<sup>er</sup> prix</h3>
   <p class="concis">
     « Kadounkor » sculpturede <b>Yannick CONNAN</b>
   </p>
@@ -468,6 +504,6 @@ https://imazpress.com/culture/le-prix-celimene-pour-odile-sauve
 
 
 <!--
-    toutes les laureates
-    https://www.departement974.fr/sites/default/files/2020-03/dossier-presse-celimene_2020.pdf
-     -->
+  toutes les laureates
+  https://www.departement974.fr/sites/default/files/2020-03/dossier-presse-celimene_2020.pdf
+-->
