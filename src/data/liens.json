@@ -1215,15 +1215,6 @@
       "article": ["201408"]
   },
   {
-      "id": 137,
-      "title": "DOM TOM ADSL",
-      "url": "http://www.domtom-adsl.com/comparatifs/internet/reunion.html",
-      "parent": "internet",
-      "importance": 0,
-      "description": "Site comparatif des offres internet de tous les opérateurs présent à la Réunion et dans les autres DOM TOM. Les offres ne sont peut-être pas à jour.",
-      "article": ["200804"]
-  },
-  {
       "id": 138,
       "title": "Canalbox",
       "url": "https://www.canalbox.com/re",

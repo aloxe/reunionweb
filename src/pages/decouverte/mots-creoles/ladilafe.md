@@ -1,0 +1,27 @@
+---
+title: Ladilafé
+description: Ladilafé, L'a dit l'a fait. Facile à comprendre ou faux ami ?
+image: ladilafait.gif
+keywords:
+---
+
+![bla bla bla](ladilafait.gif){.left} <b>Ladilafé</b>, l'a dit, l'a fait, il a dit ça, il a fait ça, en fait c'est simple à comprendre même si les réunionnais emploient ce mot comme un nom pour parler commérages.
+
+Derrière cette expression <a href="/decouverte/mots-creoles/creole/">réunionnaise</a> du « qu'en dira-ton ? » se dessine aussi un état d'esprit très réunionnais.
+
+En effet, le commérage semble être le sport national et les rumeurs n'on pas besoin de petits papiers pour circuler. C'est un élément de culture typiquement orale ce qui évite de laisser des traces sur qui a dit quoi et d'avoir à apporter des preuves. Je ne peux vraiment pas dire d'où vient cette tradition mais ce pourrait être une culture insulaire ou letour du pays est fait assez rapidement ce qui donne l'impression que tout le monde peut prétendre connaitre tout le monde. Ce peut aussi venir du mélange des culture de cette société créole. Comme la Réunion abrite de nombreuse communautées culturelles <a href="/decouverte/culture/">très différentes</a>, il est assez facile de railler un voisin qui ne fait pas comme nous ou un autre aux habitudes bizarres. Toutes ces spéculations pour dire que je ne sais pas d'où vient cette tradition du commérage mais je peux vous dire que tout le monde entretient cet état de fait tout en le raillant.
+
+Tiens pas plus tard qu'hier, le webmaster de lareunion.com, m'a justement écrit pour me dire que… oh et puis non je ne vais pas vous le dire, ce serait encore un ladilafé…
+<!-- <div class="legende">
+Merci à <a href="http://www.cuisinereunionnaise.com/" class="legende">Marie</a> pour les animations</div> -->
+
+## Une chanson
+
+En 2012 Le groupe <b>Tryo</b> sort un album au nom de <i>Ladilafé</i>. Dans l'album une chanson hommage à feu, leur éditrice <b>Patricia Bonnetaud</b>, fondatrice du label <b>Yelen musiques</b> qui signait le groupe et de <b>Ladilafé Productions</b>. Dans leur chanson, Ladilafé signifie « Elle l’a dit, elle l’a fait », autant que « Lady la Fée ». Les membres du groupe considèrent Patricia Bonnetaud comme une fée.
+
+Même si la chanson n'a rien à voir avec les commérages (ladilafé créole), <a name="https://www.franceinter.fr/oeuvres/ladilafe-0" class="ext">France Inter nous rapporte</a> qu'il a été initié à la Réunion en juin 2011 avant d'être enregistrés aux studios Realworld près de Bristol (Angleterre) et au studio Garage à Paris (France).
+
+<!---
+    TODO: ajouter ceci: 
+    https://www.journal.re/societe/la-psychologie-du-ladilafe-pourquoi-on-aime-tant-les-commerages-a-la-reunion.html
+--->

@@ -36,11 +36,5 @@ Kréol rényoné ↔ Français <br>
   {% fnac "Grimaud", "https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=Grimaud&ued=https%3A%2F%2Fwww.fnac.com%2Fa10500711%2FRichard-Ferrando-Le-Grimaud" %}
 
 <div class="clear"></div>
-<!--<p>
-  <img class="left" alt="Créole de poche" src="creole-de-poche.jpg">
-  Editeur Assimil<br>
-  Collection Langue De Poche<br>
-  Format 11cm x 15cm<br>
-  {% fnac "creole", "https://livre.fnac.com/a2989799/Gillette-Staudacher-Valliamee-Le-creole-reunionnais-de-poche" %}
-</p>-->
+
 

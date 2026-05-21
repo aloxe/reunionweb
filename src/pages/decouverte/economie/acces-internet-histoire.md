@@ -39,12 +39,3 @@ Le paysage des fournisseurs d’accès a continué à évoluer au gré des fusio
   <li><a href="/numericable-sfr-chamboulent-tout-a-la-reunion/">Numericable - SFR chamboulent tout à la Réunion</a></li>
   <li><a href="/internet-par-satellite/">Internet par satellite</a></li>
 </ul>
-
-<!-- TODO
-L’ADSL dans les DOM-TOM</b></a>
-<br/>
-<a href="http://www.domtom-adsl.com" title="DOMTOM-adsl : comparatif
-d’offres ADSL et Internet dans les DOM TOM et en Outremer"><img
-src="http://www.domtom-adsl.com/img/pub/logo_120x60.gif"
-alt="DOMTOM-adsl : comparatif d’offres ADSL et Internet dans les DOM
-TOM et en Outremer" border="0"></a> -->
