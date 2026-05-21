@@ -5,26 +5,19 @@ image: carte-reunion-est.jpg
 keywords:
 ---
 
-<p class="center">
-<img src="carte-reunion-est.jpg" width="300" height="300"
-alt="carte coté est - coté volcan" align="right">
-La
-  plaine des palmistes est un plateau située sur le flanc nord du <a href="/decouverte/geographie/volcan/">volcan</a>,
+![carte coté est - coté volcan](carte-reunion-est.jpg){.center}
+
+La plaine des palmistes est un plateau située sur le flanc nord du <a href="/decouverte/geographie/volcan/">volcan</a>,
   dans la <a href="/decouverte/geographie/cartes/divisions/#:~:text=Au vent / sous le vent">partie au vent</a> de l'île
-</p>
-<p>
-C'est un
-  lieu verdoyant et frais de calme et de détente à vous pourrez aller vous ressourcer
-  en toute tranquillité. Son nom lui vient de la quantité de <a href="/decouverte/nature/palmiste/">palmistes</a> de l'on
-  y trouve. C'est une région très humide et assez froide. Le thermomètre peut descendre en dessous de 10°C l'hiver.
-</P>
-<p>
+
+C'est un lieu verdoyant et frais de calme et de détente à vous pourrez aller vous ressourcer en toute tranquillité. Son nom lui vient de la quantité de <a href="/decouverte/nature/palmiste/">palmistes</a> de l'on y trouve. C'est une région très humide et assez froide. Le thermomètre peut descendre en dessous de 10°C l'hiver.
+
 Les passionnés de marche et de botanique seront comblés par cette végétation exotique abondante où se mèlent nombreuses variétés de fougères et orchidées. Au mois de juin, vous aurez le plaisir de manger des goyaviers qui sont de succulents petits fruits ronds de la taille d'un petit abricot et au goût de fraise des bois.
-</P>
-<h2>Hauts lieux du tourisme des hauts</h2>
-<p>
+
+## Hauts lieux du tourisme des hauts
+
 On trouve sur le territoire de la commune de la Plaine des Palmiste, un site classé à l'UNESCO pour la richesse de son biotope: <b>la pandanaie des Hauts de l'Est</b>, une zone humide où pousse entre autre des vacoas des hauts, une espèce endemique de <a href="/decouverte/nature/vacoa/">vacoas</a>. La commune est aussi la porte d'entrée privilégiée pour accéder au <a href="/le-parc-national-de-la-reunion-developpement-durable-des-hauts/">parc national de la Réunion</a> puisqu'il s'y trouve la maison du parc.
-</p>
+
 <ul>
 <li><a href="/decouverte/geographie/plaine-cafres/">La plaine des Cafres</a></li>
 

@@ -13,16 +13,17 @@ keywords: Linux, GNU, informatique, GUL, Logiciel, ordinateurs
     Puis ils sont devenus tellement nombreux que ça devenait difficile de les compter alors le site du compteur Linux a arrêté de les compter avant de fermer définitivement. En souvenir j'archive ici la liste de ces pioniers réunionnais des logiciels libres en 1999, 2001 et 2003.
 </p>
 <hr>
-<img src="linux-counter.png" alt="Linux Counter Logo" class="left">
-Page <font
-color=blue>http://counter.li.org/bycountry/RE.html</font> <br>
+
+![Linux Counter Logo](linux-counter.png){.logo}
+Page <font color=blue>http://counter.li.org/bycountry/RE.html</font> <br>
 archivée le <b>2 dec 1999</b> à 05:24:47,
 <br>
 le <b>16 oct 2001</b> à 00:33:57,<br>
 le <b>1er août 2003</b>
 <hr class="clear">
 <h2>Compteur Linux en 1999</h2>
-<p> <img src="linux-reunion-1999.png" width="420" height="180" Alt="utilisateurs linux réunionnais" class="center">
+
+![courbe utilisateurs linux réunionnais](linux-reunion-1999.png){.center}
 <p>
 Population: 0.679198 million<br>
 Linux users: 11<br>
@@ -59,7 +60,8 @@ Reunion is no. 69 in the density statistics, with 16.20 users/Mpop<br>
 <br>
 <h2>Compteur Linux en 2001</h2>
 <p class="center">This file generated: Tue Oct 16 00:33:57 2001<br>
-<img src="linux-reunion-2001.png" width="512" height="240" Alt="graph linux" >
+
+![graph des utilisateurs linux qui fait un plateau](linux-reunion-2001.png){.}
 </p>
 <p>
 Population: 0.7 million<br>
@@ -100,7 +102,8 @@ Reunion is no. 79 in the density statistics, with 26.50 users/Mpop<br>
 <h2>Compteur Linux en 2003</h2>
 <p>
   Linux users in Reunion<br>
-  <img src="linux-reunion-2003.png" width="512" height="240" Alt="courbe des utilisateurs linux a la Reunion" class="center">
+
+  ![courbe des utilisateurs linux a la Reunion qui remonte à la fin](linux-reunion-2003.png){.center}
 </p>
 
 

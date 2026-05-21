@@ -1,0 +1,77 @@
+---
+title: La Lémurie
+description: La Lémurie est le grand mythe du continent perdu, age d'or de l'Océan Indien. Comment est née cette histoire ?
+image: gravure-propithecus-coronatus-1882.jpg
+keywords: Malcom de Chazal, Lémur, Madagascar, continent, Océan Indien
+---
+
+La richesse de de <a href="/trop-de-livres-pour-un-seul-ete/">la littérature de l'Océan Indien</a> se concrétise aussi avec un grand mythe : <b>la Lémurie</b>. Un continent aurait jadis occupé l'Océan Indien avant d'être englouti avec ses habitants : les Lémuriens.{.chapo}
+
+## Le Gondwana
+Les travaux d'<b>Alfred Wegener</b> sur la dérive des continents ont montré que l'Amérique méridionale, l'Afrique, Madagascar, l'Arabie, le Deccan, l'Australie et l'Antarctique était à l'ère primaire, réunis en un seul continent qu'on appelle aujourd'hui la Pangée. C'est <b>P. L Sclater</b> qui donne le nom de Gondwana à ce continent originel où <b>E. Haeckel</b> pensait pouvoir y situer l'origine de l'espèce humaine.
+
+La légende de la Lémurie fait écho à celle de <b>l'Atlantide</b> en Europe dont l'archipel des Açores est le témoin ou à celle du <b>continent de Mu</b> dans l'océan Pacifique dont les îles qui subsistent renferment les vestiges de cette ancienne civilisation.
+
+C'est une histoire similaire dans l'Océan Indien dont les îles et les archipels ne manquent pas des Maldives aux Seychelles et des Chagos à Nicobar en passant par Madacascar et la Réunion. Dans la légende de la Lémurie, la civilisation qui y vivait serait à l'origine de toute l'humanité.
+
+### À Madagascar 
+![Van der Decken's Sifaka (Propithecus dackenii coronatus) gravure noir et blanc](gravure-propithecus-coronatus-1882.jpg){.left} Aujourd'hui, <b>les lémuriens</b> ou <b>Lemuriformes</b> sont une variété de primates aux grand yeux qu'on trouve <b>à Madagascar</b>. Cet animal est maintenant connu des petits et des grands enfants grâce aux dessins animés qui portent le nom de la grand île. Les lémurs y sont personnifiés comme les autres animaux et sont plutôt de joyeux fêtards.
+
+Le <b>maki catta</b> ou <b>Lemur catta</b> est le plus connu d'entre eux avec sa queue annelée noire et blanche et ses grand yeux il est facilement reconnaissable. Le <b>Lemur catta</b> n'est qu'un spécimen de la famille des lémuriens qui est endémique à Madagascar. Cette famille compte de nombreuses espèces du plus petit <b>microcède de Madame Berthe</b> qui mesure 9cm au <b>Vari roux</b> qui mesure 1,13m avec la queue. Certaines espèces de lémurs, aujourd'hui éteintes étaient même plus grandes. Aujourd'hui il n'en reste que des squelettes découverts qui témoignent de leur existence.
+
+Dans l'imaginaire malgache, les lémuriens, qui ont une âme (<i>ambiroa</i>), peuvent aussi avoir un pouvoir bénéfique ou vengeur sur une personne ou d'un clan. Certains lémuriens, sont considérés comme des hommes, les légendes malgaches <i>fady</i>, parlent d'hommes qui se seraient transformés en singes au cours des âges mais aussi de grands singes qui seraient devenus des hommes.
+
+### Aux Seychelles
+
+<b>Aux Seychelles, l'île de Praslin</b> est prisée par beaucoup de touristes, elle est présentée comme l'île du paradis terrestre. Sa particularité ? Elle abrite la première forêt de <a href="http://fr.wikipedia.org/wiki/Cocotier_de_mer"
+class="ext">coco-fesses</a> (&nbsp;ou coco des îles&nbsp;), un cocotier dont la noix ressemble à une paire de fesses avec le sexe d'une femme. Le chaton de ce cocotier ressemble lui à une très grosse verge. Cela ne fait aucun doute qu'il s'agit là de l'arbre au fruit défendu dont parle la Genèse. Nous sommes donc ici dans ce qu'il reste du berceau de l'humanité.
+
+<b>La Lémurie serait, selon le mythe, le continent berceau de l'humanité</b>. Cela peut s'expliquer scientifiquement avec la dérive des continents, une partie de la Lémurie serait remonté vers le nord et ceci explique que les traces humaines les plus vieilles se retrouvent aujourd'hui dans la corne de l'Afrique. Cette théorie scientifique du premier continent ( <i>Le Gondwana</i> ) formé par l'Amérique du sud, l'Afrique, Madagascar, l'Arabie, l'Inde, l'Australie et l'Antarctique indiquerait que ce continent n'aurait pas été englouti mais disloqué. Toujours est-il que les Darwiniens Sclater et Haeckel y situaient l'origine de l'espèce humaine.
+
+### À la Réunion
+Le plus prolixe <!--a href="http://www.litterature-reunionnaise.org/histoirelitt/geomyth.htm" class="ext"-->au sujet de la Lemurie est sans doute <b>Jules Hermann</b>, maire de Saint Pierre-de-la-Réunion et premier président de l'Académie de la Réunion. Il voyait dans le découpage de la cote sud une œuvre des hommes, sans laquelle les premiers arrivants européens n'auraient jamais trouvé l'île accueillante. Ses écrits était publiés dans la revue des colonies et étaient quand même signés de la main d'un grand érudit à l'adresse de ses pairs avec un aplomb qui ne laissait aucun doute sur la véracité de ses théories. 
+
+
+![Couverture su livre avec une carte du monde style parchemin](Les-Revelations-du-Grand-Ocean.jpg){.left} Tous ces écrits de 1896 à 1898 ont été regroupés dans un ouvrage posthume en deux tomes : **Les révélations du Grand Océan** qui est paru en 1927, toujours en vente.<br/>
+
+#### Les révélations du Grand Océan
+novembre 2020 - 426 pages
+*Diffusion Traditionnelles* éditeur
+{% fnac "Jules-Hermann", "https://www.fnac.com/a9718901/Jules-Hermann-Les-Revelations-du-Grand-Ocean" %}
+
+
+> L’île tout entière «a reçu, comme mont sacré, l'hommage d'une humanité qui a entendu employer toute sa force et sa puissance à marquer et élever sa pensée vers les Cieux» (Les révélations du Grand Océan, t. II, p. 129 et 178).{.clear}
+
+Jules Hermann se base sur les travaux de <b>Philip Lutley Sclater</b>, un Anglais qui émet l'hypothèse d'un continent unifié pour expliquer les similitude de faune entre l'Afrique, Madagascar l'Inde et l'Australie. Il invente le mot <i>Lemuria</i> qui sera cité par Hermann, seul en son temps à le faire. Ce n'est que bien plus tard qu'<b>Helena Blavatsky</b>, une écrivaine russo-américaine reprend ce terme pour parler du continent de la troisième race de l'humanité nommée <i>Taro</i> dans sa <i>Doctrine Secrète</i>, un ouvrage ésotérique paru en 1888.
+
+#### Doctrine Secrète - T.1 Cosmogénèse ![couverture du Tome 1 de Doctrine secrète réédité en 2000](Doctrine-Secrete-T-1-Cosmogenese.jpg){.left}
+août 2000  - 295 pages
+*Adyar* éditeur
+(5 autres tomes disponibles chez le même éditeur)
+{% fnac "Doctrine-Secrete", "https://www.fnac.com/a59666/Helena-Petrovna-Blavatsky-Doctrine-Secrete-T-1-Cosmogenese" %}
+
+
+Depuis la parution des <i>révélations du Grand Océan</i> en 1927, D'autres ouvrages ont décrit ce continent perdu en reprennent ce nom de Lémurie.{.clear}
+
+### À Maurice
+<b>Malcom de Chazal</b> est un peintre et écrivain Mauricien génial-atypique et va donner une crédibilité à ce mythe dans ces écrits surréalistes et au travers de ses diverses interventions dans la presse ou dans la rédaction de préfaces.
+
+C'est un autre écrivain Mauricien, <b>Robert-Edward Hart</b> qui lui fera découvrir ce continent. Robert-Edward Hart, lui-même lecteur de Jules Hermann reprendra le thème des sculptures de géants sur les montagnes dans le <i>Cycle Pierre Flandre</i>. Chazal a donc pris le relai de Hart en décrivant les personnages mythiques sculptés dans les falaises notamment dans le roman <i>Petrusmok</i>. Chazal impressionnait par son talent et a influencé nombre d'auteurs autour de lui. Il a aussi élargi le mythe de la Lémurie en décrivant ses habitants : les Lémuriens. Pour lui, <a href="/decouverte/mots-creoles/creole/">le créole</a> est une langue qui vient aussi du lémurien. Le lémurien est aussi la langue d'origine qui a donné le vieux français galo tout comme le malgache.
+<!--
+Malcom de Chazal :
+
+Marius-Ary Leblond :
+
+http://www.ac-reunion.fr/pedagogie/lyvergerp/Culture/roman_reun.htm
+-->
+
+## La Lémurie aujourd'hui
+
+Contrairement au mythe de l'Atlantide ou du continent de Mu, la Lémurie n'est pas uniquement le mythe d'un age d'or. La civilisation Lémurienne est à l'origine de toute l'humanité.{.left}
+
+On sait que <a href="/decouverte/geographie/mascareignes/">les Mascareignes</a> n'étaient pas peuplées quand les Européens <a
+href="/decouverte/histoire/decouverte">les ont abordés</a>. Tous les habitants de la Réunion ou de Maurice ont des origines par delà l'océan. Et pourtant, <a href="/trop-de-livres-pour-un-seul-ete/">la littérature de l'océan Indien</a> montre ces îles accueillantes et paradisiaques, on voudrait en être originaire.
+
+> Aujourd'hui, des gens originaires du monde entier habitent à la Réunion… comme pour révéler le mythe.
+
+Les habitants des Mascareignes, <a href="/decouverte/mots-creoles/creole/">créoles</a> ou non, ont tous été déracinés de leur pays à une génération ou à une autre. Le mythe de la Lémurie donne donc des racines communes aux habitants de cette île où personne n'a les mêmes racines mais où vit un seul peuple multiculturel.

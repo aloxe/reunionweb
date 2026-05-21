@@ -4,9 +4,8 @@ description: La prière pour la paix du groupe de dialogue Inter-religieux de la
 image: reunion-paix.png
 keywords:
 ---
-<p class="chapo">
-La prière pour la paix est une prière issue du groupe de dialogue Inter-religieux de la Réunion et qui a été publiée en décembre 2002 alors que de nombreux gouvernements agitaient la menace d'une guerre qui s'est concrétisé par l'invasion de l'Irak en 2003. Cette pière était un message politique pour un moment critique ou la guerre est devenue l'option préférée de certains puissants en manque de légitimité. Néamoins, cette pière s'adresse directement à Dieu pour pouvoir convenir à toute religion et se ne se focalise pas sur un conflit en particulier ce qui lui permet d'être encore valide aujourd'hui.
-</p>
+
+La prière pour la paix est une prière issue du groupe de dialogue Inter-religieux de la Réunion et qui a été publiée en décembre 2002 alors que de nombreux gouvernements agitaient la menace d'une guerre qui s'est concrétisé par l'invasion de l'Irak en 2003. Cette pière était un message politique pour un moment critique ou la guerre est devenue l'option préférée de certains puissants en manque de légitimité. Néamoins, cette pière s'adresse directement à Dieu pour pouvoir convenir à toute religion et se ne se focalise pas sur un conflit en particulier ce qui lui permet d'être encore valide aujourd'hui.{.chapo}
 
 <p class="citation lettrine">Seigneur Dieu,</p>
 <p class="citation lettrine">Créateur Maître de tous les univers,</p>
@@ -23,10 +22,9 @@ La prière pour la paix est une prière issue du groupe de dialogue Inter-religi
 <p class="citation lettrine">Nous te demandons cela pour la Réunion et pour le monde entier.</p>
 <p class="citation lettrine">Maintenant et pour les siècles sans fin.</p>
 
-<h3><i>Groupe de dialogue Inter-religieux</i></h3>
-<hr>
-<img src="reunion-paix.png" width="220" height="145" alt="Logo
-Réunion Paix">
+### *Groupe de dialogue Inter-religieux*
+
+!["Logo Réunion Paix: colombe colorée qui traverse l'île dans un espace négatif](reunion-paix.png){.center}
 <p class="note">
 <a href="/dialogue-inter-religieux-a-la-reunion/">Article de novembre 2003 sur le dialogue inter-religieux</a>
 <br/><br/>

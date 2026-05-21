@@ -1,0 +1,46 @@
+---
+title: Le créole
+description: Créole, voilà un mot qui a de nombreux sens. À la Réunion, le réunionnais est la langue créole du pays.
+image: creole-de-poche.jpg
+keywords: langue, créole, pidgin, mélange, patois, dialecte
+---
+
+<b>Créole</b>, voilà un mot qui a de nombreux sens.{.chapo}
+
+  Le nom Créole peut aussi bien désigner une personne qu'une langue. En général les personnes désignées par ce sobriquet parlent aussi la langue du même nom. Cela pourrait faciliter les choses...
+
+À l'origine, au XVIIe siècle, ce mot vient du portugais crioulo qui voulait dire « serviteur nourri dans la maison » et désignait ces esclaves métis étaant serviteurs dans les maisons au Brésil. Le terme a ensuite évolué pour désigner différentes personnes en rapport avec les migrations coloniales aux Amériques et dans les caraïbes. En France, <i>Créole</i> pouvait désigner une personne européenne, métis ou non, née dans les colonies ; par exemple, l'impératrice Joséphine était créole. À Maurice par contre le terme était plus utilisé pour désigner les noirs
+
+## Un mélange
+
+Créole veut dire mélange et donc le créole est un métis de sang ou de culture. Il a cette particularité d'être un mélange de <i>races</i> si prolixe qu'on pourrait dire que c'est une <i>race</i> à part entière. Il y a des Créoles aux Antilles, aux Caraïbes, en Amérique du sud, aux <a href="/decouverte/geographie/mascareignes/">Mascareignes</a>, aux Seychelles, en Indonésie, aux États-Unis… Chaque créole de chaque pays est spécifique à ce pays tout comme leur langues. A part se mélange, il n'y a pas de spécificité créole. C'est pourquoi pour les langues créoles, il est plus juste de parler de catégorie ou de famille de langues car chaque langue créole a ses origines, son histoire et sa grammaire propre.
+
+Ainsi les Réunionnais parlent réunionnais, les Haïtiens parlent haïtiens et même si les deux créoles ont des origines communes comme le français, les deux langues ont évolué différement et répondent à des règles différentes.
+
+La plupart des langues créoles ont pour base une langue européenne, principalement le français, l'anglais, l'espagnol mais il existe aussi des créoles ayant pour base l'arabe, le malais ou certaines langues africaines. Partout dans le monde, les gens ont voyagé et ont eu besoin de communiquer.
+
+## Le créole réunionnais
+
+En ce qui concerne le réunionnais (la langue), les avis sont partagés pour ce qui concerne le métissage. Certains parlent d'un vieux français transformé et simplifié mais sans apport d'autres langues. Cette théorie ancienne et largement réfutée était surtout retenue par une société qui voulait signifier la préhéminence de la culture française.
+
+Aujourd'hui, on explique que le réunionnais est un mélange de français qui est sa base, de dialectes régionnaux français comme le normand mais aissi de langues africaines ou indiennes comme le malgache et le tamoul, bref, que le réunionnais est une langue créole !
+
+La langue véhiculaire de l'île de la Réunion reste le français. Le créole réunionnais, né de la tradition orale a évolué comme langue maternelle au cours des générations et répond aujourd'hui à des régles de grammaires et d'orthographe bien définies mais reste principalement une langue vernaculaire et domestique. Il aime bien pointer le bout de son nez dans les arts et dans les nouvelles
+
+## Dictionaire français - kréol
+![Le Grimaud Petit dictionnaire bilingue Kréol rényoné - Français avec carte de la réunion sur fond noir](le-Grimaud.jpg){.left}
+### Le Grimaud
+Petit dictionnaire bilingue 
+Kréol rényoné ↔ Français <br>
+442 pages
+  {% fnac "Grimaud", "https://www.awin1.com/cread.php?awinmid=12665&awinaffid=297165&clickref=Grimaud&ued=https%3A%2F%2Fwww.fnac.com%2Fa10500711%2FRichard-Ferrando-Le-Grimaud" %}
+
+<div class="clear"></div>
+<!--<p>
+  <img class="left" alt="Créole de poche" src="creole-de-poche.jpg">
+  Editeur Assimil<br>
+  Collection Langue De Poche<br>
+  Format 11cm x 15cm<br>
+  {% fnac "creole", "https://livre.fnac.com/a2989799/Gillette-Staudacher-Valliamee-Le-creole-reunionnais-de-poche" %}
+</p>-->
+

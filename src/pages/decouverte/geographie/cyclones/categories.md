@@ -5,10 +5,8 @@ description: Pour donner une idée sur la violence d’un phénomène météo, l
 image: cyclone-dina.png
 keywords: cyclone, tempête, ouragan, typhon, dépression, tropicale
 ---
-<h2>Classification des cyclones</h2>
-<p>
+## Classification des cyclones
 Les phénomènes météorologiques intenses qui se produisent dans les tropiques sont plus ou moins violents et pour comparer ce qui est comparable, on a recours à des échelles. Un exemple souvent retenu est l'échelle de Saffir-Simpson qui classe les cyclones par catégories allant de 1 a 5. Cette référence est maintenant utilisée pour les ouragans se produisant sur l’océan Atlantique et l’océan Pacifique.
-</p>
 
 <table width="30%" cellspacing="0" cellpadding="5" border="1" style="margin: 0 auto">
   <tbody>
@@ -21,7 +19,9 @@ Les phénomènes météorologiques intenses qui se produisent dans les tropiques
   </th> -->
 </tr>
   <tr>
-  <th style="background-color:#FFFFCC; text-align:center;"><img alt="Dépression tropicale" src="cyclone-1.png"  width="60" height="60">
+  <th style="background-color:#FFFFCC; text-align:center;">
+
+![Dépression tropicale](cyclone-1.png)
   </th>
   <td style="white-space:nowrap;">Vents de 118 à 153 km/h
   </td>
@@ -31,28 +31,36 @@ Les phénomènes météorologiques intenses qui se produisent dans les tropiques
 Dommages limités aux maisons mobiles, arrach</td> -->
 </tr>
   <tr>
-  <th style="background-color:#FFE775; text-align:center;"><img alt="Dépression tropicale" src="cyclone-2.png" decoding="async" width="60" height="60">
+  <th style="background-color:#FFE775; text-align:center;">
+
+![Dépression tropicale 2](cyclone-2.png)
   </th>
   <td style="white-space:nowrap;">Vents de 154 à 177 km/h
   </td>
   <td style="white-space:nowrap;">Onde de 1.8 à 2,7 m
   </td></tr>
   <tr>
-  <th style="background-color:#FFC140; text-align:center;"><img alt="Dépression tropicale" src="cyclone-3.png" decoding="async" width="60" height="60">
+  <th style="background-color:#FFC140; text-align:center;">
+  
+  ![Dépression tropicale 3](cyclone-3.png)
   </th>
   <td style="white-space:nowrap;">Vents de 178 à 209 km/h
   </td>
   <td style="white-space:nowrap;">Onde de 2.8 à 3,9 m
   </td></tr>
   <tr>
-  <th style="background-color:#FF8F20; text-align:center;"><img alt="Dépression tropicale" src="cyclone-4.png" decoding="async" width="60" height="60">
+  <th style="background-color:#FF8F20; text-align:center;">
+  
+    ![Dépression tropicale 4](cyclone-4.png)
   </th>
   <td style="white-space:nowrap;">Vents de 210 à 250 km/h
   </td>
   <td style="white-space:nowrap;">Onde de 4.0 à 5,5 m
   </td></tr>
   <tr>
-  <th style="background-color:#FF6060; text-align:center;"><img alt="Dépression tropicale" src="cyclone-5.png" decoding="async" width="60" height="60">
+  <th style="background-color:#FF6060; text-align:center;">
+
+  ![Dépression tropicale 5](cyclone-5.png)
   </th>
   <td style="white-space:nowrap;">Vents supérieurs à 250 km/h
   </td>
@@ -64,7 +72,7 @@ Dommages limités aux maisons mobiles, arrach</td> -->
 Il est aussi possible d’utiliser l’échelle de Beaufort qui classifie les vents selon leur vitesse pendant au moins 10 minutes. C’est cette référence qui est retenue par les organismes météorologiques nationaux pour nommer les cyclones selon leur intensité. Comme l'échelle de Saffir-Simpson n'est pas utilisé dans l’océan Indien, nous allons énumérer les termes utilisés dans l’océan Indien sud-ouest tels qu’ils ont été établis par Météo-France.
 </p>
 
-<h2>Les catégories de cyclones à la Réunion</h2>
+## Les catégories de cyclones à la Réunion
 <p>Ci-dessous la liste des désignations des systèmes tropicaux en fonction de la force continue des vents sur une période de 10 minutes. Les noms utilisés dans les bulletins météo suivent cette nomenclature et indiquent ainsi la violence de chaque phénomène rapporté. Attention tout de même, les rafales peuvent dépasser de 50 % la force des vents moyens.
 </p>
 
@@ -88,11 +96,12 @@ Il est aussi possible d’utiliser l’échelle de Beaufort qui classifie les ve
 <tr>
   <td rowspan="4">
     <br><br><br><br>
-    <img alt="Dépression tropicale" src="cyclone-1.png" width="60" height="60">
-    <img alt="Dépression tropicale" src="cyclone-2.png" width="60" height="60">
-    <img alt="Dépression tropicale" src="cyclone-3.png" width="60" height="60">
-    <img alt="Dépression tropicale" src="cyclone-4.png" width="60" height="60">
-    <img alt="Dépression tropicale" src="cyclone-5.png" width="60" height="60">
+
+    ![Dépression tropicale 1](cyclone-1.png)
+    ![Dépression tropicale 2](cyclone-2.png)
+    ![Dépression tropicale 3](cyclone-3.png)
+    ![Dépression tropicale 4](cyclone-4.png)
+    ![Dépression tropicale 5](cyclone-5.png)
   </td>
   <td>entre 89 et 117 km/h</td>
   <td><h3>Forte tempête tropicale</h3></td>
@@ -111,7 +120,7 @@ Il est aussi possible d’utiliser l’échelle de Beaufort qui classifie les ve
 </tr></tbody>
 </table>
 
-<h2>En savoir plus sur les cyclones</h2>
+## En savoir plus sur les cyclones
 <ul>
   <!-- <li><a href="/decouverte/geographie/cyclones/categories/">Les différentes catégories de cyclones</a></li> -->
   <li><a href="/decouverte/geographie/cyclones/alertes-cycloniques/">Les alertes cycloniques</a></li>

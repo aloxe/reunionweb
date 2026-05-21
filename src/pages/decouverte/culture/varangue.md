@@ -5,25 +5,21 @@ image: tableau-Leona-sous-varangue-creole.jpg
 keywords: jardin, case, ombre, créole, lambroquin, terrasse, véranda
 ---
 
-<p>
-<i>Que de douceurs sur cette île!</i>
-<br/><br/>
-<div style="float:right;" class="cadrimage legende">
-    <img
-    src="tableau-Leona-sous-varangue-creole.jpg"
-    width="200" height="262" alt="Léona triant le riz tableau de Emmanuelle Peters : une créole sous la varangue d'une case">
-    <br/><a
-    href="http://emmapeters.canalblog.com/archives/2005/12/05/1075796.html"
-    class="ext">Léona triant le riz<br/>
-    de Emmanuelle Peters</a>
+> Que de douceurs sur cette île!</i>
+
+<div style="float:right;" class="cadrimage">
+
+  ![Léona triant le riz tableau de Emmanuelle Peters : une créole sous la varangue d'une case](tableau-Leona-sous-varangue-creole.jpg)
+  <a href="http://emmapeters.canalblog.com/archives/2005/12/05/1075796.html" class="ext legende">Léona triant le riz
+  de Emmanuelle Peters</a>
 </div>
-<p>
+
 <b>La varangue</b> est cet élément indispensable de la <b>case créole</b>, cette espèce de terrasse avancée, devant l'entrée de la maison, souvent décorée <a href="/decouverte/culture/lambrequins/">de lambrequins</a> à la fois couverte, à l'abri des intempéries et ouverte sur le jardin et sa végétation souvent verdoyante.
-<br/><br/>
+
 C'est un endroit ni dans la maison ni tout fait dehors qui offre à la fois la chaleur d'un logis et le grand air de l'extérieur. Dans la varangue, on peut y faire quelques travaux quotidiens à l'air libre ou bien y passer les meilleurs moments de farniente dans un fauteuil créole en rotin, regardant à l'ombre, passer les chaudes des après-midi d'hiver.
-<br/><br/>
+
 La varangue est une pièce part entière que les gens installent volontié dans leur maisons neuves mais dont la tradition remontent surement aux villa coloniales des premiers habitants. Les plus jolis exemplaires peuvent être admirés depuis les jardins des villas de la rue de Paris Saint-Denis. Si cette spécialité architecturale est typiquement coloniale, il est possible qu'elle viennent d'Asie ou d'Afrique ou de n'importe quel endroit où il fait bon d'être un peu l'ombre sous le soleil.
-</p>
+
 <p class="center legende cadrimage">
   {% Image page, "Saint-Denis_Villa-General.jpg", "Villa Général à Saint-Denis" %}<br>
   Saint-Denis: Villa du Général par <a href="https://commons.wikimedia.org/w/index.php?title=File:ReU_StDenis_VillaGeneral.jpg&action=view" class="ext">Bbb</a>
@@ -32,10 +28,9 @@ La varangue est une pièce part entière que les gens installent volontié dans 
 TODO décaler vers un article Blogs
 ajouter photos de https://commons.wikimedia.org/wiki/Category:Lambrequins_in_R%C3%A9union
 <p><i>Decouvrez d'autres photos de varangue sur <a href="http://maelduin.over-blog.fr/article-20630375.html">le blog du Grillon</a></i> -->
-<h2>Varangue ou véranda ?</h2>
-<p>
+
+## Varangue ou véranda ?
+
 La varangue peut être close de simples panneaux ou de porte-fenêtres. Rien ne s'oppose alors à ce qu'on l'appelle veranda comme c'est souvent le cas en France hexagonale. C'est en tout cas le mot varangue qui est utilisé à la Réunion, une riche histoire qui justifie ce vocabulaire différent.
-</p>
-<p>
+
 Le mot <b>veranda</b> vient du portugais varanda passée à l'anglais puis devenu <i>veranda</i>, les Francais ont adopté le terme alors que les Réunionnais ont gardé le mot varangue qui est à l'origine un terme de marine. En effet, la <i>varange</i> est, sur un bateau, la pièce de bois qui relie les deux parties de la coque d'un bateau avec la quille.
-</p>

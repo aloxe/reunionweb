@@ -481,7 +481,7 @@ main p.retrait {
   border-left: 4px solid #006fd5;
 }
 
-main p.citation {
+main p.citation, main blockquote p {
   font-family: Devroye, serif;
   font-size: 17px;
   font-weight: 500;
