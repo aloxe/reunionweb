@@ -357,7 +357,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "La Journal de L’île de la Réunion. Informations quotidiennes",
-      "article": ["200205", "200409", "200504", "200605"]
+      "article": ["200205", "200409", "200504", "200605", "200709"]
   },
   {
       "id": 41,
@@ -829,12 +829,12 @@
   },
   {
       "id": 94,
-      "title": "Temoignages",
+      "title": "Témoignages",
       "url": "http://www.temoignages.re/",
       "parent": "actualites",
       "importance": 0,
       "description": "Le quotidien du PCR, archives de tous les articles depuis 2004.",
-      "article": ["200703", "200805", "201404"]
+      "article": ["200703", "200805", "201404", "200709"]
   },
   {
       "id": 95,
@@ -1698,7 +1698,7 @@
       "parent": "blogs",
       "importance": 0,
       "description": "Lionel Suz parle de lui et de ses activités sur son blog.",
-      "article": ["200707"]
+      "article": ["200703", "200707"]
   },
   {
       "id": 217,
