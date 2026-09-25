@@ -2,7 +2,6 @@ const path = require("path");
 const format = require('date-fns/format');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 const { minify: minify_html } = require("html-minifier-terser");
@@ -21,9 +20,22 @@ const Images = {
   SIZES: '(max-width: 1200px) 70vw, 1200px' // size of image rendered
 }
 
+module.exports = async (eleventyConfig) => {
 
-module.exports = (eleventyConfig) => {
-  // page 404 with --serve
+  const { default: Image, eleventyImageTransformPlugin } = await import("@11ty/eleventy-img");
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: Images.FORMATS,
+    widths: Images.WIDTHS,
+    htmlOptions: {
+      imgAttributes: {
+        decoding: "async",
+        sizes: Images.SIZES,
+      }
+    }
+  });
+
+// page 404 with --serve
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
       ready: function(err, bs) {
@@ -57,11 +69,15 @@ module.exports = (eleventyConfig) => {
   mdLib.renderer.rules.image = (tokens, idx, options, env) => {
 
     if (Object.keys(env).length === 0) {
-      return ""; //"<!--"+ tokens[idx].attrGet('src') + "-->";
+      return "";
     }
 
     const token = tokens[idx]
     const imgPath = token.attrGet('src')
+    // const isGlobal = imgPath.slice(0, env.meta.public_folder.length) === env.meta.public_folder;
+    // const imgSrc = isGlobal
+    //   ? "/" + env.meta.media_folder + imgPath.slice(env.meta.public_folder.length)
+    //   : imgPath;
     const imgSrc = imgPath.slice(0,1) === "/" 
         ? env.eleventy.directories.input.slice(0, -1) + imgPath
         : env.page.inputPath.substring(0, env.page.inputPath.lastIndexOf('/')+1) + imgPath
@@ -69,7 +85,8 @@ module.exports = (eleventyConfig) => {
     const imgAlt = token.content
     const imgTitle = token.attrGet('title') ?? ''
     const className = token.attrGet('class')
-    
+    const isLazy = className?.includes('lazy');
+
     if (!env.page.outputPath) {
       // comments don't have output path for images we create it with the comment folder name
       const output = env.page.inputPath.split("/");
@@ -77,24 +94,25 @@ module.exports = (eleventyConfig) => {
     }
     // we force gif format whet it's a gif (TODO: but this doesn't maintain animation)
     const ImgOptions = getImgOptions(env.page, imgSrc, imgAlt, className, Images.WIDTHS, type === "gif" ? ["gif"] : Images.FORMATS, Images.SIZES);
-    const htmlOptions = {
+    const attrs = stringifyAttributes({
       alt: imgAlt,
       class: className,
       sizes: Images.SIZES,
       loading: className?.includes('lazy') ? 'lazy' : undefined,
       decoding: 'async',
       title: imgTitle
-    }
+    });
     Image(imgSrc, ImgOptions)
-    const metadata = Image.statsSync(imgSrc, ImgOptions)
-    const picture = Image.generateHTML(metadata, htmlOptions)
+    // const metadata = Image.statsSync(imgSrc, ImgOptions)
+    // const picture = Image.generateHTML(metadata, htmlOptions)
+    return `<img ${attrs}>`;
 
     // DEBUG IMAGES WITH:
     // console.log("metadata", metadata);
     // console.log("ImgOptions", ImgOptions);
     // console.log("picture", picture);
     // console.log("::::::::::::: ::::::::::::");
-    return picture
+    // return picture
   }
 
   eleventyConfig.setLibrary('md', mdLib)
@@ -161,10 +179,11 @@ module.exports = (eleventyConfig) => {
       loading: loading || "lazy",
       decoding: "async",
     }
-
+    Image(srcImage, options)
+    return `<img ${imageAttributes}>`;
     // get metadata
-    let metadata = Image.statsSync(srcImage, options)  
-    return Image.generateHTML(metadata, imageAttributes)
+    // let metadata = Image.statsSync(srcImage, options)  
+    // return Image.generateHTML(metadata, imageAttributes)
   });
 
   // images thumbnails of pages
@@ -210,8 +229,10 @@ module.exports = (eleventyConfig) => {
     };
 
     // get metadata even if the images are not fully generated yet
-    let metadata = Image.statsSync(srcImage, options);
-    return Image.generateHTML(metadata, imageAttributes);
+    // let metadata = Image.statsSync(srcImage, options);
+    // return Image.generateHTML(metadata, imageAttributes);
+    Image(srcImage, options)
+    return `<img ${imageAttributes}>`;
   });
 
   // images thumbnails for gouzou
@@ -250,8 +271,10 @@ module.exports = (eleventyConfig) => {
       onclick:"rewrite_url('{{gouzou.title}}')"
     };
     // get metadata even if the images are not fully generated yet
-    let metadata = Image.statsSync(srcImage, options);
-    return Image.generateHTML(metadata, imageAttributes);
+    // let metadata = Image.statsSync(srcImage, options);
+    // return Image.generateHTML(metadata, imageAttributes);
+    Image(srcImage, options)
+    return `<img ${imageAttributes}>`;
   });
 
   eleventyConfig.addNunjucksAsyncShortcode("getOGImageUri", async (page, src) => {
@@ -412,6 +435,15 @@ module.exports = (eleventyConfig) => {
 };
 
 // helpers
+
+const stringifyAttributes = (attributeMap) => {
+  return Object.entries(attributeMap)
+    .map(([attribute, value]) => {
+      if (typeof value === 'undefined') return '';
+      return `${attribute}="${value}"`;
+    })
+    .join(' ');
+};
 
 const getImgOptions = (page, src, alt, className, widths, formats, sizes) => {
   if (!page.outputPath) return;
