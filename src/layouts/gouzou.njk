@@ -29,7 +29,7 @@
             <span class="cssbox_full">
                 <h2>{{ gouzou.title }}</h2>
                 <span>
-                    <img src="/img/gouzou/{{ gouzou.file }}" alt="{{ gouzou.title }}" /><br>
+                    <img src="/img/gouzou/{{ gouzou.file }}" alt="{{ gouzou.title }}" eleventy:ignore /><br>
                     {% if gouzou.license %}{{ gouzou.license }} {% endif %}
                     {% if gouzou.author %}
                         {% if gouzou.url %}<span onclick="location='{{ gouzou.url }}'" class="link">{% endif %}
