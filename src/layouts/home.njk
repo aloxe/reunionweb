@@ -1,5 +1,3 @@
-{% from 'macros/snipet.njk' import snipet with context %}
-
 {% extends 'base.njk' %}
 
 {% block main %}
@@ -38,9 +36,10 @@
     <h2><a href="/decouverte/">Découvrez l'île de la Réunion</a></h2>
 
     <div class="twocolumns">
+
     {% for post in collections.all %}
-        {% if post.url.split("/")[1] === "decouverte" and post.url.split("/")[2] and not post.url.split("/")[3] %}
-          {{ snipet(post) }}
+        {% ifAsync post.url.split("/")[1] === "decouverte" and post.url.split("/")[2] and not post.url.split("/")[3] %}
+          {% include "snipet.njk" %}
         {% endif %}
     {% endfor %}
     </div>

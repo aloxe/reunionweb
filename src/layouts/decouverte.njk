@@ -1,5 +1,3 @@
-{% from 'macros/snipet.njk' import snipet with context %}
-
 {% extends 'base.njk' %}
 
     {%- block main %}
@@ -14,8 +12,8 @@
           {% if post.url.split("/")[1] === "decouverte"
           and page.url.split("/")[section - 2] === post.url.split("/")[section - 2]
           and post.url.split("/")[section - 1] and not post.url.split("/")[section] %}
-            {% if not post.data.unlist %}
-              {{ snipet(post) }}
+            {% ifAsync not post.data.unlist %}
+              {% include "snipet.njk" %}
             {% endif %}
 
             {% for subpost in collections.all %}
