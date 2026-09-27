@@ -1,0 +1,23 @@
+{% if post.slug %}
+    {% set snipeturl = "/"+categoryUrl(post.slug) | trim %}
+{% else %}
+    {% set snipeturl = post.url %}
+{% endif %}
+<div class="snipet">
+  <h2><a href="{{ snipeturl }}">{{ post.title or post.data.short or post.data.title }}</a></h2>
+  <p>
+    {% if post.data.image %}
+      <a href="{{ snipeturl }} "class="thumb"><span>{% thumb post, 120 %}</span></a>
+    {% endif %}
+    {% if page.url === "/" %}
+      {% if post.data.homedesc or post.data.description %}
+        <a href="{{ snipeturl }}">{{ post.data.homedesc or post.data.description }}</a>
+      {% endif %}
+    {% else %}
+      {% if post.description or post.data.description %}
+        <a href="{{ snipeturl }}">{{ post.description or post.data.description }}</a>
+      {% endif %}
+    {% endif %}
+  </p>
+</div>
+

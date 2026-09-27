@@ -2,7 +2,6 @@ const path = require("path");
 const format = require('date-fns/format');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
-const Image = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 const { minify: minify_html } = require("html-minifier-terser");
@@ -21,8 +20,23 @@ const Images = {
   SIZES: '(max-width: 1200px) 70vw, 1200px' // size of image rendered
 }
 
+module.exports = async (eleventyConfig) => {
 
-module.exports = (eleventyConfig) => {
+  const { default: Image, eleventyImageTransformPlugin } = await import("@11ty/eleventy-img");
+
+  // Handles ALL <img> tags in the final rendered HTML output
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: "html",
+    formats: Images.FORMATS,
+    widths: Images.WIDTHS,
+    htmlOptions: {
+      imgAttributes: {
+        decoding: "async",
+        sizes: Images.SIZES,
+      }
+    }
+  });
+
   // page 404 with --serve
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
@@ -53,54 +67,28 @@ module.exports = (eleventyConfig) => {
   }
   const mdLib = mdit(mditOptions).use(mditAttrs)
 
-  // generate responsive images from Markdown
-  mdLib.renderer.rules.image = (tokens, idx, options, env) => {
-
+  mdLib.renderer.rules.image = (tokens, idx, options, env, self) => {
     if (Object.keys(env).length === 0) {
-      return ""; //"<!--"+ tokens[idx].attrGet('src') + "-->";
+      return "";
     }
 
-    const token = tokens[idx]
-    const imgPath = token.attrGet('src')
-    const imgSrc = imgPath.slice(0,1) === "/" 
-        ? env.eleventy.directories.input.slice(0, -1) + imgPath
-        : env.page.inputPath.substring(0, env.page.inputPath.lastIndexOf('/')+1) + imgPath
-    const type = imgSrc.slice(-3)
-    const imgAlt = token.content
-    const imgTitle = token.attrGet('title') ?? ''
-    const className = token.attrGet('class')
-    
-    if (!env.page.outputPath) {
-      // comments don't have output path for images we create it with the comment folder name
-      const output = env.page.inputPath.split("/");
-      env.page.outputPath = env.eleventy.directories.output + output[output.length-2] + "/index.html"
-    }
-    // we force gif format whet it's a gif (TODO: but this doesn't maintain animation)
-    const ImgOptions = getImgOptions(env.page, imgSrc, imgAlt, className, Images.WIDTHS, type === "gif" ? ["gif"] : Images.FORMATS, Images.SIZES);
-    const htmlOptions = {
-      alt: imgAlt,
-      class: className,
-      sizes: Images.SIZES,
-      loading: className?.includes('lazy') ? 'lazy' : undefined,
-      decoding: 'async',
-      title: imgTitle
-    }
-    Image(imgSrc, ImgOptions)
-    const metadata = Image.statsSync(imgSrc, ImgOptions)
-    const picture = Image.generateHTML(metadata, htmlOptions)
+    const token = tokens[idx];
+    const className = token.attrGet('class');
 
-    // DEBUG IMAGES WITH:
-    // console.log("metadata", metadata);
-    // console.log("ImgOptions", ImgOptions);
-    // console.log("picture", picture);
-    // console.log("::::::::::::: ::::::::::::");
-    return picture
+    token.attrSet('decoding', 'async');
+    if (className?.includes('lazy')) {
+      token.attrSet('loading', 'lazy');
+    }
+
+    // render a normal <img> tag that will be handled by eleventyImageTransformPlugin
+    return self.renderToken(tokens, idx, options);
   }
 
   eleventyConfig.setLibrary('md', mdLib)
 
   // content filter for search
   eleventyConfig.addFilter("search", searchFilter);
+
   // collection for search
   eleventyConfig.addCollection("indexable", collection => {
     const collectionDecouverte = collection.getFilteredByGlob("./src/pages/decouverte/**/*.html");
@@ -114,6 +102,7 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginRss);
 
   // Short codes
+
   // Get the current year as {% year %}
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
@@ -152,25 +141,22 @@ module.exports = (eleventyConfig) => {
       }
     }
 
-    // generate images
-    Image(srcImage, options)
-
     let imageAttributes = {
       alt,
       sizes: '(max-width: 764px) 70vw, 764px',
       loading: loading || "lazy",
       decoding: "async",
+      "eleventy:ignore": true // don't use eleventyImageTransformPlugin
     }
 
-    // get metadata
-    let metadata = Image.statsSync(srcImage, options)  
+    let metadata = await Image(srcImage, options)
     return Image.generateHTML(metadata, imageAttributes)
   });
 
   // images thumbnails of pages
-  eleventyConfig.addShortcode("thumb", (page, size) => {
+  eleventyConfig.addShortcode("thumb", async (page, size) => {
     if (! page?.data?.image) return "";
-    const alt = page.data.imagealt || page.data.title || illustration;
+    const alt = page.data.imagealt || page.data.title || "illustration";
     const src = page.data.image;
 
     let inputFolder = page.inputPath.split("/")
@@ -199,32 +185,39 @@ module.exports = (eleventyConfig) => {
       }
     };
 
-    // generate images
-    Image(srcImage, options)
-
     let imageAttributes = {
       alt,
       loading: "lazy",
       sizes: size+"px",
       decoding: "async",
+      "eleventy:ignore": true // don't use eleventyImageTransformPlugin
     };
 
-    // get metadata even if the images are not fully generated yet
-    let metadata = Image.statsSync(srcImage, options);
+console.log("--------thumb----------------------------------");
+console.log("page data image", page?.data?.image);
+// console.log("inputfolder", inputFolder);
+// console.log("urlPath", urlPath);
+// console.log(imageAttributes);
+console.log(srcImage);
+// console.log(Image.generateHTML(metadata, imageAttributes));
+
+console.log("-----------------------------------thumb-------");
+
+
+
+    let metadata = await Image(srcImage, options);
     return Image.generateHTML(metadata, imageAttributes);
   });
 
   // images thumbnails for gouzou
-  eleventyConfig.addShortcode("gzthumb", (filename, alt) => {
+  eleventyConfig.addShortcode("gzthumb", async (filename, alt) => {
     if (!filename) return "";
     const THUMB = 130
-    const FULL = 650; // should we resize also big images (TODO)
     const src = filename;
     const inputFolder = "./src/assets/img/gouzou/";
     const srcImage = inputFolder+src;
     const outputFolder = "./_site/img/gouzou/thumb/";
     const urlPath = "/img/gouzou/thumb/";
-
 
     let options = {
       widths: [THUMB],
@@ -238,23 +231,21 @@ module.exports = (eleventyConfig) => {
       }
     };
 
-    // generate images
-    Image(srcImage, options)
-
     let imageAttributes = {
       alt,
       sizes: THUMB+"px",
       loading: "lazy",
       decoding: "async",
       class: "cssbox_thumb",
+      "eleventy:ignore": true, // don't use eleventyImageTransformPlugin
       onclick:"rewrite_url('{{gouzou.title}}')"
     };
-    // get metadata even if the images are not fully generated yet
-    let metadata = Image.statsSync(srcImage, options);
+
+    let metadata = await Image(srcImage, options);
     return Image.generateHTML(metadata, imageAttributes);
   });
 
-  eleventyConfig.addNunjucksAsyncShortcode("getOGImageUri", async (page, src) => {
+  eleventyConfig.addShortcode("getOGImageUri", async (page, src) => {
     if (!src) return "/img/tete-2006.png";
 
     let inputFolder = page.inputPath.split("/")
@@ -279,9 +270,7 @@ module.exports = (eleventyConfig) => {
         return `${name}-og.${format}`;
       }
     })
-
     const data = metadata.webp[0]
-    // data.url might be /blog/hello-world/xfO_genLg4-600.jpeg
     return data.url
   })
 
@@ -334,9 +323,8 @@ module.exports = (eleventyConfig) => {
   // filter to minify css output files
   eleventyConfig.addTransform("cssmin", async function(source, output_path) {
     if(!output_path.endsWith(".css") || !IS_PROD) return source;
-
     const result = new CleanCSS({
-        level: 2
+      level: 2
     }).minify(source).styles.trim();
     console.log(`MINIFY ${output_path}`, source.length, `→`, result.length, `(${((1 - (result.length / source.length)) * 100).toFixed(2)}% reduction)`);
     return result;
@@ -344,10 +332,9 @@ module.exports = (eleventyConfig) => {
 
   // minify html output files
   eleventyConfig.addTransform("htmlmin", async function (source, output_path) {
-    
     if(output_path.endsWith("feed.xml")) {
       // remove comments from atom feed
-      const pattern = /&lt;!--([\s\S]*?)--&gt;/g;
+      const pattern = /<!--([\s\S]*?)-->/g;
       const cleanSource = source.replace(pattern, "")
       // minify
       const rssResult = await minify_html(cleanSource, {
@@ -364,7 +351,6 @@ module.exports = (eleventyConfig) => {
     }
 
     if(!output_path.endsWith(".html") || !IS_PROD) return source;
-
     const result = await minify_html(source, {
       collapseBooleanAttributes: true,
       collapseWhitespace: true,
@@ -396,47 +382,16 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy({ 'src/assets/api': '/api' });
 
   return {
-      pathPrefix: "/",
-      // pathPrefix: "/reunionweb/", // only for test
-      dir: {
-          input: 'src/pages',
-          output: '_site',
-          layouts: '../layouts',
-          includes: '../layouts',
-          data: '../data',
-      },
-      templateFormats: ['md', 'njk', 'jpg', 'gif', 'png', 'html', 'jpeg', 'webp'],
-      markdownTemplateEngine: 'njk',
-  };
-
-};
-
-// helpers
-
-const getImgOptions = (page, src, alt, className, widths, formats, sizes) => {
-  if (!page.outputPath) return;
-  let outputFolder = page.outputPath.slice(0, page.outputPath.lastIndexOf('/')+1) // remove index.html
-  
-  let urlPath = outputFolder.split("/")
-  urlPath.shift() // remove ./
-  urlPath.shift() // remove _site
-  urlPath = "/" + urlPath.join("/");
-  
-  const options = {
-    widths: widths
-      .concat(widths.map((w) => w * 2)) // generate 2x sizes
-      .filter((v, i, s) => s.indexOf(v) === i), // dedupe
-    formats: [...formats, null],
-    sharpOptions: {
-      animated: true,
+    pathPrefix: "/",
+    // pathPrefix: "/reunionweb/", // only for test
+    dir: {
+      input: 'src/pages',
+      output: '_site',
+      layouts: '../layouts',
+      includes: '../layouts',
+      data: '../data',
     },
-    outputDir: outputFolder,
-    urlPath: urlPath,
-    filenameFormat: function (id, src, width, format, options) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-      return `${name}-${width}w.${format}`;
-    }
-  }
-  return options;
-}
+    templateFormats: ['md', 'njk', 'jpg', 'gif', 'png', 'html', 'jpeg', 'webp'],
+    markdownTemplateEngine: 'njk',
+  };
+};

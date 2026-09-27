@@ -1,5 +1,5 @@
 {% from 'macros/url.njk' import categoryUrl with context %}
-{% from 'macros/snipet.njk' import snipet with context %}
+{% from 'macros/snipetliens.njk' import snipetliens with context %}
 {% from 'macros/title.njk' import getLinkTitle with context %}
 
 {% extends 'base.njk' %}
@@ -21,7 +21,7 @@
             {% if slug === "liens" %}{% else %}<h2>Sous catégorie</h2>{% endif %}
           {% endif %}
           {%- for lien in subcategories %}
-            {{ snipet(lien) }}
+            {{ snipetliens(lien) }}
           {% endfor %}
           {% if subcategories.length > 1 %}</div>{% endif %}
         {% endif %}
@@ -65,7 +65,7 @@
           {% endif %}
           {%- for aslug in assocat.associe %}
             {% set lien =  categories | getCategoryFromSlug(aslug) %}
-            {{ snipet(lien) }}
+            {{ snipetliens(lien) }}
           {% endfor %}
           {% if assocat.associe.length > 1 %}</div>{% endif %}
         {% endif %}
