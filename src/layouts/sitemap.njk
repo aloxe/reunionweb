@@ -31,14 +31,14 @@
       <priority>{{ item.data.sitemapPriority | default(0.5) }}</priority>
     </url>
     {%- endif -%}
-{%- endfor -%}
-{%- set goodcategories = categories | getCategoriesWithLiens(liens) -%}
-{%- for item in goodcategories -%}
-{%- set snipeturl = "/"+categoryUrl(item.slug) | trim %}
+  {%- endfor -%}
+  {%- set goodcategories = categories | getCategoriesWithLiens(liens) -%}
+  {%- for item in goodcategories -%}
+    {%- set snipeturl = "/"+categoryUrl(item.slug) | trim %}
     <url>
       <loc>{{ snipeturl | absoluteUrl(meta.url) }}</loc>
       <changefreq>monthly</changefreq>
       <priority>0.3</priority>
     </url>
-{%- endfor %}
+  {%- endfor %}
 </urlset>

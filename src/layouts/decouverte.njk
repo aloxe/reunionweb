@@ -5,31 +5,28 @@
         <h1>{{ title }}</h1>
         {% include "breadcrumb.njk" %}
         {{ content | safe }}
-
         {% set section = page.url.split("/").length %}
         <div class="twocolumns">
-        {% for post in collections.all %}
-          {% if post.url.split("/")[1] === "decouverte"
-          and page.url.split("/")[section - 2] === post.url.split("/")[section - 2]
-          and post.url.split("/")[section - 1] and not post.url.split("/")[section] %}
-            {% ifAsync not post.data.unlist %}
-              {% include "snipet.njk" %}
-            {% endif %}
-
-            {% for subpost in collections.all %}
-              {% if subpost.url.split("/")[1] === "decouverte"
-              and page.url.split("/")[section - 2] === subpost.url.split("/")[section - 2]
-              and subpost.url.split("/")[section - 1] === post.url.split("/")[section - 1]
-              and subpost.url.split("/")[section] %}
+          {% for post in collections.all %}
+            {% if post.url.split("/")[1] === "decouverte"
+            and page.url.split("/")[section - 2] === post.url.split("/")[section - 2]
+            and post.url.split("/")[section - 1] and not post.url.split("/")[section] %}
+              {% ifAsync not post.data.unlist %}
+                {% include "snipet.njk" %}
+              {% endif %}
+              {% for subpost in collections.all %}
+                {% if subpost.url.split("/")[1] === "decouverte"
+                and page.url.split("/")[section - 2] === subpost.url.split("/")[section - 2]
+                and subpost.url.split("/")[section - 1] === post.url.split("/")[section - 1]
+                and subpost.url.split("/")[section] %}
                   {% if not subpost.data.unlist %}
                       <p class="lientitre"><a href="{{subpost.url}}">{{subpost.data.title}}</a></p>
                   {% endif %}
-              {% endif %}
-            {% endfor %}
+                {% endif %}
+              {% endfor %}
 
-          {% endif %}
-        {% endfor %}
+            {% endif %}
+          {% endfor %}
         </div>
-
       </main>
     {% endblock %}
