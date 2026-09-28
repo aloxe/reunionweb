@@ -13,11 +13,10 @@ const NOT_FOUND_PATH = "_site/404.html";
 const IS_PROD = typeof process.env.ENVIRONMENT === "string" && process.env.ENVIRONMENT === "prod";
 
 // sizes and formats of resized images to make them responsive
-// it can be overwriten when using the "Picture" short code
 const Images = {
-  WIDTHS: [426], // WIDTHS: [426, 460, 580, 768, 1200], // sizes of generated images
-  FORMATS: ['jpeg'], // ['webp', 'jpeg'], // formats of generated images
-  SIZES: '(max-width: 1200px) 70vw, 1200px' // size of image rendered
+  WIDTHS: [380, 450, 640, 764], // sizes of generated images
+  FORMATS: ['webp'], // formats of generated images
+  SIZES: '(max-width: 764px) 70vw, 764px' // size of image rendered
 }
 
 module.exports = async (eleventyConfig) => {
@@ -130,7 +129,7 @@ module.exports = async (eleventyConfig) => {
     urlPath = "/" + urlPath.join("/");
 
     let options = {
-      widths: [380, 450, 640, 764],
+      widths: Images.WIDTHS,
       formats: ["webp"],
       urlPath: urlPath,
       outputDir: outputFolder,
@@ -143,7 +142,7 @@ module.exports = async (eleventyConfig) => {
 
     let imageAttributes = {
       alt,
-      sizes: '(max-width: 764px) 70vw, 764px',
+      sizes: Images.SIZES,
       loading: loading || "lazy",
       decoding: "async",
       "eleventy:ignore": true // don't use eleventyImageTransformPlugin
@@ -193,18 +192,6 @@ module.exports = async (eleventyConfig) => {
       "eleventy:ignore": true // don't use eleventyImageTransformPlugin
     };
 
-console.log("--------thumb----------------------------------");
-console.log("page data image", page?.data?.image);
-// console.log("inputfolder", inputFolder);
-// console.log("urlPath", urlPath);
-// console.log(imageAttributes);
-console.log(srcImage);
-// console.log(Image.generateHTML(metadata, imageAttributes));
-
-console.log("-----------------------------------thumb-------");
-
-
-
     let metadata = await Image(srcImage, options);
     return Image.generateHTML(metadata, imageAttributes);
   });
@@ -221,7 +208,7 @@ console.log("-----------------------------------thumb-------");
 
     let options = {
       widths: [THUMB],
-      formats: ["webp"],
+      formats: Images.FORMATS,
       urlPath: urlPath,
       outputDir: outputFolder,
       filenameFormat: function (id, src, width, format, options) {
