@@ -19,9 +19,11 @@ Merci à <a href="http://www.cuisinereunionnaise.com/" class="legende">Marie</a>
 
 En 2012 Le groupe <b>Tryo</b> sort un album au nom de <i>Ladilafé</i>. Dans l'album une chanson hommage à feu, leur éditrice <b>Patricia Bonnetaud</b>, fondatrice du label <b>Yelen musiques</b> qui signait le groupe et de <b>Ladilafé Productions</b>. Dans leur chanson, Ladilafé signifie « Elle l’a dit, elle l’a fait », autant que « Lady la Fée ». Les membres du groupe considèrent Patricia Bonnetaud comme une fée.
 
-Même si la chanson n'a rien à voir avec les commérages (ladilafé créole), <a name="https://www.franceinter.fr/oeuvres/ladilafe-0" class="ext">France Inter nous rapporte</a> qu'il a été initié à la Réunion en juin 2011 avant d'être enregistrés aux studios Realworld près de Bristol (Angleterre) et au studio Garage à Paris (France).
+Même si la chanson n'a rien à voir avec les commérages (ladilafé créole), il a été initié à la Réunion en juin 2011 avant d'être enregistrés aux studios Realworld près de Bristol (Angleterre) et au studio Garage à Paris (France).
 
 <!---
     TODO: ajouter ceci: 
     https://www.journal.re/societe/la-psychologie-du-ladilafe-pourquoi-on-aime-tant-les-commerages-a-la-reunion.html
+
+    https://www.franceinter.fr/oeuvres/ladilafe-0
 --->
