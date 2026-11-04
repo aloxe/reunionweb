@@ -467,6 +467,11 @@ main p.note {
   padding: 12px;
 }
 
+main p.sig {
+  margin-top: -1.5em;
+  text-align: right;
+}
+
 main p.chapo {
   font-family: Devroye, serif;
   font-size: 18px;
