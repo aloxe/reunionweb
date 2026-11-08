@@ -72,7 +72,7 @@ Sur ces ponts et viaducs, et sur tout le trajet, la voie est posée avec un soin
 
 ### Les innaugurations
 
-Les innaugurations suivent l'ouverture de chaque tronçons. La première, en présence du gouverneur **Pierre Étienne Cuinier** a lieu le 11 février 1882 pour la ligne de Saint-Denis à Saint-Benoît, suivie le lendemain de l'innauguration de la ligne de Saint-Denis à Saint-Louis. Les arrêtés d'exploitation sont publiés le 15 février pour Saint-Benoît–Saint-Louis. Il faudra néanmoins attendre le 5 juillet 1882 pour voir des trains sur l'ensemble des 126,2 kilomètres de voie jusqu'à Saint-Pierre. La ligne compte, sur tout sa longueur, **13 gares et 28 haltes** (un peu moins selon certaines sources). Au départ de Saint-Denis, le train inaugural est béni pour écarter tout accident mais le train déraillera pour son premier trajet, inaugurant du même coup la longue série d'incidents qui rythmeront l'histoire du ti train.
+Les innaugurations suivent l'ouverture de chaque tronçons. La première, en présence du gouverneur **Pierre Étienne Cuinier** a lieu le 11 février 1882 pour la ligne de Saint-Denis à Saint-Benoît, suivie le lendemain de l'innauguration de la ligne de Saint-Denis à Saint-Louis. Les arrêtés d'exploitation sont publiés le 15 février pour Saint-Benoît–Saint-Louis. Il faudra néanmoins attendre le 5 juillet 1882 pour voir des trains sur l'ensemble des 126,2 kilomètres de voie jusqu'à Saint-Pierre. Au départ de Saint-Denis, le train inaugural est béni pour écarter tout accident mais le train déraillera pour son premier trajet, inaugurant du même coup la longue série d'incidents qui rythmeront l'histoire du ti train.
 
 Le port, retardé par un banc de galets non détecté lors des sondages, est inauguré le 1er septembre 1886. Son activité ne décolera pas tout de suite parce que les armateurs préfèrent mouiller ailleurs. Les revenus du port seront donc décevantes et les recettes couvreront à peine la moitié des dépenses. La déchéance de la Compagnie du Chemin de Fer et du Port de La Réunion est prononcée par arrêté du 2 décembre 1887 et l'État en prend le contrôle dès le premier janvier suivant.
 
@@ -80,23 +80,76 @@ Le sucre et la canne circulant en masse, le port et le chemin de fer développer
 
 ## L'âge d'or du rail
 
-### Développement
+### Un progrès indiscutable
 
-Pendant un demi-siècle, le chemin de fer est sans rival. Les journaux le disent « utile », « rapide » et « bon marché » ; on se presse dans les gares et les haltes, espacées en moyenne de 6 300 mètres, pour éviter des pistes muletières impraticables en saison des pluies. Quatre trains omnibus quotidiens relaient Saint-Denis et Saint-Pierre dans chaque sens, deux entre Saint-Benoît et Saint-Paul, et un « Train-Malle » assure la correspondance avec les paquebots entre Le Port et Saint-Denis. En **1922**, plus de **8,6 millions de voyageurs-kilomètres** sont assurés, à 30 km/h de moyenne.
+Pendant un demi-siècle, le chemin de fer est sans rival. Les journaux le disent utile, rapide et bon marché. Quatre trains omnibus quotidiens relaient Saint-Denis et Saint-Pierre dans chaque sens ainsi que deux autres entre Saint-Benoît et Saint-Paul. Un « Train-Malle » assure la correspondance avec les paquebots entre Le Port et Saint-Denis.
 
-La gare principale du réseau est celle du Port, au kilomètre 58,5 : exactement le mi-parcours de la ligne. Saint-Denis, elle, est la gare administrative. Les gares deviennent des pôles d'animation locale, avec salles d'attente séparées par classe, guichets et logements de chefs de gare. La gare de Saint-Denis, inaugurée en 1882, est un élégant bâtiment de basalte aux larges auvents près du Barachois, au kilomètre 38,8. Le train, aussi surnommé « train de la canne », achemine voyageurs, cannes, sucre, rhum, charbon et courrier postal : wagons de voyageurs à banquettes de bois et wagons de marchandises se côtoient sur les quais.
+À la saison des pluie, lorque les pistes muletières sont impraticables, les voyageurs rejoignent les gares et les haltes encore plus nombreux. L'historien des chemins de fer Clive Lamming rapporte qu'en 1922, plus de 8,6 millions de voyageurs-kilomètres sont assurés, à 30 km/h de moyenne.
 
-En **1938**, il faut 12 heures pour relier Saint-Benoît à Saint-Pierre, là où il fallait deux à trois jours de cheval cinquante ans plus tôt. La mobilité des personnes est aussi celle des idées et des informations.
+La gare principale du réseau est celle du Port, au kilomètre 58,5 : exactement le mi-parcours de la ligne. Saint-Denis, elle, est la gare administrative. Les gares deviennent des pôles d'animation locale, avec salles d'attente séparées par classe, les guichets au rez-de-chaussé et les logements de chefs de gare à l'étage. La gare de Saint-Denis, inaugurée en 1882, est un élégant bâtiment de basalte aux larges auvents près du Barachois. Au total 13 gares et 28 haltes découpent le tracé du chemin de fer, espacés d'environ 6,3 km.
+
+Voici quelques photos d'époque des principales gares de la ligne.
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-de-saint-andre4.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare de Saint-André
+</p>
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-de-st-denis2.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare de Saint-Denis
+</p>
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-de-la-possession.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare de la Possession
+</p>
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-du-port5.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare du Port
+</p>
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-de-saint-paul5.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare de Saint-Paul
+</p>
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-de-saint-louis3.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare de Saint-Louis
+</p>
+
+<p class="center cadrimage legende">
+   {% Image page, "gare-de-st-pierre-b.jpg", "Photo noir et blanc d'une bâtisse et de rails" %}<br>
+Gare de Saint-Pierre, terminus sud de la ligne
+</p>
+
+Ces photos et d'autres photos lontan des gares du parcous sont visibles [sur le site Réunionnais du monde](https://www.reunionnaisdumonde.com/magazine/actualites/la-saga-des-gares-ferroviaires-de-la-reunion-photos/).
+
+Jusqu'au début du XXème sicècle, le train est symbole de progrès qui facilite des échanges. En 1938, il faut 12 heures pour relier Saint-Benoît à Saint-Pierre, là où il fallait deux à trois jours de cheval cinquante ans plus tôt. 
 
 ### Les trains spéciaux
 
-Certains convois marquent les mémoires. En **1897**, le train de la reine **Ranavalona III** de Madagascar, en exil, traverse l'île. En **1916**, c'est le tour du prince **Vinh San**, en **1926** du chef marocain **Abd el-Krim**. En **1914**, les trains de soldats embarquent près de 8 % de la population réunionnaise engagée dans le conflit.
+Certains convois marquent les mémoires par leurs passagers illustres où les moment historiques qu'ils représentent. 
 
-Et dès **1890**, le « **train des maris** » permet aux salariés de rejoindre en fin de semaine leur famille en villégiature à Saint-Gilles pendant la saison des vacances hivernales : c'est l'acte de naissance de Saint-Gilles-les-Bains comme station balnéaire.
+- En 1897, devant l'expension du mouvement de résistance Menalamba à Madagascar, le Général Gallieni décide de faire exiler la reine **Ranavalona III** de Madagascar. Arrivée au Port le 14 mars 1897, elle sera accueillie par une foule de 1 500 à 2 000 personnes, présente sur les quais et le long de la voie ferrée. Elle repartira pour Alger en février 1899.
+
+- Le prince vietnamien **Nguyễn Phúc Vĩnh**. Porté au pouvoir par les autorités coloniales françaises, régna de 1907 à 1916, jusqu'à l'échec de la révolte qu'il mena contre le Protectorat français. À la suite de quoi il sera détrôné par le gouvernement français et exilé à La Réunion. Son train l'emmènera à Saint-Denis où il refera sa vie.
+
+- En 1926, c'est au tour de **Abd El-Krim el-Khattabi** Marocain et ancien Président de la république du Rif, qui vaincu est forcé à l'exil à la Réunion par les Français prendra le train entre le Port et Saint-Denis avec sa famille. Il s'installera à Trois-Bassins où il vivra jusqu'en 1947, année de son départ pour l'Égypte.
+
+- En 1914, les trains de soldats embarquent près de 8 % de la population réunionnaise engagée dans **la première guerre mondiale**. Il rejoindrons les bataillons de tirailleurs et beaucoup laisseront leur vie sur les champs de bataille en Europe. Leur retour est compté dans [la Grippe colloniale](/la-grande-guerre-prend-la-reunion-en-grippe/).
+
+- Dès 1890, le train permet aux hommes salariés de rejoindre en fin de semaine leur famille en villégiature à Saint-Gilles pendant la saison des vacances hivernales. Ce train permettra la naissance et le développement de Saint-Gilles-les-Bains comme station balnéaire. Le train sera nommé le « **train des maris** » comme à Deauville.
 
 ### Emploi et organisation des travailleurs
 
-Le C.P.R. est le plus gros employeur de l'île : conduite, entretien des machines et des voies, dockers du port, auxiliaires de la saison de la coupe de canne. Les ateliers de la Pointe des Galets ont un savoir-faire reconnu dans tout l'océan Indien. C'est aussi la première entreprise à réunir autant de travailleurs : les premières grèves ont lieu en **1912**, la Fédération Réunionnaise du Travail, proche de la C.G.T., est créée en **1936**, et les grèves de janvier 1937 font émerger des leaders comme **Léon de Lépervenche**, faisant du Port le « bastion de la classe ouvrière ». Les cheminots luttent aussi pour la suppression du statut colonial, qui prend fin en **1946** avec la départementalisation.
+Le C.P.R. emploie de nombreuses personnes pour assurer les activités du port et du chemin de fer. L'entreprise embauche des dockers, cheminots, ouvriers d'entretien des voies et des machines et autres auxiliaires, si bien qu'elle devient le premier employeur de l'île. 
+
+Les travailleurs du rail participent en 1902 à la création du **syndicat professionnel des travailleurs du Chemin de Fer et Port de La Réunion**. la solidarité entre dockers, cheminots, ouvriers et marins des Messageries Maritimes, inaugurent la tradition de luttes qui déterminera l’histoire de la ville du Port, berceau du syndicalisme réunionnais, et celle de l’île. Plusieurs grèves éclatent en 1912, année de la création de l’**Union Radicale et Radicale Socialiste des employés et ouvriers du CPR** dont l’objectif prioritaire est d’obtenir l’application des avantages sociaux en vigueur en France. 
+
+Sur l'impulsion de **Léon de Lépervanche** le **Syndicat général du personnel du CPR** voit le jour en avril 1936. la **Fédération Réunionnaise du Travail** (FRT), affiliée à la CGT, naît dans la foulée, le 23 août 1936 et regroupe 37 syndicats fin 1937. Léon de Lépervanche en prend le secrétariat général. Très vite, les cheminots luttent aussi pour la suppression du statut colonial, qui prend fin en **1946** avec la départementalisation.
 
 ### Le matériel roulant
 
@@ -167,11 +220,15 @@ Le tracé de l'ancienne ligne se suit encore. À Saint-Pierre, la gare construit
 
 Eric Boulogne https://www.reunionnaisdumonde.com/magazine/actualites/petite-histoire-du-train-a-la-reunion/
 
-
+Podcast du quotidien https://www.dailymotion.com/video/x9losgg
 
 https://web.archive.org/web/20111004120142/http://www.mi-aime-a-ou.com/histoire_chemin_de_fer.php
 
 https://fr.wikipedia.org/wiki/Chemin_de_fer_de_La_R%C3%A9union
+
+https://7lameslamer.net/11-fevrier-1882-lotoray-larive/
+
+
 
 https://www.lequotidien.re/article/societe/2025/08/30/le-ti-train-de-la-reunion-80-ans-de-bons-et-loyaux-services
 
