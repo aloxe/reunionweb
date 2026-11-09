@@ -161,45 +161,67 @@ D'autres locomotives type 030 sont livrées, venant de la **Société Alsacienne
 
 En 1938 on envisage l'électrification d'une partie de la ligne avec l'aquisition de la rame automotrices Diesel électrique **Brissonneau et Lotz** de 23 metres de long et offrant 102 places et une vitesse en pointe de 70 km/h offrant l'espoir de relier les deux terminus en 2 h 40. On envisage même de boucler la boucle en prolongeant la voie dans le sud sauvage. 
 
-La guerre va mettre fin à tous ces projets. Le blocus de la Royal Navy de 1940 à 1942, puis après l'arrivée des Forces françaises libres, la pénurie de carburant clouent les automotrices au garage.automotrices. Après la guerre, le très meurtrier **cyclone de 1948** détruit une grande partie de la ligne et désigne de nouvelles priorités.
-
-Une précision qui honore ce chemin de fer : en **80 ans d'exploitation**, malgré déraillements, collisions avec des animaux et autres accidents spectaculaires, il n'a causé **aucun décès de voyageurs**. Sa lenteur, dictée par le relief, y fut sans doute pour quelque chose ([Le Quotidien](https://www.lequotidien.re/article/societe/2025/08/30/le-ti-train-de-la-reunion-80-ans-de-bons-et-loyaux-services){.ext}).
+La guerre va mettre fin à tous ces projets. De 1940 à 1942, la Réunion ratachée au régime de Vichy subit le blocus de la Royal Navy, puis après l'arrivée des Forces françaises libres, la pénurie de carburant clouent les automotrices au garage. Après la guerre, le très meurtrier **cyclone de 1948** détruit une grande partie de la ligne et désigne de nouvelles priorités.
 
 ## Le lent déclin
 
+Dès les années 1890, le train a subis les critiques principalement pour sa lenteur. Le sigle C.P.R. est ironiquement détourné en « Charbon Poussière Retard » ou « C'est Pas Rapide ». On plaisante même qu'un piéton marche aussi vite que ce train sale et inconfortable. 
+
+C'est peut-être sa lenteur, principalement dictée par le relief, qui lui a vallut le titre de transport le plus sûr. En 80 ans d'exploitation, malgré déraillements, collisions avec des animaux et autres accidents spectaculaires, le ti train n'a causé aucun décès de voyageurs.
+
 ### Le développement de la voiture
 
-Dès les années 1890, les critiques fusent : le train est « lent », « poussif », les voitures « bringuebalantes ». Le sigle C.P.R. est ironiquement détourné en « Charbon Poussière Retard » ou « C'est Pas Rapide » ; on plaisante même qu'un piéton marche aussi vite que ce train sale et inconfortable. En **1911**, les premiers autocars annoncent la concurrence à venir. Après la Seconde Guerre mondiale, le **13 juin 1946**, le conseil général adopte par 19 voix contre 5 le projet de « suppression de principe du C.P.R. et de création d'une autostrade » sur le tracé côtier.
+En 1911, les premiers autocars apparaissent à la Réunion. Ils préfigure une concurence à venir qui finira par  être fatale à la ligne.
 
-L'ironie veut que le rail serve déjà sa rivale : vers **1952-1953**, des trains transportent les automobiles entre Saint-Denis et La Possession, leur épargnant le long détour par la route de la Montagne.
+Après la Seconde Guerre mondiale, le 13 juin 1946, le conseil général adopte par 19 voix contre 5 le projet n°22 de « suppression de principe du C.P.R. et de création d'une autostrade » sur le tracé côtier. Mais l'infrastructure routière n'est pas encore à la hauteur et le train reste sur les rails pendant encore quelques années. L'ironie veut que le rail serve déjà sa rivale, dans les années 50, des trains transportent les automobiles entre Saint-Denis et La Possession, leur épargnant le long détour par la route de la Montagne.
 
 ### Le nombre de passagers et le déclin
 
-Le C.F.R. (*Chemin de Fer de la Réunion*), créé le **1er janvier 1951** en régie départementale après la dissolution du C.P.R. le 27 décembre 1950, doit faire face à un matériel vétuste, aux camions qui captent le fret et aux autocars plus pratiques. Les voyageurs subissent des surtaxes temporaires pour combler le déficit, et dans les années 1950 les usines sucrières acheminent **80 % de leur production par la route**. Seule la traversée des tunnels entre Saint-Denis et La Possession attire encore les voyageurs vers le rail. Le **17 février 1954**, le préfet **Pierre Philip** enterre l'affaire : « La difficile exploitation du C.F.R. et ses désastreuses conséquences financières nous conduisent à supprimer le chemin de fer ». C'est une catastrophe pour une centaine d'employés.
+Face à la concurrence, la compagnie tente le pari de la vitesse. Les rames **Brissonneau et Lotz** de 1940 roulaient déjà à 70 km/h ; en **1951-1952**, six autorails **Floirat**, des autocars adaptés à la circulation sur voie ferrée, prennent le relais, puis en **1960** trois motrices et trois remorques **Billard** entrent en service. 
 
-### Michelines et augmentation de la vitesse
+<p class="center cadrimage legende">
+   {% Image page, "Autorail-Billard-A150D8-grande.chaloupe.jpg", "Autorail rouge en attente devant le bâtiment rouge de la gare de Gande Chaloupe" %}<br>
 
+Autorail Billard devant la gare de Grande Chaloupe. photo par [Tonton Bernardo](https://commons.wikimedia.org/wiki/File:Autorail.grande.chaloupe01.JPG){.ext}
 
-Face à la concurrence, la compagnie tente le pari de la vitesse. Les rames Brissonneau et Lotz de 1940 roulaient déjà à 70 km/h ; en **1951-1952**, six autorails **Floirat**, des autocars adaptés à la circulation sur voie ferrée, prennent le relais, puis en **1960** trois motrices et trois remorques **Billard** entrent en service. Même quatre locomotives diesel commandées chez Brissonneau et Lotz en 1940, livrées en Afrique équatoriale française en 1947, finissent par arriver sur l'île en 1953. Mais il est trop tard : la clientèle a déserté les gares.
+</p>
 
-### Les dates de fermeture des tronçons
+Dans les années 50, les camions captent déjà la majorité du fret et les voyageurs utilisent de plus en plus les autocars plus pratiques. Les usines sucrières acheminent déjà 80 % de leur production par la route. Seule la traversée des tunnels entre Saint-Denis et La Possession attire encore les voyageurs vers le rail.
 
-Le dépeçage se fait par morceaux :
+Les voyageurs subissent des surtaxes temporaires pour combler le déficit mais en vain. Non rentable et supportant du matériel vétuste, le C.P.R. es dissout le 27 décembre 1950. Le 1er janvier suivant est créé la régie départementale **Chemin de Fer de la Réunion** ou C.F.R.
 
-- **mars 1956** : fermeture de la section sud entre Saint-Pierre et Le Port ;
-- **novembre 1962** : fermeture entre Saint-Benoît et Saint-André ;
-- **mars 1963** : fin du trafic voyageurs entre Saint-André et Saint-Denis ;
-- **1er juin 1963** : inauguration de la première [route en corniche](/decouverte/economie/route-corniche/), qui emprunte en partie l'emprise de l'ancienne voie ferrée ;
-- **31 décembre 1963** : fin d'exploitation programmée du C.F.R. ;
-- **1976** : suppression des 11 derniers kilomètres entre Saint-Denis et La Possession, le service de secours ferroviaire fermant définitivement avec la nouvelle route en corniche.
+Le **17 février 1954**, le préfet **Pierre Philip** tire un trait sur cette aventure ferrovière. 
 
-Le matériel vieillot, l'abandon du public, un déficit chronique qualifié de « mal inéluctable » et la route en ont raison.
+> La difficile exploitation du C.F.R. et ses désastreuses conséquences financières nous conduisent à supprimer le chemin de fer
+
+Le ti train de la Réunion va s'arrêter de circuler. C'est décevent pour les quelques passagers qui restent et c'est une catastrophe pour une centaine d'employés.
+
+### Les fermetures
+
+Le dépeçage se fait par petits bouts
+
+- **mars 1956** : fermeture de la section sud entre Saint-Pierre et Le Port
+- **novembre 1962** : fermeture du tronçon entre Saint-Benoît et Saint-André
+- **mars 1963** : fin du trafic voyageurs entre Saint-André et Saint-Denis
+- **1er juin 1963** : inauguration de la première [route en corniche](/decouverte/economie/route-corniche/), qui emprunte en partie l'emprise de l'ancienne voie ferrée
+- **31 décembre 1963** : fin d'exploitation programmée du C.F.R. <br/>
+Environ 11,2 km de voies sont maintenus en état, dont 10,4 km en tunnel pour un service de secours. Chaque fois que la route en corniche est coupée par des chutes de pierres ou la houle, les autorails Billard reprennent du service, le rail secourant la route qui l'a supplanté. 
+- **1976** : Ouverture de la nouvelle route en corniche avec ses double voies permettant le basculement en cas d'incident. Les 11 derniers kilomètres entre Saint-Denis et La Possession sont définitivement abandonnés
+
+Après 94 ans de bons services et de modifications du paysage, le train disparait de l'île de la Réunion.
 
 ## La redécouverte du patrimoine lontan
 
 ### La fin du service et l'abandon des infrastructures
 
 Après 1976, les rails disparaissent peu à peu du paysage. Certains riverains s'approprient les terrains de la plateforme ferroviaire là où les voies ont été démantelées, les ponts se dégradent, et certaines gares sont démolies ou détournées de leur usage. La mémoire du ti train, elle, ne s'efface pas.
+
+<p class="center cadrimage legende">
+   {% Image page, "Vestiges_De_L_Ancien_Chemin_De_Fer_Trois-Bassins.jpeg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
+
+Vestiges De L'Ancien Chemin De Fer à Trois-Bassins par [Alexandre Dijoux](https://500px.com/photo/BkQno9zJa4){.ext}
+
+</p>
 
 ### La création de l'association Ti Train
 
@@ -246,5 +268,7 @@ des références à utiliser https://francearchives.gouv.fr/fr/article/899095144
 
 images
 https://commons.wikimedia.org/wiki/File:Ti_Train-Grande_Chaloupe.jpeg#
+https://commons.wikimedia.org/wiki/Category:Gare_de_la_Grande_Chaloupe
+https://commons.wikimedia.org/wiki/Category:Stone_arch_railway_bridges_in_R%C3%A9union
 
  -->
