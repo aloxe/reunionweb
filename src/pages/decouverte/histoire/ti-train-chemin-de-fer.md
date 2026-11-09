@@ -9,13 +9,15 @@ keywords: chemin de fer, ti train, CPR, CFR, Lavalley, tunnel de la Montagne, au
 
 Pendant près d'un siècle, un train à écartement métrique a longé le littoral de la Réunion, reliant Saint-Benoît à Saint-Pierre en passant par Saint-Denis et Saint-Paul. Le « ti train », comme l'appellent les Réunionnais, a d'abord été pensé pour la canne à sucre avant de devenir l'épine dorsale des déplacements d'une île entière. Les rails ont disparu en 1976, mais gares, viaducs et tunnels sont encore là, du Barachois à la Grande Chaloupe.
 
-## Avant le chemin de fer
+## La possibilité d'un train sur l'île
+
+### Avant le chemin de fer
 
 À la sortie de [l'esclavage](/decouverte/histoire/esclavage/), l'économie sucrière continue de se développer grâce à l'[engagisme](/decouverte/histoire/engagement/). Le sucre descend vers les marines à dos de mule, les voyages entre Saint-Benoît et Saint-Pierre prennent plusieurs jours à cheval, et la traversée entre Saint-Denis et La Possession en chaloupe dépend de la houle. L'île ne possède pas de port digne de ce nom : les navires mouillent au large des marines et les chaloupes font la navette, au péril des passagers et des marchandises. Bref, le manque d'infrastructure logistique se fait sentir.
 
 Dès 1858, l'idée dun chemin de fer commence à poindre mais le premier véhicule à vapeur sur l'île emprentera finalement la route. Le 20 juin 1870, **une locomotive à vapeur routière** imaginée par **M. de Kervéguen**, propriétaire d'un immense empire sucrier, fait ses essais dans la cour de l'usine des Casernes à Saint-Pierre. À la vitesse de 4 km/h, l'étrange convoi met quatre heures à rejoindre Rivière Saint-Louis. Un service public de locomotives routières inspiré de ces essais est même mis en place en septembre 1871 mais ne durera pas.
 
-## Le début des travaux
+### Un vrai grand projet
 
 Le vrai projet ferroviaire naît en 1872, quand l'ingénieur **Alexandre Lavalley**, qui a travaillé au creusement du canal de Suez, et l'homme d'affaires **Eugène Pallu de la Barrière** présentent leur plan : combiner un port en eau profonde à la Pointe des Galets et une ligne de chemin de fer transportant la canne à sucre et divers marchandises de Saint-Pierre à Saint-Benoît. En fait, l'ingénieur **Joseph-François Charpentier de Cossigny**, envoyé [à Bourbon](/decouverte/histoire/noms-ile/#:~:text=Île%20Bourbon) en 1732 par la compagnie des Indes avait déjà identifié la pointe des galets comme lieu d'accueil idéal pour le mouillage des bateaux. Le réseau ferré, lui, longera le littoral, divise en deux sections séparé par la capitale Saint-Denis. La partie [au vent](/decouverte/geographie/cartes/#:~:text=Au%20vent%20/%20sous%20le%20vent) jusquà à Saint-Benoît, environ 50 km, et celle de [Sous-le-Vent](/decouverte/geographie/ouest-ile/), jusqu'à Saint-Pierre, un peu plus de 80 km. Le point culminant de la ligne n'atteint que 145 mètres au-dessus de la mer, après le pont de la Petite Ravine.
 
@@ -70,9 +72,9 @@ Construction du viaduc de ls petite Ravine à Saint-Leu.
 
 Sur ces ponts et viaducs, et sur tout le trajet, la voie est posée avec un soin exemplaire, le plus droit et plat possible. Aucune rampe n'est supérieure à 20 pour mille, aucune courbe en dessous de 107 mètres de rayon. C'est une [voie métrique](https://fr.wikipedia.org/wiki/Voie_m%C3%A9trique){.ext}. Les rails de 14 kg/m ont la particularité d'être posés sur des traverses métaliques inventées par James Livesey. Les traverses seront remplacées par du 16 sur des traverses en bois, puis du 22 kg/m en 1901 au fil de la croissance du trafic. 
 
-### Les innaugurations
+### Les inaugurations
 
-Les innaugurations suivent l'ouverture de chaque tronçons. La première, en présence du gouverneur **Pierre Étienne Cuinier** a lieu le 11 février 1882 pour la ligne de Saint-Denis à Saint-Benoît, suivie le lendemain de l'innauguration de la ligne de Saint-Denis à Saint-Louis. Les arrêtés d'exploitation sont publiés le 15 février pour Saint-Benoît–Saint-Louis. Il faudra néanmoins attendre le 5 juillet 1882 pour voir des trains sur l'ensemble des 126,2 kilomètres de voie jusqu'à Saint-Pierre. Au départ de Saint-Denis, le train inaugural est béni pour écarter tout accident mais le train déraillera pour son premier trajet, inaugurant du même coup la longue série d'incidents qui rythmeront l'histoire du ti train.
+Les inaugurations suivent l'ouverture de chaque tronçons. La première, en présence du gouverneur **Pierre Étienne Cuinier** a lieu le 11 février 1882 pour la ligne de Saint-Denis à Saint-Benoît, suivie le lendemain de l'innauguration de la ligne de Saint-Denis à Saint-Louis. Les arrêtés d'exploitation sont publiés le 15 février pour Saint-Benoît–Saint-Louis. Il faudra néanmoins attendre le 5 juillet 1882 pour voir des trains sur l'ensemble des 126,2 kilomètres de voie jusqu'à Saint-Pierre. Au départ de Saint-Denis, le train inaugural est béni pour écarter tout accident mais le train déraillera pour son premier trajet, inaugurant du même coup la longue série d'incidents qui rythmeront l'histoire du ti train.
 
 Le port, retardé par un banc de galets non détecté lors des sondages, est inauguré le 1er septembre 1886. Son activité ne décolera pas tout de suite parce que les armateurs préfèrent mouiller ailleurs. Les revenus du port seront donc décevantes et les recettes couvreront à peine la moitié des dépenses. La déchéance de la Compagnie du Chemin de Fer et du Port de La Réunion est prononcée par arrêté du 2 décembre 1887 et l'État en prend le contrôle dès le premier janvier suivant.
 
@@ -82,9 +84,11 @@ Le sucre et la canne circulant en masse, le port et le chemin de fer développer
 
 ### Un progrès indiscutable
 
+Jusqu'au début du XXème sicècle, le train est symbole de progrès qui facilite des échanges. En 1938, il faut 12 heures pour relier Saint-Benoît à Saint-Pierre, là où il fallait deux à trois jours de cheval cinquante ans plus tôt.
+
 Pendant un demi-siècle, le chemin de fer est sans rival. Les journaux le disent utile, rapide et bon marché. Quatre trains omnibus quotidiens relaient Saint-Denis et Saint-Pierre dans chaque sens ainsi que deux autres entre Saint-Benoît et Saint-Paul. Un « Train-Malle » assure la correspondance avec les paquebots entre Le Port et Saint-Denis.
 
-À la saison des pluie, lorque les pistes muletières sont impraticables, les voyageurs rejoignent les gares et les haltes encore plus nombreux. L'historien des chemins de fer Clive Lamming rapporte qu'en 1922, plus de 8,6 millions de voyageurs-kilomètres sont assurés, à 30 km/h de moyenne.
+À la saison des pluies, lorque les pistes muletières sont impraticables, les voyageurs rejoignent les gares et les haltes encore plus nombreux. L'historien des chemins de fer Clive Lamming rapporte qu'en 1922, plus de 8,6 millions de voyageurs-kilomètres sont assurés, à 30 km/h de moyenne.
 
 La gare principale du réseau est celle du Port, au kilomètre 58,5 : exactement le mi-parcours de la ligne. Saint-Denis, elle, est la gare administrative. Les gares deviennent des pôles d'animation locale, avec salles d'attente séparées par classe, les guichets au rez-de-chaussé et les logements de chefs de gare à l'étage. La gare de Saint-Denis, inaugurée en 1882, est un élégant bâtiment de basalte aux larges auvents près du Barachois. Au total 13 gares et 28 haltes découpent le tracé du chemin de fer, espacés d'environ 6,3 km.
 
@@ -127,8 +131,6 @@ Gare de Saint-Pierre, terminus sud de la ligne
 
 Ces photos et d'autres photos lontan des gares du parcous sont visibles [sur le site Réunionnais du monde](https://www.reunionnaisdumonde.com/magazine/actualites/la-saga-des-gares-ferroviaires-de-la-reunion-photos/).
 
-Jusqu'au début du XXème sicècle, le train est symbole de progrès qui facilite des échanges. En 1938, il faut 12 heures pour relier Saint-Benoît à Saint-Pierre, là où il fallait deux à trois jours de cheval cinquante ans plus tôt. 
-
 ### Les trains spéciaux
 
 Certains convois marquent les mémoires par leurs passagers illustres où les moment historiques qu'ils représentent. 
@@ -153,9 +155,13 @@ Sur l'impulsion de **Léon de Lépervanche** le **Syndicat général du personne
 
 ### Le matériel roulant
 
-À l'origine, un parc de **29 locomotives, 67 voitures et 676 wagons** à deux essieux. Les premières locomotives-tender type 030T arrivent de chez **Schneider** au Creusot et de chez **Weidknecht** à Paris en **1878-1881** : la **Schneider n° 8**, probablement la dernière du type au monde, participa aux travaux, à l'inauguration de 1882 et aux derniers convois de marchandises en 1963 ; elle est classée monument historique par arrêté du **26 mai 1994**. Suivent des SACM en 1883, des Decauville en 1913 et 1920, sept locomotives **Mallet** belges dans les années 1920, puis douze machines Corpet & Louvert rachetées en **1949** au réseau d'Ille-et-Vilaine ([Clive Lamming](https://trainconsultant.com/2023/02/25/le-train-de-la-reunion-le-tour-de-la-question-mais-pas-completement/){.ext}).
+À l'origine, le parc comptait 29 locomotives, 67 voitures et 676 wagons à deux essieux. Les premières locomotives sont de type 030T et sont fabriquées  chez **Schneider** au Creusot et chez **Weidknecht** à Paris. La **Schneider n° 8** est emblématique parce qu'entre 1878 et 1881, elle participe aux travaux, à l'inauguration de 1882 et est utilisée jusqu'en 1963 pour les derniers convois de marchandises. C'est aujourd'hui probablement la dernière locomotive de ce type au monde. Elle est classée monument historique par arrêté du 26 mai 1994. 
 
-La modernisation fait un bond en **mars 1940** avec les rames diesel-électriques **Brissonneau et Lotz** : 23 mètres de long, 102 places, **70 km/h** en pointe, une caisse dessinée par le gabarit très restreint des tunnels, et l'espoir de relier les deux terminus en 2 h 40. La guerre en décide autrement : le **blocus de la Royal Navy** de 1940 à 1942, l'île étant sous Vichy jusqu'à l'arrivée des Forces françaises libres, puis la pénurie de carburant clouent les automotrices au garage et rendent la vapeur aux commandes. Le très meurtrier **cyclone de 1948** détruit une grande partie de la ligne.
+D'autres locomotives type 030 sont livrées, venant de la **Société Alsacienne de Constructions Mécaniques** en 1883, de **Decauville** en 1913 et 1920. En cette année aussi, sept locomotives **Mallet** de type 020+020T sont fabriqués en Belgique et livrées dans les années 1920, puis douze machines **Corpet & Louvert** rachetées en 1949 au réseau d'Ille-et-Vilaine.
+
+En 1938 on envisage l'électrification d'une partie de la ligne avec l'aquisition de la rame automotrices Diesel électrique **Brissonneau et Lotz** de 23 metres de long et offrant 102 places et une vitesse en pointe de 70 km/h offrant l'espoir de relier les deux terminus en 2 h 40. On envisage même de boucler la boucle en prolongeant la voie dans le sud sauvage. 
+
+La guerre va mettre fin à tous ces projets. Le blocus de la Royal Navy de 1940 à 1942, puis après l'arrivée des Forces françaises libres, la pénurie de carburant clouent les automotrices au garage.automotrices. Après la guerre, le très meurtrier **cyclone de 1948** détruit une grande partie de la ligne et désigne de nouvelles priorités.
 
 Une précision qui honore ce chemin de fer : en **80 ans d'exploitation**, malgré déraillements, collisions avec des animaux et autres accidents spectaculaires, il n'a causé **aucun décès de voyageurs**. Sa lenteur, dictée par le relief, y fut sans doute pour quelque chose ([Le Quotidien](https://www.lequotidien.re/article/societe/2025/08/30/le-ti-train-de-la-reunion-80-ans-de-bons-et-loyaux-services){.ext}).
 
