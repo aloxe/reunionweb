@@ -27,7 +27,7 @@ Sous cette latitude, les vents dominants soufflent d'est en ouest et comme parto
 Division arbitraire comme souvent avec les frontières administratives. La bidep proposait de diviser la Réunion en deux départements regroupant d'un coté les communes du nord est avec une préfecture à <b>Saint-Denis</b> et de l'autre les communes du sud-est avec <b>Saint-Pierre</b> pour préfecture. La bidep n'ayant pas eu lieu, cette division n'est plus qu'un mauvais souvenir.
 
 ## Hauts / bas
-![Carte de de la Réunion et un trait noir suivant le litoral](carte_division_bas-hauts.png){.center}
+![Carte de de la Réunion et un trait noir suivant le littoral](carte_division_bas-hauts.png){.center}
 
 C'est une division qui fait partie du vocabulaire réunionnais autant que des toponymes: <i>les hauts</i> et <i>les bas</i>. Même si ce positionnement est tout relatif. Des villages des hauts peuvent s'appeller « le-bas » dès lors qu'il y a un autre village à une altitude supérieure. Géographiquement parlant, la Réunion est une région de montagne et les dénivelés augmentent très vite depuis le littoral. La <a href="/decouverte/economie/route-corniche/">route en corniche</a> en est un bon exemple avec sa route au ras des flots bordée d'une falaise de 200m de haut. Il reste que cette division entre le littoral et la montagne peut-être faite et l'on peut voir que la montagne ne laisse qu'une maigre bande au littoral.
 
