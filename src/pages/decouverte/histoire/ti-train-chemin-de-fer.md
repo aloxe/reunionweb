@@ -267,7 +267,7 @@ Les ponts sur la ravine des Colimaçons vus depuis la tour Kélonia. On observe 
 
 </p>
 
-Maintenant, le rail pourrait bien faire son retour dans quelques années avec le projet Réunion Express, un siècle après le dernier voyage du ti train.
+Maintenant, le rail pourrait bien faire son retour dans quelques années avec [le projet Réunion Express](/train-express-et-train-lontan/), un siècle après le dernier voyage du ti train.
 
 <!-- 
 

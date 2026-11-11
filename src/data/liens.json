@@ -834,7 +834,7 @@
       "parent": "actualites",
       "importance": 0,
       "description": "Le quotidien du PCR, archives de tous les articles depuis 2004.",
-      "article": ["200703", "200805", "201404", "200709"]
+      "article": ["200703", "200805", "201404", "200709", "202610"]
   },
   {
       "id": 95,
@@ -987,7 +987,7 @@
       "parent": "radio",
       "importance": 0,
       "description": "Le site info d’Antenne Réunion. Écoute en direct.",
-      "article": ["200409"]
+      "article": ["200409", "202610"]
   },
   {
       "id": 112,
@@ -1266,7 +1266,7 @@
       "parent": "associations",
       "importance": 0,
       "description": "Site web fédérant les Réunionnais qui se sont expatriés en Europe ou ailleurs dans le monde. Forum, produits pays, actu et interviews.",
-      "article": ["199809", "200109", "200307", "200712"]
+      "article": ["199809", "200109", "200307", "200712", "202610"]
   },
   {
       "id": 144,
@@ -1352,11 +1352,11 @@
   {
       "id": 153,
       "title": "Réunion 1ère",
-      "url": "https://la1ere.francetvinfo.fr/reunion/",
+      "url": "https://la1ere.franceinfo.fr/reunion/",
       "parent": "radio",
       "importance": 0,
       "description": "La chaîne télé et de radio de la Réunion par le groupe France Télévision. Actualités et programmes en écoute différée.",
-      "article": ["199811", "202407", "202411", "202502", "202503"]
+      "article": ["199811", "202407", "202411", "202502", "202503", "202610"]
   },
   {
       "id": 156,
@@ -1825,5 +1825,23 @@
         "importance": 0,
         "description": "le site d'Alexandre Roels qui donne plein de recettes de rhum arrangé",
         "article": ["200612"]
+    },
+    {
+        "id": 231,
+        "title": "Réunion Express",
+        "url": "https://reunionexpress.re/",
+        "parent": "transports",
+        "importance": 0,
+        "description": "Site du projet ferroviaire autour de l'île de la Réunion",
+        "article": ["202610"]
+    },
+    {
+        "id": 232,
+        "title": "Association Ti Train",
+        "url": "https://association-ti-train.re/",
+        "parent": "associations",
+        "importance": 0,
+        "description": "L'association qui entretien la mémoire de la ligne de train de la Réunion",
+        "article": ["202610"]
     }
 ]
