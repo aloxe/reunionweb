@@ -157,9 +157,19 @@ Sur l'impulsion de **Léon de Lépervanche**, le **Syndicat général du personn
 
 À l'origine, le parc comptait 29 locomotives, 67 voitures et 676 wagons à deux essieux. Les premières locomotives sont de type 030T et sont fabriquées chez **Schneider** au Creusot et chez **Weidknecht** à Paris. La **Schneider n° 8** est emblématique parce qu'entre 1878 et 1881, elle participe aux travaux, à l'inauguration de 1882 et est utilisée jusqu'en 1963 pour les derniers convois de marchandises. C'est aujourd'hui probablement la dernière locomotive de ce type au monde. Elle est classée monument historique par arrêté du 26 mai 1994.
 
+<p class="center cadrimage legende">
+   {% Image page, "carte-postale-train-saint-denis-1.jpg", "carte postale noir et blanc d'un train de profil sur un pont à Saint-Denis" %}<br>
+   Un train tiré par une Schneider type 030 sur le pont à l'embouchure de la rivière Saint-Denis
+</p>
+
 D'autres locomotives type 030 sont livrées, venant de la **Société Alsacienne de Constructions Mécaniques** en 1883, de **Decauville** en 1913 et 1920. Cette même année, sept locomotives **Mallet** de type 020+020T sont fabriquées en Belgique et livrées dans les années 1920, puis douze machines **Corpet & Louvert** sont rachetées en 1949 au réseau d'Ille-et-Vilaine.
 
 En 1938, on envisage l'électrification d'une partie de la ligne avec l'acquisition de la rame automotrice diesel-électrique **Brissonneau et Lotz** de 23 mètres de long, offrant 102 places et une vitesse en pointe de 70 km/h, et l'espoir de relier les deux terminus en 2 h 40. On envisage même de boucler la boucle en prolongeant la voie dans le sud sauvage.
+
+<p class="center cadrimage legende">
+   {% Image page, "train-CPR-debut-du-XX.jpg", "photo noir et blanc d'un autorail à l'arrêt avec des passagers qui descendent sur la voie" %}<br>
+   Une rame automotrice à Saint-Gilles
+</p>
 
 La guerre va mettre fin à tous ces projets. De 1940 à 1942, la Réunion, rattachée au régime de Vichy, subit le blocus de la Royal Navy, puis après l'arrivée des Forces françaises libres, la pénurie de carburant cloue les automotrices au garage. Après la guerre, le très meurtrier **cyclone de 1948** détruit une grande partie de la ligne et désigne de nouvelles priorités.
 
@@ -180,10 +190,8 @@ Après la Seconde Guerre mondiale, le 13 juin 1946, le conseil général adopte 
 Face à la concurrence, la compagnie tente le pari de la vitesse. Les rames **Brissonneau et Lotz** de 1940 roulaient déjà à 70 km/h ; en **1951-1952**, six autorails **Floirat**, des autocars adaptés à la circulation sur voie ferrée, prennent le relais, puis en **1960** trois motrices et trois remorques **Billard** entrent en service.
 
 <p class="center cadrimage legende">
-   {% Image page, "Autorail-Billard-A150D8-grande.chaloupe.jpg", "Autorail rouge en attente devant le bâtiment rouge de la gare de la Grande Chaloupe" %}<br>
-
-Autorail Billard devant la gare de la Grande Chaloupe. Photo par [Tonton Bernardo](https://commons.wikimedia.org/wiki/File:Autorail.grande.chaloupe01.JPG){.ext}
-
+   {% Image page, "arret_du_cfr-rue-embarcadere.jpg", "Autorail de trois voitures blanc et rouge à l'arrêt des passagers à la mode des années 50 de presse devant les portes" %}<br>
+   Une rame Billard qui embarque des passagers à l'arrêt rue de l'embacradère
 </p>
 
 Dans les années 50, les camions captent déjà la majorité du fret et les voyageurs utilisent de plus en plus les autocars, plus pratiques. Les usines sucrières acheminent déjà 80 % de leur production par la route. Seule la traversée des tunnels entre Saint-Denis et La Possession attire encore les voyageurs vers le rail.
@@ -229,6 +237,13 @@ En janvier 1987, l'association **Ti Train Lontan** naît de la volonté de trois
 
 Petit à petit, les compères y rassemblent le matériel disséminé dans toute l'île : un autorail Billard à l'Étang-Salé, un autre aux Archives départementales, une locomotive à vapeur à la Bibliothèque départementale ou une voiture de voyageurs à Sainte-Suzanne. Il leur faut six mois pour ramener ce matériel à la Grande Chaloupe.
 
+<p class="center cadrimage legende">
+   {% Image page, "Autorail-Billard-A150D8-grande.chaloupe.jpg", "Autorail rouge en attente devant le bâtiment rouge de la gare de la Grande Chaloupe" %}<br>
+
+Autorail Billard devant la gare de la Grande Chaloupe. Photo par [Tonton Bernardo](https://commons.wikimedia.org/wiki/File:Autorail.grande.chaloupe01.JPG){.ext}
+
+</p>
+
 La gare est inscrite au titre des monuments historiques le 22 octobre 1998. Le 15 juillet 2007, une stèle est érigée sur le site en hommage aux anciens ouvriers et cheminots de la ligne.
 
 ### Spectacle et rénovations
@@ -255,6 +270,9 @@ Les ponts sur la ravine des Colimaçons vus depuis la tour Kélonia. On observe 
 Maintenant, le rail pourrait bien faire son retour dans quelques années avec le projet Réunion Express, un siècle après le dernier voyage du ti train.
 
 <!-- 
+
+https://baladescreoles.wordpress.com/2008/05/24/alexandre-lavalley-et-eugene-pallu-de-la-barriere/
+
  Clive Lamming https://trainconsultant.com/2023/02/25/le-train-de-la-reunion-le-tour-de-la-question-mais-pas-completement
  
  FranceArchives https://francearchives.gouv.fr/fr/article/899095144
