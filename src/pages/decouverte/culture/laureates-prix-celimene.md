@@ -2,6 +2,7 @@
 title: Les Lauréates du prix Célimène
 description: Toutes les Lauréates du prix Célimène depuis 2005
 image: celimene/julie-joly-mayaj-fil-de-fer.jpg
+imagealt: "Femme en robe noire et sac à main vert pose une statuette à la main à coté d'une sculpture en fil de fer représentant une autre femme"
 keywords: 974, dessinatrice, peintre, sculpteuse, photographe
 ---
 

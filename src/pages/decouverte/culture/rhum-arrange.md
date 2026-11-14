@@ -2,6 +2,7 @@
 title: Le rhum arrangé
 description: Faire mariner des fruits, des plantes  ou des épices dans le rhum est un des passe-temps favori des réunionnais.
 image: etagere-rhums-arranges-la-montagne.jpg
+imagealt: "Grand allignement de pot sur 5 rangées d'étagères chaque pot contenant des fruits ou plantes différents"
 keywords: rhum, puch, coctail, mélange, apéritif
 ---
 

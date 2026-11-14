@@ -2,6 +2,7 @@
 title: Prière réunionnaise pour la paix
 description: La prière pour la paix du groupe de dialogue Inter-religieux de la Réunion
 image: reunion-paix.png
+imagealt: "Logo formé d'une carte de la Reunion bleu nuit avec une colombe allant vers la droite en espace négatif."
 keywords:
 ---
 

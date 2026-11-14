@@ -2,6 +2,7 @@
 title: La Varangue
 description: Petit détail d'architecture avec une grande présence à la Réunion
 image: tableau-Leona-sous-varangue-creole.jpg
+imagealt: "Peinture représentant une femme assise devant une case créole aux colets verts, à l'ombre d'un palmier."
 keywords: jardin, case, ombre, créole, lambroquin, terrasse, véranda
 ---
 

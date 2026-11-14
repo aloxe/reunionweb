@@ -4,6 +4,7 @@ short: La Culture
 description: C'est une culture faite de cultures de diverses origines
 homedesc: Musique, littérature, religions et curiosités.
 image: Saint-Denis_Villa-General.jpg
+imagealt: "Grande villa créole blanche avec une varangue à colonnes et une fontaine a statue au premier plan"
 keywords: Découverte, Reunion, Coutumes, art, traditions, langue
 layout: decouverte.njk
 ---

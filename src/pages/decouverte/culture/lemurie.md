@@ -2,6 +2,7 @@
 title: La Lémurie
 description: La Lémurie est le grand mythe du continent perdu, age d'or de l'Océan Indien. Comment est née cette histoire ?
 image: gravure-propithecus-coronatus-1882.jpg
+imagealt: "Vieille gravure d'un lémur qui lève les bras"
 keywords: Malcom de Chazal, Lémur, Madagascar, continent, Océan Indien
 ---
 

@@ -3,6 +3,7 @@ title: L'islam et les musulmans de la Réunion
 short: L'islam
 description: Comme souvent ailleurs en France la religion musulmane à la Réunion est polymorphe, sa présence est ancienne et plurielle.
 image: mosquee-saint-denis.jpg
+imagealt: "Vue plongeante d'une colonade le long du'une rue avec des voitures et plein de gens dont cetrains portent des robes et un peci sur la tête"
 keywords: islam, zarabe, musulmans, mosquée, minaret, prière sunnites, chiites
 ---
 

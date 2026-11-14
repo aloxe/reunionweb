@@ -2,6 +2,7 @@
 title: Le Séga
 description: Le Séga est une danse et musique typique de la Réunion, Maurice et des Seychelles. Né de la fusion des rythmes africains et des musiques apportées par les Européens Le Séga est un symbole de la culture créole des îles de l'Océan Indien.
 image: couple-danse-sega.gif
+imagealt: "animation clipart d'un couple qui danse colé sérré"
 keywords: esclavage, danse, musique, tambour, rouler, Maravann, kayamb
 ---
 
