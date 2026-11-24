@@ -225,8 +225,8 @@ Après 94 ans de bons services et de modifications du paysage, le train dispara�
 Après 1976, les rails disparaissent peu à peu du paysage. Certains riverains s'approprient les terrains de la plateforme ferroviaire là où les voies ont été démantelées, les ponts se dégradent, et certaines gares sont démolies ou détournées de leur usage. La mémoire du ti train, elle, ne s'efface pas.
 
 <p class="center cadrimage legende">
-   {% Image page, "Vestiges_De_L_Ancien_Chemin_De_Fer_Trois-Bassins.jpeg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
-Vestiges de l'ancien chemin de fer à Trois-Bassins par [Alexandre Dijoux](https://500px.com/photo/BkQno9zJa4){.ext}
+{% Image page, "Vestiges_De_L_Ancien_Chemin_De_Fer_Trois-Bassins.jpeg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
+Vestiges de l'ancien chemin de fer à Trois-Bassins par <a href="https://500px.com/photo/BkQno9zJa4" class="ext>Alexandre Dijoux</a>
 </p>
 
 ### La création de l'association Ti Train
@@ -238,7 +238,7 @@ Petit à petit, les compères y rassemblent le matériel disséminé dans toute 
 <p class="center cadrimage legende">
 {% Image page, "Autorail-Billard-A150D8-grande.chaloupe.jpg", "Autorail rouge en attente devant le bâtiment rouge de la gare de la Grande Chaloupe" %}
 <br/>
-Autorail Billard devant la gare de la Grande Chaloupe. Photo par [Tonton Bernardo](https://commons.wikimedia.org/wiki/File:Autorail.grande.chaloupe01.JPG){.ext}
+Autorail Billard devant la gare de la Grande Chaloupe. Photo par <a href="https://commons.wikimedia.org/wiki/File:Autorail.grande.chaloupe01.JPG" class="ext">Tonton Bernardo</a>
 </p>
 
 La gare est inscrite au titre des monuments historiques le 22 octobre 1998. Le 15 juillet 2007, une stèle est érigée sur le site en hommage aux anciens ouvriers et cheminots de la ligne.
@@ -259,7 +259,7 @@ Il est encore possible de suivre l'ancienne ligne du C.F.R. À Saint-Pierre, la 
 
 <p class="center cadrimage legende">
 {% Image page, "Pont-ravine-Colimacons.jpg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
-Les ponts sur la ravine des Colimaçons vus depuis la tour Kélonia. On observe encore bien les arches du pont du chemin de fer. Photo : [Thierry Caro](https://commons.wikimedia.org/wiki/File:Pont-ravine-Colima%C3%A7ons-K%C3%A9lonia.JPG){.ext}
+Les ponts sur la ravine des Colimaçons vus depuis la tour Kélonia. On observe encore bien les arches du pont du chemin de fer. Photo : <a href="https://commons.wikimedia.org/wiki/File:Pont-ravine-Colima%C3%A7ons-K%C3%A9lonia.JPG" class="ext">Thierry Caro</a>
 </p>
 
 Maintenant, le rail pourrait bien faire son retour dans quelques années avec [le projet Réunion Express](/train-express-et-train-lontan/), un siècle après le dernier voyage du ti train.
