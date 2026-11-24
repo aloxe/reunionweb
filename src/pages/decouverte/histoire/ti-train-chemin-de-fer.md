@@ -226,9 +226,7 @@ Après 1976, les rails disparaissent peu à peu du paysage. Certains riverains s
 
 <p class="center cadrimage legende">
    {% Image page, "Vestiges_De_L_Ancien_Chemin_De_Fer_Trois-Bassins.jpeg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
-
 Vestiges de l'ancien chemin de fer à Trois-Bassins par [Alexandre Dijoux](https://500px.com/photo/BkQno9zJa4){.ext}
-
 </p>
 
 ### La création de l'association Ti Train
@@ -238,17 +236,16 @@ En janvier 1987, l'association **Ti Train Lontan** naît de la volonté de trois
 Petit à petit, les compères y rassemblent le matériel disséminé dans toute l'île : un autorail Billard à l'Étang-Salé, un autre aux Archives départementales, une locomotive à vapeur à la Bibliothèque départementale ou une voiture de voyageurs à Sainte-Suzanne. Il leur faut six mois pour ramener ce matériel à la Grande Chaloupe.
 
 <p class="center cadrimage legende">
-   {% Image page, "Autorail-Billard-A150D8-grande.chaloupe.jpg", "Autorail rouge en attente devant le bâtiment rouge de la gare de la Grande Chaloupe" %}<br>
-
+{% Image page, "Autorail-Billard-A150D8-grande.chaloupe.jpg", "Autorail rouge en attente devant le bâtiment rouge de la gare de la Grande Chaloupe" %}
+<br/>
 Autorail Billard devant la gare de la Grande Chaloupe. Photo par [Tonton Bernardo](https://commons.wikimedia.org/wiki/File:Autorail.grande.chaloupe01.JPG){.ext}
-
 </p>
 
 La gare est inscrite au titre des monuments historiques le 22 octobre 1998. Le 15 juillet 2007, une stèle est érigée sur le site en hommage aux anciens ouvriers et cheminots de la ligne.
 
 ### Spectacle et rénovations
 
-Pour faire vivre le lieu pendant la rénovation des voies et des autorails, l'association fait appel à Emmanuel Genvrin et à la troupe du théâtre Vollard. Ils créent le spectacle *Lepervenche, chemin de fer*, qui se jouera entre 1990 et 1996. Pendant cette période, le Ti Train transportera 34.000 spectateurs lors de 113 représentations.
+Pour faire vivre le lieu pendant la rénovation des voies et des autorails, [l'association](https://titrain.re/){.ext} fait appel à Emmanuel Genvrin et à la troupe du théâtre Vollard. Ils créent le spectacle *Lepervenche, chemin de fer*, qui se jouera entre 1990 et 1996. Pendant cette période, le Ti Train transportera 34.000 spectateurs lors de 113 représentations.
 
 La rénovation se poursuit aujourd'hui. Les premiers dimanches du mois, les bénévoles proposent des visites guidées de la gare et de son site classé, avec [ses lazarets](/decouverte/histoire/lazarets-grande-chaloupe/) et le départ du [chemin des Anglais](/decouverte/geographie/chemin-des-anglais/), la plus ancienne route pavée de l'île. Quand le matériel fonctionne, il est possible de faire une balade en ti train.
 
@@ -261,10 +258,8 @@ Les Archives départementales ont consacré au ti train une exposition, **« Tit
 Il est encore possible de suivre l'ancienne ligne du C.F.R. À Saint-Pierre, la gare construite à la fin des années 1880, six portes cintrées et toiture en bardeaux, est préservée et reconvertie en brasserie historique. À Saint-Paul, la gare est toujours visible au n°30 du quai Gilbert. À Saint-Leu, le viaduc des Colimaçons domine toujours la ravine, le viaduc de la Petite Ravine a troqué les rails contre un tablier moderne avec du bitume.
 
 <p class="center cadrimage legende">
-   {% Image page, "Pont-ravine-Colimacons.jpg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
-
+{% Image page, "Pont-ravine-Colimacons.jpg", "Coucher de soleil sous un pont qui ne traverse plus la rivière" %}<br>
 Les ponts sur la ravine des Colimaçons vus depuis la tour Kélonia. On observe encore bien les arches du pont du chemin de fer. Photo : [Thierry Caro](https://commons.wikimedia.org/wiki/File:Pont-ravine-Colima%C3%A7ons-K%C3%A9lonia.JPG){.ext}
-
 </p>
 
 Maintenant, le rail pourrait bien faire son retour dans quelques années avec [le projet Réunion Express](/train-express-et-train-lontan/), un siècle après le dernier voyage du ti train.
@@ -286,8 +281,6 @@ https://web.archive.org/web/20111004120142/http://www.mi-aime-a-ou.com/histoire_
 https://fr.wikipedia.org/wiki/Chemin_de_fer_de_La_R%C3%A9union
 
 https://7lameslamer.net/11-fevrier-1882-lotoray-larive/
-
-
 
 https://www.lequotidien.re/article/societe/2025/08/30/le-ti-train-de-la-reunion-80-ans-de-bons-et-loyaux-services
 
